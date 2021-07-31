@@ -37,21 +37,20 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 **Block Diagram**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5bb67453-e7d5-4d11-8823-ab7c9d9eb149/diagram_v3.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5bb67453-e7d5-4d11-8823-ab7c9d9eb149/diagram_v3.png)
+![Block Diagram](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/diagram_v3.png)
 
 **Core** **Circuit Diagram**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae494a09-9abf-49e8-9e19-530ff55d3697/diagram_v2.svg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae494a09-9abf-49e8-9e19-530ff55d3697/diagram_v2.svg)
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d2b2aac-ae43-430f-af91-51bccc386868/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d2b2aac-ae43-430f-af91-51bccc386868/Untitled.png)
 
 Low-Power Low-Noise Amplifier (LNA) [1]
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e4665ed-f716-4dcc-9f25-45ba85ac700f/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e4665ed-f716-4dcc-9f25-45ba85ac700f/Untitled.png)
+![LNA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/LNA.png)
 
 VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable resistors and folded cascode OTAs with class AB output stage [2]
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00f3ab76-ede0-4b02-bd00-2d2a7c557a72/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00f3ab76-ede0-4b02-bd00-2d2a7c557a72/Untitled.png)
+![Filter](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png)
 
 Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4]
 
