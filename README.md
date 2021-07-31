@@ -57,19 +57,13 @@ Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier
 
 Target Performance Summary
 
-VDD             | 1.8 V
-
-Power           | 100 uW
-
-Input Noise     | 10 uV RMS (@ 0.05-100 Hz)
-
-Offset Voltage  | 1 mV
-
-Gain            | 10-100 V/V
-
-Bandwidth       |	0.5-100 Hz
-
-THD             |	0.1 % @ 1 Vpp
+| VDD             | 1.8 V                     |
+| Power           | 100 uW                    |
+| Input Noise     | 10 uV RMS (@ 0.05-100 Hz) |
+| Offset Voltage  | 1 mV                      |
+| Gain            | 10-100 V/V                |
+| Bandwidth       |	0.5-100 Hz                |
+| THD             |	0.1 % @ 1 Vpp             |
 
 ** References **
 
