@@ -46,7 +46,7 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 Low-Power Low-Noise Amplifier (LNA) [1]
 
-![VGA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png)
+![VGA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/vga.png)
 
 VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable resistors and folded cascode OTAs with class AB output stage [2]
 
