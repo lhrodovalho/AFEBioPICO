@@ -55,7 +55,33 @@ VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable 
 
 Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4]
 
-[Target Performance Summary](https://www.notion.so/5080160bf7f0460aacdccbaf19b643f2)
+Target Performance Summary
+
+VDD             | 1.8 V
+
+Power           | 100 uW
+
+Input Noise     | 10 uV RMS (@ 0.05-100 Hz)
+
+Offset Voltage  | 1 mV
+
+Gain            | 10-100 V/V
+
+Bandwidth       |	0.5-100 Hz
+
+THD             |	0.1 % @ 1 Vpp
+
+** References **
+
+[1] Harrison, Reid R., et al. "A low-power integrated circuit for a wireless 100-electrode neural recording system." IEEE Journal of Solid-State Circuits 42.1 (2006): 123-133.
+
+[2] Hogervorst, Ron, et al. "A compact power-efficient 3 V CMOS rail-to-rail input/output operational amplifier for VLSI cell libraries." IEEE journal of solid-state circuits 29.12 (1994): 1505-1513.
+
+[3] Arnaud, Alfredo, Rafaella Fiorelli, and Carlos Galup-Montoro. "Nanowatt, sub-nS OTAs, with sub-10-mV input offset, using series-parallel current mirrors." IEEE Journal of Solid-State Circuits 41.9 (2006): 2009-2018.
+
+[4] Krummenacher, Francois, and Norbert Joehl. "A 4-MHz CMOS continuous-time filter with on-chip automatic tuning." IEEE Journal of Solid-State Circuits 23.3 (1988): 750-758.
+
+[5] Serra-Graells, Francisco, and Jose Luis Huertas. "Sub-1-V CMOS proportional-to-absolute temperature references." IEEE Journal of Solid-State Circuits 38.1 (2003): 84-88.
 
 **Team members**
 
