@@ -56,7 +56,7 @@ VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable 
 Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4]
 
 Target Performance Summary
-
+| :---            | :---                      |
 | VDD             | 1.8 V                     |
 | Power           | 100 uW                    |
 | Input Noise     | 10 uV RMS (@ 0.05-100 Hz) |
