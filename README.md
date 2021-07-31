@@ -43,12 +43,15 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 
 ![LNA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/LNA.png)
+
 Low-Power Low-Noise Amplifier (LNA) [1]
 
 ![VGA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png)
+
 VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable resistors and folded cascode OTAs with class AB output stage [2]
 
 ![Filter](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png)
+
 Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4]
 
 Target Performance Summary
