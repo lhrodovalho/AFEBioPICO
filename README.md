@@ -39,19 +39,16 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 ![Block Diagram](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/diagram_v3.png)
 
-**Core** **Circuit Diagram**
+**Schematics**
 
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d2b2aac-ae43-430f-af91-51bccc386868/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d2b2aac-ae43-430f-af91-51bccc386868/Untitled.png)
-
-Low-Power Low-Noise Amplifier (LNA) [1]
 
 ![LNA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/LNA.png)
+Low-Power Low-Noise Amplifier (LNA) [1]
 
+![VGA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png)
 VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable resistors and folded cascode OTAs with class AB output stage [2]
 
 ![Filter](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png)
-
 Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4]
 
 Target Performance Summary
@@ -65,7 +62,7 @@ Target Performance Summary
 | Bandwidth       |	0.5-100 Hz                |
 | THD             |	0.1 % @ 1 Vpp             |
 
-** References **
+**References**
 
 [1] Harrison, Reid R., et al. "A low-power integrated circuit for a wireless 100-electrode neural recording system." IEEE Journal of Solid-State Circuits 42.1 (2006): 123-133.
 
