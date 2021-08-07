@@ -34,8 +34,6 @@ N 7280 -4090 7290 -4090 { lab=#net5}
 N 7430 -4020 7470 -4020 { lab=vout}
 N 7280 -4020 7370 -4020 { lab=#net5}
 N 7280 -3940 7280 -3920 { lab=GND}
-C {opamp.sym} 3670 -3130 0 0 {name=X1}
-C {opamp.sym} 4200 -3100 0 0 {name=X2}
 C {devices/res.sym} 6580 -4180 1 0 {name=R1
 value=1k
 footprint=1206
@@ -58,7 +56,6 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/gnd.sym} 7190 -4040 0 0 {name=l2 lab=GND}
-C {opamp.sym} 4720 -3070 0 0 {name=X3}
 C {devices/res.sym} 7280 -3970 0 0 {name=R3
 value=1k
 footprint=1206
@@ -72,3 +69,6 @@ m=1}
 C {devices/gnd.sym} 7280 -3920 0 0 {name=l3 lab=GND}
 C {devices/ipin.sym} 6160 -4210 0 0 {name=p1 lab=vin}
 C {devices/opin.sym} 7570 -4120 0 0 {name=p2 lab=vout}
+C {MISC/opamp.sym} 3670 -3130 0 0 {name=X1}
+C {MISC/opamp.sym} 4200 -3100 0 0 {name=X2}
+C {MISC/opamp.sym} 4720 -3070 0 0 {name=X3}
