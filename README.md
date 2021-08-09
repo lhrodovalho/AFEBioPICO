@@ -5,8 +5,19 @@ Analog Front End for Bio-Signals - IEEE SSCS PICO
 
 **Project Name:** Ultra-Low-Power Analog Front-End for Bio-Signals
 
-**Visibility:** Private
-
+Table of contents
+==============================
+<!--ts-->
+* [Summary](*Summary)
+  * [Details](*Details)
+* [Goal](*Goal)
+* [Description](*Description)
+* [Block Diagram](*Block Diagram)
+* [Schematics](*Schematics)
+* [Targer Performance Summary](*Target Performance Summary)
+* [References](*References)
+* [Team Members](*Team Members)
+<!--te-->
 **Summary:** This design contains an analog signal process block that filters DC inputs, amplifies the AC components with an user selected voltage gain, and filters frequencies outside the bio-signals bandwidth, while consuming only 100 uW for a 1.8 V supply voltage.
 
 ---
@@ -89,15 +100,3 @@ M.Sc. Luís Henrique Rodovalho
 M.Sc. Rafael Sanchotene Silva
 
 M.Sc. Thiago Daros Fernandes
-
-**References**
-
-[1] Harrison, Reid R., et al. "A low-power integrated circuit for a wireless 100-electrode neural recording system." IEEE Journal of Solid-State Circuits 42.1 (2006): 123-133.
-
-[2] Hogervorst, Ron, et al. "A compact power-efficient 3 V CMOS rail-to-rail input/output operational amplifier for VLSI cell libraries." IEEE journal of solid-state circuits 29.12 (1994): 1505-1513.
-
-[3] Arnaud, Alfredo, Rafaella Fiorelli, and Carlos Galup-Montoro. "Nanowatt, sub-nS OTAs, with sub-10-mV input offset, using series-parallel current mirrors." IEEE Journal of Solid-State Circuits 41.9 (2006): 2009-2018.
-
-[4] Krummenacher, Francois, and Norbert Joehl. "A 4-MHz CMOS continuous-time filter with on-chip automatic tuning." IEEE Journal of Solid-State Circuits 23.3 (1988): 750-758.
-
-[5] Serra-Graells, Francisco, and Jose Luis Huertas. "Sub-1-V CMOS proportional-to-absolute temperature references." IEEE Journal of Solid-State Circuits 38.1 (2003): 84-88.
