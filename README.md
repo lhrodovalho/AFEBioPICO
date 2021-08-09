@@ -7,34 +7,40 @@ Analog Front End for Bio-Signals - IEEE SSCS PICO
 
 Table of contents
 ==============================
-<!--ts-->
-* [Summary](*Summary)
-  * [Details](*Details)
-* [Goal](*Goal)
-* [Description](*Description)
-* [Block Diagram](*Block Diagram)
-* [Schematics](*Schematics)
-* [Targer Performance Summary](*Target Performance Summary)
-* [References](*References)
-* [Team Members](*Team Members)
-<!--te-->
-**Summary:** This design contains an analog signal process block that filters DC inputs, amplifies the AC components with an user selected voltage gain, and filters frequencies outside the bio-signals bandwidth, while consuming only 100 uW for a 1.8 V supply voltage.
+
+-  `Summary <#Summary>`__
+
+   -  `Details <#Details>`__
+
+-  `Goal<#Goal>`__
+-  `Description<#Description>`__
+-  `Block Diagram<#Block-Diagram>`__
+-  `Schematics<#Schematics>`_
+-  `Target Performance Summary <#Target-Performance-Summary>`__
+-  `References <#References>`__
+-  `Team Members <#Team-Members>`__
+
+Summary
+=======
+
+This design contains an analog signal process block that filters DC inputs, amplifies the AC components with an user selected voltage gain, and filters frequencies outside the bio-signals bandwidth, while consuming only 100 uW for a 1.8 V supply voltage.
 
 ---
 
-### Details
+Details
+=======
 
 **Category:** N/A
 
 **Process:** sky130A
 
-**Description:**
-
 **Goal** 
+=========
 
 As a consequence of the population aging, chronic diseases are becoming the significant cause of death in most countries. Unfortunately, intermittent and asymptomatic features of many chronic disorders turn the task of diagnosis into a real challenge. Due to the new trends of wearable devices for biosensing, predicting and detecting the exact moment that chronic disease is happening became a possible solution. Hence, it can do a better and timely diagnostic. Therefore, in this project, we propose an ultra-low-power analog front-end to integrate a system for long-term monitoring. We can apply this work to several bio-signals, such as ECG, EMG, and EEG.
 
-**Description**
+Description
+===========
 
 The analog front-end for bio-signals main goal is to amplify its inputs, and filter interference and noise without losing resolution, so the processed signals information can be properly extracted.
 
@@ -46,12 +52,13 @@ Finally, the VGA output signal must be filtered to limit the noise and interfere
 
 All these analog circuit blocks have in common the need of a biasing current. We chose a resistorless self-biased current reference source (SBCS) [5], since integrated resistors exhibit a larger process variability than MOS transistors.
 
-**Block Diagram**
+Block Diagram
+=============
 
 ![Block Diagram](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/diagram_v3.png)
 
-**Schematics**
-
+Schematics
+==========
 
 ![LNA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/LNA.png)
 
@@ -65,7 +72,8 @@ VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable 
 
 Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4]
 
-**Target Performance Summary**
+Target Performance Summary
+==========================
 
 | Specifications  | -                         |
 | :---            | :---                      |
@@ -77,7 +85,8 @@ Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier
 | Bandwidth       |	0.5-100 Hz                |
 | THD             |	0.1 % @ 1 Vpp             |
 
-**References**
+References
+==========
 
 [1] Harrison, Reid R., et al. "A low-power integrated circuit for a wireless 100-electrode neural recording system." IEEE Journal of Solid-State Circuits 42.1 (2006): 123-133.
 
@@ -89,7 +98,8 @@ Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier
 
 [5] Serra-Graells, Francisco, and Jose Luis Huertas. "Sub-1-V CMOS proportional-to-absolute temperature references." IEEE Journal of Solid-State Circuits 38.1 (2003): 84-88.
 
-**Team members**
+Team members
+============
 
 B.Eng. Deni Germano Alves Neto
 
