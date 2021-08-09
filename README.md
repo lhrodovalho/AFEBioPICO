@@ -1,7 +1,4 @@
-# AFEBioPICO
-Analog Front End for Bio-Signals - IEEE SSCS PICO
-
-### Basics
+# AFEBioPICO - IEEE SSCS PICO
 
 **Project Name:** Ultra-Low-Power Analog Front-End for Bio-Signals
 
