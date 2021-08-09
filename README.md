@@ -1,5 +1,3 @@
-.. raw:: html
-
 # AFEBioPICO
 Analog Front End for Bio-Signals - IEEE SSCS PICO
 
@@ -10,17 +8,17 @@ Analog Front End for Bio-Signals - IEEE SSCS PICO
 Table of contents
 ==============================
 
-- `Summary <#Summary>`__
+* [Summary] (#Summary)
 
-   - `Details <#Details>`__
+   * [Details] (#Details)
 
-- `Goal<#Goal>`__
-- `Description<#Description>`__
-- `Block Diagram<#Block-Diagram>`__
-- `Schematics<#Schematics>`_
-- `Target Performance Summary <#Target-Performance-Summary>`__
-- `References <#References>`__
-- `Team Members <#Team-Members>`__
+*  [Goal] (#Goal)
+* [Description]<#Description>
+* [Block Diagram]<#Block-Diagram>
+* [Schematics]<#Schematics>
+* [Target Performance Summary] <#Target-Performance-Summary>
+* [References] <#References>
+* [Team Members] <#Team-Members>
 
 Summary
 =======
