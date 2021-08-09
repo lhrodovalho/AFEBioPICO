@@ -1,24 +1,22 @@
-# AFEBioPICO
-Analog Front End for Bio-Signals - IEEE SSCS PICO
-
-### Basics
+# AFEBioPICO 
 
 **Project Name:** Ultra-Low-Power Analog Front-End for Bio-Signals
 
+🚧 IEEE SSCS PICO 🚀 Under Construction...  🚧
+
 Table of contents
 ==============================
-
--  `Summary <#Summary>`__
-
-   -  `Details <#Details>`__
-
--  `Goal<#Goal>`__
--  `Description<#Description>`__
--  `Block Diagram<#Block-Diagram>`__
--  `Schematics<#Schematics>`_
--  `Target Performance Summary <#Target-Performance-Summary>`__
--  `References <#References>`__
--  `Team Members <#Team-Members>`__
+<!--ts-->
+  * [Summary](#Summary)
+    * [Details](#Details)
+  *  [Goal](#Goal)
+  * [Description](#Description)
+  * [Block Diagram](#Block-Diagram)
+  * [Schematics](#Schematics)
+  * [Target Performance Summary](#Target-Performance-Summary)
+  * [References](#References)
+  * [Team Members](#Team-Members)
+<!--te-->
 
 Summary
 =======
