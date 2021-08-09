@@ -8,17 +8,17 @@ Analog Front End for Bio-Signals - IEEE SSCS PICO
 Table of contents
 ==============================
 
--  `Summary <#Summary>`__
+- `Summary <#Summary>`__
 
-   -  `Details <#Details>`__
+   - `Details <#Details>`__
 
--  `Goal<#Goal>`__
--  `Description<#Description>`__
--  `Block Diagram<#Block-Diagram>`__
--  `Schematics<#Schematics>`_
--  `Target Performance Summary <#Target-Performance-Summary>`__
--  `References <#References>`__
--  `Team Members <#Team-Members>`__
+- `Goal<#Goal>`__
+- `Description<#Description>`__
+- `Block Diagram<#Block-Diagram>`__
+- `Schematics<#Schematics>`_
+- `Target Performance Summary <#Target-Performance-Summary>`__
+- `References <#References>`__
+- `Team Members <#Team-Members>`__
 
 Summary
 =======
