@@ -1,8 +1,8 @@
-# AFEBioPICO 
-
-**Project Name:** Ultra-Low-Power Analog Front-End for Bio-Signals
-
-🚧 IEEE SSCS PICO 🚀 Under Construction...  🚧
+<h1 align="center">
+ AFEBioPICO
+</h1> 
+<p aligh="center"><i> An Ultra-Low-Power Analog Front-End for Bio-Signals. </br></i>
+ 🚧 IEEE SSCS PICO 🚀 Under Construction...  🚧</p>
 
 Table of contents
 ==============================
