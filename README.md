@@ -20,6 +20,9 @@ Table of contents
   * [Description](#Description)
     * [Block Diagram](#Block-Diagram)
     * [Schematics](#Schematics)
+      * [LNA](#LNA)
+      * [VGA](#VGA)
+      * [Filter](#Filter) 
     * [Target Performance Summary](#Target-Performance-Summary)
   * [References](#References)
   * [Team Members](#Team-Members)
@@ -55,8 +58,9 @@ The analog front-end for bio-signals main goal is to amplify its inputs, and fil
 
 ### Block Diagram
 
-
-![Block Diagram](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/diagram_v3.png)
+<p align="center">
+  <img width="800" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/diagram_v3.png" alt="blockdiagram">
+</p>
 
 Our design is composed of four blocks. The `Low-Power Low-Noise Amplifier (LNA)` [1] simultaneously filters the input DC signal and amplify it. Normally, electrodes output an unknown DC offset which must be canceled, otherwise it would be amplified together with the input signal and saturate the output, causing distortion.
 
@@ -69,18 +73,26 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 ### Schematics
 
-
-![LNA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/LNA.png)
-
+#### LNA
+<p align="left">
+  <img width="300" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/LNA.png" alt="lna"></br>
 Low-Power Low-Noise Amplifier (LNA) [1]
 
-![VGA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/vga.png)
+</p>
 
+#### VGA
+<p align="left">
+  <img width="300" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/vga.png" alt="vga"></br>
 VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable resistors and folded cascode OTAs with class AB output stage [2]
 
-![Filter](https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png)
+</p>
 
+#### Filter
+<p align="left">
+  <img width="300" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png" alt="filter"></br>
 Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4]
+
+</p>
 
 ### Target Performance Summary
 
