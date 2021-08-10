@@ -1,3 +1,4 @@
+![plot](./images/logo.png)
 <h1 align="center">
  AFEBioPICO
 </h1> 
