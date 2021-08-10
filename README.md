@@ -30,8 +30,6 @@ Summary
 
 This design contains an analog signal process block that filters DC inputs, amplifies the AC components with an user selected voltage gain, and filters frequencies outside the bio-signals bandwidth, while consuming only 100 uW for a 1.8 V supply voltage.
 
----
-
 Details
 =======
 
@@ -106,12 +104,23 @@ References
 Team members
 ============
 
-B.Eng. Deni Germano Alves Neto
 
-M.Sc. João Vitor Testi Ferreira
+**B.Eng. Deni Germano Alves Neto (Deni)**
+[Email](mailto:denialves77@gmail.com?subject=Hi% "Hi!")
+[Linkedin](https://www.linkedin.com/in/deni-alves-neto)
 
-M.Sc. Luís Henrique Rodovalho
+**M.Sc. João Vitor Testi Ferreira (Testi)**
+[Email](mailto:testiferreira.jv@gmail.com?subject=Hi% "Hi!")
+[Linkedin](https://www.linkedin.com/in/joão-vitor-testi-ferreira-925305101)
 
-M.Sc. Rafael Sanchotene Silva
+**M.Sc. Luís Henrique Rodovalho (Rodovalho)**
+[Email](mailto:luishenriquerodovalho@gmail.com?subject=Hi% "Hi!")
+[Linkedin](https://www.linkedin.com/in/luís-henrique-rodovalho-moreira-de-lima-765a8a7a)
 
-M.Sc. Thiago Daros Fernandes
+**M.Sc. Rafael Sanchotene Silva (Rafael)**
+[Email](mailto:r.sanchotene@gmail.com?subject=Hi% "Hi!")
+[Linkedin](https://www.linkedin.com/in/rafael-sanchotene-silva-1a6275b4)
+
+**M.Sc. Thiago Daros Fernandes (Thiago)**
+[Email](mailto:daros.thiago@gmail.com?subject=Hi% "Hi!")
+[Linkedin](https://www.linkedin.com/in/thiago-daros-fernandes-20a365115)
