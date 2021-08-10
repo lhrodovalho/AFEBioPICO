@@ -16,7 +16,7 @@ Table of contents
 <!--ts-->
   * [Summary](#Summary)
     * [Details](#Details)
-  *  [Goal](#Goal)
+  *  [Motivation](#Motivation)
   * [Description](#Description)
   * [Block Diagram](#Block-Diagram)
   * [Schematics](#Schematics)
@@ -35,17 +35,16 @@ This design contains an analog signal processing block that:
 
 All this process is done while consuming only 100 uW for a 1.8 V supply voltage.
 
-Details
-=======
+### Details
 
-**Category:** N/A
+Category: `N/A`
 
-**Process:** sky130A
+Process: `sky130A`
 
-**Goal** 
+Motivation
 =========
 
-As a consequence of the population aging, chronic diseases are becoming the significant cause of death in most countries. Unfortunately, intermittent and asymptomatic features of many chronic disorders turn the task of diagnosis into a real challenge. Due to the new trends of wearable devices for biosensing, predicting and detecting the exact moment that chronic disease is happening became a possible solution. Hence, it can do a better and timely diagnostic. Therefore, in this project, we propose an ultra-low-power analog front-end to integrate a system for long-term monitoring. We can apply this work to several bio-signals, such as ECG, EMG, and EEG.
+As a consequence of the population aging, chronic diseases are becoming the significant cause of death in most countries. Unfortunately, intermittent and asymptomatic features of many chronic disorders turn the task of diagnosis into a real challenge. Due to the new trends of wearable devices for biosensing, predicting and detecting the exact moment that a chronic disease is happening became a possible solution. Hence, it can do a better and timely diagnostic. Therefore, in this project, we propose an ultra-low-power analog front-end to integrate a system for long-term monitoring. We can apply this work to several bio-signals, such as ECG, EMG, and EEG.
 
 Description
 ===========
