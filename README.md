@@ -28,7 +28,12 @@ Table of contents
 Summary
 =======
 
-This design contains an analog signal process block that filters DC inputs, amplifies the AC components with an user selected voltage gain, and filters frequencies outside the bio-signals bandwidth, while consuming only 100 uW for a 1.8 V supply voltage.
+This design contains an analog signal processing block that:
+-  filters DC inputs;
+-  amplifies the AC components with an user selected voltage gain; and
+-  filters frequencies outside the bio-signals bandwidth. </br>
+
+All this process is done while consuming only 100 uW for a 1.8 V supply voltage.
 
 Details
 =======
@@ -106,21 +111,21 @@ Team members
 
 
 **B.Eng. Deni Germano Alves Neto (Deni)**
-[Email](mailto:denialves77@gmail.com?subject=Hi% "Hi!")
-[Linkedin](https://www.linkedin.com/in/deni-alves-neto)
+| [denialves77@gmail.com](mailto:denialves77@gmail.com?subject=Hi% "Hi!") <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/email.png" alt="email"> | 
+[Linkedin](https://www.linkedin.com/in/deni-alves-neto) <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/linkedin.png"> |
 
 **M.Sc. João Vitor Testi Ferreira (Testi)**
-[Email](mailto:testiferreira.jv@gmail.com?subject=Hi% "Hi!")
-[Linkedin](https://www.linkedin.com/in/joão-vitor-testi-ferreira-925305101)
+| [testiferreira.jv@gmail.com](mailto:testiferreira.jv@gmail.com?subject=Hi% "Hi!") <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/email.png" alt="email"> | 
+[Linkedin](https://www.linkedin.com/in/joão-vitor-testi-ferreira-925305101) <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/linkedin.png"> |
 
 **M.Sc. Luís Henrique Rodovalho (Rodovalho)**
-[Email](mailto:luishenriquerodovalho@gmail.com?subject=Hi% "Hi!")
-[Linkedin](https://www.linkedin.com/in/luís-henrique-rodovalho-moreira-de-lima-765a8a7a)
+| [luishenriquerodovalho@gmail.com](mailto:luishenriquerodovalho@gmail.com?subject=Hi% "Hi!") <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/email.png" alt="email"> | 
+[Linkedin](https://www.linkedin.com/in/luís-henrique-rodovalho-moreira-de-lima-765a8a7a) <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/linkedin.png"> |
 
 **M.Sc. Rafael Sanchotene Silva (Rafael)**
-[Email](mailto:r.sanchotene@gmail.com?subject=Hi% "Hi!")
-[Linkedin](https://www.linkedin.com/in/rafael-sanchotene-silva-1a6275b4)
+| [r.sanchotene@gmail.com](mailto:r.sanchotene@gmail.com?subject=Hi% "Hi!") <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/email.png" alt="email"> | 
+[Linkedin](https://www.linkedin.com/in/rafael-sanchotene-silva-1a6275b4) <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/linkedin.png"> |
 
 **M.Sc. Thiago Daros Fernandes (Thiago)**
-[Email](mailto:daros.thiago@gmail.com?subject=Hi% "Hi!")
-[Linkedin](https://www.linkedin.com/in/thiago-daros-fernandes-20a365115)
+| [daros.thiago@gmail.com](mailto:daros.thiago@gmail.com?subject=Hi% "Hi!") <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/email.png" alt="email"> | 
+[Linkedin](https://www.linkedin.com/in/thiago-daros-fernandes-20a365115) <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/linkedin.png"> |
