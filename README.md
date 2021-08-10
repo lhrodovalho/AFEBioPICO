@@ -1,9 +1,15 @@
-![plot](./images/logo.png)
-<h1 align="center">
- AFEBioPICO
-</h1> 
-<p aligh="center"><i> An Ultra-Low-Power Analog Front-End for Bio-Signals. </br></i>
- 🚧 IEEE SSCS PICO 🚀 Under Construction...  🚧</p>
+<p align="center">
+
+  <img width="100" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/Logo.jpg" alt="logo">
+
+  <h1>
+     AFEBioPICO
+  </h1> 
+  <i> 
+     An Ultra-Low-Power Analog Front-End for Bio-Signals. </br>
+  </i>
+  🚧 IEEE SSCS PICO 🚀 Under Construction...  🚧
+</p>
 
 Table of contents
 ==============================
