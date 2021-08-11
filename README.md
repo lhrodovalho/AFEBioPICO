@@ -24,8 +24,8 @@ Table of contents
       * [VGA](#VGA)
       * [Filter](#Filter) 
     * [Target Performance Summary](#Target-Performance-Summary)
+  * [Team Members](#Team-Members)  
   * [References](#References)
-  * [Team Members](#Team-Members)
 <!--te-->
 
 Summary
@@ -36,7 +36,7 @@ This design contains an analog signal processing block that:
 -  amplifies the AC components with an user selected voltage gain; and
 -  filters frequencies outside the bio-signals bandwidth. </br>
 
-All this process is done while consuming only 100 uW for a 1.8 V supply voltage.
+All this process is done while consuming only 5 uW for a 1.8 V supply voltage.
 
 ### Motivation
 
@@ -100,25 +100,12 @@ Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier
 | Specifications  | -                         |
 | :---            | :---                      |
 | VDD             | 1.8 V                     |
-| Power           | 100 uW                    |
+| Power           | 5 uW                    |
 | Input Noise     | 10 uV RMS (@ 0.05-100 Hz) |
 | Offset Voltage  | 1 mV                      |
-| Gain            | 10-100 V/V                |
+| Gain            | 10-1000 V/V                |
 | Bandwidth       |	0.5-100 Hz                |
 | THD             |	0.1 % @ 1 Vpp             |
-
-References
-==========
-
-[1] Harrison, Reid R., et al. "A low-power integrated circuit for a wireless 100-electrode neural recording system." IEEE Journal of Solid-State Circuits 42.1 (2006): 123-133.
-
-[2] Hogervorst, Ron, et al. "A compact power-efficient 3 V CMOS rail-to-rail input/output operational amplifier for VLSI cell libraries." IEEE journal of solid-state circuits 29.12 (1994): 1505-1513.
-
-[3] Arnaud, Alfredo, Rafaella Fiorelli, and Carlos Galup-Montoro. "Nanowatt, sub-nS OTAs, with sub-10-mV input offset, using series-parallel current mirrors." IEEE Journal of Solid-State Circuits 41.9 (2006): 2009-2018.
-
-[4] Krummenacher, Francois, and Norbert Joehl. "A 4-MHz CMOS continuous-time filter with on-chip automatic tuning." IEEE Journal of Solid-State Circuits 23.3 (1988): 750-758.
-
-[5] Serra-Graells, Francisco, and Jose Luis Huertas. "Sub-1-V CMOS proportional-to-absolute temperature references." IEEE Journal of Solid-State Circuits 38.1 (2003): 84-88.
 
 Team members
 ============
@@ -143,3 +130,18 @@ Team members
 **M.Sc. Thiago Daros Fernandes (Thiago)**
 | [daros.thiago@gmail.com](mailto:daros.thiago@gmail.com?subject=Hi% "Hi!") <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/email.png" alt="email"> | 
 [Linkedin](https://www.linkedin.com/in/thiago-daros-fernandes-20a365115) <img width="15" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/linkedin.png"> |
+
+References
+==========
+
+[1] Harrison, Reid R., et al. "A low-power integrated circuit for a wireless 100-electrode neural recording system." IEEE Journal of Solid-State Circuits 42.1 (2006): 123-133.
+
+[2] Hogervorst, Ron, et al. "A compact power-efficient 3 V CMOS rail-to-rail input/output operational amplifier for VLSI cell libraries." IEEE journal of solid-state circuits 29.12 (1994): 1505-1513.
+
+[3] Arnaud, Alfredo, Rafaella Fiorelli, and Carlos Galup-Montoro. "Nanowatt, sub-nS OTAs, with sub-10-mV input offset, using series-parallel current mirrors." IEEE Journal of Solid-State Circuits 41.9 (2006): 2009-2018.
+
+[4] Krummenacher, Francois, and Norbert Joehl. "A 4-MHz CMOS continuous-time filter with on-chip automatic tuning." IEEE Journal of Solid-State Circuits 23.3 (1988): 750-758.
+
+[5] Serra-Graells, Francisco, and Jose Luis Huertas. "Sub-1-V CMOS proportional-to-absolute temperature references." IEEE Journal of Solid-State Circuits 38.1 (2003): 84-88.
+
+
