@@ -36,7 +36,7 @@ This design contains an analog signal processing block that:
 -  amplifies the AC components with an user selected voltage gain; and
 -  filters frequencies outside the bio-signals bandwidth. </br>
 
-All this process is done while consuming only 100 uW for a 1.8 V supply voltage.
+All this process is done while consuming only 5 uW for a 1.8 V supply voltage.
 
 ### Motivation
 
@@ -100,7 +100,7 @@ Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier
 | Specifications  | -                         |
 | :---            | :---                      |
 | VDD             | 1.8 V                     |
-| Power           | 100 uW                    |
+| Power           | 5 uW                    |
 | Input Noise     | 10 uV RMS (@ 0.05-100 Hz) |
 | Offset Voltage  | 1 mV                      |
 | Gain            | 10-100 V/V                |
