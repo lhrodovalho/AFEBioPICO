@@ -22,14 +22,16 @@ N 410 -480 410 -430 { lab=VDD}
 N 490 -360 540 -360 { lab=OUT}
 N 410 -290 410 -250 { lab=GND}
 N 350 -260 350 -220 { lab=IBIAS}
-C {devices/isource.sym} 860 -420 0 0 {name=I0 value=500n}
+N 540 -360 540 -330 { lab=OUT}
+N 540 -270 540 -250 { lab=GND}
+C {devices/isource.sym} 860 -420 0 0 {name=I0 value=100n}
 C {devices/vdd.sym} 950 -450 0 0 {name=l4 lab=VDD}
 C {devices/vsource.sym} 950 -420 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 950 -390 0 0 {name=l5 lab=GND}
 C {devices/title.sym} 160 -30 0 0 {name=l6 author="LCI Team"}
 C {devices/vsource.sym} 780 -420 0 0 {name=V2 value="DC 0.9 AC 1"}
 C {devices/gnd.sym} 780 -390 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 690 -420 0 0 {name=V4 value="DC 0.9 AC 1"}
+C {devices/vsource.sym} 690 -420 0 0 {name=V4 value="DC 0.9"}
 C {devices/gnd.sym} 690 -390 0 0 {*name=V4 value="DC 0.9 AC 1"}
 C {devices/lab_pin.sym} 780 -480 2 0 {name=l9 sig_type=std_logic lab=PLUS}
 C {devices/gnd.sym} 860 -390 0 0 {name=l11 lab=GND}
@@ -51,12 +53,21 @@ C {devices/code.sym} 0 -700 0 0 {name=LIB_TT only_toplevel=false value="
 }
 C {devices/code.sym} 130 -700 0 0 {name=CONTROL only_toplevel=false value="
 
+.option gmin=1E-21
+
 .control
 
 op
-dc V2 0.85 0.95 100u
+dc V2 0.85 0.95 10u
 plot OUT
 plot deriv(OUT)
+
+ac dec 100 1 10MEG 
+plot db(OUT)
+
+noise v(out) V2 dec 100 50m 100
+print inoise_total
+print onoise_total
 
 .endc
 "}
@@ -67,4 +78,10 @@ C {devices/lab_pin.sym} 350 -220 3 0 {name=l3 sig_type=std_logic lab=IBIAS}
 C {devices/gnd.sym} 410 -250 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 540 -360 2 0 {name=l13 sig_type=std_logic lab=OUT}
 C {devices/vdd.sym} 410 -480 0 0 {name=l14 lab=VDD}
-C {MISC/TL_SYM_OPAMP.sym} -2290 690 0 0 {name=X1}
+C {devices/capa.sym} 540 -300 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 540 -250 0 0 {name=l15 lab=GND}
+C {LNA/LNA_OPAMP_0.sym} -2290 690 0 0 {name=X1}
