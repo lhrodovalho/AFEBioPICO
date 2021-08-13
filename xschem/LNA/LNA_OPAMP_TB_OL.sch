@@ -24,7 +24,7 @@ N 410 -290 410 -250 { lab=GND}
 N 350 -260 350 -220 { lab=IBIAS}
 N 540 -360 540 -330 { lab=OUT}
 N 540 -270 540 -250 { lab=GND}
-C {devices/isource.sym} 860 -420 0 0 {name=I0 value=100n}
+C {devices/isource.sym} 860 -420 0 0 {name=I0 value=10n}
 C {devices/vdd.sym} 950 -450 0 0 {name=l4 lab=VDD}
 C {devices/vsource.sym} 950 -420 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 950 -390 0 0 {name=l5 lab=GND}
@@ -53,21 +53,26 @@ C {devices/code.sym} 0 -700 0 0 {name=LIB_TT only_toplevel=false value="
 }
 C {devices/code.sym} 130 -700 0 0 {name=CONTROL only_toplevel=false value="
 
-.option gmin=1E-21
+.option gmin=1E-14
 
 .control
 
 op
-dc V2 0.85 0.95 10u
-plot OUT
-plot deriv(OUT)
+*dc V2 0.85 0.95 10u
+*plot OUT
+*plot deriv(OUT)
 
 ac dec 100 1 10MEG 
 plot db(OUT)
 
+*set sqrnoise
 noise v(out) V2 dec 100 50m 100
+*setplot noise1
+*plot log(inoise_spectrum)
+*plot onoise_spectrum
+
 print inoise_total
-print onoise_total
+*print onoise_total
 
 .endc
 "}
@@ -84,4 +89,4 @@ value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 540 -250 0 0 {name=l15 lab=GND}
-C {LNA/LNA_OPAMP_0.sym} -2290 690 0 0 {name=X1}
+C {LNA/LNA_OPAMP.sym} 310 -260 0 0 {name=X1}

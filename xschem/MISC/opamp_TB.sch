@@ -4,21 +4,21 @@ K {}
 V {}
 S {}
 E {}
-N 6170 -3120 6220 -3120 { lab=Vout}
-N 5950 -3090 5990 -3090 { lab=Vout}
-N 5950 -3090 5950 -3070 { lab=Vout}
-N 5950 -3070 5950 -3060 { lab=Vout}
-N 5780 -3070 5780 -3050 { lab=GND}
-N 5900 -3150 5990 -3150 { lab=Vin}
-N 5780 -3170 5780 -3130 { lab=Vin}
-N 5950 -3060 5950 -3010 { lab=Vout}
-N 5950 -3010 6200 -3010 { lab=Vout}
-N 6200 -3120 6200 -3010 { lab=Vout}
-C {opamp.sym} 3390 -2070 0 0 {name=X1}
-C {devices/vsource.sym} 5780 -3100 0 0 {name=V1 value=3}
-C {devices/code_shown.sym} 6210 -3240 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.01
+N 300 -110 350 -110 { lab=Vout}
+N 80 -80 120 -80 { lab=Vout}
+N 80 -80 80 -60 { lab=Vout}
+N 80 -60 80 -50 { lab=Vout}
+N 450 -140 450 -120 { lab=GND}
+N 30 -140 120 -140 { lab=Vin}
+N 450 -240 450 -200 { lab=Vin}
+N 80 -50 80 0 { lab=Vout}
+N 80 0 330 0 { lab=Vout}
+N 330 -110 330 0 { lab=Vout}
+C {opamp.sym} 120 -40 0 0 {name=X1}
+C {devices/vsource.sym} 450 -170 0 0 {name=V1 value=3}
+C {devices/code_shown.sym} 0 -280 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.01
 .save all"}
-C {devices/gnd.sym} 5780 -3050 0 0 {name=l2 lab=GND}
-C {devices/lab_pin.sym} 5900 -3150 0 0 {name=l3 sig_type=std_logic lab=Vin}
-C {devices/lab_pin.sym} 5780 -3170 1 0 {name=l4 sig_type=std_logic lab=Vin}
-C {devices/lab_pin.sym} 6220 -3120 2 0 {name=l5 sig_type=std_logic lab=Vout}
+C {devices/gnd.sym} 450 -120 0 0 {name=l2 lab=GND}
+C {devices/lab_pin.sym} 30 -140 0 0 {name=l3 sig_type=std_logic lab=Vin}
+C {devices/lab_pin.sym} 450 -240 1 0 {name=l4 sig_type=std_logic lab=Vin}
+C {devices/lab_pin.sym} 350 -110 2 0 {name=l5 sig_type=std_logic lab=Vout}

@@ -4,56 +4,56 @@ K {}
 V {}
 S {}
 E {}
-N 1940 -1160 1980 -1160 { lab=#net1}
-N 1980 -1160 1980 -1050 { lab=#net1}
-N 1720 -1050 1980 -1050 { lab=#net1}
-N 1720 -1130 1720 -1050 { lab=#net1}
-N 1720 -1130 1760 -1130 { lab=#net1}
-N 2370 -1130 2410 -1130 { lab=#net2}
-N 2410 -1130 2410 -1020 { lab=#net2}
-N 2150 -1020 2410 -1020 { lab=#net2}
-N 2150 -1100 2150 -1020 { lab=#net2}
-N 2150 -1100 2190 -1100 { lab=#net2}
-N 2860 -1100 2900 -1100 { lab=xxx}
-N 2900 -1100 2900 -990 { lab=xxx}
-N 2640 -990 2900 -990 { lab=xxx}
-N 2640 -1070 2640 -990 { lab=xxx}
-N 2640 -1070 2680 -1070 { lab=xxx}
-N 1640 -1190 1760 -1190 { lab=vin}
-N 1980 -1160 2000 -1160 { lab=#net1}
-N 2060 -1160 2080 -1160 { lab=#net3}
-N 2080 -1160 2080 -1140 { lab=#net3}
-N 2080 -1080 2080 -1050 { lab=GND}
-N 2080 -1160 2190 -1160 { lab=#net3}
-N 2410 -1130 2430 -1130 { lab=#net2}
-N 2490 -1130 2680 -1130 { lab=#net4}
-N 2520 -1130 2520 -1110 { lab=#net4}
-N 2520 -1050 2520 -1020 { lab=GND}
-N 2900 -1100 2960 -1100 { lab=xxx}
-C {MISC/opamp.sym} -840 -110 0 0 {name=X1}
-C {MISC/opamp.sym} -410 -80 0 0 {name=X2}
-C {MISC/opamp.sym} 80 -50 0 0 {name=X3}
-C {devices/ipin.sym} 1650 -1190 0 0 {name=p1 lab=vin}
-C {devices/gnd.sym} 2080 -1050 0 0 {name=l1 lab=GND}
-C {devices/gnd.sym} 2520 -1020 0 0 {name=l2 lab=GND}
-C {devices/res.sym} 2030 -1160 1 0 {name=R1
+N 300 -170 340 -170 { lab=#net1}
+N 340 -170 340 -60 { lab=#net1}
+N 80 -60 340 -60 { lab=#net1}
+N 80 -140 80 -60 { lab=#net1}
+N 80 -140 120 -140 { lab=#net1}
+N 730 -140 770 -140 { lab=#net2}
+N 770 -140 770 -30 { lab=#net2}
+N 510 -30 770 -30 { lab=#net2}
+N 510 -110 510 -30 { lab=#net2}
+N 510 -110 550 -110 { lab=#net2}
+N 1220 -110 1260 -110 { lab=xxx}
+N 1260 -110 1260 0 { lab=xxx}
+N 1000 0 1260 0 { lab=xxx}
+N 1000 -80 1000 0 { lab=xxx}
+N 1000 -80 1040 -80 { lab=xxx}
+N 0 -200 120 -200 { lab=vin}
+N 340 -170 360 -170 { lab=#net1}
+N 420 -170 440 -170 { lab=#net3}
+N 440 -170 440 -150 { lab=#net3}
+N 440 -90 440 -60 { lab=GND}
+N 440 -170 550 -170 { lab=#net3}
+N 770 -140 790 -140 { lab=#net2}
+N 850 -140 1040 -140 { lab=#net4}
+N 880 -140 880 -120 { lab=#net4}
+N 880 -60 880 -30 { lab=GND}
+N 1260 -110 1320 -110 { lab=xxx}
+C {MISC/opamp.sym} 120 -100 0 0 {name=X1}
+C {MISC/opamp.sym} 550 -70 0 0 {name=X2}
+C {MISC/opamp.sym} 1040 -40 0 0 {name=X3}
+C {devices/ipin.sym} 10 -200 0 0 {name=p1 lab=vin}
+C {devices/gnd.sym} 440 -60 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} 880 -30 0 0 {name=l2 lab=GND}
+C {devices/res.sym} 390 -170 1 0 {name=R1
 value=1k
 footprint=1206
 device=resistor
 m=1}
-C {devices/res.sym} 2520 -1080 0 0 {name=R2
+C {devices/res.sym} 880 -90 0 0 {name=R2
 value=10k
 footprint=1206
 device=resistor
 m=1}
-C {devices/capa.sym} 2080 -1110 0 0 {name=C1
+C {devices/capa.sym} 440 -120 0 0 {name=C1
 m=1
 value=5.3u
 footprint=1206
 device="ceramic capacitor"}
-C {devices/capa.sym} 2460 -1130 1 0 {name=C2
+C {devices/capa.sym} 820 -140 1 0 {name=C2
 m=1
 value=1.6u
 footprint=1206
 device="ceramic capacitor"}
-C {devices/opin.sym} 2950 -1100 0 0 {name=p2 lab=vout}
+C {devices/opin.sym} 1310 -110 0 0 {name=p2 lab=vout}

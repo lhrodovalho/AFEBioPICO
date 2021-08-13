@@ -4,13 +4,13 @@ K {}
 V {}
 S {}
 E {}
-N 2600 -1080 2680 -1080 { lab=vp}
-N 2600 -1040 2680 -1040 { lab=vm}
-N 2720 -1030 2720 -980 { lab=GND}
-N 2720 -1140 2720 -1090 { lab=out}
-N 2720 -980 2720 -960 { lab=GND}
-C {devices/vcvs.sym} 2720 -1060 0 0 {name=E1 value=1E6}
-C {devices/gnd.sym} 2720 -960 0 0 {name=l1 lab=GND}
-C {devices/ipin.sym} 2610 -1080 0 0 {name=p1 lab=vp}
-C {devices/ipin.sym} 2610 -1040 0 0 {name=p2 lab=vm}
-C {devices/opin.sym} 2720 -1130 3 0 {name=p3 lab=out}
+N 30 -140 110 -140 { lab=vp}
+N 30 -100 110 -100 { lab=vm}
+N 150 -90 150 -40 { lab=GND}
+N 150 -200 150 -150 { lab=out}
+N 150 -40 150 -20 { lab=GND}
+C {devices/vcvs.sym} 150 -120 0 0 {name=E1 value=1E6}
+C {devices/gnd.sym} 150 -20 0 0 {name=l1 lab=GND}
+C {devices/ipin.sym} 40 -140 0 0 {name=p1 lab=vp}
+C {devices/ipin.sym} 40 -100 0 0 {name=p2 lab=vm}
+C {devices/opin.sym} 150 -190 3 0 {name=p3 lab=out}

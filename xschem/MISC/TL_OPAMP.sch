@@ -67,4 +67,4 @@ C {devices/lab_pin.sym} 350 -220 3 0 {name=l3 sig_type=std_logic lab=IBIAS}
 C {devices/gnd.sym} 410 -250 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 540 -360 2 0 {name=l13 sig_type=std_logic lab=OUT}
 C {devices/vdd.sym} 410 -480 0 0 {name=l14 lab=VDD}
-C {MISC/TL_SYM_OPAMP.sym} -2290 690 0 0 {name=X1}
+C {MISC/TL_SYM_OPAMP.sym} 310 -260 0 0 {name=X1}
