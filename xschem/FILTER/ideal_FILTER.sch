@@ -14,11 +14,11 @@ N 770 -140 770 -30 { lab=#net2}
 N 510 -30 770 -30 { lab=#net2}
 N 510 -110 510 -30 { lab=#net2}
 N 510 -110 550 -110 { lab=#net2}
-N 1220 -110 1260 -110 { lab=xxx}
-N 1260 -110 1260 0 { lab=xxx}
-N 1000 0 1260 0 { lab=xxx}
-N 1000 -80 1000 0 { lab=xxx}
-N 1000 -80 1040 -80 { lab=xxx}
+N 1220 -110 1260 -110 { lab=vout}
+N 1260 -110 1260 0 { lab=vout}
+N 1000 0 1260 0 { lab=vout}
+N 1000 -80 1000 0 { lab=vout}
+N 1000 -80 1040 -80 { lab=vout}
 N 0 -200 120 -200 { lab=vin}
 N 340 -170 360 -170 { lab=#net1}
 N 420 -170 440 -170 { lab=#net3}
@@ -29,10 +29,10 @@ N 770 -140 790 -140 { lab=#net2}
 N 850 -140 1040 -140 { lab=#net4}
 N 880 -140 880 -120 { lab=#net4}
 N 880 -60 880 -30 { lab=GND}
-N 1260 -110 1320 -110 { lab=xxx}
-C {MISC/opamp.sym} 120 -100 0 0 {name=X1}
-C {MISC/opamp.sym} 550 -70 0 0 {name=X2}
-C {MISC/opamp.sym} 1040 -40 0 0 {name=X3}
+N 1260 -110 1320 -110 { lab=vout}
+C {MISC/opamp.sym} 120 -240 2 1 {name=X1}
+C {MISC/opamp.sym} 550 -210 2 1 {name=X2}
+C {MISC/opamp.sym} 1040 -180 2 1 {name=X3}
 C {devices/ipin.sym} 10 -200 0 0 {name=p1 lab=vin}
 C {devices/gnd.sym} 440 -60 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 880 -30 0 0 {name=l2 lab=GND}

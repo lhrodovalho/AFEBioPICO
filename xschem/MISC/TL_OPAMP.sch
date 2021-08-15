@@ -15,13 +15,13 @@ T {Sources} 780 -550 0 0 0.4 0.4 {}
 N 780 -480 780 -450 { lab=PLUS}
 N 690 -480 690 -450 { lab=MINUS}
 N 860 -480 860 -450 { lab=IBIAS}
-N 240 -390 310 -390 { lab=PLUS}
-N 250 -330 310 -330 { lab=MINUS}
-N 240 -330 250 -330 { lab=MINUS}
-N 410 -480 410 -430 { lab=VDD}
-N 490 -360 540 -360 { lab=OUT}
-N 410 -290 410 -250 { lab=GND}
-N 350 -260 350 -220 { lab=IBIAS}
+N 240 -310 310 -310 { lab=PLUS}
+N 250 -370 310 -370 { lab=MINUS}
+N 240 -370 250 -370 { lab=MINUS}
+N 410 -460 410 -410 { lab=VDD}
+N 490 -340 540 -340 { lab=OUT}
+N 410 -270 410 -230 { lab=GND}
+N 350 -480 350 -440 { lab=IBIAS}
 C {devices/isource.sym} 860 -420 0 0 {name=I0 value=500n}
 C {devices/vdd.sym} 950 -450 0 0 {name=l4 lab=VDD}
 C {devices/vsource.sym} 950 -420 0 0 {name=V1 value=1.8}
@@ -61,10 +61,10 @@ plot deriv(OUT)
 .endc
 "}
 C {devices/lab_pin.sym} 690 -480 2 0 {name=l8 sig_type=std_logic lab=MINUS}
-C {devices/lab_pin.sym} 240 -390 0 0 {name=l1 sig_type=std_logic lab=PLUS}
-C {devices/lab_pin.sym} 240 -330 0 0 {name=l2 sig_type=std_logic lab=MINUS}
-C {devices/lab_pin.sym} 350 -220 3 0 {name=l3 sig_type=std_logic lab=IBIAS}
-C {devices/gnd.sym} 410 -250 0 0 {name=l10 lab=GND}
-C {devices/lab_pin.sym} 540 -360 2 0 {name=l13 sig_type=std_logic lab=OUT}
-C {devices/vdd.sym} 410 -480 0 0 {name=l14 lab=VDD}
+C {devices/lab_pin.sym} 240 -310 0 0 {name=l1 sig_type=std_logic lab=PLUS}
+C {devices/lab_pin.sym} 240 -370 0 0 {name=l2 sig_type=std_logic lab=MINUS}
+C {devices/lab_pin.sym} 350 -480 1 0 {name=l3 sig_type=std_logic lab=IBIAS}
+C {devices/gnd.sym} 410 -230 0 0 {name=l10 lab=GND}
+C {devices/lab_pin.sym} 540 -340 2 0 {name=l13 sig_type=std_logic lab=OUT}
+C {devices/vdd.sym} 410 -460 0 0 {name=l14 lab=VDD}
 C {MISC/TL_SYM_OPAMP.sym} 310 -260 0 0 {name=X1}

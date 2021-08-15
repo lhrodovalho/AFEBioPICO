@@ -37,10 +37,10 @@ N 220 -470 220 -450 { lab=GND}
 N 340 -380 340 -360 { lab=GND}
 N 420 -290 420 -280 { lab=GND}
 N 500 -220 500 -210 { lab=GND}
-N 520 -220 520 -210 { lab=#net5}
+N 520 -220 520 -210 { lab=x1000}
 N 240 -470 240 -450 { lab=x1}
-N 520 -230 520 -220 {}
-C {MISC/opamp.sym} 260 -450 0 0 {name=X1}
+N 520 -230 520 -220 { lab=x1000}
+C {MISC/opamp.sym} 260 -590 2 1 {name=X1}
 C {devices/res.sym} 190 -90 0 0 {name=R1
 value=1k
 footprint=1206

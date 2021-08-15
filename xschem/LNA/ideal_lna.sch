@@ -69,6 +69,6 @@ m=1}
 C {devices/gnd.sym} 1140 -20 0 0 {name=l3 lab=GND}
 C {devices/ipin.sym} 20 -310 0 0 {name=p1 lab=vin}
 C {devices/opin.sym} 1430 -220 0 0 {name=p2 lab=vout}
-C {MISC/opamp.sym} 130 -210 0 0 {name=X1}
-C {MISC/opamp.sym} 660 -180 0 0 {name=X2}
-C {MISC/opamp.sym} 1180 -150 0 0 {name=X3}
+C {MISC/opamp.sym} 130 -350 2 1 {name=X1}
+C {MISC/opamp.sym} 660 -320 2 1 {name=X2}
+C {MISC/opamp.sym} 1180 -290 2 1 {name=X3}

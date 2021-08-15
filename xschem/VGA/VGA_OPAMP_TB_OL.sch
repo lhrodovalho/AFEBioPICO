@@ -10,28 +10,29 @@ L 4 900 -520 930 -520 {}
 L 4 930 -520 940 -520 {}
 L 4 860 -520 900 -520 {}
 L 4 940 -520 960 -520 {}
-L 4 960 -520 980 -500 {}
-T {Sources} 780 -550 0 0 0.4 0.4 {}
+L 4 960 -520 1060 -520 {}
+L 4 1060 -520 1080 -500 {}
+T {Sources} 840 -550 0 0 0.4 0.4 {}
 N 780 -480 780 -450 { lab=PLUS}
 N 690 -480 690 -450 { lab=MINUS}
 N 860 -480 860 -450 { lab=IBIAS}
 N 240 -300 310 -300 { lab=PLUS}
-N 250 -360 310 -360 { lab=MINUS}
-N 240 -360 250 -360 { lab=MINUS}
+N 210 -360 220 -360 { lab=MINUS}
 N 410 -450 410 -400 { lab=VDD}
 N 490 -330 540 -330 { lab=OUT}
-N 410 -260 410 -220 { lab=GND}
+N 410 -260 410 -220 { lab=VSS}
 N 350 -470 350 -430 { lab=IBIAS}
 N 540 -330 540 -300 { lab=OUT}
 N 540 -240 540 -220 { lab=GND}
-C {devices/isource.sym} 860 -420 0 0 {name=I0 value=10n}
-C {devices/vdd.sym} 950 -450 0 0 {name=l4 lab=VDD}
-C {devices/vsource.sym} 950 -420 0 0 {name=V1 value=1.8}
-C {devices/gnd.sym} 950 -390 0 0 {name=l5 lab=GND}
+N 950 -480 950 -450 { lab=VDD}
+N 1020 -480 1020 -450 { lab=VSS}
+N 270 -360 310 -360 { lab=#net1}
+N 220 -360 270 -360 { lab=#net1}
+C {devices/isource.sym} 860 -420 0 0 {name=I0 value=50n}
 C {devices/title.sym} 160 -30 0 0 {name=l6 author="LCI Team"}
-C {devices/vsource.sym} 780 -420 0 0 {name=V2 value="DC 0.9 AC 1"}
+C {devices/vsource.sym} 780 -420 0 0 {name=V2 value="DC 0 AC 1"}
 C {devices/gnd.sym} 780 -390 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 690 -420 0 0 {name=V4 value="DC 0.9"}
+C {devices/vsource.sym} 690 -420 0 0 {name=V4 value="DC 0"}
 C {devices/gnd.sym} 690 -390 0 0 {*name=V4 value="DC 0.9 AC 1"}
 C {devices/lab_pin.sym} 780 -480 2 0 {name=l9 sig_type=std_logic lab=PLUS}
 C {devices/gnd.sym} 860 -390 0 0 {name=l11 lab=GND}
@@ -58,35 +59,42 @@ C {devices/code.sym} 130 -700 0 0 {name=CONTROL only_toplevel=false value="
 .control
 
 op
+print OUT
 *dc V2 0.85 0.95 10u
 *plot OUT
 *plot deriv(OUT)
 
-ac dec 100 1 10MEG 
-plot db(OUT)
+*ac dec 100 1 10MEG 
+*plot db(OUT)
 
 *set sqrnoise
-noise v(out) V2 dec 100 50m 100
+*noise v(out) V2 dec 100 50m 100
 *setplot noise1
 *plot log(inoise_spectrum)
 *plot onoise_spectrum
 
-print inoise_total
+*print inoise_total
 *print onoise_total
 
 .endc
 "}
 C {devices/lab_pin.sym} 690 -480 2 0 {name=l8 sig_type=std_logic lab=MINUS}
 C {devices/lab_pin.sym} 240 -300 0 0 {name=l1 sig_type=std_logic lab=PLUS}
-C {devices/lab_pin.sym} 240 -360 0 0 {name=l2 sig_type=std_logic lab=MINUS}
+C {devices/lab_pin.sym} 210 -360 0 0 {name=l2 sig_type=std_logic lab=MINUS}
 C {devices/lab_pin.sym} 350 -470 1 0 {name=l3 sig_type=std_logic lab=IBIAS}
-C {devices/gnd.sym} 410 -220 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 540 -330 2 0 {name=l13 sig_type=std_logic lab=OUT}
-C {devices/vdd.sym} 410 -450 0 0 {name=l14 lab=VDD}
 C {devices/capa.sym} 540 -270 0 0 {name=C1
 m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 540 -220 0 0 {name=l15 lab=GND}
-C {LNA/LNA_OPAMP.sym} 310 -260 0 0 {name=X1}
+C {devices/vsource.sym} 950 -420 0 0 {name=V3 value=0.9}
+C {devices/gnd.sym} 950 -390 0 0 {name=l16 lab=GND}
+C {devices/lab_pin.sym} 950 -480 2 0 {name=l20 sig_type=std_logic lab=VDD}
+C {devices/vsource.sym} 1020 -420 0 0 {name=V6 value=-0.9}
+C {devices/gnd.sym} 1020 -390 0 0 {name=l21 lab=GND}
+C {devices/lab_pin.sym} 1020 -480 2 0 {name=l22 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 410 -450 1 0 {name=l4 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 410 -220 3 0 {name=l5 sig_type=std_logic lab=VSS}
+C {LNA/LNA_OPAMP_0.sym} 310 -260 0 0 {name=X1}
