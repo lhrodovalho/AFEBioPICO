@@ -89,26 +89,39 @@ C {devices/code.sym} 120 -800 0 0 {name=CONTROL only_toplevel=false value="
 
 .control
 
+
+******************************OP Simulation****************************
 op
 print OUT
 print MINUS1
 print MINUS2
+***********************************************************************
 
+
+******************************DC Simulation****************************
 *dc V2 0.85 0.95 10u
 *plot OUT
 *plot deriv(OUT)
+***********************************************************************
 
-ac dec 100 0.01 1MEG 
-plot db(OUT)
 
+******************************AC Simulation****************************
+*ac dec 100 0.01 1MEG 
+*plot db(OUT)
+***********************************************************************
+
+
+******************************Noise Simulation*************************
 *set sqrnoise
-*noise v(out) V2 dec 100 50m 100
+noise v(out) V4 dec 100 50m 100
 *setplot noise1
 *plot log(inoise_spectrum)
 *plot onoise_spectrum
 
-*print inoise_total
+print inoise_total
 *print onoise_total
+***********************************************************************
+
 
 .endc
 "}

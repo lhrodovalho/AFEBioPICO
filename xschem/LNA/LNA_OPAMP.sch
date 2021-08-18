@@ -112,21 +112,21 @@ C {devices/iopin.sym} 1290 -430 0 0 {name=p5 lab=OUT}
 C {devices/iopin.sym} 1290 -400 0 0 {name=p6 lab=IBIAS}
 C {devices/lab_pin.sym} 250 -590 1 0 {name=l3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 470 -130 3 0 {name=l1 sig_type=std_logic lab=VSS}
-C {ARRAY/p4_16.sym} 90 -490 2 0 {name=x2}
 C {devices/lab_pin.sym} 1190 -340 2 0 {name=l4 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 290 -270 0 0 {name=l5 sig_type=std_logic lab=xp}
 C {devices/lab_pin.sym} 940 -590 1 0 {name=l7 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 870 -200 2 0 {name=l8 sig_type=std_logic lab=xn}
 C {devices/lab_pin.sym} 1060 -130 3 0 {name=l9 sig_type=std_logic lab=VSS}
-C {ARRAY/n4_16.sym} 1120 -200 0 0 {name=x9}
+C {ARRAY/n1_32.sym} 1120 -200 0 0 {name=x9}
 C {devices/lab_pin.sym} 1030 -200 2 1 {name=l10 sig_type=std_logic lab=xp}
 C {devices/lab_pin.sym} 420 -340 1 0 {name=l2 sig_type=std_logic lab=VDD}
-C {ARRAY/p4_16.sym} 330 -490 2 1 {name=x1}
-C {ARRAY/p4_16.sym} 530 -490 2 1 {name=x13}
-C {ARRAY/p4_16.sym} 780 -490 2 0 {name=x7}
-C {ARRAY/p4_16.sym} 1120 -490 2 1 {name=x8}
-C {ARRAY/p4_16.sym} 330 -330 2 1 {name=x3}
-C {ARRAY/p4_16.sym} 570 -330 2 0 {name=x4}
-C {ARRAY/n4_16.sym} 780 -200 0 1 {name=x5}
-C {ARRAY/n4_16.sym} 370 -200 0 1 {name=x6}
-C {ARRAY/n4_16.sym} 530 -200 0 0 {name=x10}
+C {ARRAY/p1_32.sym} 780 -490 2 0 {name=x7}
+C {ARRAY/p1_32.sym} 1120 -490 2 1 {name=x8}
+C {ARRAY/p1_32.sym} 330 -330 2 1 {name=x3}
+C {ARRAY/p1_32.sym} 570 -330 2 0 {name=x4}
+C {ARRAY/n1_32.sym} 780 -200 0 1 {name=x5}
+C {ARRAY/n1_32.sym} 370 -200 0 1 {name=x6}
+C {ARRAY/n1_32.sym} 530 -200 0 0 {name=x10}
+C {ARRAY/p1_32.sym} 90 -490 0 1 {name=x1}
+C {ARRAY/p1_32.sym} 330 -490 0 0 {name=x2}
+C {ARRAY/p1_32.sym} 530 -490 0 0 {name=x11}

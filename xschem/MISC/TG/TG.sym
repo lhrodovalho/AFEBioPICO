@@ -1,6 +1,8 @@
 v {xschem version=2.9.9 file_version=1.2 }
 G {}
-K {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"}
 V {}
 S {}
 E {}
@@ -25,3 +27,4 @@ dir=inout}
 B 5 57.5 -122.5 62.5 -117.5 {name=EN
 dir=inout}
 A 4 60 -22 7.071067811865476 315 360 {}
+T {@name} 80 0 0 0 0.4 0.4 {}
