@@ -58,20 +58,20 @@ C {devices/code.sym} 130 -700 0 0 {name=CONTROL only_toplevel=false value="
 .control
 
 op
-*dc V2 0.85 0.95 10u
-*plot OUT
-*plot deriv(OUT)
+dc V2 0.85 0.95 10u
+plot OUT
+plot deriv(OUT)
 
 ac dec 100 1 10MEG 
 plot db(OUT)
 
 *set sqrnoise
-noise v(out) V2 dec 100 50m 100
+*noise v(out) V2 dec 100 50m 100
 *setplot noise1
 *plot log(inoise_spectrum)
 *plot onoise_spectrum
 
-print inoise_total
+*print inoise_total
 *print onoise_total
 
 .endc
@@ -89,4 +89,4 @@ value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 540 -220 0 0 {name=l15 lab=GND}
-C {LNA/LNA_OPAMP.sym} 310 -260 0 0 {name=X1}
+C {LNA/LNA_OPAMP_1.sym} 310 -260 0 0 {name=X1}

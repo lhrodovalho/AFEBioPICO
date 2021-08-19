@@ -13,9 +13,9 @@ L 4 760 -760 780 -780 {}
 L 4 1140 -780 1160 -760 {}
 L 4 1060 -780 1140 -780 {}
 T {Sources} 930 -810 0 0 0.4 0.4 {}
-N 590 -420 660 -420 { lab=#net1}
+N 590 -420 660 -420 { lab=100X}
 N 310 -390 370 -390 { lab=GND}
-N 550 -420 590 -420 { lab=#net1}
+N 550 -420 590 -420 { lab=100X}
 N 790 -740 790 -710 { lab=IN}
 N 860 -740 860 -710 { lab=IBIAS1}
 N 470 -350 470 -290 { lab=VSS}
@@ -23,12 +23,12 @@ N 1020 -740 1020 -710 { lab=VDD}
 N 1090 -740 1090 -710 { lab=VSS}
 N 330 -450 370 -450 { lab=MINUS1}
 N 330 -590 330 -450 { lab=MINUS1}
-N 590 -590 590 -420 { lab=#net1}
-N 500 -590 590 -590 { lab=#net1}
+N 590 -590 590 -420 { lab=100X}
+N 500 -590 590 -590 { lab=100X}
 N 330 -590 440 -590 { lab=MINUS1}
 N 280 -590 330 -590 { lab=MINUS1}
-N 120 -590 220 -590 { lab=IN}
-N 1030 -250 1100 -250 { lab=OUT}
+N 120 -590 220 -590 { lab=10X}
+N 1030 -250 1100 -250 { lab=1000X}
 N 750 -220 810 -220 { lab=GND}
 N 990 -250 1030 -250 { lab=OUT}
 N 910 -180 910 -120 { lab=VSS}
@@ -46,9 +46,9 @@ N 930 -540 1020 -540 { lab=OUT}
 N 1020 -540 1030 -540 { lab=OUT}
 N 1030 -540 1030 -420 { lab=OUT}
 N 330 -730 430 -730 { lab=MINUS1}
-N 490 -730 580 -730 { lab=#net1}
-N 580 -730 590 -730 { lab=#net1}
-N 590 -730 590 -590 { lab=#net1}
+N 490 -730 580 -730 { lab=100X}
+N 580 -730 590 -730 { lab=100X}
+N 590 -730 590 -590 { lab=100X}
 N 330 -730 330 -590 { lab=MINUS1}
 C {devices/lab_pin.sym} 470 -490 1 0 {name=l1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 410 -520 1 0 {name=l6 sig_type=std_logic lab=IBIAS1
@@ -165,3 +165,6 @@ value=10E12
 footprint=1206
 device=resistor
 m=1}
+C {devices/lab_pin.sym} 150 -590 1 0 {name=l28 sig_type=std_logic lab=10X}
+C {devices/lab_pin.sym} 630 -420 1 0 {name=l31 sig_type=std_logic lab=100X}
+C {devices/lab_pin.sym} 1050 -250 1 0 {name=l33 sig_type=std_logic lab=1000X}

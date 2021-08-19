@@ -105,7 +105,7 @@ print inoise_total
 "}
 C {devices/title.sym} 160 -30 0 0 {name=l19 author="LCI TEAM"}
 C {LNA/LNA_OPAMP_0.sym} 260 -180 0 0 {name=X1}
-C {devices/isource.sym} 930 -790 0 0 {name=I0 value=10n}
+C {devices/isource.sym} 930 -790 0 0 {name=I0 value=1n}
 C {devices/vsource.sym} 1160 -790 0 0 {name=V1 value=0.9}
 C {devices/gnd.sym} 1160 -760 0 0 {name=l5 lab=GND}
 C {devices/vsource.sym} 860 -790 0 0 {name=V4 value="AC 1"}
@@ -122,17 +122,17 @@ C {devices/gnd.sym} 1010 -760 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 1010 -850 2 0 {name=l16 sig_type=std_logic lab=IBIAS2}
 C {LNA/LNA_OPAMP_0.sym} 680 -150 0 0 {name=X2}
 C {LNA/LNA_OPAMP_0.sym} 650 -480 0 1 {name=X3}
-C {devices/isource.sym} 1080 -790 0 0 {name=I2 value=10n}
+C {devices/isource.sym} 1080 -790 0 0 {name=I2 value=1n}
 C {devices/gnd.sym} 1080 -760 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 1080 -850 2 0 {name=l3 sig_type=std_logic lab=IBIAS3}
 C {devices/capa.sym} 500 -210 0 0 {name=C1
 m=1
-value=100p
+value=100f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 380 -500 0 0 {name=C2
 m=1
-value=1p
+value=1000p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 500 -180 0 0 {name=l7 lab=GND}
