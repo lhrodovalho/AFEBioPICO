@@ -66,12 +66,12 @@ C {devices/code.sym} 30 -150 0 0 {name=LIB_TT only_toplevel=false value="
 .include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice"
 .include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice"
 
-.include "~/OpenPDK/skywater-pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/all.spice"
+.include "/usr/share/pdk/sky130A/libs.tech/ngspice/all.spice"
 "
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 420 -400 1 0 {name=M1
-L=20
-W=0.42
+L=8
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -84,8 +84,8 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 300 -400 3 1 {name=M2
-L=20
-W=0.42
+L=8
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -97,7 +97,7 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/vsource.sym} 220 -110 0 0 {name=VA value=0}
+C {devices/vsource.sym} 220 -110 0 0 {name=VA value="DC 0 AC 1"}
 C {devices/vsource.sym} 380 -110 0 0 {name=VB value=0}
 C {devices/lab_pin.sym} 380 -200 1 0 {name=l1 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 220 -200 1 0 {name=l2 sig_type=std_logic lab=A}
@@ -106,19 +106,26 @@ C {devices/lab_pin.sym} 130 -380 0 0 {name=l4 sig_type=std_logic lab=A}
 C {devices/gnd.sym} 220 -40 0 0 {name=l5 lab=GND}
 C {devices/code.sym} 30 -330 0 0 {name=CONTROL only_toplevel=false value="
 
-.options gmin=1e-14
-.options rshunt = 1.0e14
+.param mc_mm_switch=0
+
+.options gmin=1e-16
+*.options rshunt = 1.0e14
 
 .control
-  dc VA -0.1 0.1 0.011
-  let r=abs(deriv(v(a))/deriv(i(va)))
-  plot r ylog
+*  dc VA -0.1 0.1 10.1m
+*  let r=abs(deriv(v(a))/deriv(i(va)))
+*  plot r ylog
+
+  op
+  ac DEC 1 1 1
+  print 1/abs(I(VA))
+
 .endc
 "}
 C {devices/lab_pin.sym} 300 -480 1 0 {name=l6 sig_type=std_logic lab=X}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 490 -400 1 0 {name=M3
-L=20
-W=0.42
+L=8
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -131,8 +138,8 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 230 -400 3 1 {name=M4
-L=20
-W=0.42
+L=8
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
