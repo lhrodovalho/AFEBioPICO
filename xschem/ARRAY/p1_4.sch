@@ -22,8 +22,8 @@ C {devices/iopin.sym} 295 -240 0 0 {name=p1 lab=D}
 C {devices/iopin.sym} 295 -200 0 0 {name=p2 lab=G}
 C {devices/iopin.sym} 295 -160 0 0 {name=p3 lab=S}
 C {devices/iopin.sym} 295 -120 0 0 {name=p4 lab=B}
-C {p1_2.sym} 140 -240 0 0 {name=xs}
-C {p1_2.sym} 140 -120 0 0 {name=xd}
+C {ARRAY/p1_2.sym} 140 -240 0 0 {name=xs}
+C {ARRAY/p1_2.sym} 140 -120 0 0 {name=xd}
 C {devices/lab_pin.sym} 160 -40 1 1 {name=l2 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 240 -240 0 1 {name=l4 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 240 -180 0 1 {name=l5 sig_type=std_logic lab=X}

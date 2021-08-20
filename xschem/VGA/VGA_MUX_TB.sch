@@ -50,6 +50,17 @@ N 490 -730 580 -730 { lab=100X}
 N 580 -730 590 -730 { lab=100X}
 N 590 -730 590 -590 { lab=100X}
 N 330 -730 330 -590 { lab=MINUS1}
+N 860 -980 880 -980 { lab=#net1}
+N 860 -920 880 -920 { lab=OUT}
+N 610 -1010 680 -1010 { lab=IN}
+N 610 -950 680 -950 { lab=100X}
+N 760 -900 760 -880 { lab=VSS}
+N 760 -1090 760 -1070 { lab=VDD}
+N 960 -870 960 -850 { lab=VSS}
+N 960 -1060 960 -1040 { lab=VDD}
+N 780 -900 780 -880 { lab=CTRL1}
+N 980 -870 980 -850 { lab=CTRL2}
+N 1060 -950 1120 -950 { lab=#net2}
 C {devices/lab_pin.sym} 470 -490 1 0 {name=l1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 410 -520 1 0 {name=l6 sig_type=std_logic lab=IBIAS1
 }
@@ -165,3 +176,15 @@ value=10E12
 footprint=1206
 device=resistor
 m=1}
+C {MISC/MUX/MUX.sym} 940 -880 0 0 {name=X3}
+C {MISC/MUX/MUX.sym} 740 -910 0 0 {name=X4}
+C {devices/lab_pin.sym} 860 -920 3 0 {name=l25 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 610 -1010 0 0 {name=l26 sig_type=std_logic lab=IN}
+C {devices/lab_pin.sym} 630 -420 1 0 {name=l27 sig_type=std_logic lab=100X}
+C {devices/lab_pin.sym} 610 -950 0 0 {name=l28 sig_type=std_logic lab=100X}
+C {devices/lab_pin.sym} 760 -1090 1 0 {name=l29 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 760 -880 3 0 {name=l30 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 960 -1060 1 0 {name=l31 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 960 -850 3 0 {name=l32 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 780 -880 3 0 {name=l33 sig_type=std_logic lab=CTRL1}
+C {devices/lab_pin.sym} 980 -850 3 0 {name=l35 sig_type=std_logic lab=CTRL2}
