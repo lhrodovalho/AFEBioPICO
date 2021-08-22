@@ -6,10 +6,10 @@ S {}
 E {}
 N -160 -320 -0 -320 { lab=IN1}
 N -160 -110 -0 -110 { lab=IN2}
-N 160 -320 240 -320 { lab=xxx}
-N 240 -320 240 -110 { lab=xxx}
-N 160 -110 240 -110 { lab=xxx}
-N 240 -220 360 -220 { lab=xxx}
+N 160 -320 240 -320 { lab=OUT}
+N 240 -320 240 -110 { lab=OUT}
+N 160 -110 240 -110 { lab=OUT}
+N 240 -220 360 -220 { lab=OUT}
 N 80 -260 80 -220 { lab=#net1}
 N 80 -220 80 -170 { lab=#net1}
 N 170 -280 170 -240 { lab=VDD}
@@ -38,3 +38,7 @@ C {devices/lab_pin.sym} 360 -220 2 0 {name=l3 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 80 -420 1 0 {name=l4 sig_type=std_logic lab=CTRL}
 C {devices/lab_pin.sym} -160 -320 0 0 {name=l5 sig_type=std_logic lab=IN1}
 C {devices/lab_pin.sym} -160 -110 0 0 {name=l6 sig_type=std_logic lab=IN2}
+C {devices/lab_pin.sym} 60 -380 1 0 {name=l7 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 60 -170 1 0 {name=l8 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 60 -260 3 0 {name=l9 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 60 -50 3 0 {name=l10 sig_type=std_logic lab=VSS}

@@ -12,36 +12,39 @@ L 4 1110 -890 1130 -890 {}
 L 4 830 -870 850 -890 {}
 L 4 1130 -890 1210 -890 {}
 L 4 1210 -890 1260 -890 {}
-L 4 1260 -890 1320 -890 {}
-L 4 1320 -890 1340 -870 {}
-T {Sources} 1050 -920 0 0 0.4 0.4 {}
+L 4 1260 -890 1280 -870 {}
+T {Sources} 1010 -920 0 0 0.4 0.4 {}
+T {A = gm1/gm2
+
+wo = sqrt(gm1gm3/C1C2)
+
+Q = sqrt(C1/C2)(sqrtgm1gm3)/gm2} 1410 -930 0 0 0.4 0.4 {}
 N 860 -850 860 -820 { lab=IN}
 N 930 -850 930 -820 { lab=IBIAS1}
-N 1230 -850 1230 -820 { lab=VDD}
-N 1300 -850 1300 -820 { lab=VSS}
+N 1150 -850 1150 -820 { lab=VDD}
+N 1220 -850 1220 -820 { lab=VSS}
 N 1010 -850 1010 -820 { lab=IBIAS2}
-N 440 -250 680 -250 { lab=#net1}
-N 630 -380 630 -250 { lab=#net1}
-N 630 -380 890 -380 { lab=#net1}
-N 890 -380 890 -220 { lab=#net1}
-N 860 -220 890 -220 { lab=#net1}
-N 890 -510 890 -380 { lab=#net1}
-N 650 -520 890 -520 { lab=#net1}
-N 890 -520 890 -510 { lab=#net1}
+N 440 -250 680 -250 { lab=OUT}
+N 630 -380 630 -250 { lab=OUT}
+N 630 -380 890 -380 { lab=OUT}
+N 890 -380 890 -220 { lab=OUT}
+N 860 -220 890 -220 { lab=OUT}
+N 890 -510 890 -380 { lab=OUT}
+N 650 -520 890 -520 { lab=OUT}
+N 890 -520 890 -510 { lab=OUT}
 N 640 -190 680 -190 { lab=GND}
 N 640 -190 640 -170 { lab=GND}
 N 210 -220 260 -220 { lab=IN}
 N 650 -580 680 -580 { lab=GND}
 N 680 -580 680 -570 { lab=GND}
-N 200 -550 470 -550 { lab=#net2}
-N 200 -550 200 -280 { lab=#net2}
-N 200 -280 260 -280 { lab=#net2}
+N 200 -550 470 -550 { lab=#net1}
+N 200 -550 200 -280 { lab=#net1}
+N 200 -280 260 -280 { lab=#net1}
 N 1080 -850 1080 -820 { lab=IBIAS3}
-N 380 -550 380 -530 { lab=#net2}
-N 500 -250 500 -240 { lab=#net1}
+N 380 -550 380 -530 { lab=#net1}
+N 500 -250 500 -240 { lab=OUT}
 N 200 -220 210 -220 { lab=IN}
-N 890 -220 1050 -220 { lab=#net1}
-N 1160 -850 1160 -820 { lab=IBIAS4}
+N 890 -220 1050 -220 { lab=OUT}
 C {devices/code.sym} -20 -860 0 0 {name=LIB_TT only_toplevel=false value="
 
 *.include "~/OpenPDK/skywater-pdk/skywater-pdk/libraries/sky130_fd_pr/latest/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice"
@@ -86,7 +89,7 @@ print OUT
 
 
 ******************************AC Simulation****************************
-ac dec 100 0.01 1MEG 
+ac dec 100 0.01 10000 
 plot db(OUT)
 ***********************************************************************
 
@@ -106,30 +109,30 @@ plot db(OUT)
 .endc
 "}
 C {devices/title.sym} 160 -30 0 0 {name=l19 author="LCI TEAM"}
-C {LNA/LNA_OPAMP_2.sym} 260 -180 0 0 {name=x1}
-C {devices/isource.sym} 930 -790 0 0 {name=I0 value=100n}
-C {devices/vsource.sym} 1230 -790 0 0 {name=V1 value=0.9}
-C {devices/gnd.sym} 1230 -760 0 0 {name=l5 lab=GND}
+C {LNA/LNA_OPAMP_3.sym} 260 -180 0 0 {name=X1}
+C {devices/isource.sym} 930 -790 0 0 {name=I0 value=210n}
+C {devices/vsource.sym} 1150 -790 0 0 {name=V1 value=0.9}
+C {devices/gnd.sym} 1150 -760 0 0 {name=l5 lab=GND}
 C {devices/vsource.sym} 860 -790 0 0 {name=V4 value="AC 1"}
 C {devices/gnd.sym} 930 -760 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 930 -850 2 0 {name=l12 sig_type=std_logic lab=IBIAS1}
 C {devices/lab_pin.sym} 860 -850 2 0 {name=l10 sig_type=std_logic lab=IN}
-C {devices/lab_pin.sym} 1230 -850 2 0 {name=l2 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 1300 -790 0 0 {name=V3 value=-0.9}
-C {devices/gnd.sym} 1300 -760 0 0 {name=l4 lab=GND}
-C {devices/lab_pin.sym} 1300 -850 2 0 {name=l9 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1150 -850 2 0 {name=l2 sig_type=std_logic lab=VDD}
+C {devices/vsource.sym} 1220 -790 0 0 {name=V3 value=-0.9}
+C {devices/gnd.sym} 1220 -760 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} 1220 -850 2 0 {name=l9 sig_type=std_logic lab=VSS}
 C {devices/gnd.sym} 860 -760 0 0 {name=l15 lab=GND}
-C {devices/isource.sym} 1010 -790 0 0 {name=I1 value=10n}
+C {devices/isource.sym} 1010 -790 0 0 {name=I1 value=200n}
 C {devices/gnd.sym} 1010 -760 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 1010 -850 2 0 {name=l16 sig_type=std_logic lab=IBIAS2}
-C {LNA/LNA_OPAMP_2.sym} 680 -150 0 0 {name=X2}
+C {LNA/LNA_OPAMP_3.sym} 680 -150 0 0 {name=X2}
 C {LNA/LNA_OPAMP_2.sym} 650 -480 0 1 {name=x3}
 C {devices/isource.sym} 1080 -790 0 0 {name=I2 value=1n}
 C {devices/gnd.sym} 1080 -760 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 1080 -850 2 0 {name=l3 sig_type=std_logic lab=IBIAS3}
 C {devices/capa.sym} 500 -210 0 0 {name=C1
 m=1
-value=1p
+value=50f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 380 -500 0 0 {name=C2
@@ -151,7 +154,4 @@ C {devices/lab_pin.sym} 300 -350 2 0 {name=l25 sig_type=std_logic lab=IBIAS1}
 C {devices/lab_pin.sym} 720 -320 2 0 {name=l26 sig_type=std_logic lab=IBIAS2}
 C {devices/lab_pin.sym} 610 -650 2 0 {name=l27 sig_type=std_logic lab=IBIAS3}
 C {devices/lab_pin.sym} 200 -220 0 0 {name=l6 sig_type=std_logic lab=IN}
-C {devices/gnd.sym} 1160 -760 0 0 {name=l32 lab=GND}
-C {devices/lab_pin.sym} 1160 -850 2 0 {name=l33 sig_type=std_logic lab=IBIAS4}
-C {devices/isource.sym} 1160 -790 0 0 {name=I3 value=10n}
 C {devices/lab_pin.sym} 1050 -220 2 0 {name=l28 sig_type=std_logic lab=OUT}

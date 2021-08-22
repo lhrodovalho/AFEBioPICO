@@ -7,7 +7,7 @@ E {}
 L 4 830 -360 850 -380 {}
 L 4 850 -380 970 -380 {}
 L 4 970 -380 1070 -380 {}
-L 4 1070 -380 1090 -360 {}
+L 4 1140 -380 1160 -360 {}
 T {Sources} 920 -410 0 0 0.4 0.4 {}
 N 30 -250 90 -250 { lab=IN}
 N 170 -350 170 -310 { lab=EN}
@@ -21,15 +21,18 @@ N 520 -210 570 -210 { lab=EN}
 N 470 -250 520 -250 { lab=EN}
 N 610 -250 670 -250 { lab=nEN}
 N 610 -380 610 -320 { lab=VDD}
-N 610 -180 610 -130 { lab=GND}
+N 610 -180 610 -130 { lab=VSS}
 N 1030 -340 1030 -310 { lab=VDD}
 N 610 -290 630 -290 { lab=VDD}
 N 630 -340 630 -290 { lab=VDD}
 N 610 -340 630 -340 { lab=VDD}
-N 610 -210 630 -210 { lab=GND}
-N 630 -210 630 -170 { lab=GND}
-N 610 -170 630 -170 { lab=GND}
+N 610 -210 630 -210 { lab=VSS}
+N 630 -210 630 -170 { lab=VSS}
+N 610 -170 630 -170 { lab=VSS}
 N 250 -250 320 -250 { lab=OUT}
+N 150 -350 150 -310 { lab=VDD}
+N 150 -190 150 -130 { lab=VSS}
+N 1100 -340 1100 -310 { lab=VSS}
 C {devices/code.sym} -10 -530 0 0 {name=LIB_TT only_toplevel=false value="
 
 *.include "~/OpenPDK/skywater-pdk/skywater-pdk/libraries/sky130_fd_pr/latest/cells/pfet_g5v0d10v5/sky130_fd_pr__pfet_g5v0d10v5__tt.corner.spice"
@@ -52,7 +55,7 @@ C {devices/code.sym} 120 -530 0 0 {name=CONTROL only_toplevel=false value="
 .control
 
 op
-dc V4 0 1.8 10m
+dc V4 -0.9 0.9 10m
 *.tran 1u 10m 
 plot OUT
 *plot OUT
@@ -72,9 +75,9 @@ plot OUT
 
 .endc
 "}
-C {devices/vsource.sym} 950 -280 0 0 {name=V2 value="DC 1.8"}
+C {devices/vsource.sym} 950 -280 0 0 {name=V2 value="DC 0.9"}
 C {devices/gnd.sym} 950 -250 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 860 -280 0 0 {name=V4 value="DC 1.8"}
+C {devices/vsource.sym} 860 -280 0 0 {name=V4 value="DC 0.9"}
 C {devices/gnd.sym} 860 -250 0 0 {*name=V4 value="DC 0.9 AC 1"}
 C {devices/lab_pin.sym} 950 -340 2 0 {name=l9 sig_type=std_logic lab=EN}
 C {devices/lab_pin.sym} 860 -340 2 0 {name=l8 sig_type=std_logic lab=IN}
@@ -84,12 +87,17 @@ C {devices/lab_pin.sym} 170 -350 1 0 {name=l3 sig_type=std_logic lab=EN}
 C {devices/lab_pin.sym} 170 -130 3 0 {name=l10 sig_type=std_logic lab=nEN}
 C {ARRAY/n1_1.sym} 590 -210 0 0 {name=x1}
 C {ARRAY/p1_1.sym} 590 -290 0 0 {name=x2}
-C {devices/gnd.sym} 610 -130 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 470 -250 0 0 {name=l5 sig_type=std_logic lab=EN}
 C {devices/lab_pin.sym} 670 -250 2 0 {name=l11 sig_type=std_logic lab=nEN}
-C {devices/vsource.sym} 1030 -280 0 0 {name=V1 value="DC 1.8"}
+C {devices/vsource.sym} 1030 -280 0 0 {name=V1 value="DC 0.9"}
 C {devices/gnd.sym} 1030 -250 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 1030 -340 2 0 {name=l13 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 610 -380 1 0 {name=l14 sig_type=std_logic lab=VDD}
 C {MISC/TG/TG.sym} 110 -190 0 0 {name=X1}
 C {devices/lab_pin.sym} 320 -250 2 0 {name=l6 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 150 -130 3 0 {name=l15 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 150 -350 1 0 {name=l16 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 610 -130 3 0 {name=l4 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 1100 -280 0 0 {name=V3 value="DC -0.9"}
+C {devices/gnd.sym} 1100 -250 0 0 {name=l17 lab=GND}
+C {devices/lab_pin.sym} 1100 -340 2 0 {name=l18 sig_type=std_logic lab=VSS}

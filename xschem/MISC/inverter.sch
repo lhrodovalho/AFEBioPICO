@@ -14,14 +14,14 @@ N 40 -290 40 -230 { lab=VDD}
 N 40 -250 60 -250 { lab=VDD}
 N 60 -250 60 -200 { lab=VDD}
 N 40 -200 60 -200 { lab=VDD}
-N 40 -60 40 -30 { lab=xxx}
-N 40 -90 60 -90 { lab=xxx}
-N 60 -90 60 -40 { lab=xxx}
-N 40 -40 60 -40 { lab=xxx}
-N 40 -30 40 -10 { lab=xxx}
-N 40 -10 40 -0 { lab=xxx}
-C {ARRAY/n1_1.sym} 20 -90 0 0 {name=x1}
-C {ARRAY/p1_1.sym} 20 -200 0 0 {name=x2}
+N 40 -60 40 -30 { lab=VSS}
+N 40 -90 60 -90 { lab=VSS}
+N 60 -90 60 -40 { lab=VSS}
+N 40 -40 60 -40 { lab=VSS}
+N 40 -30 40 -10 { lab=VSS}
+N 40 -10 40 -0 { lab=VSS}
+C {ARRAY/TG_n1_1.sym} 20 -90 0 0 {name=x1}
+C {ARRAY/TG_p1_1.sym} 20 -200 0 0 {name=x2}
 C {devices/iopin.sym} 220 -250 0 0 {name=p1 lab=VDD}
 C {devices/iopin.sym} 220 -230 0 0 {name=p2 lab=VSS}
 C {devices/iopin.sym} 220 -210 0 0 {name=p3 lab=IN}

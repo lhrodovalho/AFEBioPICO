@@ -39,28 +39,25 @@ N 480 -200 510 -200 { lab=xn}
 N 480 -270 480 -200 { lab=xn}
 N 480 -270 550 -270 { lab=xn}
 N 290 -270 350 -270 { lab=xp}
-N 800 -490 900 -490 { lab=Z}
+N 800 -490 900 -490 { lab=#net1}
 N 1140 -560 1140 -520 { lab=VDD}
 N 760 -560 940 -560 { lab=VDD}
 N 760 -560 760 -520 { lab=VDD}
-N 850 -490 850 -420 { lab=Z}
-N 760 -420 850 -420 { lab=Z}
+N 850 -490 850 -420 { lab=#net1}
+N 760 -420 850 -420 { lab=#net1}
 N 1140 -490 1160 -490 { lab=VDD}
 N 1160 -560 1160 -490 { lab=VDD}
 N 740 -490 760 -490 { lab=VDD}
 N 740 -560 740 -490 { lab=VDD}
 N 740 -560 760 -560 { lab=VDD}
-N 760 -460 760 -410 { lab=Z}
+N 760 -460 760 -410 { lab=#net1}
 N 940 -560 1150 -560 { lab=VDD}
-N 1140 -460 1140 -450 { lab=#net1}
+N 1140 -460 1140 -450 { lab=#net2}
 N 940 -590 940 -560 { lab=VDD}
-N 900 -490 1100 -490 { lab=Z}
+N 900 -490 1100 -490 { lab=#net1}
 N 1140 -170 1140 -140 { lab=VSS}
-N 1140 -200 1180 -200 { lab=VSS}
-N 1180 -200 1180 -140 { lab=VSS}
-N 1140 -140 1180 -140 { lab=VSS}
 N 1060 -140 1060 -130 { lab=VSS}
-N 760 -410 760 -340 { lab=Z}
+N 760 -410 760 -340 { lab=#net1}
 N 760 -170 760 -140 { lab=VSS}
 N 760 -140 1110 -140 { lab=VSS}
 N 800 -200 870 -200 { lab=xn}
@@ -69,22 +66,20 @@ N 1110 -140 1140 -140 { lab=VSS}
 N 740 -200 760 -200 { lab=VSS}
 N 740 -200 740 -140 { lab=VSS}
 N 740 -140 760 -140 { lab=VSS}
-N 760 -340 760 -230 { lab=Z}
-N 1140 -450 1140 -430 { lab=#net1}
+N 760 -340 760 -230 { lab=#net1}
+N 1140 -450 1140 -430 { lab=#net2}
 N 1140 -400 1160 -400 { lab=VDD}
 N 1160 -490 1160 -400 { lab=VDD}
-N 1080 -400 1100 -400 { lab=Z}
-N 1080 -490 1080 -400 { lab=Z}
+N 1080 -400 1100 -400 { lab=#net1}
+N 1080 -490 1080 -400 { lab=#net1}
 N 1080 -290 1100 -290 { lab=xp}
 N 1080 -290 1080 -200 { lab=xp}
-N 1140 -260 1140 -230 { lab=#net2}
-N 1140 -290 1180 -290 { lab=VSS}
-N 1180 -290 1180 -200 { lab=VSS}
-N 350 -380 350 -360 { lab=#net3}
-N 350 -550 350 -380 { lab=#net3}
+N 1140 -260 1140 -230 { lab=#net3}
+N 350 -380 350 -360 { lab=#net4}
+N 350 -550 350 -380 { lab=#net4}
 N 210 -650 310 -650 { lab=IBIAS}
-N 550 -620 550 -360 { lab=#net4}
-N 350 -620 350 -550 { lab=#net3}
+N 550 -620 550 -360 { lab=#net5}
+N 350 -620 350 -550 { lab=#net4}
 N 350 -720 350 -680 { lab=VDD}
 N 250 -720 350 -720 { lab=VDD}
 N 550 -720 550 -680 { lab=VDD}
@@ -97,31 +92,20 @@ N 380 -720 380 -650 { lab=VDD}
 N 550 -650 580 -650 { lab=VDD}
 N 550 -720 580 -720 { lab=VDD}
 N 580 -720 580 -650 { lab=VDD}
-N 1030 -330 1140 -330 { lab=VDD}
-N 1030 -360 1140 -360 { lab=VSS}
-N 1280 -260 1280 -240 { lab=#net2}
-N 1140 -240 1280 -240 { lab=#net2}
-N 1280 -290 1300 -290 { lab=VSS}
-N 1300 -290 1300 -140 { lab=VSS}
-N 1180 -140 1300 -140 { lab=VSS}
-N 1220 -290 1240 -290 { lab=xp}
-N 1280 -450 1280 -430 { lab=#net1}
-N 1140 -450 1280 -450 { lab=#net1}
-N 1280 -400 1300 -400 { lab=VDD}
-N 1300 -560 1300 -400 { lab=VDD}
-N 1160 -560 1300 -560 { lab=VDD}
-N 1220 -400 1240 -400 { lab=Z}
-N 1280 -370 1280 -320 { lab=OUT}
-N 1280 -340 1330 -340 { lab=OUT}
 N 350 -330 380 -330 { lab=PLUS}
 N 520 -330 550 -330 { lab=MINUS}
-N 350 -430 420 -430 { lab=#net3}
-N 350 -480 420 -480 { lab=#net3}
-N 480 -480 550 -480 { lab=#net4}
-N 480 -430 550 -430 { lab=#net4}
-N 1150 -560 1160 -560 {}
-N 1140 -330 1140 -320 {}
-N 1140 -370 1140 -360 {}
+N 350 -430 420 -430 { lab=#net4}
+N 350 -480 420 -480 { lab=#net4}
+N 480 -480 550 -480 { lab=#net5}
+N 480 -430 550 -430 { lab=#net5}
+N 1150 -560 1160 -560 { lab=VDD}
+N 1140 -330 1140 -320 { lab=OUT}
+N 1140 -370 1140 -360 { lab=OUT}
+N 1140 -290 1160 -290 { lab=VSS}
+N 1160 -290 1160 -140 { lab=VSS}
+N 1140 -140 1160 -140 { lab=VSS}
+N 1140 -200 1160 -200 { lab=VSS}
+N 1140 -360 1140 -330 { lab=OUT}
 C {devices/lab_pin.sym} 270 -330 0 0 {name=l13 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 620 -330 2 0 {name=l14 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 70 -220 2 0 {name=l15 sig_type=std_logic lab=IBIAS}
@@ -138,8 +122,8 @@ C {devices/lab_pin.sym} 470 -130 3 0 {name=l1 sig_type=std_logic lab=VSS}
 C {ARRAY/p1_4.sym} 90 -650 2 0 {name=x2}
 C {ARRAY/p1_4.sym} 330 -330 0 0 {name=x3}
 C {ARRAY/p1_4.sym} 570 -330 2 0 {name=x4}
-C {ARRAY/n4_1.sym} 530 -200 0 0 {name=x5}
-C {ARRAY/n4_1.sym} 370 -200 2 0 {name=x6}
+C {ARRAY/n8_1.sym} 530 -200 0 0 {name=x5}
+C {ARRAY/n8_1.sym} 370 -200 2 0 {name=x6}
 C {devices/lab_pin.sym} 290 -270 0 0 {name=l5 sig_type=std_logic lab=xp}
 C {devices/lab_pin.sym} 940 -590 1 0 {name=l7 sig_type=std_logic lab=VDD}
 C {ARRAY/p1_4.sym} 1120 -490 0 0 {name=x7}
@@ -153,14 +137,7 @@ C {ARRAY/p4_1.sym} 1120 -400 0 0 {name=x11}
 C {ARRAY/n4_1.sym} 1120 -290 0 0 {name=x12}
 C {ARRAY/p1_4.sym} 530 -650 2 1 {name=x1}
 C {ARRAY/p1_4.sym} 330 -650 2 1 {name=x13}
-C {ARRAY/n1_4.sym} 1260 -290 0 0 {name=x14}
-C {devices/lab_pin.sym} 1030 -330 0 0 {name=l4 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 1030 -360 0 0 {name=l11 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1220 -290 2 1 {name=l12 sig_type=std_logic lab=xp}
-C {ARRAY/p1_4.sym} 1260 -400 0 0 {name=x15}
-C {devices/lab_pin.sym} 850 -440 2 0 {name=l17 sig_type=std_logic lab=Z}
-C {devices/lab_pin.sym} 1220 -400 0 0 {name=l18 sig_type=std_logic lab=Z}
-C {devices/lab_pin.sym} 1330 -340 0 1 {name=l19 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 1140 -340 2 0 {name=l17 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 380 -330 2 0 {name=l2 sig_type=std_logic lab=PLUS}
 C {devices/lab_pin.sym} 520 -330 0 0 {name=l20 sig_type=std_logic lab=MINUS}
 C {ARRAY/p1_16.sym} 450 -500 1 0 {name=x16}

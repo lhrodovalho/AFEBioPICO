@@ -13,9 +13,9 @@ L 4 1110 -740 1130 -760 {}
 L 4 1490 -760 1510 -740 {}
 L 4 1410 -760 1490 -760 {}
 T {Sources} 1280 -790 0 0 0.4 0.4 {}
-N 590 -420 660 -420 { lab=100X}
+N 590 -420 660 -420 { lab=OUT_10}
 N 310 -390 370 -390 { lab=GND}
-N 550 -420 590 -420 { lab=100X}
+N 550 -420 590 -420 { lab=OUT_10}
 N 1140 -720 1140 -690 { lab=IN}
 N 1210 -720 1210 -690 { lab=IBIAS1}
 N 470 -350 470 -290 { lab=VSS}
@@ -23,8 +23,8 @@ N 1370 -720 1370 -690 { lab=VDD}
 N 1440 -720 1440 -690 { lab=VSS}
 N 330 -450 370 -450 { lab=MINUS1}
 N 330 -590 330 -450 { lab=MINUS1}
-N 590 -590 590 -420 { lab=100X}
-N 500 -590 590 -590 { lab=100X}
+N 590 -590 590 -420 { lab=OUT_10}
+N 500 -590 590 -590 { lab=OUT_10}
 N 330 -590 440 -590 { lab=MINUS1}
 N 280 -590 330 -590 { lab=MINUS1}
 N 120 -590 220 -590 { lab=IN}
@@ -32,23 +32,23 @@ N 1030 -250 1100 -250 { lab=OUT}
 N 750 -220 810 -220 { lab=GND}
 N 990 -250 1030 -250 { lab=OUT}
 N 910 -180 910 -120 { lab=VSS}
-N 770 -280 810 -280 { lab=MINUS2}
-N 770 -420 770 -280 { lab=MINUS2}
+N 770 -280 810 -280 { lab=#net1}
+N 770 -420 770 -280 { lab=#net1}
 N 1030 -420 1030 -250 { lab=OUT}
 N 940 -420 1030 -420 { lab=OUT}
-N 770 -420 880 -420 { lab=MINUS2}
-N 720 -420 770 -420 { lab=MINUS2}
+N 770 -420 880 -420 { lab=#net1}
+N 720 -420 770 -420 { lab=#net1}
 N 1070 -190 1070 -170 { lab=VSS}
 N 1290 -720 1290 -690 { lab=IBIAS2}
-N 770 -540 770 -420 { lab=MINUS2}
-N 770 -540 870 -540 { lab=MINUS2}
+N 770 -540 770 -420 { lab=#net1}
+N 770 -540 870 -540 { lab=#net1}
 N 930 -540 1020 -540 { lab=OUT}
 N 1020 -540 1030 -540 { lab=OUT}
 N 1030 -540 1030 -420 { lab=OUT}
 N 330 -730 430 -730 { lab=MINUS1}
-N 490 -730 580 -730 { lab=100X}
-N 580 -730 590 -730 { lab=100X}
-N 590 -730 590 -590 { lab=100X}
+N 490 -730 580 -730 { lab=OUT_10}
+N 580 -730 590 -730 { lab=OUT_10}
+N 590 -730 590 -590 { lab=OUT_10}
 N 330 -730 330 -590 { lab=MINUS1}
 C {devices/lab_pin.sym} 470 -490 1 0 {name=l1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 410 -520 1 0 {name=l6 sig_type=std_logic lab=IBIAS1
@@ -94,7 +94,7 @@ C {devices/code.sym} 120 -800 0 0 {name=CONTROL only_toplevel=false value="
 op
 print OUT
 print MINUS1
-print MINUS2
+*print MINUS2
 ***********************************************************************
 
 
@@ -107,7 +107,7 @@ print MINUS2
 
 ******************************AC Simulation****************************
 ac dec 100 0.01 1MEG 
-plot db(OUT)
+plot db(OUT_10)
 ***********************************************************************
 
 
@@ -141,7 +141,7 @@ C {devices/lab_pin.sym} 850 -350 1 0 {name=l7 sig_type=std_logic lab=IBIAS2
 }
 C {devices/lab_pin.sym} 1100 -250 2 0 {name=l17 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} 910 -120 3 0 {name=l21 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 770 -420 1 0 {name=l22 sig_type=std_logic lab=MINUS2}
+C {devices/lab_pin.sym} 640 -420 1 0 {name=l22 sig_type=std_logic lab=OUT_10}
 C {LNA/LNA_OPAMP_0.sym} 810 -180 0 0 {name=X2}
 C {devices/gnd.sym} 750 -220 1 0 {name=l23 lab=GND}
 C {devices/capa.sym} 1070 -220 0 0 {name=C3
