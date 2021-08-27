@@ -1,10 +1,14 @@
-<img align="right" width="175" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/Logo.jpg" alt="logo">
-
 # AFEBioPICO
 
-🚧 IEEE SSCS PICO 🚀 Under Construction...  🚧
+![GitHub](https://img.shields.io/github/license/lhrodovalho/AFEBioPICO?style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/lhrodovalho/AFEBioPICO?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/lhrodovalho/AFEBioPICO?style=plastic)
+![GitHub tapeout](https://img.shields.io/date/1634326346?label=tapeout%20in&style=plastic)
+<img align="right" width="200" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/Logo.jpg" alt="logo">
 
-An Ultra-Low-Power Analog Front-End for Bio-Signals. </br>
+An <b>Ultra-Low-Power Analog Front-End for Bio-Signals</b> intended to be integrated for the SSCS Platform for IC Design Outreach (PICO) Open-Source Design Contest. </br>
+
+
 
 
 Table of contents
@@ -32,7 +36,7 @@ This design contains an analog signal processing block that:
 -  amplifies the AC components with an user selected voltage gain; and
 -  filters frequencies outside the bio-signals bandwidth. </br>
 
-All this process is done while consuming only 5 uW for a 1.8 V supply voltage.
+In order to bias the circuit a current reference is also provided. All this process is done while consuming only 5 uW for a 1.8 V supply voltage.
 
 ### Motivation
 
@@ -49,7 +53,7 @@ Process: `sky130A`
 Description
 ===========
 
-The analog front-end for bio-signals main goal is to amplify its inputs, and filter interference and noise without losing resolution, so the processed signals information can be properly extracted.
+The analog front-end for bio-signals main goal is to amplify its inputs, and filter interference and noise without losing resolution, so that the processed signals information can be properly extracted.
 
 
 ### Block Diagram
@@ -58,7 +62,7 @@ The analog front-end for bio-signals main goal is to amplify its inputs, and fil
   <img width="800" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/diagram_v3.png" alt="blockdiagram">
 </p>
 
-Our design is composed of four blocks. The `Low-Power Low-Noise Amplifier (LNA)` [1] simultaneously filters the input DC signal and amplify it. Normally, electrodes output an unknown DC offset which must be canceled, otherwise it would be amplified together with the input signal and saturate the output, causing distortion.
+Our design is composed of four blocks. The `Low-Power Low-Noise Amplifier (LNA)` [1] simultaneously filters the input DC signal and amplifies it. Normally, electrodes output an unknown DC offset which must be canceled, otherwise it would be amplified together with the input signal and saturate the output, causing distortion.
 
 After the first stage gain, a variable gain stage is needed, since the biomedical signals have a varying amplitude due to electrode position and the user own characteristics. This variable gain stage is implemented with a `Variable Gain Amplifier (VGA)` based on the non-inverting operational amplifier with variable resistors in its feedback loop. This operational amplifier should have a large output voltage excursion, and be capable of driving a relatively large resisitive load as efficiently as possible, so it should have a  class AB output stage [2]
 
@@ -70,26 +74,33 @@ All these analog circuit blocks have in common the need of a biasing current. We
 ### Schematics
 
 #### LNA
-<p align="left">
-  <img width="300" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/LNA.png" alt="lna"></br>
+
+![image](https://user-images.githubusercontent.com/5855935/131168906-d9f4932c-202e-4b55-a1dd-8a790dc35118.png) 
+
 Low-Power Low-Noise Amplifier (LNA) [1]
 
-</p>
+The LNA is designed with a voltage subtractor topology using capacitive impedances with a `nominal gain of 20dB`. Due to the low frequency corner specification, the output DC coupling is accomplished using `high resistance pseudo-resistors`. A symmectrical OTA is used as the transconductor element. The OTA transistors are big in order to reduce the flicker noise (1/f).
 
 #### VGA
-<p align="left">
-  <img width="300" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/vga.png" alt="vga"></br>
-VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable resistors and folded cascode OTAs with class AB output stage [2]
 
-</p>
+![image](https://user-images.githubusercontent.com/5855935/131169220-8777ed4b-ae8a-4a2d-abdf-f7bed77cc1e4.png)
+
+VGA: Variable Gain Amplifier based on the non-inverting amplifier with variable resistors and folded cascode OTAs with class AB output stage [2] 
+
+The VGA is designed with 2 stages and an analog mux to select a gain between 20, 40 or 60dB. The output DC coupling is also accomplished by using pseudo-resistors. The OTA used for this design is the same as the one used for the LNA, but the dimensions of the transistors were reduced, because this block is not the bottleneck of noise requirements.   
 
 #### Filter
-<p align="left">
-  <img width="300" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/filtro.png" alt="filter"></br>
-Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4]
 
-</p>
+![image](https://user-images.githubusercontent.com/5855935/131169297-3e5da296-6070-44ba-ab23-63b7ad8618f4.png)
 
+Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4] 
+
+The Filter is designed with with ultra-low-transconductance amplifiers 
+
+<img src="https://render.githubusercontent.com/render/math?math=\frac{V_{out}}{V_{in}} = A \frac{s\frac{\omega_o}{Q}}{s^{2}+s\frac{\omega_o}{Q}+\omega_{o}^{2}}">
+<img src="https://render.githubusercontent.com/render/math?math=A = \frac{g_{m1}}{g_{m2}}">
+<img src="https://render.githubusercontent.com/render/math?math=\omega_o = \sqrt{\frac{g_{m1}g_{m3}}{C_{1}C_{2}}}">
+<img src="https://render.githubusercontent.com/render/math?math=Q = \sqrt{\frac{C_1}{C_2}}\frac{\sqrt{g_{m1}g_{m3}}}{g_{m2}}">
 ### Target Performance Summary
 
 
