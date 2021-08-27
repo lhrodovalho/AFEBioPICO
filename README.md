@@ -1,15 +1,11 @@
-<p align="center">
-  <img width="100" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/Logo.jpg" alt="logo">
-</p>
-<h3 align="center">
-    AFEBioPICO
-</h3> 
-<p align="center">  
-  <i> 
-     An Ultra-Low-Power Analog Front-End for Bio-Signals. </br>
-  </i>
-  🚧 IEEE SSCS PICO 🚀 Under Construction...  🚧
-</p>
+<img align="right" width="175" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/Logo.jpg" alt="logo">
+
+# AFEBioPICO
+
+🚧 IEEE SSCS PICO 🚀 Under Construction...  🚧
+
+An Ultra-Low-Power Analog Front-End for Bio-Signals. </br>
+
 
 Table of contents
 ==============================
