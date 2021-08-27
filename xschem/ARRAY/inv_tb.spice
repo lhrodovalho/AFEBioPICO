@@ -37,8 +37,8 @@ VIN in GND 0
 **.ends
 
 * expanding   symbol:  n2_1.sym # of pins=4
-* sym_path: /home/rodovalho/git/AFEBioPICO/xschem/ARRAY/n2_1.sym
-* sch_path: /home/rodovalho/git/AFEBioPICO/xschem/ARRAY/n2_1.sch
+* sym_path: /home/thiago/OpenPDK/AFEBioPICO/xschem/ARRAY/n2_1.sym
+* sch_path: /home/thiago/OpenPDK/AFEBioPICO/xschem/ARRAY/n2_1.sch
 .subckt n2_1  D  G  S  B
 *.iopin D
 *.iopin G
@@ -50,8 +50,8 @@ xl D G S B n1_1
 
 
 * expanding   symbol:  p1_2.sym # of pins=4
-* sym_path: /home/rodovalho/git/AFEBioPICO/xschem/ARRAY/p1_2.sym
-* sch_path: /home/rodovalho/git/AFEBioPICO/xschem/ARRAY/p1_2.sch
+* sym_path: /home/thiago/OpenPDK/AFEBioPICO/xschem/ARRAY/p1_2.sym
+* sch_path: /home/thiago/OpenPDK/AFEBioPICO/xschem/ARRAY/p1_2.sch
 .subckt p1_2  D  G  S  B
 *.iopin D
 *.iopin G
@@ -63,8 +63,8 @@ xd D G X B p1_1
 
 
 * expanding   symbol:  n1_1.sym # of pins=4
-* sym_path: /home/rodovalho/git/AFEBioPICO/xschem/ARRAY/n1_1.sym
-* sch_path: /home/rodovalho/git/AFEBioPICO/xschem/ARRAY/n1_1.sch
+* sym_path: /home/thiago/OpenPDK/AFEBioPICO/xschem/ARRAY/n1_1.sym
+* sch_path: /home/thiago/OpenPDK/AFEBioPICO/xschem/ARRAY/n1_1.sch
 .subckt n1_1  D  G  S  B
 *.iopin D
 *.iopin G
@@ -77,8 +77,8 @@ XM1 D G S B sky130_fd_pr__nfet_01v8_lvt L=8 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 
 
 
 * expanding   symbol:  p1_1.sym # of pins=4
-* sym_path: /home/rodovalho/git/AFEBioPICO/xschem/ARRAY/p1_1.sym
-* sch_path: /home/rodovalho/git/AFEBioPICO/xschem/ARRAY/p1_1.sch
+* sym_path: /home/thiago/OpenPDK/AFEBioPICO/xschem/ARRAY/p1_1.sym
+* sch_path: /home/thiago/OpenPDK/AFEBioPICO/xschem/ARRAY/p1_1.sch
 .subckt p1_1  D  G  S  B
 *.iopin D
 *.iopin G
