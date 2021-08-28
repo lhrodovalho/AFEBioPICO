@@ -104,11 +104,12 @@ The Filter is designed with with ultra-low-transconductance amplifiers due to th
 <img src="https://render.githubusercontent.com/render/math?math=\omega_o = \sqrt{\frac{g_{m1}g_{m3}}{C_{1}C_{2}}}">
 <img src="https://render.githubusercontent.com/render/math?math=Q = \sqrt{\frac{C_1}{C_2}}\frac{\sqrt{g_{m1}g_{m3}}}{g_{m2}}">
 
-#### Current Reference
+
+#### Pseudo-Resistor
 
 TBD
 
-#### Pseudo-Resistor
+### Current Reference
 
 TBD
 
