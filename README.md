@@ -22,7 +22,9 @@ Table of contents
     * [Schematics](#Schematics)
       * [LNA](#LNA)
       * [VGA](#VGA)
-      * [Filter](#Filter) 
+      * [Filter](#Filter)
+      * [Pseudo-Resistor](#Pseudo-Resistor)
+      * [Current Reference](#Current-Reference)
     * [Target Performance Summary](#Target-Performance-Summary)
   * [Team Members](#Team-Members)  
   * [References](#References)
@@ -101,6 +103,14 @@ The Filter is designed with with ultra-low-transconductance amplifiers due to th
 <img src="https://render.githubusercontent.com/render/math?math=A = \frac{g_{m1}}{g_{m2}}">
 <img src="https://render.githubusercontent.com/render/math?math=\omega_o = \sqrt{\frac{g_{m1}g_{m3}}{C_{1}C_{2}}}">
 <img src="https://render.githubusercontent.com/render/math?math=Q = \sqrt{\frac{C_1}{C_2}}\frac{\sqrt{g_{m1}g_{m3}}}{g_{m2}}">
+
+#### Current Reference
+
+TBD
+
+#### Pseudo-Resistor
+
+TBD
 
 ### Target Performance Summary
 
