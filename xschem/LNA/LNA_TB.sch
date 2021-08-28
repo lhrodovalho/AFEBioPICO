@@ -16,8 +16,6 @@ N 510 -450 600 -450 { lab=OUT}
 N 340 -450 450 -450 { lab=MINUS1}
 N 290 -450 340 -450 { lab=MINUS1}
 N 20 -450 120 -450 { lab=VM}
-N 340 -590 440 -590 { lab=MINUS1}
-N 500 -590 590 -590 { lab=OUT}
 N 590 -590 600 -590 { lab=OUT}
 N 600 -590 600 -450 { lab=OUT}
 N 340 -590 340 -450 { lab=MINUS1}
@@ -58,6 +56,10 @@ N 1010 -290 1060 -290 { lab=IN}
 N 1100 -330 1100 -300 { lab=VM}
 N 1100 -350 1100 -330 { lab=VM}
 N 950 -340 950 -330 { lab=VP}
+N 340 -590 380 -590 { lab=MINUS1}
+N 560 -590 590 -590 { lab=OUT}
+N 500 -590 560 -590 { lab=OUT}
+N 380 -590 440 -590 { lab=MINUS1}
 C {LNA/LNA_OPAMP.sym} 370 -220 0 0 {name=X1}
 C {devices/lab_pin.sym} 0 -450 0 0 {name=l8 sig_type=std_logic lab=VM}
 C {devices/lab_pin.sym} 340 -450 1 0 {name=l18 sig_type=std_logic lab=MINUS1}
@@ -98,7 +100,7 @@ C {devices/code.sym} 20 -830 0 0 {name=LIB_TT only_toplevel=false value="
 }
 C {devices/code.sym} 150 -830 0 0 {name=CONTROL only_toplevel=false value="
 
-.option gmin=1E-15
+.option gmin=1E-14
 
 .control
 
