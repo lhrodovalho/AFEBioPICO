@@ -26,9 +26,23 @@ Low-Power Low-Noise Amplifier (LNA) [1]
 ### Simulation
 
 The following simulations were done for this design:
-- [DC]()
-- [Transfer Function]()
+- [DC](#DC)
+- [Transfer Function](#Transfer-Function)
+- [Noise](#Noise)
 (...)
+
+#### Transfer Function
+
+The Transfer Function was simulated in a range a of frequencies from 0.01Hz to 1MHz charged with an output capacitance of 1pF. The following spice code was used in order to simulate the circuit and the results can be observed in the picture.
+
+```
+.control
+ac dec 0.01 1MEG 100
+plot ac vdb(out) xlog
+```
+![image](https://user-images.githubusercontent.com/5855935/131365854-c3bfed69-5844-4ae5-8cf5-ccefbdd8563a.png)
+
+#### Noise
 
 ### Target Performance Summary
 
