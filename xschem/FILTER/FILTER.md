@@ -12,7 +12,7 @@ Table of contents
 
 ![image](https://user-images.githubusercontent.com/5855935/131169297-3e5da296-6070-44ba-ab23-63b7ad8618f4.png)
 
-Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [3] and active source degeneration for improved linearity [4] 
+Filter: Very low-frequency Gm-C filter with ultra-low-transconductance amplifier [1] and active source degeneration for improved linearity [2] 
 
 The Filter is designed with with ultra-low-transconductance amplifiers due to the low frequencies necessary to achieve the specification. It is a bandpass filter and its parameters are described below.
 
@@ -54,3 +54,7 @@ plot ac vdb(out) xlog
 (...)
 
 ### References
+
+[1] Arnaud, Alfredo, Rafaella Fiorelli, and Carlos Galup-Montoro. "Nanowatt, sub-nS OTAs, with sub-10-mV input offset, using series-parallel current mirrors." IEEE Journal of Solid-State Circuits 41.9 (2006): 2009-2018.
+
+[2] Krummenacher, Francois, and Norbert Joehl. "A 4-MHz CMOS continuous-time filter with on-chip automatic tuning." IEEE Journal of Solid-State Circuits 23.3 (1988): 750-758.
