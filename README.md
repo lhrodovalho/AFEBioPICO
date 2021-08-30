@@ -16,16 +16,10 @@ Table of contents
 ==============================
 <!--ts-->
   * [Summary](#Summary)
-    * [Motivation](#Motivation)    
-    * [Details](#Details)
+    * [Motivation](#Motivation)
   * [Description](#Description)
     * [Block Diagram](#Block-Diagram)
     * [Schematics](#Schematics)
-      * [LNA](#LNA)
-      * [VGA](#VGA)
-      * [Filter](#Filter)
-      * [Pseudo-Resistor](#Pseudo-Resistor)
-      * [Current Reference](#Current-Reference)
     * [Target Performance Summary](#Target-Performance-Summary)
   * [Team Members](#Team-Members)  
   * [References](#References)
@@ -44,14 +38,6 @@ In order to bias the circuit a current reference is also provided. All this proc
 ### Motivation
 
 As a consequence of the population aging, chronic diseases are becoming the significant cause of death in most countries. Unfortunately, intermittent and asymptomatic features of many chronic disorders turn the task of diagnosis into a real challenge. Due to the new trends of wearable devices for biosensing, predicting and detecting the exact moment that a chronic disease is happening became a possible solution. Hence, it can do a better and timely diagnostic. Therefore, in this project, we propose an ultra-low-power analog front-end to integrate a system for long-term monitoring. We can apply this work to several bio-signals, such as ECG, EMG, and EEG.
-
-### Details
-
-Category: `N/A`
-
-Process: `sky130A`
-
-
 
 Description
 ===========
