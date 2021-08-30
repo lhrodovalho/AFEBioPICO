@@ -3,6 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/lhrodovalho/AFEBioPICO?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/lhrodovalho/AFEBioPICO?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lhrodovalho/AFEBioPICO?style=plastic)
+![Tech](https://img.shields.io/badge/Tech-sky130A-blue?style=plastic)
 ![GitHub tapeout](https://img.shields.io/date/1634326346?label=tapeout%20in&style=plastic)
 <img align="right" width="200" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/Logo.jpg" alt="logo">
 
@@ -75,11 +76,11 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 ### Schematics
 
-- [LNA](https://github.com/lhrodovalho/AFEBioPICO/xschem/LNA/LNA.md)
-- [VGA](https://github.com/lhrodovalho/AFEBioPICO/xschem/VGA/VGA.md) 
-- [FILTER](https://github.com/lhrodovalho/AFEBioPICO/xschem/FILTER/FILTER.md) 
-- [Pseudo-Resistor](https://github.com/lhrodovalho/AFEBioPICO/xschem/PR/PR.md)
-- [Current Reference](https://github.com/lhrodovalho/AFEBioPICO/xschem/SBCS/SBCS.md)
+- [LNA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/LNA/LNA.md)
+- [VGA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/VGA/VGA.md) 
+- [FILTER](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/FILTER/FILTER.md) 
+- [Pseudo-Resistor](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/PR/PR.md)
+- [Current Reference](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/SBCS/SBCS.md)
 
 ### Target Performance Summary
 
