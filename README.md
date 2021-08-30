@@ -62,11 +62,12 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 ### Schematics
 
-- [LNA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/LNA/LNA.md)
-- [VGA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/VGA/VGA.md) 
-- [FILTER](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/FILTER/FILTER.md) 
+- [Low Noise Amplifier (LNA)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/LNA/LNA.md)
+- [Variable Gain Amplifier (VGA)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/VGA/VGA.md) 
+- [Filter](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/FILTER/FILTER.md) 
 - [Pseudo-Resistor](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/PR/PR.md)
-- [Current Reference](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/SBCS/SBCS.md)
+- [Current Reference (SBCS)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/SBCS/SBCS.md)
+- [Analog Mux (AMUX)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/AMUX/AMUX.md)
 
 ### Target Performance Summary
 
