@@ -66,7 +66,7 @@ All these analog circuit blocks have in common the need of a biasing current. We
 - [VGA](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/VGA/VGA.md) 
 - [FILTER](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/FILTER/FILTER.md) 
 - [Pseudo-Resistor](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/PR/PR.md)
-- [Current Reference](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/SBCS/SBCS.md)
+- [Current Reference](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/IREF/IREF.md)
 
 ### Target Performance Summary
 
