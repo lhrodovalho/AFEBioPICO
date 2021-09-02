@@ -5,7 +5,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/lhrodovalho/AFEBioPICO?style=plastic)
 ![Tech](https://img.shields.io/badge/Tech-sky130A-blue?style=plastic)
 ![GitHub tapeout](https://img.shields.io/date/1634326346?label=tapeout%20in&style=plastic)
-<img align="right" width="200" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/images/Logo.jpg" alt="logo">
+
+<img align="right" width="200" src="https://user-images.githubusercontent.com/5855935/131919296-44c57e7a-2a92-46f5-af4d-672fbe1cb04c.png" alt="logo">
 
 An <b>Ultra-Low-Power Analog Front-End for Bio-Signals</b> intended to be integrated for the SSCS Platform for IC Design Outreach (PICO) Open-Source Design Contest. </br>
 
