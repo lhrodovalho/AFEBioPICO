@@ -29,7 +29,6 @@ The following simulations were done for this design:
 - [DC](#DC)
 - [Transfer Function](#Transfer-Function)
 - [Noise](#Noise)
-(...)
 
 #### Transfer Function
 
@@ -43,6 +42,15 @@ plot ac vdb(out) xlog
 ![image](https://user-images.githubusercontent.com/5855935/131365854-c3bfed69-5844-4ae5-8cf5-ccefbdd8563a.png)
 
 #### Noise
+
+The Noise was simulated in a range a of frequencies from 0.05Hz to 100Hz. The following spice code was used in order to simulate the circuit and an input referred noise of ``&mu;V`` was obtained.
+
+```
+.noise v(out)  VIN  dec 100 0.05 100
+print inoise_total
+set sqrnoise
+plot inoise_spectrum
+```
 
 ### Target Performance Summary
 
