@@ -49,7 +49,8 @@ The analog front-end for bio-signals main goal is to amplify its inputs, and fil
 ### Block Diagram
 
 <p align="center">
-  <img width="800" src="https://github.com/lhrodovalho/AFEBioPICO/blob/main/pictures/diagram_v3.png" alt="blockdiagram">
+![image](https://user-images.githubusercontent.com/5855935/132107427-31f872da-6a13-4c76-896e-a9d391276c4b.png)
+
 </p>
 
 Our design is composed of four blocks. The `Low-Power Low-Noise Amplifier (LNA)` [1] simultaneously filters the input DC signal and amplifies it. Normally, electrodes output an unknown DC offset which must be canceled, otherwise it would be amplified together with the input signal and saturate the output, causing distortion.
