@@ -1,0 +1,24 @@
+* NGSPICE file created from n1_8.ext - technology: sky130A
+
+.subckt n1_1 D G S B
+X0 D G S B sky130_fd_pr__nfet_01v8 ad=4.8e+12p pd=2.56e+07u as=4.8e+12p ps=2.56e+07u w=1e+06u l=9e+06u
+X1 D G S B sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=9e+06u
+X2 D G S B sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=9e+06u
+X3 D G S B sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=9e+06u
+X4 D G S B sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=9e+06u
+X5 D G S B sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=9e+06u
+X6 D G S B sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=9e+06u
+X7 D G S B sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=9e+06u
+.ends
+
+.subckt n1_8 B
+Xn1_1_0 n1_1_1/S n1_1_0/G n1_1_0/S B n1_1
+Xn1_1_1 n1_1_2/S n1_1_1/G n1_1_1/S B n1_1
+Xn1_1_2 n1_1_3/S n1_1_2/G n1_1_2/S B n1_1
+Xn1_1_3 n1_1_4/S n1_1_3/G n1_1_3/S B n1_1
+Xn1_1_4 n1_1_5/S n1_1_4/G n1_1_4/S B n1_1
+Xn1_1_5 n1_1_6/S n1_1_5/G n1_1_5/S B n1_1
+Xn1_1_6 n1_1_7/S n1_1_6/G n1_1_6/S B n1_1
+Xn1_1_7 n1_1_7/D n1_1_7/G n1_1_7/S B n1_1
+.ends
+

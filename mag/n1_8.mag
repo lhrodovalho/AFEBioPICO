@@ -1,0 +1,45 @@
+magic
+tech sky130A
+timestamp 1630376762
+<< locali >>
+rect 960 50 1060 1060
+rect 1980 50 2080 1060
+rect 3000 50 3100 1060
+rect 4020 50 4120 1060
+rect -10 -20 8150 20
+use n1_1  n1_1_7
+timestamp 1630376495
+transform 1 0 7290 0 1 50
+box -160 -70 860 1080
+use n1_1  n1_1_6
+timestamp 1630376495
+transform 1 0 6270 0 1 50
+box -160 -70 860 1080
+use n1_1  n1_1_5
+timestamp 1630376495
+transform 1 0 5250 0 1 50
+box -160 -70 860 1080
+use n1_1  n1_1_4
+timestamp 1630376495
+transform 1 0 4230 0 1 50
+box -160 -70 860 1080
+use n1_1  n1_1_3
+timestamp 1630376495
+transform 1 0 3210 0 1 50
+box -160 -70 860 1080
+use n1_1  n1_1_2
+timestamp 1630376495
+transform 1 0 2190 0 1 50
+box -160 -70 860 1080
+use n1_1  n1_1_1
+timestamp 1630376495
+transform 1 0 1170 0 1 50
+box -160 -70 860 1080
+use n1_1  n1_1_0
+timestamp 1630376495
+transform 1 0 150 0 1 50
+box -160 -70 860 1080
+<< labels >>
+rlabel locali 8130 0 8130 0 1 B
+port 1 n
+<< end >>

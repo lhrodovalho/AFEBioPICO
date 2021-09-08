@@ -1,0 +1,20 @@
+* SPICE3 file created from n1_1.ext - technology: sky130A
+
+.option scale=5000u
+
+.subckt n1_1 D G S B
+X0 sky130_fd_pr__nfet_01v8_lvt_L8NDKD_0/a_800_n100# sky130_fd_pr__nfet_01v8_lvt_L8NDKD_0/a_n800_n188# sky130_fd_pr__nfet_01v8_lvt_L8NDKD_0/a_n858_n100# B sky130_fd_pr__nfet_01v8_lvt ad=11600 pd=516 as=11600 ps=516 w=200 l=1600
+X1 sky130_fd_pr__rf_npn_05v5_W1p00L1p00_0/dw_80_80# sky130_fd_pr__rf_npn_05v5_W1p00L1p00_0/w_360_360# sky130_fd_pr__rf_npn_05v5_W1p00L1p00_0/a_762_762# B sky130_fd_pr__npn_05v5 area=2.4461e+06
+X2 sky130_fd_pr__nfet_01v8_E5V3SC_0/a_15_n42# sky130_fd_pr__nfet_01v8_E5V3SC_0/a_n33_n130# sky130_fd_pr__nfet_01v8_E5V3SC_0/a_n73_n42# B sky130_fd_pr__nfet_01v8 ad=4872 pd=284 as=4872 ps=284 w=84 l=30
+X3 D G S B sky130_fd_pr__nfet_01v8 ad=192000 pd=5120 as=192000 ps=5120 w=200 l=1800
+X4 D G S B sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=1800
+X5 D G S B sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=1800
+X6 D G S B sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=1800
+X7 D G S B sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=1800
+X8 D G S B sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=1800
+X9 D G S B sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=1800
+X10 D G S B sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=1800
+C0 G B 4.21fF
+C1 sky130_fd_pr__rf_npn_05v5_W1p00L1p00_0/dw_80_80# B 3.59fF
+C2 sky130_fd_pr__nfet_01v8_lvt_L8NDKD_0/a_n800_n188# B 3.60fF
+.ends
