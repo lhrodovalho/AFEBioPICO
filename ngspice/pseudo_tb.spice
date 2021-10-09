@@ -1,0 +1,38 @@
+* lna-ota buffer testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "pseudo.spice"
+
+vdd vdd 0 1.8
+vss vss 0 0.0
+ecm cm vss vdd vss 0.5
+
+* DUT
+X0 ga da pa ma cm cm cm cm cm vss pseudo
+vb ga da 0.2
+vpa pa cm dc 1m ac 1
+vma ma cm 0
+
+
+*.save v(in) v(x) v(out) v(ib) v(x0.x) v(x0.y) i(vdd)
+
+.option rshunt=1e14
+.option gmin=1e-14
+.option scale=1e-6
+.control
+
+	ac dec 1 1m 1m
+	print abs(1/i(vpa))
+
+	dc vpa -900m 900m 10m
+	let ii = abs(i(vpa))
+	let ri = 1/abs(deriv(ii))
+	wrdata pseudo.txt ii ri
+	plot ylog ii
+	plot ylog ri
+    
+.endc
+
+.end

@@ -1,0 +1,75 @@
+* lna-ota buffer testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "lna_ota.spice"
+.include "pseudo.spice"
+.include "cap_1_10.spice"
+
+.subckt cap4x_1_10 A B C gnd
+	x1 A B C GND cap_1_10
+	x2 A B C GND cap_1_10
+	x3 A B C GND cap_1_10
+	x4 A B C GND cap_1_10
+.ends
+
+.subckt n1_1 d g s b
+	x0 d g s b sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+.ends
+
+.subckt lna inp inm out ib cm vdd vss
+	Xlna xp xm out ib vdd vss lna_ota
+	Xpseudo ga da xp out gb db xm cm cm vss pseudo
+	Xcm xp inm out vss cap4x_1_10
+	Xcp xm inp cm  vss cap4x_1_10
+	vba ga da 0.2
+	vbb gb db 0.2
+
+	*Xsetm xm set out vss n1_1
+	*Xsetp xp set cm  vss n1_1
+	*Vset set vss 0 PULSE(1.8 0 100m 1m 1m 10 10)
+
+.ends
+
+vdd vdd 0 1.8 PULSE(1m 1.8 100m 10m 1m 10 10)
+vss vss 0 0.0
+ecm cm vss vdd vss 0.5
+
+vin in cm dc 0 ac 1 SINE(0 10m 10 0 0 0)
+
+
+IB ib vss 5n
+RIB vdd ib 100Meg
+
+* DUT
+x0 cm in out ib cm vdd vss lna
+
+CL  out vss 1p
+
+*.ic v(x0.xp) = 0.9
+*.ic v(x0.xm) = 0.9
+.save v(in) v(x0.xp) v(x0.xm) v(out) v(ib) i(vdd)
+.option gmin=1e-13
+.option scale=1e-6
+.control
+
+	op
+	print in out ib x0.x x0.y i(vdd)
+
+	ac dec 100 1m 1Meg
+	let lna_ac_gain = vdb(out) 
+	wrdata lna_ac_gain.txt lna_ac_gain
+	plot lna_ac_gain
+
+	tran 1m 2
+	let tran_vi = v(in)
+	let tran_vxp = v(x0.xp)
+	let tran_vxm = v(x0.xm)
+	let tran_vo = v(out)
+	wrdata lna_tran.txt tran_vi tran_vxp tran_vxm tran_vo
+	plot tran_vi tran_vxp tran_vxm tran_vo
+    
+.endc
+
+.end

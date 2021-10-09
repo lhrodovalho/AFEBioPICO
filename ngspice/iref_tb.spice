@@ -1,7 +1,22 @@
 * iref testbench
 
 * Include SkyWater sky130 device models
-.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+*.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+.param mc_pr_switch=0
+* MOSFET
+.include /usr/share/pdk/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.corner.spice
+.include /usr/share/pdk/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.corner.spice
+.include /usr/share/pdk/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__mismatch.corner.spice
+.include /usr/share/pdk/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__mismatch.corner.spice
+* Resistor/Capacitor
+.include "/usr/share/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice"
+.include "/usr/share/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice"
+* Special cells
+.include "/usr/share/pdk/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice"
+* All models
+.include "/usr/share/pdk/sky130A/libs.tech/ngspice/all.spice"
+
 .param mc_mm_switch=0
 .include "iref.spice"
 

@@ -1,0 +1,99 @@
+* NGSPICE file created from lna_ota.ext - technology: sky130A
+
+.subckt p1_8 D G S B SUB
+X0 x2 G x1 B sky130_fd_pr__pfet_01v8_lvt ad=7.5e+11p pd=7e+06u as=7.5e+11p ps=7e+06u w=3e+06u l=8e+06u
+X1 D G x7 B sky130_fd_pr__pfet_01v8_lvt ad=3.75e+11p pd=3.5e+06u as=7.5e+11p ps=7e+06u w=3e+06u l=8e+06u
+X2 x4 G x3 B sky130_fd_pr__pfet_01v8_lvt ad=7.5e+11p pd=7e+06u as=7.5e+11p ps=7e+06u w=3e+06u l=8e+06u
+X3 x6 G x5 B sky130_fd_pr__pfet_01v8_lvt ad=7.5e+11p pd=7e+06u as=7.5e+11p ps=7e+06u w=3e+06u l=8e+06u
+X4 S G x1 B sky130_fd_pr__pfet_01v8_lvt ad=3.75e+11p pd=3.5e+06u as=0p ps=0u w=3e+06u l=8e+06u
+X5 x4 G x5 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 x2 G x3 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X7 x6 G x7 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+.subckt n1_8 D G S B
+X0 x1 G x2 B sky130_fd_pr__nfet_01v8_lvt ad=2.5e+11p pd=3e+06u as=2.5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X1 x5 G x6 B sky130_fd_pr__nfet_01v8_lvt ad=2.5e+11p pd=3e+06u as=2.5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X2 x5 G x4 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=2.5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X3 x3 G x4 B sky130_fd_pr__nfet_01v8_lvt ad=2.5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=8e+06u
+X4 x7 G D B sky130_fd_pr__nfet_01v8_lvt ad=2.5e+11p pd=3e+06u as=1.25e+11p ps=1.5e+06u w=1e+06u l=8e+06u
+X5 x7 G x6 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X6 x1 G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=1.25e+11p ps=1.5e+06u w=1e+06u l=8e+06u
+X7 x3 G x2 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+.ends
+
+.subckt lna_ota inm inp out ibias vdda gnd
+Xp1_8_53 vdda ibias vdda vdda gnd p1_8
+Xp1_8_42 ibias ibias a5 vdda gnd p1_8
+Xp1_8_20 ibias ibias a3 vdda gnd p1_8
+Xp1_8_31 y inp x vdda gnd p1_8
+Xp1_8_5 y inp x vdda gnd p1_8
+Xp1_8_43 vdda ibias a7 vdda gnd p1_8
+Xp1_8_22 vdda ibias a4 vdda gnd p1_8
+Xp1_8_11 ibias ibias a2 vdda gnd p1_8
+Xp1_8_21 vdda ibias a3 vdda gnd p1_8
+Xp1_8_10 vdda ibias a2 vdda gnd p1_8
+Xp1_8_32 x ibias vdda vdda gnd p1_8
+Xp1_8_33 x ibias vdda vdda gnd p1_8
+Xp1_8_6 y inp x vdda gnd p1_8
+Xp1_8_44 vdda ibias a8 vdda gnd p1_8
+Xp1_8_45 ibias ibias a7 vdda gnd p1_8
+Xp1_8_23 ibias ibias a4 vdda gnd p1_8
+Xp1_8_34 x ibias vdda vdda gnd p1_8
+Xp1_8_12 out inm x vdda gnd p1_8
+Xp1_8_7 out inm x vdda gnd p1_8
+Xp1_8_46 ibias ibias a6 vdda gnd p1_8
+Xp1_8_35 x ibias vdda vdda gnd p1_8
+Xp1_8_8 x ibias vdda vdda gnd p1_8
+Xp1_8_24 out inm x vdda gnd p1_8
+Xp1_8_13 y inp x vdda gnd p1_8
+Xn1_8_10 y y gnd gnd n1_8
+Xp1_8_47 ibias ibias a8 vdda gnd p1_8
+Xp1_8_36 x ibias vdda vdda gnd p1_8
+Xp1_8_9 x ibias vdda vdda gnd p1_8
+Xp1_8_25 out inm x vdda gnd p1_8
+Xp1_8_14 out inm x vdda gnd p1_8
+Xn1_8_11 out y gnd gnd n1_8
+Xp1_8_37 x ibias vdda vdda gnd p1_8
+Xp1_8_15 y inp x vdda gnd p1_8
+Xp1_8_26 y inp x vdda gnd p1_8
+Xp1_8_48 vdda ibias vdda vdda gnd p1_8
+Xn1_8_12 out y gnd gnd n1_8
+Xp1_8_38 x ibias vdda vdda gnd p1_8
+Xp1_8_16 x ibias vdda vdda gnd p1_8
+Xp1_8_49 vdda ibias vdda vdda gnd p1_8
+Xp1_8_27 out inm x vdda gnd p1_8
+Xn1_8_13 y y gnd gnd n1_8
+Xn1_8_14 y y gnd gnd n1_8
+Xp1_8_39 x ibias vdda vdda gnd p1_8
+Xp1_8_17 x ibias vdda vdda gnd p1_8
+Xp1_8_28 out inm x vdda gnd p1_8
+Xn1_8_15 y y gnd gnd n1_8
+Xp1_8_18 x ibias vdda vdda gnd p1_8
+Xp1_8_29 y inp x vdda gnd p1_8
+Xn1_8_16 gnd y gnd gnd n1_8
+Xp1_8_19 x ibias vdda vdda gnd p1_8
+Xn1_8_17 gnd y gnd gnd n1_8
+Xn1_8_0 y y gnd gnd n1_8
+Xn1_8_2 y y gnd gnd n1_8
+Xn1_8_1 out y gnd gnd n1_8
+Xn1_8_3 out y gnd gnd n1_8
+Xn1_8_4 out y gnd gnd n1_8
+Xn1_8_5 y y gnd gnd n1_8
+Xn1_8_6 out y gnd gnd n1_8
+Xn1_8_7 y y gnd gnd n1_8
+Xn1_8_8 out y gnd gnd n1_8
+Xn1_8_9 out y gnd gnd n1_8
+Xp1_8_0 ibias ibias a1 vdda gnd p1_8
+Xp1_8_1 vdda ibias a1 vdda gnd p1_8
+Xp1_8_50 vdda ibias vdda vdda gnd p1_8
+Xp1_8_40 vdda ibias a6 vdda gnd p1_8
+Xp1_8_2 x ibias vdda vdda gnd p1_8
+Xp1_8_51 vdda ibias vdda vdda gnd p1_8
+Xp1_8_41 vdda ibias a5 vdda gnd p1_8
+Xp1_8_52 vdda ibias vdda vdda gnd p1_8
+Xp1_8_3 x ibias vdda vdda gnd p1_8
+Xp1_8_30 y inp x vdda gnd p1_8
+Xp1_8_4 out inm x vdda gnd p1_8
+.ends
+

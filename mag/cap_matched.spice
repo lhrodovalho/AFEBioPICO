@@ -1,0 +1,31 @@
+* NGSPICE file created from cap_matched.ext - technology: sky130A
+
+.subckt cap_matched A B C gnd
+X0 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X1 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X2 A C sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X3 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X4 A A sky130_fd_pr__cap_mim_m3_2 l=1.4e+06u w=1e+07u
+X5 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X6 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X7 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X8 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X9 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X10 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X11 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X12 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X13 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X14 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X15 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X16 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X17 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X18 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X19 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X20 A A sky130_fd_pr__cap_mim_m3_2 l=1.4e+06u w=1e+07u
+X21 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X22 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X23 A C sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X24 A A sky130_fd_pr__cap_mim_m3_2 l=1.4e+06u w=1e+07u
+X25 A A sky130_fd_pr__cap_mim_m3_2 l=1.4e+06u w=1e+07u
+.ends
+
