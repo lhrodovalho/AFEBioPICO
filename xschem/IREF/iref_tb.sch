@@ -17,18 +17,9 @@ N 540 -110 540 -100 { lab=GND}
 N 540 -220 540 -170 { lab=io}
 N 380 -100 540 -100 { lab=GND}
 C {devices/code.sym} 30 -190 0 0 {name=LIB_TT only_toplevel=false value="
-
-*.include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__pfet_g5v0d10v5__ss.corner.spice"
-*.include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__pfet_g5v0d10v5__mismatch.corner.spice"
-*.include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__nfet_g5v0d10v5__tt.corner.spice"
-*.include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__nfet_g5v0d10v5__mismatch.corner.spice"
-
-.include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__nfet_01v8_lvt__tt.corner.spice"
-.include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice"
-.include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__pfet_01v8_lvt__tt.corner.spice"
-.include "/usr/share/pdk/sky130A/libs.ref/spi/sky130_fd_pr/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice"
-
-.include "~/OpenPDK/skywater-pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/all.spice"
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
 "}
 C {devices/code.sym} 30 -370 0 0 {name=CONTROL only_toplevel=false value="
 

@@ -1,0 +1,45 @@
+* buffer
+
+* NGSPICE file created from n8_1.ext - technology: sky130A
+
+.subckt n8_1 D G S B
+X0 D G S B sky130_fd_pr__nfet_01v8_lvt ad=4e+12p pd=2.4e+07u as=4e+12p ps=2.4e+07u w=1e+06u l=8e+06u
+X1 D G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X2 D G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X3 D G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X4 D G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X5 D G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X6 D G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X7 D G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+.ends
+
+.subckt p8_1 D G S B SUB
+X0 S G D B sky130_fd_pr__pfet_01v8_lvt ad=1.2e+13p pd=5.6e+07u as=1.2e+13p ps=5.6e+07u w=3e+06u l=8e+06u
+X1 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X2 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X3 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X4 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X5 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X7 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+
+.subckt buf in out ib vdda vssa
+
+xpa0 ib  ib  vdda vdda vssa p1_8 m=8
+xpb0 n   ib  vdda vdda vssa p1_8 m=8
+xnb0 n   n   vssa vssa      n1_8 m=8
+
+xpc0 yn  ib  vdda vdda vssa p1_8 m=8
+xnc2 out out xn   vssa 	    n8_1 m=8
+xnc1 yn  in  xn   vssa 	    n8_1 m=8
+xnc0 xn  yn  vssa vssa 	    n1_8 m=16
+
+xpd0 xp  yp  vdda vdda vssa p1_8 m=16
+xpd1 yp  in  xp   vdda vssa p8_1 m=8
+xpd2 out out xp   vdda vssa p8_1 m=8
+xnd0 yp  n   vssa vssa      n1_8 m=8
+
+.ends
+

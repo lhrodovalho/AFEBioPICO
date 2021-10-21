@@ -1,0 +1,36 @@
+magic
+tech sky130A
+timestamp 1634785512
+use cap_1_10  cap_1_10_0
+timestamp 1633737718
+transform 1 0 -4660 0 1 20950
+box 7860 -7560 13380 8720
+use cap_1_10  cap_1_10_1
+timestamp 1633737718
+transform 1 0 700 0 1 20950
+box 7860 -7560 13380 8720
+use cap_1_10  cap_1_10_2
+timestamp 1633737718
+transform 1 0 6060 0 1 20950
+box 7860 -7560 13380 8720
+use cap_1_10  cap_1_10_3
+timestamp 1633737718
+transform 1 0 11420 0 1 20950
+box 7860 -7560 13380 8720
+use cap_1_10  cap_1_10_4
+timestamp 1633737718
+transform 1 0 16780 0 1 20950
+box 7860 -7560 13380 8720
+use cap_1_10  cap_1_10_5
+timestamp 1633737718
+transform 1 0 22140 0 1 20950
+box 7860 -7560 13380 8720
+use pseudo  pseudo_0 ../../pseudo/mag
+timestamp 1634784255
+transform 1 0 3610 0 1 9260
+box -640 -10160 9280 1390
+use ota  ota_0 ../../ota/mag
+timestamp 1634766937
+transform 1 0 7850 0 1 11100
+box 5090 -12000 24780 970
+<< end >>

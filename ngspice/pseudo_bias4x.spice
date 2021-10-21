@@ -1,0 +1,49 @@
+* NGSPICE file created from pseudo_bias4x.ext - technology: sky130A
+
+.subckt p1_8 D G S B SUB
+X0 x4 G x3 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X1 S G x1 B sky130_fd_pr__pfet_01v8_lvt ad=1.5e+12p pd=7e+06u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X2 x6 G x5 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X3 x2 G x1 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=0p ps=0u w=3e+06u l=8e+06u
+X4 x6 G x7 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X5 x2 G x3 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 x4 G x5 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X7 D G x7 B sky130_fd_pr__pfet_01v8_lvt ad=1.5e+12p pd=7e+06u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+.subckt p8_1 D G S B SUB
+X0 S G D B sky130_fd_pr__pfet_01v8_lvt ad=1.2e+13p pd=5.6e+07u as=1.2e+13p ps=5.6e+07u w=3e+06u l=8e+06u
+X1 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X2 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X3 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X4 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X5 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X7 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+.subckt pseudo_bias4x ib ga da gb db gc dc gd dd vdda gnd
+Xp1_8_5 dc ib vdda vdda gnd p1_8
+Xp1_8_6 db ib vdda vdda gnd p1_8
+Xp1_8_7 da ib vdda vdda gnd p1_8
+Xp8_1_10 ib ib vdda vdda gnd p8_1
+Xp8_1_11 gnd gb db vdda gnd p8_1
+Xp8_1_0 vdda ib vdda vdda gnd p8_1
+Xp8_1_12 gnd ga da vdda gnd p8_1
+Xp8_1_1 gnd ga da vdda gnd p8_1
+Xp8_1_13 vdda ib vdda vdda gnd p8_1
+Xp8_1_2 gnd gb db vdda gnd p8_1
+Xp8_1_3 ib ib vdda vdda gnd p8_1
+Xp8_1_4 dc gc gnd vdda gnd p8_1
+Xp8_1_5 dd gd gnd vdda gnd p8_1
+Xp8_1_6 vdda ib vdda vdda gnd p8_1
+Xp8_1_7 vdda ib vdda vdda gnd p8_1
+Xp8_1_8 dd gd gnd vdda gnd p8_1
+Xp8_1_9 dc gc gnd vdda gnd p8_1
+Xp1_8_0 da ib vdda vdda gnd p1_8
+Xp1_8_1 db ib vdda vdda gnd p1_8
+Xp1_8_2 dc ib vdda vdda gnd p1_8
+Xp1_8_3 dd ib vdda vdda gnd p1_8
+Xp1_8_4 dd ib vdda vdda gnd p1_8
+.ends
+

@@ -5,70 +5,192 @@
 .param mc_mm_switch=0
 .include "lna_ota.spice"
 .include "pseudo.spice"
+.include "pseudo_bias4x.spice"
 .include "cap_1_10.spice"
 
-.subckt cap4x_1_10 A B C gnd
+.subckt cap2x_1_10 A B C gnd
 	x1 A B C GND cap_1_10
 	x2 A B C GND cap_1_10
-	x3 A B C GND cap_1_10
-	x4 A B C GND cap_1_10
 .ends
 
-.subckt n1_1 d g s b
-	x0 d g s b sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+.subckt cap4x_1_10 A B C gnd
+	x1 A B C GND cap2x_1_10
+	x2 A B C GND cap2x_1_10
 .ends
 
-.subckt lna inp inm out ib cm vdd vss
-	Xlna xp xm out ib vdd vss lna_ota
-	Xpseudo ga da xp out gb db xm cm cm vss pseudo
-	Xcm xp inm out vss cap4x_1_10
-	Xcp xm inp cm  vss cap4x_1_10
-	vba ga da 0.2
-	vbb gb db 0.2
+.subckt cap8x_1_10 A B C gnd
+	x1 A B C GND cap4x_1_10
+	x2 A B C GND cap4x_1_10
+.ends
 
-	*Xsetm xm set out vss n1_1
-	*Xsetp xp set cm  vss n1_1
-	*Vset set vss 0 PULSE(1.8 0 100m 1m 1m 10 10)
+.subckt load ip im ib vdda vssa
+xpa1 ib ib vdda vdda vssa p1_8
+
+xpd1 x  ib vdda vdda vssa p1_8
+xpd2 ip im x    vdda vssa p1_8
+xnd3 ip n  vssa vssa n1_8
+
+xpe1 x  ib vdda vdda vssa p1_8
+xpe2 im ip x    vdda vssa p1_8
+xne3 im n  vssa vssa n1_8
+
+xpf1 x  ib   vdda vdda vssa p1_8
+xpf2 n  gnda x    vdda vssa p1_8
+xnf3 n  n    vssa vssa n1_8
+
+xpg1 x  ib   vdda vdda vssa p1_8
+xpg2 n  gnda x    vdda vssa p1_8
+xng3 n  n    vssa vssa n1_8
+
+xph1 x  ib   vdda vdda vssa p1_8
+xph2 z  ip   x    vdda vssa p1_8
+xnh3 z  z    vssa vssa n1_8
+
+xpi1 x  ib   vdda vdda vssa p1_8
+xpi2 z  im   x    vdda vssa p1_8
+xni3 z  z    vssa vssa n1_8
+
+egnd gnda vssa vdda vssa 0.5
 
 .ends
 
-vdd vdd 0 1.8 PULSE(1m 1.8 100m 10m 1m 10 10)
-vss vss 0 0.0
-ecm cm vss vdd vss 0.5
+.subckt load2 ip im ib vdda vssa
+xpa1 ib ib vdda vdda vssa p1_8
 
-vin in cm dc 0 ac 1 SINE(0 10m 10 0 0 0)
+xpb1 x  ib   vdda vdda vssa p1_8
+xpb2 n  gnda x    vdda vssa p1_8
+xnb3 n  n    vssa vssa n1_8
+
+xpc1 x  ib   vdda vdda vssa p1_8
+xpc2 n  gnda x    vdda vssa p1_8
+xnc3 n  n    vssa vssa n1_8
+
+xpd1 x  ib   vdda vdda vssa p1_8
+xpd2 z  ip   x    vdda vssa p1_8
+xnd3 z  z    vssa vssa n1_8
+
+xpe1 x  ib   vdda vdda vssa p1_8
+xpe2 z  im   x    vdda vssa p1_8
+xne3 z  z    vssa vssa n1_8
+
+xpf1 ip ib   vdda vdda vssa p1_8
+xnf3 ip n    vssa vssa n1_8
+
+xpg1 im ib   vdda vdda vssa p1_8
+xng3 im n    vssa vssa n1_8
 
 
-IB ib vss 5n
-RIB vdd ib 100Meg
+
+egnd gnda vssa vdda vssa 0.5
+
+.ends
+
+
+.subckt fdota ip im op om ib vdda vssa
+xpa1 ib ib vdda vdda vssa p1_8
+
+xpd1 x  ib vdda vdda vssa p1_8
+xpd2 op im x    vdda vssa p1_8
+xnd3 op z  vssa vssa n1_8
+
+xpe1 x  ib vdda vdda vssa p1_8
+xpe2 om ip x    vdda vssa p1_8
+xne3 om z  vssa vssa n1_8
+
+xpf1 y  ib   vdda vdda vssa p1_8
+xpf2 n  gnda y    vdda vssa p1_8
+xnf3 n  n    vssa vssa n1_8
+
+xpg1 y  ib   vdda vdda vssa p1_8
+xpg2 n  gnda y    vdda vssa p1_8
+xng3 n  n    vssa vssa n1_8
+
+xph1 y  ib   vdda vdda vssa p1_8
+xph2 z  ip   y    vdda vssa p1_8
+xnh3 z  z    vssa vssa n1_8
+
+xpi1 y  ib   vdda vdda vssa p1_8
+xpi2 z  im   y    vdda vssa p1_8
+xni3 z  z    vssa vssa n1_8
+
+egnd gnda vssa vdda vssa 0.5
+
+.ends
+
+
+.subckt lna inp inm out ib vdda gnda vssa
+
+* lna + feedback
+	Xamp xm xp out ib vdda vssa lna_ota
+	*Xcm xm inm out  vssa cap8x_1_10
+	*Xcp xp inp gnda vssa cap8x_1_10
+
+	*eamp out gnda xm xp -100
+	cip inp xp   10p
+	cfp xp  gnda 1p
+*	rp  xp  gnda 1T
+	cim inm xm   10p 
+	cfm xm  out  1p
+*	rm  xm  out  1T
+
+	Xload xp xm ib vdda vssa load
+
+* bias
+
+*	Xpseudo ga da xm out gb db xp gnda gnda vssa pseudo
+*	xpseudo_bias ips da ga db gb vssa vssa vssa vssa vdda vssa pseudo_bias4x
+*	ipseudo ips vssa 1n
+	
+	.subckt p1_1 D G S B
+		X1 D G S B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+	.ends
+	
+	xswp xp fs gnda vdda p1_1
+	xswm xm fs out  vdda p1_1
+	vfs fs vssa dc 1.8 PULSE(0 1.8 100m 1m 1m 1 1)
+	
+	
+.ends
+
+.subckt fdlna ip im out ib vdda gnda vssa
+
+* lna + feedback
+	Xamp xm xp op om ib vdda vssa fdota
+	cip ip xp  10p
+	cfp xp op  1p
+	cim im xm  10p 
+	cfm xm om 1p
+	Xload xp xm ib vdda vssa load
+	eo out gnda op om
+	
+.ends
+
+
+* supply voltages
+vdda	vdda 0 1.8
+vgnda	gnda 0 0.9
+vssa	vssa 0 0.0
+
+* input signals
+vin	in gnda dc 0 ac 1 SINE(0 5m 1 0 0 0)
+einp	inp gnda in gnda  0.5
+einm	inm gnda in gnda -0.5
+
+IB ib vssa 10n
 
 * DUT
-x0 cm in out ib cm vdd vss lna
+x0 inp  inm out ib  vdda gnda vssa fdlna
 
-CL  out vss 1p
+CL out gnda 10p
 
-*.ic v(x0.xp) = 0.9
-*.ic v(x0.xm) = 0.9
-.save v(in) v(x0.xp) v(x0.xm) v(out) v(ib) i(vdd)
-.option gmin=1e-13
+
+*.save v(in) v(x0.xp) v(x0.xm) v(out) v(ib) i(vdd) i(vb) v(ii)
+.option gmin=1e-12
 .option scale=1e-6
 .control
 
-	op
-	print in out ib x0.x x0.y i(vdd)
-
-	ac dec 100 1m 1Meg
-	let lna_ac_gain = vdb(out) 
-	wrdata lna_ac_gain.txt lna_ac_gain
-	plot lna_ac_gain
-
-	tran 1m 2
-	let tran_vi = v(in)
-	let tran_vxp = v(x0.xp)
-	let tran_vxm = v(x0.xm)
-	let tran_vo = v(out)
-	wrdata lna_tran.txt tran_vi tran_vxp tran_vxm tran_vo
-	plot tran_vi tran_vxp tran_vxm tran_vo
+	tran 50m 5
+	plot in out
     
 .endc
 

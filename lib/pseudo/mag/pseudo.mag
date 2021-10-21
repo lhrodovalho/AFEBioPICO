@@ -1,0 +1,12 @@
+magic
+tech sky130A
+timestamp 1634784255
+use pseudo_pair  pseudo_pair_0
+timestamp 1633742592
+transform 1 0 1890 0 1 -810
+box -370 -310 2340 2200
+use pseudo_bias  pseudo_bias_0
+timestamp 1634782756
+transform 1 0 710 0 1 -5000
+box -1350 -5160 8570 3700
+<< end >>

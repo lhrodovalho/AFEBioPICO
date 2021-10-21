@@ -1,0 +1,23 @@
+* lna-ota buffer testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "res.spice"
+
+.option scale=1e-6
+
+va a 0 1
+
+x0 a b 0 0 res
+
+.control
+
+	op
+	print a b gnd
+	print i(va)
+	print 1/i(va)
+    
+.endc
+
+.end

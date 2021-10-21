@@ -1,0 +1,57 @@
+* operational amplifier inverting amplifier testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/opamp.spice"
+
+* supply voltages
+vdda vdda 0 1.8
+vssa vssa 0 0.0
+egnda gnda vssa vdda vssa 0.5
+
+* input signals
+*vin in gnda dc 0 ac 1 SINE(0 10m 100 0 0 0)
+vin in gnda dc 0 ac 1 PULSE(-50m 50m 5m 10u 10u 5m 10m)
+IB ib vssa 10n
+
+* DUT
+Xdut x gnda out ib vdda gnda vssa opamp
+ri x in 1Meg
+rf x out  10Meg
+CL out vssa 10p
+RL out vssa 1Meg
+
+.save v(in) v(x) v(out) v(ib) i(vdda)
+.option gmin=1e-12
+.option NOREFVALUE NOINIT NOACCT NOOPITER
+.control
+
+	op
+	print ib i(vdda)
+
+	dc vin -0.1 0.1 1m
+	wrdata ../data/opamp_tb_inv_dc.txt v(in) v(out)
+	plot v(in) v(out) v(ib)
+	
+	ac DEC 10 1m 1Meg
+	let ph = (phase(out)-phase(x))*180/PI
+	let av = vdb(out)-vdb(x)
+	meas ac gbw when av=0
+	meas ac pm find ph at=gbw
+	meas ac av_1  find av at=1m
+	plot av
+	plot ph
+
+	wrdata ../data/opamp_tb_inv_ac.txt av ph
+	
+*	noise v(out) vin dec 10 1 100
+
+	tran 10u 15m
+	plot in out
+	wrdata ../data/opamp_tb_inv_tran.txt v(in) v(out)
+
+    
+.endc
+
+.end

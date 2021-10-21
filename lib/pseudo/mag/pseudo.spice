@@ -1,0 +1,70 @@
+* NGSPICE file created from pseudo.ext - technology: sky130A
+
+.subckt pseudo_pair ga da pa ma gb db pb mb cm gnd
+X0 db gb b4 mb sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X1 b5 gb b4 mb sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=8e+06u
+X2 mb gb b6 mb sky130_fd_pr__nfet_g5v0d10v5 ad=5e+11p pd=3e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X3 a5 ga a4 ma sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X4 b5 gb b6 mb sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X5 a3 ga da pa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X6 a3 ga a2 pa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X7 a1 ga a2 pa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=8e+06u
+X8 b3 gb db pb sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=8e+06u
+X9 b1 gb pb pb sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X10 b1 gb b2 pb sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X11 da ga a4 ma sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X12 a1 ga pa pa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X13 ma ga a6 ma sky130_fd_pr__nfet_g5v0d10v5 ad=5e+11p pd=3e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X14 a5 ga a6 ma sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X15 b3 gb b2 pb sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+.ends
+
+.subckt p8_1 D G S B SUB
+X0 S G D B sky130_fd_pr__pfet_01v8_lvt ad=1.2e+13p pd=5.6e+07u as=1.2e+13p ps=5.6e+07u w=3e+06u l=8e+06u
+X1 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X2 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X3 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X4 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X5 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X7 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+.subckt p1_8 D G S B SUB
+X0 D G a7 B sky130_fd_pr__pfet_01v8_lvt ad=1.5e+12p pd=7e+06u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X1 a6 G a5 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X2 S G a1 B sky130_fd_pr__pfet_01v8_lvt ad=1.5e+12p pd=7e+06u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X3 a6 G a7 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X4 a2 G a3 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X5 a2 G a1 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 a4 G a5 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=0p ps=0u w=3e+06u l=8e+06u
+X7 a4 G a3 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+.subckt pseudo_bias ib xa ya xb yb vdda gnda vssa
+Xp8_1_0 vdda ib vdda vdda vssa p8_1
+Xp8_1_1 ya xa vssa vdda vssa p8_1
+Xp8_1_2 ib ib vdda vdda vssa p8_1
+Xp8_1_3 yb xb vssa vdda vssa p8_1
+Xp8_1_4 vdda ib vdda vdda vssa p8_1
+Xp8_1_5 yb xb vssa vdda vssa p8_1
+Xp8_1_6 vdda ib vdda vdda vssa p8_1
+Xp8_1_7 ib ib vdda vdda vssa p8_1
+Xp8_1_8 ya xa vssa vdda vssa p8_1
+Xp8_1_9 vdda ib vdda vdda vssa p8_1
+Xp1_8_0 ya ib vdda vdda vssa p1_8
+Xp1_8_1 yb ib vdda vdda vssa p1_8
+Xp1_8_2 yb ib vdda vdda vssa p1_8
+Xp1_8_3 ya ib vdda vdda vssa p1_8
+.ends
+
+
+* Top level circuit pseudo
+
+Xpseudo_pair_0 pseudo_pair_0/ga pseudo_pair_0/da pseudo_pair_0/pb pseudo_pair_0/pb
++ pseudo_pair_0/gb pseudo_pair_0/db pseudo_pair_0/pb pseudo_pair_0/pb pseudo_pair_0/cm
++ pseudo_pair_0/pb pseudo_pair
+Xpseudo_bias_0 pseudo_bias_0/ib pseudo_bias_0/xa pseudo_bias_0/ya pseudo_bias_0/xb
++ pseudo_bias_0/yb pseudo_bias_0/vdda pseudo_bias_0/gnda pseudo_pair_0/pb pseudo_bias
+.end
+

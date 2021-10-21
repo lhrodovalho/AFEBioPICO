@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1633716225
+timestamp 1634082727
 << nwell >>
 rect -1220 -6310 15650 2540
 << pwell >>
@@ -222,14 +222,7 @@ rect -290 2520 -240 2530
 rect 14670 2520 14720 2530
 rect -290 2490 -280 2520
 rect -250 2490 -240 2520
-rect 650 2490 760 2520
-rect 2510 2490 2620 2520
-rect 4370 2490 4480 2520
-rect 6230 2490 6340 2520
-rect 8090 2490 8200 2520
-rect 9950 2490 10060 2520
-rect 11810 2490 11920 2520
-rect 13670 2490 13780 2520
+rect 650 2490 13780 2520
 rect 14670 2490 14680 2520
 rect 14710 2490 14720 2520
 rect -290 2480 -240 2490
@@ -1097,76 +1090,12 @@ rect 13700 -8060 14600 -7960
 rect 14630 -8060 15530 -7960
 rect 15560 -8060 15710 -7960
 use n1_8  n1_8_16
-timestamp 1633696713
+timestamp 1634082727
 transform 1 0 -6290 0 1 -14670
 box 5130 6720 6070 7950
 use n1_8  n1_8_0
-timestamp 1633696713
+timestamp 1634082727
 transform 1 0 -5360 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_1
-timestamp 1633696713
-transform 1 0 -4430 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_3
-timestamp 1633696713
-transform -1 0 7700 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_2
-timestamp 1633696713
-transform -1 0 8630 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_5
-timestamp 1633696713
-transform 1 0 -1640 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_4
-timestamp 1633696713
-transform 1 0 -710 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_10
-timestamp 1633696713
-transform 1 0 2080 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_6
-timestamp 1633696713
-transform -1 0 11420 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_7
-timestamp 1633696713
-transform -1 0 12350 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_9
-timestamp 1633696713
-transform -1 0 15140 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_8
-timestamp 1633696713
-transform 1 0 3010 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_14
-timestamp 1633696713
-transform 1 0 5800 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_13
-timestamp 1633696713
-transform -1 0 16070 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_12
-timestamp 1633696713
-transform -1 0 18860 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_11
-timestamp 1633696713
-transform 1 0 6730 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_15
-timestamp 1633696713
-transform -1 0 19790 0 1 -14670
-box 5130 6720 6070 7950
-use n1_8  n1_8_17
-timestamp 1633696713
-transform -1 0 20720 0 1 -14670
 box 5130 6720 6070 7950
 use p1_8  p1_8_48
 timestamp 1633696558
@@ -1176,66 +1105,130 @@ use p1_8  p1_8_5
 timestamp 1633696558
 transform 1 0 140 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_1
+timestamp 1634082727
+transform 1 0 -4430 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_4
 timestamp 1633696558
 transform 1 0 1070 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_3
+timestamp 1634082727
+transform -1 0 7700 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_7
 timestamp 1633696558
 transform -1 0 2200 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_2
+timestamp 1634082727
+transform -1 0 8630 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_6
 timestamp 1633696558
 transform -1 0 3130 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_5
+timestamp 1634082727
+transform 1 0 -1640 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_13
 timestamp 1633696558
 transform 1 0 3860 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_4
+timestamp 1634082727
+transform 1 0 -710 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_12
 timestamp 1633696558
 transform 1 0 4790 0 1 -6170
 box -370 -140 570 2690
-use p1_8  p1_8_26
-timestamp 1633696558
-transform 1 0 7580 0 1 -6170
-box -370 -140 570 2690
+use n1_8  n1_8_6
+timestamp 1634082727
+transform -1 0 11420 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_14
 timestamp 1633696558
 transform -1 0 5920 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_7
+timestamp 1634082727
+transform -1 0 12350 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_15
 timestamp 1633696558
 transform -1 0 6850 0 1 -6170
 box -370 -140 570 2690
-use p1_8  p1_8_25
+use n1_8  n1_8_10
+timestamp 1634082727
+transform 1 0 2080 0 1 -14670
+box 5130 6720 6070 7950
+use p1_8  p1_8_26
 timestamp 1633696558
-transform -1 0 9640 0 1 -6170
+transform 1 0 7580 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_8
+timestamp 1634082727
+transform 1 0 3010 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_24
 timestamp 1633696558
 transform 1 0 8510 0 1 -6170
 box -370 -140 570 2690
-use p1_8  p1_8_30
+use n1_8  n1_8_9
+timestamp 1634082727
+transform -1 0 15140 0 1 -14670
+box 5130 6720 6070 7950
+use p1_8  p1_8_25
 timestamp 1633696558
-transform 1 0 11300 0 1 -6170
+transform -1 0 9640 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_13
+timestamp 1634082727
+transform -1 0 16070 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_29
 timestamp 1633696558
 transform -1 0 10570 0 1 -6170
 box -370 -140 570 2690
-use p1_8  p1_8_28
+use n1_8  n1_8_14
+timestamp 1634082727
+transform 1 0 5800 0 1 -14670
+box 5130 6720 6070 7950
+use p1_8  p1_8_30
 timestamp 1633696558
-transform -1 0 13360 0 1 -6170
+transform 1 0 11300 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_11
+timestamp 1634082727
+transform 1 0 6730 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_27
 timestamp 1633696558
 transform 1 0 12230 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_12
+timestamp 1634082727
+transform -1 0 18860 0 1 -14670
+box 5130 6720 6070 7950
+use p1_8  p1_8_28
+timestamp 1633696558
+transform -1 0 13360 0 1 -6170
+box -370 -140 570 2690
+use n1_8  n1_8_15
+timestamp 1634082727
+transform -1 0 19790 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_31
 timestamp 1633696558
 transform -1 0 14290 0 1 -6170
 box -370 -140 570 2690
+use n1_8  n1_8_17
+timestamp 1634082727
+transform -1 0 20720 0 1 -14670
+box 5130 6720 6070 7950
 use p1_8  p1_8_51
 timestamp 1633696558
 transform -1 0 15220 0 1 -6170
@@ -1268,10 +1261,6 @@ use p1_8  p1_8_16
 timestamp 1633696558
 transform 1 0 4790 0 1 -3170
 box -370 -140 570 2690
-use p1_8  p1_8_34
-timestamp 1633696558
-transform 1 0 7580 0 1 -3170
-box -370 -140 570 2690
 use p1_8  p1_8_18
 timestamp 1633696558
 transform -1 0 5920 0 1 -3170
@@ -1280,29 +1269,33 @@ use p1_8  p1_8_19
 timestamp 1633696558
 transform -1 0 6850 0 1 -3170
 box -370 -140 570 2690
-use p1_8  p1_8_33
+use p1_8  p1_8_34
 timestamp 1633696558
-transform -1 0 9640 0 1 -3170
+transform 1 0 7580 0 1 -3170
 box -370 -140 570 2690
 use p1_8  p1_8_32
 timestamp 1633696558
 transform 1 0 8510 0 1 -3170
 box -370 -140 570 2690
-use p1_8  p1_8_38
+use p1_8  p1_8_33
 timestamp 1633696558
-transform 1 0 11300 0 1 -3170
+transform -1 0 9640 0 1 -3170
 box -370 -140 570 2690
 use p1_8  p1_8_37
 timestamp 1633696558
 transform -1 0 10570 0 1 -3170
 box -370 -140 570 2690
-use p1_8  p1_8_36
+use p1_8  p1_8_38
 timestamp 1633696558
-transform -1 0 13360 0 1 -3170
+transform 1 0 11300 0 1 -3170
 box -370 -140 570 2690
 use p1_8  p1_8_35
 timestamp 1633696558
 transform 1 0 12230 0 1 -3170
+box -370 -140 570 2690
+use p1_8  p1_8_36
+timestamp 1633696558
+transform -1 0 13360 0 1 -3170
 box -370 -140 570 2690
 use p1_8  p1_8_39
 timestamp 1633696558
@@ -1316,17 +1309,21 @@ use p1_8  p1_8_50
 timestamp 1633696558
 transform 1 0 -790 0 1 -150
 box -370 -140 570 2690
-use p1_8  p1_8_10
+use p1_8  p1_8_0
 timestamp 1633696558
-transform 1 0 2000 0 1 -150
+transform 1 0 140 0 1 -150
 box -370 -140 570 2690
 use p1_8  p1_8_1
 timestamp 1633696558
 transform -1 0 1270 0 1 -150
 box -370 -140 570 2690
-use p1_8  p1_8_0
+use p1_8  p1_8_10
 timestamp 1633696558
-transform 1 0 140 0 1 -150
+transform 1 0 2000 0 1 -150
+box -370 -140 570 2690
+use p1_8  p1_8_11
+timestamp 1633696558
+transform -1 0 3130 0 1 -150
 box -370 -140 570 2690
 use p1_8  p1_8_20
 timestamp 1633696558
@@ -1336,21 +1333,17 @@ use p1_8  p1_8_21
 timestamp 1633696558
 transform -1 0 4990 0 1 -150
 box -370 -140 570 2690
-use p1_8  p1_8_11
+use p1_8  p1_8_22
 timestamp 1633696558
-transform -1 0 3130 0 1 -150
-box -370 -140 570 2690
-use p1_8  p1_8_42
-timestamp 1633696558
-transform 1 0 7580 0 1 -150
+transform 1 0 5720 0 1 -150
 box -370 -140 570 2690
 use p1_8  p1_8_23
 timestamp 1633696558
 transform -1 0 6850 0 1 -150
 box -370 -140 570 2690
-use p1_8  p1_8_22
+use p1_8  p1_8_42
 timestamp 1633696558
-transform 1 0 5720 0 1 -150
+transform 1 0 7580 0 1 -150
 box -370 -140 570 2690
 use p1_8  p1_8_41
 timestamp 1633696558
@@ -1368,13 +1361,13 @@ use p1_8  p1_8_45
 timestamp 1633696558
 transform 1 0 11300 0 1 -150
 box -370 -140 570 2690
-use p1_8  p1_8_44
-timestamp 1633696558
-transform 1 0 13160 0 1 -150
-box -370 -140 570 2690
 use p1_8  p1_8_43
 timestamp 1633696558
 transform -1 0 12430 0 1 -150
+box -370 -140 570 2690
+use p1_8  p1_8_44
+timestamp 1633696558
+transform 1 0 13160 0 1 -150
 box -370 -140 570 2690
 use p1_8  p1_8_47
 timestamp 1633696558
@@ -1397,14 +1390,7 @@ port 4 e
 rlabel metal2 -1160 -3470 -1150 -3440 1 x
 rlabel metal2 -1280 -470 -1270 -370 3 vdda
 port 7 e
-rlabel metal1 700 2500 710 2510 1 a1
-rlabel metal1 2560 2500 2570 2510 1 a2
-rlabel metal1 4420 2500 4430 2510 1 a3
-rlabel metal1 6280 2500 6290 2510 1 a4
-rlabel metal1 8140 2500 8150 2510 1 a5
-rlabel metal1 10000 2500 10010 2510 1 a6
-rlabel metal1 11860 2500 11870 2510 1 a7
-rlabel metal1 13720 2500 13730 2510 1 a8
 rlabel metal2 -1280 -8060 -1270 -7960 3 gnd
 port 8 e
+rlabel metal1 650 2490 13780 2520 1 a
 << end >>

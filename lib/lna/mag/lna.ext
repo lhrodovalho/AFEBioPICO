@@ -1,0 +1,131 @@
+timestamp 1634784837
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use cap_1_10 cap_1_10_0 1 0 -9320 0 1 41900
+use cap_1_10 cap_1_10_1 1 0 1400 0 1 41900
+use cap_1_10 cap_1_10_2 1 0 12120 0 1 41900
+use cap_1_10 cap_1_10_3 1 0 22840 0 1 41900
+use cap_1_10 cap_1_10_4 1 0 33560 0 1 41900
+use cap_1_10 cap_1_10_5 1 0 44280 0 1 41900
+use pseudo pseudo_0 1 0 7220 0 1 18520
+use ota ota_0 1 0 15700 0 1 22200
+substrate "w_10720_16720#" 0 0 10720 16720 pw 0 0 12441600 28800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 98
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 123.015
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 745.5
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 124.559
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 276.938
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 777
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 122.5
+cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 275.625
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 735
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
+cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 275.625
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 735
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 123.015
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 745.5
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 123.529
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 756
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 122.5
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
+cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 735
+cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 275.625
+subcap "w_10720_16720#" -259.74
+cap "ota_0/vdda" "pseudo_0/pseudo_bias_0/vdda" 1.38889
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 50.75
+cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 169.312
+cap "ota_0/vdda" "pseudo_0/pseudo_bias_0/vdda" 16.6667
+cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 451.5
+cap "cap_1_10_0/C" "cap_1_10_0/gnd" -144.207
+cap "cap_1_10_0/gnd" "cap_1_10_0/C" -199.112
+cap "cap_1_10_1/C" "cap_1_10_1/gnd" -240.12
+cap "cap_1_10_2/gnd" "cap_1_10_2/C" -240.12
+cap "cap_1_10_3/gnd" "cap_1_10_3/C" -167.022
+cap "cap_1_10_4/C" "cap_1_10_3/gnd" -297.332
+cap "cap_1_10_4/C" "cap_1_10_4/gnd" -240.12
+cap "cap_1_10_1/B" "cap_1_10_0/gnd" -25.7581
+cap "cap_1_10_0/C" "cap_1_10_0/gnd" -142.847
+cap "cap_1_10_0/gnd" "cap_1_10_1/B" -373.371
+cap "cap_1_10_0/gnd" "cap_1_10_0/C" -178.712
+cap "cap_1_10_1/gnd" "cap_1_10_2/B" -412.129
+cap "cap_1_10_1/gnd" "cap_1_10_1/C" -218.36
+cap "cap_1_10_2/gnd" "cap_1_10_3/B" -412.129
+cap "cap_1_10_2/gnd" "cap_1_10_2/C" -218.36
+cap "cap_1_10_3/gnd" "cap_1_10_4/B" -77.2743
+cap "cap_1_10_3/gnd" "cap_1_10_3/C" -162.942
+cap "cap_1_10_3/gnd" "cap_1_10_4/C" -279.652
+cap "cap_1_10_3/gnd" "cap_1_10_4/B" -295.855
+cap "cap_1_10_4/C" "cap_1_10_4/gnd" -218.36
+cap "cap_1_10_5/B" "cap_1_10_4/gnd" -412.129
+cap "cap_1_10_1/B" "cap_1_10_0/gnd" -14.2675
+cap "cap_1_10_0/gnd" "cap_1_10_1/B" -201.012
+cap "cap_1_10_1/gnd" "cap_1_10_2/B" -228.28
+cap "cap_1_10_2/gnd" "cap_1_10_3/B" -228.28
+cap "cap_1_10_4/B" "cap_1_10_3/gnd" -42.8025
+cap "cap_1_10_4/B" "cap_1_10_3/gnd" -146.477
+cap "cap_1_10_4/gnd" "cap_1_10_5/B" -228.28
+cap "cap_1_10_0/gnd" "cap_1_10_1/A" -14.2675
+cap "cap_1_10_1/A" "cap_1_10_0/gnd" -201.012
+cap "cap_1_10_1/gnd" "cap_1_10_2/A" -228.28
+cap "cap_1_10_3/A" "cap_1_10_2/gnd" -228.28
+cap "cap_1_10_4/A" "cap_1_10_3/gnd" -42.8025
+cap "cap_1_10_3/gnd" "cap_1_10_4/A" -146.477
+cap "cap_1_10_4/gnd" "cap_1_10_5/A" -228.28
+cap "cap_1_10_1/A" "cap_1_10_0/gnd" -25.7581
+cap "cap_1_10_1/A" "cap_1_10_0/gnd" -373.371
+cap "cap_1_10_1/gnd" "cap_1_10_2/A" -412.129
+cap "cap_1_10_3/A" "cap_1_10_2/gnd" -412.129
+cap "cap_1_10_4/A" "cap_1_10_3/gnd" -77.2743
+cap "cap_1_10_3/gnd" "cap_1_10_4/A" -295.855
+cap "cap_1_10_4/gnd" "cap_1_10_5/A" -412.129
+merge "cap_1_10_5/VSUBS" "cap_1_10_4/VSUBS" 1152.85 0 0 -8851200 -25820 0 0 0 0 0 0 0 0 20000 600 -391200 3520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -374400 4080 46400 1480 73260 2502 0 0 0 0 0 0 0 0
+merge "cap_1_10_4/VSUBS" "cap_1_10_3/VSUBS"
+merge "cap_1_10_3/VSUBS" "cap_1_10_2/VSUBS"
+merge "cap_1_10_2/VSUBS" "cap_1_10_1/VSUBS"
+merge "cap_1_10_1/VSUBS" "cap_1_10_0/VSUBS"
+merge "cap_1_10_0/VSUBS" "pseudo_0/pseudo_pair_0/ma"
+merge "pseudo_0/pseudo_pair_0/ma" "pseudo_0/pseudo_pair_0/pb"
+merge "pseudo_0/pseudo_pair_0/pb" "pseudo_0/pseudo_pair_0/mb"
+merge "pseudo_0/pseudo_pair_0/mb" "pseudo_0/pseudo_pair_0/pa"
+merge "pseudo_0/pseudo_pair_0/pa" "ota_0/w_13880_n22360#"
+merge "ota_0/w_13880_n22360#" "pseudo_0/VSUBS"
+merge "pseudo_0/VSUBS" "w_10720_16720#"
+merge "cap_1_10_5/A" "cap_1_10_4/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap_1_10_4/A" "cap_1_10_3/A"
+merge "cap_1_10_3/A" "cap_1_10_2/A"
+merge "cap_1_10_2/A" "cap_1_10_1/A"
+merge "cap_1_10_1/A" "cap_1_10_0/A"
+merge "cap_1_10_5/gnd" "cap_1_10_4/gnd" -75088.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 248000 -32000 -37720000 -328800 0 0
+merge "cap_1_10_4/gnd" "cap_1_10_3/gnd"
+merge "cap_1_10_3/gnd" "cap_1_10_2/gnd"
+merge "cap_1_10_2/gnd" "cap_1_10_1/gnd"
+merge "cap_1_10_1/gnd" "cap_1_10_0/gnd"
+merge "cap_1_10_5/B" "cap_1_10_4/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap_1_10_4/B" "cap_1_10_3/B"
+merge "cap_1_10_3/B" "cap_1_10_2/B"
+merge "cap_1_10_2/B" "cap_1_10_1/B"
+merge "cap_1_10_1/B" "cap_1_10_0/B"
+merge "cap_1_10_5/C" "cap_1_10_4/C" -1053.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -126400 -5560 0 0 0 0
+merge "cap_1_10_4/C" "cap_1_10_3/C"
+merge "cap_1_10_3/C" "cap_1_10_2/C"
+merge "cap_1_10_2/C" "cap_1_10_1/C"
+merge "cap_1_10_1/C" "cap_1_10_0/C"

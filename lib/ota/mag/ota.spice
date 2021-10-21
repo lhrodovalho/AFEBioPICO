@@ -1,0 +1,99 @@
+* NGSPICE file created from ota.ext - technology: sky130A
+
+.subckt p1_8 D G S B SUB
+X0 D G a7 B sky130_fd_pr__pfet_01v8_lvt ad=1.5e+12p pd=7e+06u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X1 a6 G a5 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X2 S G a1 B sky130_fd_pr__pfet_01v8_lvt ad=1.5e+12p pd=7e+06u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X3 a6 G a7 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X4 a2 G a3 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X5 a2 G a1 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 a4 G a5 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=0p ps=0u w=3e+06u l=8e+06u
+X7 a4 G a3 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+.subckt n1_8 D G S B
+X0 a5 G a6 B sky130_fd_pr__nfet_01v8_lvt ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X1 a1 G a2 B sky130_fd_pr__nfet_01v8_lvt ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X2 a1 G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X3 a7 G D B sky130_fd_pr__nfet_01v8_lvt ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X4 a3 G a4 B sky130_fd_pr__nfet_01v8_lvt ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X5 a5 G a4 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X6 a3 G a2 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X7 a7 G a6 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+.ends
+
+.subckt ota inm inp out ib vdda gnda vssa
+Xp1_8_5 y inp x vdda vssa p1_8
+Xp1_8_31 y inp x vdda vssa p1_8
+Xp1_8_42 ib ib z vdda vssa p1_8
+Xp1_8_20 ib ib z vdda vssa p1_8
+Xp1_8_53 vdda ib vdda vdda vssa p1_8
+Xp1_8_11 out inm x vdda vssa p1_8
+Xp1_8_10 y inp x vdda vssa p1_8
+Xp1_8_33 x ib vdda vdda vssa p1_8
+Xp1_8_32 x ib vdda vdda vssa p1_8
+Xp1_8_6 vdda ib z vdda vssa p1_8
+Xp1_8_22 vdda ib z vdda vssa p1_8
+Xp1_8_21 vdda ib z vdda vssa p1_8
+Xp1_8_43 vdda ib z vdda vssa p1_8
+Xp1_8_12 out inm x vdda vssa p1_8
+Xp1_8_34 x ib vdda vdda vssa p1_8
+Xp1_8_7 ib ib z vdda vssa p1_8
+Xp1_8_23 ib ib z vdda vssa p1_8
+Xp1_8_45 ib ib z vdda vssa p1_8
+Xp1_8_44 vdda ib z vdda vssa p1_8
+Xp1_8_13 y inp x vdda vssa p1_8
+Xn1_8_10 out y vssa vssa n1_8
+Xp1_8_24 out inm x vdda vssa p1_8
+Xp1_8_8 x ib vdda vdda vssa p1_8
+Xp1_8_35 x ib vdda vdda vssa p1_8
+Xp1_8_46 ib ib z vdda vssa p1_8
+Xp1_8_14 out inm x vdda vssa p1_8
+Xp1_8_25 y inp x vdda vssa p1_8
+Xn1_8_11 out y vssa vssa n1_8
+Xp1_8_9 x ib vdda vdda vssa p1_8
+Xp1_8_36 x ib vdda vdda vssa p1_8
+Xp1_8_47 ib ib z vdda vssa p1_8
+Xp1_8_48 vdda y vdda vdda vssa p1_8
+Xp1_8_15 y inp x vdda vssa p1_8
+Xp1_8_26 out inm x vdda vssa p1_8
+Xn1_8_12 out y vssa vssa n1_8
+Xp1_8_37 x ib vdda vdda vssa p1_8
+Xn1_8_13 y y vssa vssa n1_8
+Xn1_8_14 y y vssa vssa n1_8
+Xp1_8_27 out inm x vdda vssa p1_8
+Xp1_8_49 vdda ib vdda vdda vssa p1_8
+Xp1_8_16 x ib vdda vdda vssa p1_8
+Xp1_8_38 x ib vdda vdda vssa p1_8
+Xp1_8_28 out inm x vdda vssa p1_8
+Xn1_8_15 y y vssa vssa n1_8
+Xp1_8_17 x ib vdda vdda vssa p1_8
+Xp1_8_39 x ib vdda vdda vssa p1_8
+Xn1_8_16 vssa y vssa vssa n1_8
+Xp1_8_29 y inp x vdda vssa p1_8
+Xp1_8_18 x ib vdda vdda vssa p1_8
+Xn1_8_17 vssa y vssa vssa n1_8
+Xp1_8_19 x ib vdda vdda vssa p1_8
+Xn1_8_0 y y vssa vssa n1_8
+Xn1_8_1 out y vssa vssa n1_8
+Xn1_8_2 y y vssa vssa n1_8
+Xn1_8_3 out y vssa vssa n1_8
+Xn1_8_4 out y vssa vssa n1_8
+Xn1_8_5 y y vssa vssa n1_8
+Xn1_8_6 out y vssa vssa n1_8
+Xn1_8_7 y y vssa vssa n1_8
+Xn1_8_8 out y vssa vssa n1_8
+Xn1_8_9 y y vssa vssa n1_8
+Xp1_8_0 ib ib z vdda vssa p1_8
+Xp1_8_50 vdda ib vdda vdda vssa p1_8
+Xp1_8_1 vdda ib z vdda vssa p1_8
+Xp1_8_51 vdda y vdda vdda vssa p1_8
+Xp1_8_2 x ib vdda vdda vssa p1_8
+Xp1_8_40 vdda ib z vdda vssa p1_8
+Xp1_8_4 out inm x vdda vssa p1_8
+Xp1_8_30 y inp x vdda vssa p1_8
+Xp1_8_3 x ib vdda vdda vssa p1_8
+Xp1_8_52 vdda ib vdda vdda vssa p1_8
+Xp1_8_41 vdda ib z vdda vssa p1_8
+.ends
+

@@ -1,0 +1,50 @@
+* symmetrical single-ended OTA open-loop testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/opamp.spice"
+
+* supply voltages
+vdda vdda 0 1.8
+vssa vssa 0 0.0
+egnda gnda vssa vdda vssa 0.5
+
+* input signals
+*vin in gnda dc 0 ac 1 SINE(0 10m 100 0 0 0)
+vin in gnda dc 0 ac 1 PULSE(-50m 50m 3m 10u 10u 1 1)
+IB ib vssa 10n
+
+
+* DUT
+Xdut x in out ib vdda gnda vssa opamp
+ri x gnda 1Meg
+rf x out  9Meg
+CL out gnda 10p
+
+.save v(in) v(x) v(out) v(ib) i(vdda)
+.option gmin=1e-15
+.control
+
+	op
+	print ib i(vdda)
+
+	dc vin -0.1 0.1 1m
+	wrdata ../data/opamp_tb_ninv_dc.txt v(in) v(out)
+	plot v(in) v(out) v(ib)
+	
+	ac DEC 10 1m 1Meg
+	plot vdb(out)
+	plot phase(out)*180/PI
+	wrdata ../data/opamp_tb_ninv_ac.txt vdb(out) phase(out)*180/PI
+	
+*	noise v(out) vin dec 10 1 100
+
+	tran 10u 6m
+	plot in out
+	wrdata ../data/opamp_tb_ninv_tran.txt v(in) v(out)
+
+    
+.endc
+
+.end

@@ -1,0 +1,42 @@
+* operational amplifier buffer testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/opamp.spice"
+
+* supply voltages
+vdda vdda 0 1.8
+vssa vssa 0 0.0
+egnda gnda vssa vdda vssa 0.5
+
+* input signals
+vin in gnda dc 0 ac 1 SINE(0 0.6 500 0 0 0)
+IB ib vss 10u
+
+
+* DUT
+Xdut out in out ib vdda gnda vssa opamp 
+CL out gnda 1p
+RL out gnda 1Meg
+
+.save v(in) v(out) v(ib) v(Xdut.x) i(vdda)
+.option gmin=1e-15
+.control
+
+	op
+	print ib i(vdda)
+	
+	ac dec 10 1 1Meg
+	wrdata ../data/ampop_tb_buf_ac.txt vdb(out) phase(out)*180/PI
+	plot vdb(out)
+	plot phase(out)*180/PI
+	
+	tran 100u 10m
+	wrdata ../data/ampop_tb_buf_tran.txt v(in) v(out) i(vdda)
+	plot v(in) v(out)
+	plot i(vdda)
+
+.endc
+
+.end

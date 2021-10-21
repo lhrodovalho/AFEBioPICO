@@ -1,0 +1,48 @@
+* pseudo-resistor testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/pseudo_pair.spice"
+.include "../mag/pseudo_bias.spice"
+
+
+* supply voltages
+vdda  vdda 0 1.8
+vssa  vssa 0 0.0
+egnda gnda vssa vdda vssa 0.5
+
+
+vp  p  gnda dc 1m ac 1
+epa pa gnda p gnda 1
+epb pb gnda p gnda 1
+
+
+* DUT
+X0 ga da pa gnda gb db pb gnda gnda vssa pseudo_pair
+x1 ib da ga gb db vdda         gnda vssa pseudo_bias
+ibias ib vss 1n
+
+.save ib ga da db gb pa i(epa) i(epb)
+
+*.option rshunt=1e18
+.option gmin=1e-14
+.control
+
+	ac dec 1 1m 1m
+	print abs(1/i(epa))
+
+	dc vp -100m 100m 1m
+	let ii = abs(i(epa))
+	let ri = 1/abs(deriv(ii))
+	wrdata ../data/pseudo_i.txt ii ri
+	plot ylog ii
+	plot ylog ri
+	let vg = da
+	let vd = ga
+	plot vd-vg
+	wrdata ../data/pseudo_v.txt vg vd vd-vg
+    
+.endc
+
+.end

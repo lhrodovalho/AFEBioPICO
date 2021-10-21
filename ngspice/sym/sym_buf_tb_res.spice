@@ -1,0 +1,65 @@
+* symmetrical single-ended OTA open-loop testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "sym.spice"
+.include "buf.spice"
+
+vdda vdda0 0 1.8
+rvdda vdda vdda0 10
+vssa vssa 0 0.0
+egnda gnda vssa vdda vssa 0.5
+
+vin in gnda dc 0 ac 1 SINE(0 10m 100 0 0 0)
+*vin in gnda dc 0 ac 1 PULSE(-10m 10m 0.1m 0.1m 1m 1 1)
+
+.subckt sym_buf in out ib vdda gnda vssa
+
+	Xamp x in outx ib vdda vssa sym
+	Xbuf outx out  ib vdda vssa buffer
+	ri gnda x   1Meg
+	rf x    out 10Meg
+
+.ends
+
+
+* DUT
+*Xdut x in out ib vdda vssa sym
+Xbuf0 in buf ib vdda vssa buf
+Xdut x in y ib vdda vssa sym  
+*ex out gnda y gnda 1
+Xbuf1 y out ib vdda vssa buf
+ri x gnda 1Meg
+rf x out  9Meg
+IB ib vssa 5n
+*VB ib vssa 1.4
+CL out gnda 1p
+
+*.save v(in) v(x) v(out) v(ib) i(vdd)
+*.option gmin=1e-15
+.option scale=1e-6
+.control
+
+	op
+	print ib i(vdda)
+
+	dc vin -0.1 0.1 1m
+	wrdata sym_res_dc.txt v(in) v(out)
+	plot v(in) v(out) v(ib)
+	
+	ac DEC 10 1 1Meg
+	plot vdb(out)
+	plot phase(out)
+	wrdata sym_res_ac.txt vdb(out) phase(out)*180/PI
+	
+*	noise v(out) vin dec 10 1 100
+	
+*	tran 100u 50m 10m
+*	plot in out
+*	wrdata sym_res_tran.txt v(in) v(out)
+
+    
+.endc
+
+.end
