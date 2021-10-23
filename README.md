@@ -118,6 +118,12 @@ OTA layout
 ---
 #### Variable Gain Amplifier (VGA)
 
+![image](./images/vga_sch.png)
+
+Outdated VGA schematic
+* Amplifier topology with capacitve feedback with pseudo-resistors was dismissed, as distortion is too large for output signals over 100 mV, as the pseudo-resistor resistance is too non-linear and the cutoff frequencies are a function of the output signal.
+* Non-inverting amplifier was choosen for better linearity, but resistive feedback requires a class AB operational amplifier which can drive the resistive load, otherwise the polysilicon resistors would be too large. A simple symmetrical OTA can drive the capacitive loads, but can't drive reasonably sized integrated resistors efficiently.
+
 ![image](./images/opamp15.gif)
 
 VGA based on non-inverting amplifier with variable resistive feedback
@@ -194,6 +200,7 @@ Open-loop in-out DC characteristic curve
 
 Voltage follower with varying current load with input at 0.9 V and output connected to a varying current source/sink
 * Can drive up to 300 uA load, both positive and negative
+* Uses about 300 nA quiescent current for no load.
 
 
 ![image](./lib/opamp/plots/opamp_tb_inv_ac_gain.png)
