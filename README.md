@@ -93,11 +93,16 @@ Matched Pseudo-Resistor layout
 OTA layout
 
 #### VGA
+
+![image](./images/opamp_sch.jpeg)
+
 ![image](./layouts/opamp.png)
 
 OPAMP layout
 
 #### SBCS
+![image](./images/irefa.png)
+
 ![image](./layouts/sbcs.png)
 
 Self-Biased Current Source layout
