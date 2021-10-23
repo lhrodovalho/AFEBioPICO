@@ -229,12 +229,13 @@ Self-Biasing Current Source temperature variability
 Status and Issues
 ============
 
-* LNA doesn't work with MiM capacitors. Perhaps it is a problem with the models.
+* LNA -doesn't work- with MiM capacitors. Perhaps it is a problem with the models.
 * No dual MiM capacitors pass DRC.
-* Noise simulation doesn't work with extracted netlists.
+* -Noise simulation doesn't work- with extracted netlists.
 * No Monte carlo or corner simulations for extracted netlists
 * Resistive feedback and switches aren't finished. VGA gain is fixed.
-* No current DAC for pseudo-resistor calibration. Currently, blocks will be biased externally.
+* No current DAC for pseudo-resistor calibration. Individual blocks will be biased externally.
+* No digital control for tuning.
 * Top level blocks aren't routed
 
 
