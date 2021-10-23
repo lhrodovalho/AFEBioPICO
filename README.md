@@ -21,6 +21,8 @@ Table of contents
   * [Description](#Description)
     * [Block Diagram](#Block-Diagram)
     * [Schematics](#Schematics)
+    * [Layouts](#Layouts)
+    * [Simulation Results](#Simulation-Results)
     * [Target Performance Summary](#Target-Performance-Summary)
   * [Team Members](#Team-Members)  
   * [References](#References)
@@ -182,6 +184,28 @@ Non-inverting amplifier AC phase
 
 ![image](./lib/opamp/plots/opamp_tb_inv_tran.png)
 Non-inverting amplifier transient simulation results
+
+#### SBCS
+
+![image](./lib/sbcs/plots/sbcs_io.png)
+
+Self-Biasing Current Source output current.
+
+![image](./lib/sbcs/plots/sbsc_psrr.png)
+
+Self-Biasing Current Source DC Power Supply Rejection Ratio
+
+![image](./lib/sbcs/plots/sbcs_idd.png)
+
+Self-Biasing Current Source total current consumption.
+
+![image](./lib/sbcs/plots/sbcs_temp.png)
+
+Self-Biasing Current Source temperature variability
+* PTAT behaviour
+
+
+
 
 
 
