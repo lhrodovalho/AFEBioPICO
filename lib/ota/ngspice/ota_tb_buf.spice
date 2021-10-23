@@ -11,7 +11,7 @@ vssa vssa 0 0.0
 egnda gnda vssa vdda vssa 0.5
 
 * input signals
-vin in gnda dc 0 ac 1 SINE(0 0.4 1 0 0 0)
+vin in gnda dc 0 ac 1 SINE(0 0.9 1 0 0 0)
 IB ib vss 5n
 
 
@@ -34,6 +34,7 @@ CL out gnda 1p
 	tran 10m 5 1
 	wrdata ../data/ota_tb_buf_tran.txt v(in) v(out) i(vdda)
 	plot v(in) v(out)
+	
 
 .endc
 

@@ -1,6 +1,14 @@
 magic
 tech sky130A
-timestamp 1633737718
+timestamp 1634826128
+<< psubdiff >>
+rect 7860 -7620 7880 -7590
+rect 13350 -7620 13380 -7590
+<< psubdiffcont >>
+rect 7880 -7620 13350 -7590
+<< locali >>
+rect 7860 -7620 7880 -7590
+rect 13350 -7620 13380 -7590
 << metal4 >>
 rect 7860 8700 13380 8720
 rect 7860 8580 7880 8700
@@ -739,4 +747,6 @@ rlabel metal5 13220 -7560 13380 -7400 1 gnd
 port 4 n
 rlabel metal5 10540 8560 10700 8720 1 A
 port 1 n
+rlabel psubdiff 13360 -7610 13370 -7600 1 vssa
+port 5 n
 << end >>

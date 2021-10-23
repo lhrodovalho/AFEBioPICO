@@ -1,161 +1,196 @@
-* SPICE3 file created from lna.ext - technology: sky130A
+* NGSPICE file created from lna.ext - technology: sky130A
 
-.option scale=5000u
+.subckt pseudo_pair ga da pa ma gb db pb mb cm gnd
+X0 db gb b4 mb sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X1 b5 gb b4 mb sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=8e+06u
+X2 mb gb b6 mb sky130_fd_pr__nfet_g5v0d10v5 ad=5e+11p pd=3e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X3 a5 ga a4 ma sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X4 b5 gb b6 mb sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X5 a3 ga da pa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X6 a3 ga a2 pa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X7 a1 ga a2 pa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=8e+06u
+X8 b3 gb db pb sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=8e+06u
+X9 b1 gb pb pb sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X10 b1 gb b2 pb sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X11 da ga a4 ma sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X12 a1 ga pa pa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X13 ma ga a6 ma sky130_fd_pr__nfet_g5v0d10v5 ad=5e+11p pd=3e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X14 a5 ga a6 ma sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X15 b3 gb b2 pb sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+.ends
 
-C0 ota_0/vdda ota_0/li_10200_n19840# 25.55fF
-C1 pseudo_0/pseudo_pair_0/ga pseudo_0/pseudo_pair_0/da 4.29fF
-C2 pseudo_0/pseudo_pair_0/m2_n740_2060# pseudo_0/pseudo_pair_0/db 6.86fF
-C3 pseudo_0/pseudo_pair_0/m2_n740_1860# pseudo_0/pseudo_pair_0/db 6.86fF
-C4 pseudo_0/pseudo_bias_0/m1_n1280_n10320# pseudo_0/pseudo_bias_0/m1_n1680_n10320# 2.34fF
-C5 ota_0/m5_11200_n24000# ota_0/m5_10400_n24000# 9.67fF
-C6 ota_0/gnda ota_0/m2_10200_n19540# 4.43fF
-C7 cap_1_10_5/C cap_1_10_5/A 128.93fF
-C8 ota_0/li_10200_n19840# ota_0/ib 62.26fF
-C9 pseudo_0/pseudo_bias_0/ya pseudo_0/pseudo_bias_0/ib 2.55fF
-C10 cap_1_10_5/C cap_1_10_5/B 67.15fF
-C11 pseudo_0/pseudo_bias_0/yb pseudo_0/pseudo_bias_0/m5_n1080_n10320# 3.13fF
-C12 pseudo_0/pseudo_bias_0/m1_n1280_n10320# pseudo_0/pseudo_bias_0/m1_n880_n10320# 2.34fF
-C13 ota_0/m5_11200_n24000# ota_0/out 4.53fF
-C14 pseudo_0/pseudo_bias_0/ya pseudo_0/pseudo_bias_0/m5_n1880_n10320# 3.28fF
-C15 pseudo_0/pseudo_bias_0/gnda pseudo_0/pseudo_bias_0/m5_n1080_n10320# 18.82fF
-C16 pseudo_0/pseudo_bias_0/xb pseudo_0/pseudo_bias_0/m5_n1080_n10320# 3.13fF
-C17 ota_0/m5_11200_n24000# ota_0/gnda 12.36fF
-C18 ota_0/li_10200_n19840# ota_0/inp 34.39fF
-C19 cap_1_10_5/gnd cap_1_10_5/A 185.14fF
-C20 pseudo_0/pseudo_bias_0/yb pseudo_0/pseudo_bias_0/gnda 81.24fF
-C21 pseudo_0/pseudo_bias_0/yb pseudo_0/pseudo_bias_0/xb 11.79fF
-C22 cap_1_10_5/gnd cap_1_10_5/B 723.02fF
-C23 ota_0/m4_10200_n19300# ota_0/gnda 11.50fF
-C24 ota_0/li_10200_n19840# ota_0/inm 35.68fF
-C25 pseudo_0/pseudo_bias_0/m1_n2480_n10320# pseudo_0/pseudo_bias_0/gnda 19.22fF
-C26 pseudo_0/pseudo_pair_0/m2_n740_2060# pseudo_0/pseudo_pair_0/da 6.86fF
-C27 pseudo_0/pseudo_pair_0/m2_n740_1860# pseudo_0/pseudo_pair_0/da 2.34fF
-C28 ota_0/li_10200_n19840# ota_0/x 22.70fF
-C29 pseudo_0/pseudo_pair_0/ga pseudo_0/pseudo_pair_0/m2_n740_1460# 6.86fF
-C30 ota_0/y ota_0/out 20.99fF
-C31 ota_0/m5_11200_n24000# ota_0/ib 4.67fF
-C32 ota_0/li_10200_n19840# ota_0/m4_10200_n19780# 19.86fF
-C33 ota_0/m4_10200_n12780# ota_0/gnda 11.50fF
-C34 pseudo_0/pseudo_bias_0/yb pseudo_0/pseudo_bias_0/vdda 13.91fF
-C35 pseudo_0/pseudo_bias_0/m1_n2480_n10320# pseudo_0/pseudo_bias_0/m1_n2080_n10320# 2.34fF
-C36 pseudo_0/pseudo_bias_0/m5_n2680_n10320# pseudo_0/pseudo_bias_0/ib 3.25fF
-C37 pseudo_0/pseudo_bias_0/xb pseudo_0/pseudo_bias_0/gnda 79.25fF
-C38 ota_0/y ota_0/gnda 74.65fF
-C39 pseudo_0/pseudo_bias_0/m1_n480_n10320# pseudo_0/pseudo_bias_0/gnda 11.25fF
-C40 ota_0/m4_10200_n12780# ota_0/ib 6.02fF
-C41 pseudo_0/pseudo_pair_0/da pseudo_0/pseudo_pair_0/db 3.09fF
-C42 ota_0/y ota_0/vdda 3.38fF
-C43 pseudo_0/pseudo_bias_0/xa pseudo_0/pseudo_bias_0/ib 13.81fF
-C44 pseudo_0/pseudo_bias_0/gnda pseudo_0/pseudo_bias_0/m1_n2080_n10320# 18.88fF
-C45 pseudo_0/pseudo_bias_0/m5_n2680_n10320# pseudo_0/pseudo_bias_0/m5_n1880_n10320# 6.60fF
-C46 pseudo_0/pseudo_bias_0/yb pseudo_0/pseudo_bias_0/ya 5.52fF
-C47 pseudo_0/pseudo_bias_0/vdda pseudo_0/pseudo_bias_0/gnda 35.96fF
-C48 pseudo_0/pseudo_bias_0/vdda pseudo_0/pseudo_bias_0/xb 2.13fF
-C49 pseudo_0/pseudo_pair_0/ga pseudo_0/pseudo_pair_0/m2_n740_2260# 6.86fF
-C50 ota_0/m5_10400_n24000# ota_0/gnda 12.36fF
-C51 ota_0/inp ota_0/m4_10200_n19300# 5.71fF
-C52 pseudo_0/pseudo_pair_0/m2_n740_1660# pseudo_0/pseudo_pair_0/da 6.86fF
-C53 pseudo_0/pseudo_pair_0/gb pseudo_0/pseudo_pair_0/m2_n740_1860# 6.86fF
-C54 pseudo_0/pseudo_bias_0/m5_n1880_n10320# pseudo_0/pseudo_bias_0/xa 3.28fF
-C55 ota_0/inm ota_0/m4_10200_n19300# 6.08fF
-C56 pseudo_0/pseudo_bias_0/m1_n1280_n10320# pseudo_0/pseudo_bias_0/gnda 18.88fF
-C57 ota_0/out ota_0/gnda 97.94fF
-C58 ota_0/m4_10200_n19780# ota_0/m4_10200_n19300# 13.95fF
-C59 pseudo_0/pseudo_bias_0/ya pseudo_0/pseudo_bias_0/gnda 127.58fF
-C60 pseudo_0/pseudo_bias_0/m5_n1880_n10320# pseudo_0/pseudo_bias_0/m1_n1680_n10320# 2.12fF
-C61 pseudo_0/pseudo_bias_0/xb pseudo_0/pseudo_bias_0/ya 8.60fF
-C62 pseudo_0/pseudo_bias_0/vdda ota_0/gnda 10.86fF
-C63 ota_0/m4_10200_n12780# ota_0/x 6.00fF
-C64 ota_0/y ota_0/inp 2.05fF
-C65 pseudo_0/pseudo_pair_0/cm pseudo_0/pseudo_pair_0/da 3.57fF
-C66 ota_0/out ota_0/ib 5.04fF
-C67 pseudo_0/pseudo_pair_0/gb pseudo_0/pseudo_pair_0/db 2.19fF
-C68 ota_0/m4_10260_n6000# ota_0/gnda 13.20fF
-C69 ota_0/y ota_0/inm 10.26fF
-C70 cap_1_10_5/gnd cap_1_10_5/C 434.37fF
-C71 pseudo_0/pseudo_bias_0/vdda pseudo_0/pseudo_bias_0/ya 9.64fF
-C72 ota_0/vdda ota_0/gnda 87.42fF
-C73 ota_0/y ota_0/m4_10200_n19780# 7.07fF
-C74 ota_0/inp ota_0/m5_10400_n24000# 4.53fF
-C75 ota_0/li_10200_n19840# ota_0/m5_11200_n24000# 13.96fF
-C76 ota_0/ib ota_0/gnda 162.30fF
-C77 ota_0/m4_10260_n6000# ota_0/ib 10.89fF
-C78 ota_0/li_10200_n19840# ota_0/m4_10200_n19300# 19.86fF
-C79 ota_0/vdda ota_0/z 2.05fF
-C80 ota_0/inm ota_0/m5_10400_n24000# 4.53fF
-C81 pseudo_0/pseudo_pair_0/gb pseudo_0/pseudo_pair_0/m2_n740_1660# 6.86fF
-C82 pseudo_0/pseudo_bias_0/m1_n2480_n10320# pseudo_0/pseudo_bias_0/m5_n2680_n10320# 2.12fF
-C83 ota_0/vdda ota_0/ib 63.68fF
-C84 ota_0/z ota_0/ib 2.26fF
-C85 cap_1_10_5/B cap_1_10_5/A 1267.86fF
-C86 ota_0/inp ota_0/out 5.61fF
-C87 ota_0/m4_10200_n12780# ota_0/li_10200_n19840# 19.89fF
-C88 pseudo_0/pseudo_bias_0/gnda pseudo_0/pseudo_bias_0/m5_n2680_n10320# 18.59fF
-C89 ota_0/y ota_0/li_10200_n19840# 35.39fF
-C90 ota_0/m2_10200_n12780# ota_0/gnda 4.15fF
-C91 pseudo_0/pseudo_pair_0/cm pseudo_0/pseudo_pair_0/m2_n740_1460# 2.10fF
-C92 pseudo_0/pseudo_bias_0/vdda ota_0/inm 3.48fF
-C93 pseudo_0/pseudo_pair_0/gb pseudo_0/pseudo_pair_0/da 2.98fF
-C94 ota_0/inp ota_0/gnda 95.35fF
-C95 pseudo_0/pseudo_pair_0/m2_n740_1460# pseudo_0/pseudo_pair_0/da 6.86fF
-C96 ota_0/m4_10200_n19780# ota_0/out 6.33fF
-C97 pseudo_0/pseudo_bias_0/m5_n1080_n10320# pseudo_0/pseudo_bias_0/m1_n880_n10320# 2.12fF
-C98 ota_0/inm ota_0/gnda 102.26fF
-C99 ota_0/vdda ota_0/inp 8.23fF
-C100 ota_0/x ota_0/gnda 66.33fF
-C101 pseudo_0/pseudo_bias_0/m5_n1880_n10320# pseudo_0/pseudo_bias_0/m5_n1080_n10320# 6.60fF
-C102 pseudo_0/pseudo_bias_0/gnda pseudo_0/pseudo_bias_0/xa 125.51fF
-C103 ota_0/vdda ota_0/inm 8.13fF
-C104 ota_0/li_10200_n19840# ota_0/m5_10400_n24000# 13.96fF
-C105 ota_0/m4_10200_n19780# ota_0/gnda 11.50fF
-C106 ota_0/vdda ota_0/x 3.99fF
-C107 pseudo_0/pseudo_bias_0/gnda pseudo_0/pseudo_bias_0/m1_n1680_n10320# 18.88fF
-C108 pseudo_0/pseudo_bias_0/gnda pseudo_0/pseudo_bias_0/ib 125.14fF
-C109 ota_0/x ota_0/ib 13.01fF
-C110 pseudo_0/pseudo_bias_0/vdda pseudo_0/pseudo_bias_0/xa 2.35fF
-C111 pseudo_0/pseudo_pair_0/m2_n740_2260# pseudo_0/pseudo_pair_0/cm 2.10fF
-C112 pseudo_0/pseudo_bias_0/gnda pseudo_0/pseudo_bias_0/m1_n880_n10320# 18.88fF
-C113 ota_0/li_10200_n19840# ota_0/out 38.19fF
-C114 pseudo_0/pseudo_pair_0/m2_n740_2260# pseudo_0/pseudo_pair_0/da 6.86fF
-C115 pseudo_0/pseudo_bias_0/m1_n1680_n10320# pseudo_0/pseudo_bias_0/m1_n2080_n10320# 2.34fF
-C116 pseudo_0/pseudo_bias_0/m1_n480_n10320# pseudo_0/pseudo_bias_0/m1_n880_n10320# 2.34fF
-C117 pseudo_0/pseudo_bias_0/gnda pseudo_0/pseudo_bias_0/m5_n1880_n10320# 18.82fF
-C118 pseudo_0/pseudo_bias_0/vdda pseudo_0/pseudo_bias_0/ib 24.97fF
-C119 ota_0/li_10200_n19840# ota_0/gnda 345.92fF
-C120 ota_0/li_10200_n19840# ota_0/m4_10260_n6000# 5.43fF
-C121 pseudo_0/pseudo_bias_0/ya pseudo_0/pseudo_bias_0/xa 16.70fF
-C122 ota_0/inp ota_0/inm 16.47fF
-C123 pseudo_0/pseudo_pair_0/ga pseudo_0/pseudo_pair_0/cm 15.01fF
-Xpseudo_0/pseudo_pair_0 pseudo_0/pseudo_pair_0/ga pseudo_0/pseudo_pair_0/da ota_0/vssa
-+ ota_0/vssa pseudo_0/pseudo_pair_0/gb pseudo_0/pseudo_pair_0/db ota_0/vssa ota_0/vssa
-+ pseudo_0/pseudo_pair_0/cm ota_0/vssa pseudo_pair
-Xpseudo_0/pseudo_bias_0 pseudo_0/pseudo_bias_0/ib pseudo_0/pseudo_bias_0/xa pseudo_0/pseudo_bias_0/ya
-+ pseudo_0/pseudo_bias_0/xb pseudo_0/pseudo_bias_0/yb pseudo_0/pseudo_bias_0/vdda
-+ pseudo_0/pseudo_bias_0/gnda ota_0/vssa pseudo_bias
-Xcap_1_10_0 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd cap_1_10
-Xcap_1_10_1 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd cap_1_10
-Xcap_1_10_2 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd cap_1_10
-Xcap_1_10_3 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd cap_1_10
+.subckt p8_1 D G S B SUB
+X0 S G D B sky130_fd_pr__pfet_01v8_lvt ad=1.2e+13p pd=5.6e+07u as=1.2e+13p ps=5.6e+07u w=3e+06u l=8e+06u
+X1 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X2 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X3 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X4 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X5 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X7 S G D B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+.subckt p1_8 D G S B SUB
+X0 D G a7 B sky130_fd_pr__pfet_01v8_lvt ad=1.5e+12p pd=7e+06u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X1 a6 G a5 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X2 S G a1 B sky130_fd_pr__pfet_01v8_lvt ad=1.5e+12p pd=7e+06u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X3 a6 G a7 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X4 a2 G a3 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=3e+12p ps=1.4e+07u w=3e+06u l=8e+06u
+X5 a2 G a1 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X6 a4 G a5 B sky130_fd_pr__pfet_01v8_lvt ad=3e+12p pd=1.4e+07u as=0p ps=0u w=3e+06u l=8e+06u
+X7 a4 G a3 B sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+.ends
+
+.subckt pseudo_bias ib xa ya xb yb vdda gnda vssa
+Xp8_1_0 vdda ib vdda vdda vssa p8_1
+Xp8_1_1 ya xa vssa vdda vssa p8_1
+Xp8_1_2 ib ib vdda vdda vssa p8_1
+Xp8_1_3 yb xb vssa vdda vssa p8_1
+Xp8_1_4 vdda ib vdda vdda vssa p8_1
+Xp8_1_5 yb xb vssa vdda vssa p8_1
+Xp8_1_6 vdda ib vdda vdda vssa p8_1
+Xp8_1_7 ib ib vdda vdda vssa p8_1
+Xp8_1_8 ya xa vssa vdda vssa p8_1
+Xp8_1_9 vdda ib vdda vdda vssa p8_1
+Xp1_8_0 ya ib vdda vdda vssa p1_8
+Xp1_8_1 yb ib vdda vdda vssa p1_8
+Xp1_8_2 yb ib vdda vdda vssa p1_8
+Xp1_8_3 ya ib vdda vdda vssa p1_8
+.ends
+
+.subckt pseudo VSUBS pseudo_pair_0/pb
+Xpseudo_pair_0 pseudo_pair_0/ga pseudo_pair_0/da pseudo_pair_0/pb pseudo_pair_0/pb
++ pseudo_pair_0/gb pseudo_pair_0/db pseudo_pair_0/pb pseudo_pair_0/pb pseudo_pair_0/cm
++ pseudo_pair_0/pb pseudo_pair
+Xpseudo_bias_0 pseudo_bias_0/ib pseudo_bias_0/xa pseudo_bias_0/ya pseudo_bias_0/xb
++ pseudo_bias_0/yb pseudo_bias_0/vdda pseudo_bias_0/gnda pseudo_pair_0/pb pseudo_bias
+.ends
+
+.subckt cap_1_10 A B C gnd VSUBS
+X0 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X1 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X2 A C sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X3 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X4 A A sky130_fd_pr__cap_mim_m3_2 l=1.4e+06u w=1e+07u
+X5 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X6 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X7 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X8 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X9 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X10 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X11 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X12 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X13 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X14 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X15 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X16 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X17 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X18 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X19 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X20 A A sky130_fd_pr__cap_mim_m3_2 l=1.4e+06u w=1e+07u
+X21 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X22 A B sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X23 A C sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=1e+07u
+X24 A A sky130_fd_pr__cap_mim_m3_2 l=1.4e+06u w=1e+07u
+X25 A A sky130_fd_pr__cap_mim_m3_2 l=1.4e+06u w=1e+07u
+.ends
+
+.subckt n1_8 D G S B
+X0 a5 G a6 B sky130_fd_pr__nfet_01v8_lvt ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X1 a1 G a2 B sky130_fd_pr__nfet_01v8_lvt ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X2 a1 G S B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X3 a7 G D B sky130_fd_pr__nfet_01v8_lvt ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=8e+06u
+X4 a3 G a4 B sky130_fd_pr__nfet_01v8_lvt ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
+X5 a5 G a4 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X6 a3 G a2 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X7 a7 G a6 B sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+.ends
+
+.subckt ota inm inp out ib vdda gnda vssa
+Xp1_8_5 y inp x vdda vssa p1_8
+Xp1_8_31 y inp x vdda vssa p1_8
+Xp1_8_42 ib ib z vdda vssa p1_8
+Xp1_8_20 ib ib z vdda vssa p1_8
+Xp1_8_53 vdda ib vdda vdda vssa p1_8
+Xp1_8_11 out inm x vdda vssa p1_8
+Xp1_8_10 y inp x vdda vssa p1_8
+Xp1_8_33 x ib vdda vdda vssa p1_8
+Xp1_8_32 x ib vdda vdda vssa p1_8
+Xp1_8_6 vdda ib z vdda vssa p1_8
+Xp1_8_22 vdda ib z vdda vssa p1_8
+Xp1_8_21 vdda ib z vdda vssa p1_8
+Xp1_8_43 vdda ib z vdda vssa p1_8
+Xp1_8_12 out inm x vdda vssa p1_8
+Xp1_8_34 x ib vdda vdda vssa p1_8
+Xp1_8_7 ib ib z vdda vssa p1_8
+Xp1_8_23 ib ib z vdda vssa p1_8
+Xp1_8_45 ib ib z vdda vssa p1_8
+Xp1_8_44 vdda ib z vdda vssa p1_8
+Xp1_8_13 y inp x vdda vssa p1_8
+Xn1_8_10 out y vssa vssa n1_8
+Xp1_8_24 out inm x vdda vssa p1_8
+Xp1_8_8 x ib vdda vdda vssa p1_8
+Xp1_8_35 x ib vdda vdda vssa p1_8
+Xp1_8_46 ib ib z vdda vssa p1_8
+Xp1_8_14 out inm x vdda vssa p1_8
+Xp1_8_25 y inp x vdda vssa p1_8
+Xn1_8_11 out y vssa vssa n1_8
+Xp1_8_9 x ib vdda vdda vssa p1_8
+Xp1_8_36 x ib vdda vdda vssa p1_8
+Xp1_8_47 ib ib z vdda vssa p1_8
+Xp1_8_48 vdda y vdda vdda vssa p1_8
+Xp1_8_15 y inp x vdda vssa p1_8
+Xp1_8_26 out inm x vdda vssa p1_8
+Xn1_8_12 out y vssa vssa n1_8
+Xp1_8_37 x ib vdda vdda vssa p1_8
+Xn1_8_13 y y vssa vssa n1_8
+Xn1_8_14 y y vssa vssa n1_8
+Xp1_8_27 out inm x vdda vssa p1_8
+Xp1_8_49 vdda ib vdda vdda vssa p1_8
+Xp1_8_16 x ib vdda vdda vssa p1_8
+Xp1_8_38 x ib vdda vdda vssa p1_8
+Xp1_8_28 out inm x vdda vssa p1_8
+Xn1_8_15 y y vssa vssa n1_8
+Xp1_8_17 x ib vdda vdda vssa p1_8
+Xp1_8_39 x ib vdda vdda vssa p1_8
+Xn1_8_16 vssa y vssa vssa n1_8
+Xp1_8_29 y inp x vdda vssa p1_8
+Xp1_8_18 x ib vdda vdda vssa p1_8
+Xn1_8_17 vssa y vssa vssa n1_8
+Xp1_8_19 x ib vdda vdda vssa p1_8
+Xn1_8_0 y y vssa vssa n1_8
+Xn1_8_1 out y vssa vssa n1_8
+Xn1_8_2 y y vssa vssa n1_8
+Xn1_8_3 out y vssa vssa n1_8
+Xn1_8_4 out y vssa vssa n1_8
+Xn1_8_5 y y vssa vssa n1_8
+Xn1_8_6 out y vssa vssa n1_8
+Xn1_8_7 y y vssa vssa n1_8
+Xn1_8_8 out y vssa vssa n1_8
+Xn1_8_9 y y vssa vssa n1_8
+Xp1_8_0 ib ib z vdda vssa p1_8
+Xp1_8_50 vdda ib vdda vdda vssa p1_8
+Xp1_8_1 vdda ib z vdda vssa p1_8
+Xp1_8_51 vdda y vdda vdda vssa p1_8
+Xp1_8_2 x ib vdda vdda vssa p1_8
+Xp1_8_40 vdda ib z vdda vssa p1_8
+Xp1_8_4 out inm x vdda vssa p1_8
+Xp1_8_30 y inp x vdda vssa p1_8
+Xp1_8_3 x ib vdda vdda vssa p1_8
+Xp1_8_52 vdda ib vdda vdda vssa p1_8
+Xp1_8_41 vdda ib z vdda vssa p1_8
+.ends
+
+
+* Top level circuit lna
+
+Xpseudo_0 ota_0/vssa ota_0/vssa pseudo
+Xcap_1_10_0 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd ota_0/vssa cap_1_10
+Xcap_1_10_1 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd ota_0/vssa cap_1_10
+Xcap_1_10_2 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd ota_0/vssa cap_1_10
+Xcap_1_10_3 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd ota_0/vssa cap_1_10
+Xcap_1_10_4 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd ota_0/vssa cap_1_10
+Xcap_1_10_5 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd ota_0/vssa cap_1_10
 Xota_0 ota_0/inm ota_0/inp ota_0/out ota_0/ib ota_0/vdda ota_0/gnda ota_0/vssa ota
-Xcap_1_10_5 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd cap_1_10
-Xcap_1_10_4 cap_1_10_5/A cap_1_10_5/B cap_1_10_5/C cap_1_10_5/gnd cap_1_10
-C124 ota_0/gnda w_10720_16720# 19.78fF
-C125 ota_0/m4_10260_n6000# w_10720_16720# 12.30fF **FLOATING
-C126 ota_0/li_10200_n19840# w_10720_16720# 336.93fF **FLOATING
-C127 ota_0/vdda w_10720_16720# 24.54fF
-C128 ota_0/inm w_10720_16720# 5.97fF
-C129 ota_0/out w_10720_16720# 3.39fF
-C130 ota_0/y w_10720_16720# 8.80fF
-C131 ota_0/ib w_10720_16720# 30.16fF
-C132 ota_0/inp w_10720_16720# 5.66fF
-C133 cap_1_10_5/gnd w_10720_16720# 4.33fF
-C134 pseudo_0/pseudo_bias_0/gnda w_10720_16720# 19.59fF
-C135 pseudo_0/pseudo_bias_0/m5_n2680_n10320# w_10720_16720# 2.42fF **FLOATING
-C136 pseudo_0/pseudo_bias_0/m1_n480_n10320# w_10720_16720# 3.98fF **FLOATING
-C137 pseudo_0/pseudo_bias_0/vdda w_10720_16720# 17.19fF
-C138 pseudo_0/pseudo_bias_0/xa w_10720_16720# 2.88fF
-C139 pseudo_0/pseudo_bias_0/ib w_10720_16720# 5.55fF
-C140 pseudo_0/pseudo_bias_0/xb w_10720_16720# 3.16fF
-C141 pseudo_0/pseudo_pair_0/ga w_10720_16720# 2.19fF
-C142 pseudo_0/pseudo_pair_0/gb w_10720_16720# 2.07fF
-C143 pseudo_0/pseudo_pair_0/dw_n360_n260# w_10720_16720# 36.91fF **FLOATING
+.end
+

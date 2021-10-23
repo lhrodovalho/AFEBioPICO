@@ -27,7 +27,7 @@ CL out gnda 1p
 
 	dc vin -5m 5m 100u
 	wrdata ../data/ota_tb_open_dc.txt v(out)
-	plot v(out)
+	plot v(in) v(out)  xlimit -4m 4m ylimit 0.0 1.8
 	plot deriv(out) ylog
 
     

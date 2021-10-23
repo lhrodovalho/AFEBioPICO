@@ -11,8 +11,8 @@ vssa vssa 0 0.0
 egnda gnda vssa vdda vssa 0.5
 
 * input signals
-vin in gnda dc 0 ac 1 SINE(0 0.6 500 0 0 0)
-IB ib vss 10u
+vin in gnda dc 0 ac 1 SINE(0 0.9 100 0 0 0)
+IB ib vss 10n
 
 
 * DUT
@@ -32,7 +32,7 @@ RL out gnda 1Meg
 	plot vdb(out)
 	plot phase(out)*180/PI
 	
-	tran 100u 10m
+	tran 100u 20m
 	wrdata ../data/ampop_tb_buf_tran.txt v(in) v(out) i(vdda)
 	plot v(in) v(out)
 	plot i(vdda)
