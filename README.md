@@ -68,6 +68,127 @@ All these analog circuit blocks have in common the need of a biasing current. We
 - [Current Reference (SBCS)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/SBCS/SBCS.md)
 - [Analog Mux (AMUX)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/AMUX/AMUX.md)
 
+
+### Layouts
+#### AFE - 700 x 350 um
+![image](./layouts/afe.png)
+
+
+#### LNA
+---
+![image](./layouts/lna.png)
+
+LNA layout
+
+---
+![image](./layouts/pseudo.png)
+
+Matched Pseudo-Resistor layout
+
+---
+![image](./layouts/ota.png)
+
+OTA layout
+
+#### VGA
+![image](./layouts/opamp.png)
+
+OPAMP layout
+
+#### SBCS
+![image](./layouts/sbcs.png)
+
+Self-Biased Current Source layout
+
+
+### Simulation Results
+
+* All simulated results from extracted netlists from .mag files
+* Testbenches can be found in the lib/\*/ngspice folder
+
+#### Pseudo-Resistor
+
+![image](./lib/pseudo/plots/pseudo_tb_sweep.png)
+
+Pseudo-resistor biased with 0.1, 1 and 10 nA
+* Highly non-linear
+* Biasing is necessary to calibrate pseudoresistor after process variability is considered.
+
+#### OTA
+
+![image](./lib/ota/plots/ota_tb_open_dc.png)
+
+OTA in-out DC characteristic curve.
+* It is a simple differential pair and has limited output voltage excursion, but it already limited by the pseudo-resistor excursion range
+
+#### LNA
+
+* The LNA achieves a adequate voltage gain and cutoff frequencies, but simulation with MiM capacitors models is unstable.
+* The MiM LNA version OTA inputs are not converging to the virtual ground at 0.9 V (Vdd/2), so the voltage drop at the pseudoresistor is outside its proper range
+
+![image](./lib/lna/plots/lna_tb_ac_gain_idealcap_and_mim.png)
+
+Idead and MiM capacitor AC simulation results
+
+
+![image](./lib/lna/plots/lna_idealcap.png)
+
+Ideal capacitor transisent simulation
+
+![image](./lib/lna/plots/lna_tb_tran_mimcap.png)
+
+MiM capacitor transisent simulation
+
+#### VGA - OPAMP
+![image](./lib/opamp/plots/opamp_tb_open_dc.png)
+
+Open-loop in-out DC characteristic curve
+* 500 uV instrinsic voltage offset
+* rail-to-rail output
+
+![image](./lib/opamp/plots/opamp_tb_load_V.png)
+
+Voltage follower with varying current load with input at 0.9 V and output connected to a varying current source/sink
+* Can drive up to 300 uA load, both positive and negative
+
+
+![image](./lib/opamp/plots/opamp_tb_inv_ac_gain.png)
+
+Open-loop AC gain
+
+![image](./lib/opamp/plots/opamp_tb_inv_ac_phase.png)
+
+Open-loop AC phase
+
+* 80 dB DC small-signal voltage gain
+* 3.3 kHz GBW for 10 pF load and 10 nA biasing current
+* 47° phase margin
+* 300 nA quiescent current
+
+![image](./images/opamp15.gif)
+
+Non-Inverting amplifier used for VGA
+* R1: 1 Meg, R2: 9 Meg
+* R1 is should be a digitally programmable resistor for VGA application
+
+![image](./lib/opamp/plots/opamp_tb_inv_dc.png)
+Non-inverting amplifier DC characteristic curve
+
+![image](./lib/opamp/plots/opamp_tb_inv_ac_gain.png)
+Non-inverting amplifier AC gain
+
+![image](./lib/opamp/plots/opamp_tb_inv_ac_phase.png)
+Non-inverting amplifier AC phase
+
+![image](./lib/opamp/plots/opamp_tb_inv_tran.png)
+Non-inverting amplifier transient simulation results
+
+
+
+
+
+
+
 ### Target Performance Summary
 
 
