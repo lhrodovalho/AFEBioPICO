@@ -73,10 +73,16 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 ### Layouts
 #### AFE - 700 x 350 um
+* All layouts use common-centroid technique
+* All wires are shielded, as they are very long and parasitic capacitance between then would be significant. Provides extra protection for noise. Very large parasitic capacitors between signals and the ground plane.
+* All designs were made with transistor arrays [3] of 1:8, 4:2 and 8:1 matrices. Each single PMOS single transistor is 3 X 8 um, and each single NMOS is 1 x 8 um.
+
 ![image](./layouts/afe.png)
 
 
 #### LNA
+* LNA based on [1] with tunable-pseudo resistors [6].
+* The LNA OTA is a simple single-stage amplifier with differential pair.and current mirror active load.
 ---
 ![image](./layouts/lna.png)
 
@@ -147,6 +153,9 @@ Ideal capacitor transisent simulation
 MiM capacitor transisent simulation
 
 #### VGA - OPAMP
+* VGA as non-inverting amplifier with variable resistive feedback.
+* Class AB opamp based on [2], but without Rail-to-Rail Input excursion.
+
 ![image](./lib/opamp/plots/opamp_tb_open_dc.png)
 
 Open-loop in-out DC characteristic curve
@@ -179,15 +188,19 @@ Non-Inverting amplifier used for VGA
 * R1 is should be a digitally programmable resistor for VGA application
 
 ![image](./lib/opamp/plots/opamp_tb_ninv_dc.png)
+
 Non-inverting amplifier DC characteristic curve
 
 ![image](./lib/opamp/plots/opamp_tb_inv_ac_gain.png)
+
 Non-inverting amplifier AC gain
 
 ![image](./lib/opamp/plots/opamp_tb_inv_ac_phase.png)
+
 Non-inverting amplifier AC phase
 
 ![image](./lib/opamp/plots/opamp_tb_inv_tran.png)
+
 Non-inverting amplifier transient simulation results
 
 #### SBCS
@@ -208,14 +221,11 @@ Self-Biasing Current Source total current consumption.
 
 Self-Biasing Current Source temperature variability
 * PTAT behaviour
-
-
-
-
-
-
-
-
+* 372 nA total current
+* 36 nA output current
+* 1.1 V minimum power supply
+* VDD stability: 2.9\%/V 
+* Temp. stability: 4462 ppm/°C
 
 
 ### Target Performance Summary
@@ -234,13 +244,14 @@ Self-Biasing Current Source temperature variability
 Status and Issues
 ============
 
-* LNA -doesn't work- with MiM capacitors. Perhaps it is a problem with the models.
+* LNA **doesn't work** with MiM capacitors. Perhaps it is a problem with the models.
 * No dual MiM capacitors pass DRC.
-* -Noise simulation doesn't work- with extracted netlists.
+* **Noise simulation doesn't work** with extracted netlists.
 * No Monte carlo or corner simulations for extracted netlists
 * Resistive feedback and switches aren't finished. VGA gain is fixed.
 * No current DAC for pseudo-resistor calibration. Individual blocks will be biased externally.
 * No digital control for tuning.
+* Self-Biased Current Source was made with very small transistor lenghts and VDD stability is lackluster. Should be remade.
 * Top level blocks aren't routed
 
 
@@ -280,5 +291,7 @@ References
 [4] Krummenacher, Francois, and Norbert Joehl. "A 4-MHz CMOS continuous-time filter with on-chip automatic tuning." IEEE Journal of Solid-State Circuits 23.3 (1988): 750-758.
 
 [5] Serra-Graells, Francisco, and Jose Luis Huertas. "Sub-1-V CMOS proportional-to-absolute temperature references." IEEE Journal of Solid-State Circuits 38.1 (2003): 84-88.
+
+[6] Guglielmi, Emanuele, et al. "High-value tunable pseudo-resistors design." IEEE Journal of Solid-State Circuits 55.8 (2020): 2094-2105.
 
 
