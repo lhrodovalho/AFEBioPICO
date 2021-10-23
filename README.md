@@ -20,8 +20,8 @@ Table of contents
     * [Motivation](#Motivation)
   * [Description](#Description)
     * [Block Diagram](#Block-Diagram)
-    * [Schematics](#Schematics)
-    * [Layouts](#Layouts)
+<!--    * [Schematics](#Schematics) -->
+    * [Schematics and Layouts](#Schematics-and-Layouts)
     * [Simulation Results](#Simulation-Results)
     * [Target Performance Summary](#Target-Performance-Summary)
   * [Team Members](#Team-Members)  
@@ -61,6 +61,7 @@ Finally, the VGA output signal must be filtered to limit the noise and interfere
 All these analog circuit blocks have in common the need of a biasing current. We chose a resistorless `Self-Biased Current Reference Source (SBCS)` [5], since integrated resistors exhibit a larger process variability than MOS transistors.
 
 
+<!--
 ### Schematics
 
 - [Low Noise Amplifier (LNA)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/LNA/LNA.md)
@@ -69,9 +70,9 @@ All these analog circuit blocks have in common the need of a biasing current. We
 - [Pseudo-Resistor](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/PR/PR.md)
 - [Current Reference (SBCS)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/SBCS/SBCS.md)
 - [Analog Mux (AMUX)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/AMUX/AMUX.md)
+-->
 
-
-### Layouts
+### Schematics and Layouts
 #### AFE - 700 x 350 um
 * All layouts use common-centroid technique
 * All wires are shielded, as they are very long and parasitic capacitance between then would be significant. Provides extra protection for noise. Very large parasitic capacitors between signals and the ground plane.
@@ -80,44 +81,72 @@ All these analog circuit blocks have in common the need of a biasing current. We
 ![image](./layouts/afe.png)
 
 
-#### LNA
+#### Low-Noise Amplifier (LNA)
 * LNA based on [1] with tunable-pseudo resistors [6].
 * The LNA OTA is a simple single-stage amplifier with differential pair.and current mirror active load.
 ---
+![image](./images/lna_sch.png)
+
+LNA schematic
+
 ![image](./layouts/lna.png)
 
 LNA layout
 
 ---
+![image](./images/pseudo_sch.png)
+
+Tunable pseudo-resistor [6] schematic
+
+![image](./images/pseudo_bias.png)
+
+Tunable pseudo-resistor biasing circuit schematic
+
 ![image](./layouts/pseudo.png)
 
-Matched Pseudo-Resistor layout
+Matched Pseudo-Resistors and biasing circuit layout
 
 ---
+![image](./image/ota_sch.png)
+
+OTA schematic
+
+
 ![image](./layouts/ota.png)
 
 OTA layout
 
-#### VGA
+---
+#### Variable Gain Amplifier (VGA)
+
+![image](./images/opamp15.gif)
+
+VGA based on non-inverting amplifier with variable resistive feedback
 
 ![image](./images/opamp_sch.jpeg)
+
+Class AB OPAMP schematic, based on [2]
 
 ![image](./layouts/opamp.png)
 
 OPAMP layout
 
-#### SBCS
+---
+#### Self-Biased Current Source (SBCS)
 ![image](./images/irefa.png)
+
+Self-Biased Current Source schematic
 
 ![image](./layouts/sbcs.png)
 
 Self-Biased Current Source layout
 
-
+---
 ### Simulation Results
 
 * All simulated results from extracted netlists from .mag files
-* Testbenches can be found in the lib/\*/ngspice folder
+* Testbenches can be found in the lib/\*/ngspice folder, as simulation scripts only.
+* Xschem circuits and simulations are outdated.
 
 #### Pseudo-Resistor
 
