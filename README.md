@@ -148,7 +148,7 @@ Open-loop in-out DC characteristic curve
 * 500 uV instrinsic voltage offset
 * rail-to-rail output
 
-![image](./lib/opamp/plots/opamp_tb_load_V.png)
+![image](./lib/opamp/plots/opamp_tb_load_v.png)
 
 Voltage follower with varying current load with input at 0.9 V and output connected to a varying current source/sink
 * Can drive up to 300 uA load, both positive and negative
@@ -189,7 +189,7 @@ Non-inverting amplifier transient simulation results
 
 ![image](./lib/sbcs/plots/sbcs_io.png)
 
-Self-Biasing Current Source output current.
+Self-Biasing Current Source output current X VDD.
 
 ![image](./lib/sbcs/plots/sbsc_psrr.png)
 
@@ -225,6 +225,18 @@ Self-Biasing Current Source temperature variability
 | Gain            | 10-1000 V/V                  |
 | Bandwidth       |	0.5-100 Hz                   |
 | THD             |	0.1 % @ 1 V<sub>pp</sub>     |
+
+Status and Issues
+============
+
+* LNA doesn't work with MiM capacitors. Perhaps it is a problem with the models.
+* No dual MiM capacitors pass DRC.
+* Noise simulation doesn't work with extracted netlists.
+* No Monte carlo or corner simulations for extracted netlists
+* Resistive feedback and switches aren't finished. VGA gain is fixed.
+* No current DAC for pseudo-resistor calibration. Currently, blocks will be biased externally.
+* Top level blocks aren't routed
+
 
 Team members
 ============
