@@ -20,7 +20,6 @@ Table of contents
     * [Motivation](#Motivation)
   * [Description](#Description)
     * [Block Diagram](#Block-Diagram)
-<!--    * [Schematics](#Schematics) -->
     * [Schematics and Layouts](#Schematics-and-Layouts)
     * [Simulation Results](#Simulation-Results)
     * [Target Performance Summary](#Target-Performance-Summary)
