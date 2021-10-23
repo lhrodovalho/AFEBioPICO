@@ -178,7 +178,7 @@ Non-Inverting amplifier used for VGA
 * R1: 1 Meg, R2: 9 Meg
 * R1 is should be a digitally programmable resistor for VGA application
 
-![image](./lib/opamp/plots/opamp_tb_inv_dc.png)
+![image](./lib/opamp/plots/opamp_tb_ninv_dc.png)
 Non-inverting amplifier DC characteristic curve
 
 ![image](./lib/opamp/plots/opamp_tb_inv_ac_gain.png)
