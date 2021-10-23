@@ -191,15 +191,15 @@ Non-Inverting amplifier used for VGA
 
 Non-inverting amplifier DC characteristic curve
 
-![image](./lib/opamp/plots/opamp_tb_inv_ac_gain.png)
+![image](./lib/opamp/plots/opamp_tb_ninv_ac_gain.png)
 
 Non-inverting amplifier AC gain
 
-![image](./lib/opamp/plots/opamp_tb_inv_ac_phase.png)
+![image](./lib/opamp/plots/opamp_tb_ninv_ac_phase.png)
 
 Non-inverting amplifier AC phase
 
-![image](./lib/opamp/plots/opamp_tb_inv_tran.png)
+![image](./lib/opamp/plots/opamp_tb_ninv_tran.png)
 
 Non-inverting amplifier transient simulation results
 
@@ -252,6 +252,7 @@ Status and Issues
 * No current DAC for pseudo-resistor calibration. Individual blocks will be biased externally.
 * No digital control for tuning.
 * Self-Biased Current Source was made with very small transistor lenghts and VDD stability is lackluster. Should be remade.
+* Filter block was scraped, as cutoff frequencies are now controlled by tuning the LNA OTA and pseudoresistor.
 * Top level blocks aren't routed
 
 
