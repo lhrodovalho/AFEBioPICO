@@ -107,7 +107,7 @@ Tunable pseudo-resistor biasing circuit schematic
 Matched Pseudo-Resistors and biasing circuit layout
 
 ---
-![image](./image/ota_sch.png)
+![image](./images/ota_sch.png)
 
 OTA schematic
 
@@ -283,6 +283,7 @@ Status and Issues
 * Self-Biased Current Source was made with very small transistor lenghts and VDD stability is lackluster. Should be remade.
 * Filter block was scraped, as cutoff frequencies are now controlled by tuning the LNA OTA and pseudoresistor.
 * Top level blocks aren't routed
+* Documentation is extremely incomplete and some images were sourced from outside without proper references. Images must be updated.
 
 
 Team members
