@@ -60,7 +60,7 @@ x1 x x b b vssa p1_8
 	cfp xp  gnda 1p
 	cim inm xm   10p 
 	cfm xm  out  1p
-	
+		
 	xswp xp set gnda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
 	xswm xm set out  vdda sky130_fd_pr__pfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
 	vsw set vssa dc 1.8 pulse(0 1.8 1 10u 1m 1 1)
@@ -71,8 +71,8 @@ x1 x x b b vssa p1_8
 
 * lna + feedback
 	Xamp xm xp out ib vdda gnda vssa ota
-	xcp xp inp gnda gnda vssa cap16x
-	xcm xm inm out  gnda vssa cap16x
+	xcp xp inp gnda gnda vssa cap4x
+	xcm xm inm out  gnda vssa cap4x
 
 	X0 ga da xm out gb db xp gnda gnda vssa pseudo_pair
 	x1 ib da ga db gb vdda        gnda vssa pseudo_bias
