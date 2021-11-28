@@ -1,0 +1,45 @@
+* OpAmp open-loop dc testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/opamp_core.spice"
+.include "./opamp_.spice"
+
+* supply voltages
+vdda  vdda 0 3.3
+vssa  vssa 0 0.0
+egnda gnda vssa vdda vssa 0.5
+
+* input signals
+vin in gnda dc 0 ac 1
+eip ip gnda in gnda  1.0
+eim im gnda in gnda  0.0
+
+* DUT
+*x0 gna gnb gpb gpa x ip im yp ym zn zp dn dp out vdda vssa opamp_core
+x1 gpa gpb gnb gna x ip im yp ym z dp dn out vdda vssa opamp_
+ib vdda gnb 10n
+cl out gnda 1p
+ll out gnda 1T
+
+cmp out dp 10p
+cmn out dn 10p
+
+
+.option gmin=1e-12
+.control
+
+	op
+	print gpa gpb gnb gna i(vdda)
+
+	ac dec 10 1m 1Meg
+	plot vdb(out)
+	plot cphase(out)*180/PI
+	
+*	noise v(out) vin dec 10 1 100
+*	print inoise_total onoise_total
+
+.endc
+
+.end

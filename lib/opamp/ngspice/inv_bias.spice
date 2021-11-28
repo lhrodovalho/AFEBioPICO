@@ -1,0 +1,59 @@
+* NGSPICE file created from inv_bias.ext - technology: sky130A
+
+.subckt inv_bias bpa bpb gnda na nb qa qb vdda vddx vssa xa xb
+X0 xb2 xb xb1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X1 qa6 qa vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X2 qa4 qa qa5 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X3 nb1 nb vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X4 nb3 nb nb2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X5 bpb xa xa3 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X6 xb qb qb3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X7 xa2 xa xa1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X8 qb2 qb qb1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X9 vdda bpa bpa1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X10 bpa2 bpa bpa3 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X11 na na na3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X12 qa1 qa vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X13 na2 na na1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X14 xb1 xb vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X15 xb3 xb xb2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X16 qa qa qa4 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X17 qa2 qa qa1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X18 bpb nb nb3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X19 qa5 qa qa6 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X20 nb2 nb nb1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X21 xa1 xa vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X22 xa3 xa xa2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X23 qb1 qb vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X24 qb3 qb qb2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X25 qa3 qa qa2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X26 bpa3 bpa vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X27 bpa1 bpa bpa2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X28 qa qa qa3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X29 na1 na vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X30 na3 na na2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X31 xb xb xb3 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+C0 bpb vddx 23.09fF
+C1 bpa gnda 1.57fF
+C2 vddx vdda 49.28fF
+C3 bpb vdda 3.61fF
+C4 nb vddx 2.68fF
+C5 gnda na 1.08fF
+C6 qa vddx 6.00fF
+C7 xa gnda 1.57fF
+C8 qb vdda 2.21fF
+C9 qa vdda 1.46fF
+C10 bpa vddx 27.43fF
+C11 bpa vdda 6.89fF
+C12 gnda xb 1.57fF
+C13 xa vddx 3.08fF
+C14 xa vdda 27.83fF
+C15 gnda vddx 13.65fF
+C16 gnda vdda 21.07fF
+C17 gnda nb 1.08fF
+C18 vddx xb 1.33fF
+C19 xb vdda 29.59fF
+C20 qb gnda 1.08fF
+C21 qa gnda 46.13fF
+.ends
+

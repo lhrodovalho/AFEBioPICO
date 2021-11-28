@@ -1,0 +1,93 @@
+.subckt n1_1 d g s b
+X1 d g s b sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=2.88e+15p ps=1.056e+10u w=1e+06u l=2e+06u m=8
+.ends
+
+.subckt n1_2 d g s b
+xd d g x b n1_1
+xs x g s b n1_1
+.ends
+
+.subckt n1_4 d g s b
+xd d g x b n1_2
+xs x g s b n1_2
+.ends
+
+.subckt n2_1 d g s b
+xd d g s b n1_1
+xs d g s b n1_1
+.ends
+
+.subckt n4_1 d g s b
+xd d g s b n2_1
+xs d g s b n2_1
+.ends
+
+.subckt n8_1 d g s b
+xd d g s b n4_1
+xs d g s b n4_1
+.ends
+
+.subckt p1_1 d g s b
+X1 d g s v sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=9.36e+15p ps=2.424e+10u w=3e+06u l=2e+06u m=8
+.ends
+
+.subckt p1_2 d g s b
+xd d g x b p1_1
+xs x g s b p1_1
+.ends
+
+.subckt p1_4 d g s b
+xd d g x b p1_2
+xs x g s b p1_2
+.ends
+
+.subckt p2_1 d g s b
+xd d g s b p1_1
+xs d g s b p1_1
+.ends
+
+.subckt p4_1 d g s b
+xd d g s b p2_1
+xs d g s b p2_1
+.ends
+
+.subckt p8_1 d g s b
+xd d g s b p4_1
+xs d g s b p4_1
+.ends
+
+.subckt opamp_ gpa gpb gnb gna x ip im yp ym z dp dn out vdda vssa
+
+x0nb gnb gnb gna  vssa n8_1
+x0na gna gna vssa vssa n1_4
+
+x1pa gpa gpa vdda vdda p1_4
+x1pb gpb gpb gpa  vdda p8_1
+x1na gpb gna vssa vssa n1_4
+
+x2pa x   gpa vdda vdda p1_4
+x2pb yp  ip  x    vdda p8_1
+
+x3pa x   gpa vdda vdda p1_4
+x3pb ym  im  x    vdda p8_1
+
+x4pa pl  gpa vdda vdda p1_4
+x4pb z   gpa pl   vdda p8_1
+x4nb z   z   yp   vssa n8_1
+x4na yp  z   vssa vssa n1_4
+
+x5pa pr  gpa vdda vdda p1_4
+x5pb dp  gpa pr   vdda p8_1
+x5nb dn  z   ym   vssa n8_1
+x5na ym  z   vssa vssa n1_4
+
+x6n dp  dp   j  vssa n8_1
+x6p dn  dn   j  j    p8_1
+
+x7n vdda dp  out vssa n8_1
+x7p vssa dn  out j    p8_1
+
+
+.ends
+
+

@@ -1,0 +1,77 @@
+timestamp 1637788580
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_g5v0d10v5 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_20v0 l=l w=w a1=as a2=ad p1=ps p2=pd
+parameters sky130_fd_pr__pfet_g5v0d10v5 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_20v0 l=l w=w a1=as a2=ad p1=ps p2=pd
+port "dn" 3 10400 -2160 10480 -2080 m2
+port "out" 2 10400 -2000 10480 -1920 m2
+port "dp" 1 10400 -1840 10480 -1760 m2
+port "vdda" 6 -320 -240 80 -160 m5
+port "vssa" 7 960 -240 1360 -160 m5
+node "m2_n480_n2480#" 17 5136.64 -480 -2480 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 876800 22080 0 0 0 0 0 0 0 0
+node "m2_n480_n1520#" 17 4956.64 -480 -1520 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 876800 22080 0 0 0 0 0 0 0 0
+node "m2_10000_n1360#" 1 184.24 10000 -1360 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38400 1120 0 0 0 0 0 0 0 0
+node "dn" 4420 29427.2 10400 -2160 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2304000 24320 0 0 512000 15360 1126400 30720 876800 22080 0 0 0 0 0 0 0 0
+node "out" 14092 73211.2 10400 -2000 m2 0 0 0 0 0 0 0 0 0 0 0 0 384000 7040 1152000 13440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1433600 40960 4057600 112000 2630400 66240 2419200 67200 0 0 0 0 0 0
+node "dp" 4744 22224.5 10400 -1840 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4864000 37120 0 0 512000 15360 1331200 35840 876800 22080 0 0 0 0 0 0 0 0
+node "vdda" 58957 71976.4 -320 -240 m5 0 0 0 0 12006400 23680 0 0 1843200 46080 0 0 0 0 1200000 14800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2332800 58320 432000 12240 288000 8640 288000 8640 4384000 22720 5760000 32800 0 0
+substrate "vssa" 0 0 960 -240 m5 0 0 0 0 0 0 0 0 0 0 3916800 97600 400000 7600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7075200 169840 144000 5040 144000 5040 147200 5120 4384000 22720 4608000 26240 0 0
+cap "dp" "vdda" 10173.5
+cap "dp" "m2_n480_n1520#" 4098.37
+cap "dn" "vdda" 1648.48
+cap "out" "vdda" 8319.84
+cap "vdda" "m2_n480_n2480#" 548
+cap "out" "m2_n480_n1520#" 7757.52
+cap "m2_10000_n1360#" "vdda" 188.8
+cap "m2_10000_n1360#" "m2_n480_n1520#" 300
+cap "dp" "dn" 2523.33
+cap "out" "dp" 36297.9
+cap "m2_n480_n1520#" "vdda" 548
+cap "out" "dn" 36473.9
+cap "dn" "m2_n480_n2480#" 4098.37
+cap "out" "m2_n480_n2480#" 7757.52
+cap "out" "m2_10000_n1360#" 100
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 9600 -2880 9601 -2879 l=400 w=200 "vssa" "dn" 800 0 "out" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 8960 -2880 8961 -2879 l=400 w=200 "vssa" "dn" 800 0 "vssa" 200 0 "out" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 8320 -2880 8321 -2879 l=400 w=200 "vssa" "dn" 800 0 "out" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 7680 -2880 7681 -2879 l=400 w=200 "vssa" "dn" 800 0 "vssa" 200 0 "out" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 7040 -2880 7041 -2879 l=400 w=200 "vssa" "dn" 800 0 "out" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 6400 -2880 6401 -2879 l=400 w=200 "vssa" "dn" 800 0 "vssa" 200 0 "out" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5760 -2880 5761 -2879 l=400 w=200 "vssa" "dn" 800 0 "out" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5120 -2880 5121 -2879 l=400 w=200 "vssa" "dn" 800 0 "vssa" 200 0 "out" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4480 -2880 4481 -2879 l=400 w=200 "vssa" "dn" 800 0 "out" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3840 -2880 3841 -2879 l=400 w=200 "vssa" "dn" 800 0 "vssa" 200 0 "out" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3200 -2880 3201 -2879 l=400 w=200 "vssa" "dn" 800 0 "out" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2560 -2880 2561 -2879 l=400 w=200 "vssa" "dn" 800 0 "vssa" 200 0 "out" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1920 -2880 1921 -2879 l=400 w=200 "vssa" "dn" 800 0 "out" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1280 -2880 1281 -2879 l=400 w=200 "vssa" "dn" 800 0 "vssa" 200 0 "out" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 640 -2880 641 -2879 l=400 w=200 "vssa" "dn" 800 0 "out" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 0 -2880 1 -2879 l=400 w=200 "vssa" "dn" 800 0 "vssa" 200 0 "out" 200 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 9600 -1080 9601 -1079 l=400 w=600 "vdda" "dp" 800 0 "out" 600 0 "vdda" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 8960 -1080 8961 -1079 l=400 w=600 "vdda" "dp" 800 0 "vdda" 600 0 "out" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 8320 -1080 8321 -1079 l=400 w=600 "vdda" "dp" 800 0 "out" 600 0 "vdda" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 7680 -1080 7681 -1079 l=400 w=600 "vdda" "dp" 800 0 "vdda" 600 0 "out" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 7040 -1080 7041 -1079 l=400 w=600 "vdda" "dp" 800 0 "out" 600 0 "vdda" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 6400 -1080 6401 -1079 l=400 w=600 "vdda" "dp" 800 0 "vdda" 600 0 "out" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 5760 -1080 5761 -1079 l=400 w=600 "vdda" "dp" 800 0 "out" 600 0 "vdda" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 5120 -1080 5121 -1079 l=400 w=600 "vdda" "dp" 800 0 "vdda" 600 0 "out" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 4480 -1080 4481 -1079 l=400 w=600 "vdda" "dp" 800 0 "out" 600 0 "vdda" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3840 -1080 3841 -1079 l=400 w=600 "vdda" "dp" 800 0 "vdda" 600 0 "out" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 3200 -1080 3201 -1079 l=400 w=600 "vdda" "dp" 800 0 "out" 600 0 "vdda" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 2560 -1080 2561 -1079 l=400 w=600 "vdda" "dp" 800 0 "vdda" 600 0 "out" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1920 -1080 1921 -1079 l=400 w=600 "vdda" "dp" 800 0 "out" 600 0 "vdda" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 1280 -1080 1281 -1079 l=400 w=600 "vdda" "dp" 800 0 "vdda" 600 0 "out" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 640 -1080 641 -1079 l=400 w=600 "vdda" "dp" 800 0 "out" 600 0 "vdda" 600 0
+device msubckt sky130_fd_pr__pfet_g5v0d10v5 0 -1080 1 -1079 l=400 w=600 "vdda" "dp" 800 0 "vdda" 600 0 "out" 600 0
+subcap "dn" -29394.4
+subcap "out" -73211.2
+subcap "dp" -22191.7
+subcap "vdda" -71898.4
+subcap "vssa" -49222
+subcap "vdda" -71789.2
+subcap "vssa" -49112.8

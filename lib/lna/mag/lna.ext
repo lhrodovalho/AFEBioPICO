@@ -1,131 +1,1003 @@
-timestamp 1634785512
+timestamp 1638129547
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use ota ota_0 1 0 15700 0 1 22200
-use pseudo pseudo_0 1 0 7220 0 1 18520
-use cap_1_10 cap_1_10_5 1 0 44280 0 1 41900
-use cap_1_10 cap_1_10_4 1 0 33560 0 1 41900
-use cap_1_10 cap_1_10_3 1 0 22840 0 1 41900
-use cap_1_10 cap_1_10_2 1 0 12120 0 1 41900
-use cap_1_10 cap_1_10_1 1 0 1400 0 1 41900
-use cap_1_10 cap_1_10_0 1 0 -9320 0 1 41900
-substrate "w_10720_16720#" 0 0 10720 16720 pw 0 0 12441600 28800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 98
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 735
-cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 275.625
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 122.5
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 123.015
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 745.5
-cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 275.625
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 124.559
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 777
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 276.938
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 735
-cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 275.625
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 735
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 735
-cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 275.625
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 123.015
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 745.5
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 123.529
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 756
-cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 275.625
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 122.5
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 122.5
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
-cap "ota_0/gnda" "pseudo_0/pseudo_bias_0/vdda" 122.5
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/inm" 275.625
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 735
-subcap "w_10720_16720#" -259.74
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/vdda" 1.38889
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 50.75
-cap "ota_0/inm" "pseudo_0/pseudo_bias_0/vdda" 169.312
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/vdda" 16.6667
-cap "pseudo_0/pseudo_bias_0/vdda" "ota_0/gnda" 451.5
-cap "cap_1_10_0/gnd" "cap_1_10_0/C" -144.207
-cap "cap_1_10_0/gnd" "cap_1_10_0/C" -199.112
-cap "cap_1_10_1/gnd" "cap_1_10_1/C" -240.12
-cap "cap_1_10_2/gnd" "cap_1_10_2/C" -240.12
-cap "cap_1_10_3/C" "cap_1_10_3/gnd" -167.022
-cap "cap_1_10_3/gnd" "cap_1_10_3/C" -297.332
-cap "cap_1_10_4/gnd" "cap_1_10_4/C" -240.12
-cap "cap_1_10_0/gnd" "cap_1_10_0/C" -142.847
-cap "cap_1_10_0/B" "cap_1_10_0/gnd" -25.7581
-cap "cap_1_10_0/gnd" "cap_1_10_0/B" -373.371
-cap "cap_1_10_0/C" "cap_1_10_0/gnd" -178.712
-cap "cap_1_10_1/gnd" "cap_1_10_1/B" -412.129
-cap "cap_1_10_1/gnd" "cap_1_10_1/C" -218.36
-cap "cap_1_10_2/B" "cap_1_10_2/gnd" -412.129
-cap "cap_1_10_2/C" "cap_1_10_2/gnd" -218.36
-cap "cap_1_10_3/gnd" "cap_1_10_3/B" -77.2743
-cap "cap_1_10_3/C" "cap_1_10_3/gnd" -162.942
-cap "cap_1_10_3/B" "cap_1_10_3/gnd" -295.855
-cap "cap_1_10_3/C" "cap_1_10_3/gnd" -279.652
-cap "cap_1_10_4/C" "cap_1_10_4/gnd" -218.36
-cap "cap_1_10_4/B" "cap_1_10_4/gnd" -412.129
-cap "cap_1_10_0/B" "cap_1_10_0/gnd" -14.2675
-cap "cap_1_10_0/B" "cap_1_10_0/gnd" -201.012
-cap "cap_1_10_1/B" "cap_1_10_1/gnd" -228.28
-cap "cap_1_10_2/gnd" "cap_1_10_2/B" -228.28
-cap "cap_1_10_3/B" "cap_1_10_3/gnd" -42.8025
-cap "cap_1_10_3/gnd" "cap_1_10_3/B" -146.477
-cap "cap_1_10_4/B" "cap_1_10_4/gnd" -228.28
-cap "cap_1_10_0/A" "cap_1_10_0/gnd" -14.2675
-cap "cap_1_10_0/gnd" "cap_1_10_0/A" -201.012
-cap "cap_1_10_1/A" "cap_1_10_1/gnd" -228.28
-cap "cap_1_10_2/A" "cap_1_10_2/gnd" -228.28
-cap "cap_1_10_3/gnd" "cap_1_10_3/A" -42.8025
-cap "cap_1_10_3/gnd" "cap_1_10_3/A" -146.477
-cap "cap_1_10_4/A" "cap_1_10_4/gnd" -228.28
-cap "cap_1_10_0/A" "cap_1_10_0/gnd" -25.7581
-cap "cap_1_10_0/A" "cap_1_10_0/gnd" -373.371
-cap "cap_1_10_1/A" "cap_1_10_1/gnd" -412.129
-cap "cap_1_10_2/gnd" "cap_1_10_2/A" -412.129
-cap "cap_1_10_3/gnd" "cap_1_10_3/A" -77.2743
-cap "cap_1_10_3/A" "cap_1_10_3/gnd" -295.855
-cap "cap_1_10_4/A" "cap_1_10_4/gnd" -412.129
-merge "cap_1_10_5/VSUBS" "cap_1_10_4/VSUBS" 1152.85 0 0 -8851200 -25820 0 0 0 0 0 0 0 0 20000 600 -391200 3520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -374400 4080 46400 1480 73260 2502 0 0 0 0 0 0 0 0
-merge "cap_1_10_4/VSUBS" "cap_1_10_3/VSUBS"
-merge "cap_1_10_3/VSUBS" "cap_1_10_2/VSUBS"
-merge "cap_1_10_2/VSUBS" "cap_1_10_1/VSUBS"
-merge "cap_1_10_1/VSUBS" "cap_1_10_0/VSUBS"
-merge "cap_1_10_0/VSUBS" "pseudo_0/pseudo_pair_0/ma"
-merge "pseudo_0/pseudo_pair_0/ma" "pseudo_0/pseudo_pair_0/pb"
-merge "pseudo_0/pseudo_pair_0/pb" "pseudo_0/pseudo_pair_0/mb"
-merge "pseudo_0/pseudo_pair_0/mb" "pseudo_0/pseudo_pair_0/pa"
-merge "pseudo_0/pseudo_pair_0/pa" "ota_0/w_13880_n22360#"
-merge "ota_0/w_13880_n22360#" "pseudo_0/VSUBS"
-merge "pseudo_0/VSUBS" "w_10720_16720#"
-merge "cap_1_10_0/A" "cap_1_10_1/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cap_1_10_1/A" "cap_1_10_2/A"
-merge "cap_1_10_2/A" "cap_1_10_3/A"
-merge "cap_1_10_3/A" "cap_1_10_4/A"
-merge "cap_1_10_4/A" "cap_1_10_5/A"
-merge "cap_1_10_0/gnd" "cap_1_10_1/gnd" -72619.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 422400 -26880 -36995600 -320960 0 0
-merge "cap_1_10_1/gnd" "cap_1_10_2/gnd"
-merge "cap_1_10_2/gnd" "cap_1_10_3/gnd"
-merge "cap_1_10_3/gnd" "cap_1_10_4/gnd"
-merge "cap_1_10_4/gnd" "cap_1_10_5/gnd"
-merge "cap_1_10_0/B" "cap_1_10_1/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cap_1_10_1/B" "cap_1_10_2/B"
-merge "cap_1_10_2/B" "cap_1_10_3/B"
-merge "cap_1_10_3/B" "cap_1_10_4/B"
-merge "cap_1_10_4/B" "cap_1_10_5/B"
-merge "cap_1_10_0/C" "cap_1_10_1/C" -614.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36800 -3280 0 0 0 0
-merge "cap_1_10_1/C" "cap_1_10_2/C"
-merge "cap_1_10_2/C" "cap_1_10_3/C"
-merge "cap_1_10_3/C" "cap_1_10_4/C"
-merge "cap_1_10_4/C" "cap_1_10_5/C"
+use cap1_10 cap2 1 0 -31040 0 1 -80
+use cap1_10 cap1 -1 0 -1040 0 -1 74880
+use pseudo pseudo 1 0 -16800 0 1 35600
+use ota ota 1 0 -960 0 1 4000
+port "vssa" 9 -31520 79040 -31120 79120 m5
+port "gnda" 8 -32320 79040 -31920 79120 m5
+port "vdda" 7 -33120 79040 -32720 79120 m5
+port "fsb" 4 -33280 34480 -33200 34560 m2
+port "ip" 0 -33280 37520 -33200 37600 m2
+port "op" 2 43280 39840 43360 39920 m2
+port "ib" 5 43280 41120 43360 41200 m2
+port "ib" 5 -33280 41120 -33200 41200 m2
+port "im" 1 -33280 37200 -33200 37280 m2
+port "om" 3 43280 35840 43360 35920 m2
+node "m5_11680_74880#" 0 372 11680 74880 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192000 1760 0 0
+node "m5_6880_74880#" 0 372 6880 74880 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192000 1760 0 0
+node "m5_n800_74880#" 0 372 -800 74880 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192000 1760 0 0
+node "m4_n1040_n80#" 0 184 -1040 -80 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0 0 0
+node "m4_n1040_400#" 0 184 -1040 400 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0 0 0
+node "m4_n1040_74000#" 0 184 -1040 74000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0 0 0
+node "m4_n1040_74480#" 0 184 -1040 74480 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0 0 0
+node "vssa" 0 141656 -31520 79040 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61952000 314560 66656000 334880 0 0
+node "gnda" 0 143816 -32320 79040 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63232000 320960 66656000 334880 0 0
+node "vdda" 0 143556 -33120 79040 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61952000 312160 66656000 334880 0 0
+node "m3_n30240_32880#" 1 310.56 -30240 32880 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108800 2880 0 0 0 0 0 0
+node "m3_n30240_34800#" 1 206.4 -30240 34800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70400 1920 0 0 0 0 0 0
+node "m3_n30240_35760#" 1 310.56 -30240 35760 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108800 2880 0 0 0 0 0 0
+node "m2_n1120_32080#" 0 32.8 -1120 32080 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1440_32080#" 0 32.8 -1440 32080 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1760_32080#" 0 32.8 -1760 32080 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2080_32080#" 0 32.8 -2080 32080 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1120_32400#" 0 32.8 -1120 32400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1440_32400#" 0 32.8 -1440 32400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1760_32400#" 0 32.8 -1760 32400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2080_32400#" 0 32.8 -2080 32400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2400_32400#" 0 32.8 -2400 32400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1120_32720#" 0 32.8 -1120 32720 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n10560_34480#" 0 32.8 -10560 34480 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "fsb" 36 5620.72 -33280 34480 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1811200 45440 32000 960 0 0 0 0 0 0
+node "ip" 7 10420.1 -33280 37520 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2572800 64640 902400 23040 0 0 0 0 0 0
+node "op" 9 30000.1 43280 39840 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5920000 148320 1126400 28800 0 0 0 0 0 0
+node "xm" 8 10646.8 -30240 32400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2348800 59040 1100800 28160 0 0 0 0 0 0
+node "q" 3 22325.7 -10400 40480 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4115200 103200 288000 7520 0 0 0 0 0 0
+node "ib" 0 27383.2 -33280 41120 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6131200 153440 0 0 0 0 0 0 0 0
+node "m2_n1120_42000#" 0 32.8 -1120 42000 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "im" 7 10561.4 -33280 37200 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2572800 64640 902400 23040 0 0 0 0 0 0
+node "m2_n1120_42320#" 0 32.8 -1120 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1440_42320#" 0 32.8 -1440 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1760_42320#" 0 32.8 -1760 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2080_42320#" 0 32.8 -2080 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2240_42320#" 0 32.8 -2240 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2400_42320#" 0 32.8 -2400 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2560_42320#" 0 32.8 -2560 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2720_42320#" 0 32.8 -2720 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n3040_42320#" 0 32.8 -3040 42320 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "om" 9 30044.7 43280 35840 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5920000 148320 1100800 28160 0 0 0 0 0 0
+node "m2_n1120_42640#" 0 32.8 -1120 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1440_42640#" 0 32.8 -1440 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n1760_42640#" 0 32.8 -1760 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2080_42640#" 0 32.8 -2080 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2240_42640#" 0 32.8 -2240 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2400_42640#" 0 32.8 -2400 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2560_42640#" 0 32.8 -2560 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "m2_n2720_42640#" 0 32.8 -2720 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0
+node "xp" 9 10790.5 -30240 42640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2348800 59040 1126400 28800 0 0 0 0 0 0
+node "m1_n11040_32080#" 0 69.76 -11040 32080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
+node "li_n3840_31840#" 464 1940.96 -3840 31840 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 243200 6240 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_41040_35680#" 1231 8417.76 41040 35680 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 448000 13440 179200 8960 358400 9280 448000 13440 0 0 0 0 0 0
+node "li_41040_39680#" 1231 8417.76 41040 39680 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 448000 13440 179200 8960 358400 9280 448000 13440 0 0 0 0 0 0
+node "li_41040_40960#" 1231 8417.76 41040 40960 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 448000 13440 179200 8960 358400 9280 448000 13440 0 0 0 0 0 0
+node "li_n3840_39920#" 464 2006.56 -3840 39920 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 243200 6240 12800 640 0 0 0 0 0 0 0 0 0 0
+node "li_n33120_40960#" 21 106875 -33120 40960 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5536000 166080 2214400 110720 5145600 128960 5568000 167040 0 0 0 0 0 0
+node "li_n33120_34320#" 13 699352 -33120 34320 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34886400 957120 11270400 563520 37542400 957120 45024000 1210720 10880000 285440 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_n1120_32080#" "m2_n1440_32080#" 16.6667
+cap "m4_n1040_74000#" "m4_n1040_74480#" 67
+cap "vssa" "fsb" 104.32
+cap "m2_n1120_42320#" "m2_n1440_42320#" 16.6667
+cap "m2_n1440_42640#" "m2_n1120_42640#" 16.6667
+cap "op" "m2_n2080_32080#" 50
+cap "m2_n2400_42320#" "m2_n2560_42320#" 50
+cap "im" "vdda" 104.32
+cap "m2_n3040_42320#" "om" 50
+cap "vdda" "ib" 208.64
+cap "li_n33120_40960#" "op" 209.92
+cap "xp" "m2_n3040_42320#" 16.6667
+cap "gnda" "li_41040_35680#" 727.04
+cap "m2_n1440_32080#" "m2_n1440_32400#" 16.6667
+cap "li_41040_39680#" "gnda" 727.04
+cap "m2_n1760_42640#" "m2_n1760_42320#" 16.6667
+cap "m2_n1440_42640#" "m2_n1440_42320#" 16.6667
+cap "m2_n10560_34480#" "li_n33120_34320#" 191.84
+cap "li_41040_40960#" "vdda" 690.24
+cap "li_n33120_40960#" "li_n3840_39920#" 974.4
+cap "li_n33120_34320#" "m2_n2080_32400#" 191.84
+cap "m2_n2720_42320#" "im" 16.6667
+cap "m2_n2400_42640#" "m2_n2400_42320#" 16.6667
+cap "m2_n2080_42320#" "m2_n2240_42320#" 50
+cap "m2_n2080_32400#" "m2_n2400_32400#" 16.6667
+cap "op" "fsb" 209.96
+cap "li_n33120_34320#" "m2_n2400_32400#" 191.84
+cap "vdda" "om" 104.32
+cap "ip" "li_n3840_31840#" 60.48
+cap "m2_n2720_42320#" "m2_n2560_42320#" 50
+cap "li_n33120_34320#" "vssa" 1875.2
+cap "m2_n2720_42320#" "m2_n2720_42640#" 16.6667
+cap "li_n33120_34320#" "m3_n30240_35760#" 3936.4
+cap "ip" "vdda" 104.32
+cap "li_n3840_31840#" "xm" 60.48
+cap "im" "gnda" 104.32
+cap "m2_n1120_32080#" "m2_n1120_32400#" 16.6667
+cap "gnda" "ib" 208.64
+cap "li_n33120_34320#" "m2_n1120_32720#" 208.507
+cap "m2_n2080_42320#" "m2_n1760_42320#" 16.6667
+cap "ip" "m2_n1440_32400#" 16.6667
+cap "li_41040_40960#" "gnda" 727.04
+cap "m2_n2080_42640#" "m2_n1760_42640#" 16.6667
+cap "m2_n1440_32400#" "m2_n1120_32400#" 16.6667
+cap "im" "li_n33120_40960#" 314.92
+cap "li_n33120_40960#" "ib" 68926.1
+cap "gnda" "om" 104.32
+cap "li_n33120_34320#" "op" 97533.5
+cap "li_n33120_34320#" "m2_n2240_42320#" 191.84
+cap "op" "m2_n2400_32400#" 16.6667
+cap "li_n33120_34320#" "m2_n2240_42640#" 191.84
+cap "m2_n1440_42640#" "m2_n1760_42640#" 16.6667
+cap "ip" "gnda" 104.32
+cap "m2_n2080_42320#" "im" 16.6667
+cap "li_n33120_34320#" "li_n3840_39920#" 1946.88
+cap "vssa" "op" 104.32
+cap "im" "fsb" 104.96
+cap "m2_n1760_32400#" "m2_n2080_32400#" 16.6667
+cap "li_n33120_34320#" "m2_n1760_32400#" 191.84
+cap "li_n33120_40960#" "om" 629.84
+cap "m2_n1120_42000#" "im" 50
+cap "xp" "li_n33120_40960#" 524.84
+cap "li_n33120_34320#" "m2_n1760_42320#" 191.84
+cap "m2_n2080_42320#" "m2_n2080_42640#" 16.6667
+cap "ip" "li_n33120_40960#" 314.92
+cap "op" "m1_n11040_32080#" 70.64
+cap "m2_n1120_42320#" "m2_n1120_42000#" 16.6667
+cap "vssa" "li_41040_35680#" 727.04
+cap "li_n33120_40960#" "xm" 209.92
+cap "li_41040_39680#" "vssa" 727.04
+cap "m2_n2720_42320#" "m2_n3040_42320#" 16.6667
+cap "ip" "m3_n30240_32880#" 357
+cap "li_n33120_34320#" "m2_n2560_42640#" 191.84
+cap "m2_n1760_32080#" "m2_n2080_32080#" 16.6667
+cap "m2_n2720_42320#" "m2_n2400_42320#" 16.6667
+cap "ip" "fsb" 104.96
+cap "li_n33120_34320#" "m2_n1440_32080#" 191.84
+cap "m2_n2240_42320#" "m2_n2240_42640#" 16.6667
+cap "li_n33120_34320#" "q" 28480.8
+cap "li_n33120_34320#" "im" 100731
+cap "xm" "fsb" 104.96
+cap "li_n33120_34320#" "ib" 3007.73
+cap "li_41040_39680#" "op" 5116.16
+cap "im" "vssa" 104.32
+cap "m2_n1120_42320#" "li_n33120_34320#" 191.84
+cap "vssa" "ib" 208.64
+cap "li_n33120_34320#" "m2_n2560_42320#" 191.84
+cap "li_n33120_34320#" "m2_n2720_42640#" 191.84
+cap "im" "m3_n30240_35760#" 63
+cap "m2_n2080_42640#" "li_n33120_34320#" 191.84
+cap "li_n33120_34320#" "om" 97743.1
+cap "gnda" "vdda" 134018
+cap "vssa" "li_41040_40960#" 727.04
+cap "xp" "li_n33120_34320#" 97866.9
+cap "ip" "m2_n2080_32400#" 16.6667
+cap "li_n33120_34320#" "m2_n1440_42640#" 191.84
+cap "li_n33120_34320#" "m2_n2400_42640#" 191.84
+cap "m2_n2240_42640#" "m2_n2560_42640#" 16.6667
+cap "m3_n30240_34800#" "li_n33120_34320#" 2551.6
+cap "ip" "li_n33120_34320#" 100645
+cap "vssa" "om" 104.32
+cap "ip" "m2_n2400_32400#" 16.6667
+cap "q" "op" 398.92
+cap "li_n33120_34320#" "xm" 96636.6
+cap "im" "op" 440.96
+cap "xm" "m2_n2400_32400#" 50
+cap "m2_n2240_42320#" "im" 16.6667
+cap "op" "ib" 104.96
+cap "m2_n2080_42320#" "m2_n2400_42320#" 16.6667
+cap "li_n33120_34320#" "m2_n1120_32400#" 191.84
+cap "li_n33120_40960#" "vdda" 690.24
+cap "ip" "vssa" 104.32
+cap "li_n33120_34320#" "m2_n1760_32080#" 191.84
+cap "q" "li_n3840_39920#" 60.48
+cap "ip" "m3_n30240_35760#" 357
+cap "m3_n30240_34800#" "m3_n30240_35760#" 63
+cap "im" "li_n3840_39920#" 60.48
+cap "li_n3840_39920#" "ib" 60.48
+cap "ip" "m2_n1120_32720#" 50
+cap "m2_n2240_42320#" "m2_n2560_42320#" 16.6667
+cap "vdda" "fsb" 104.32
+cap "m4_n1040_400#" "m4_n1040_n80#" 67
+cap "op" "om" 104.96
+cap "m2_n2080_42640#" "m2_n2240_42640#" 50
+cap "li_n33120_34320#" "m2_n1120_42640#" 191.84
+cap "m2_n1120_32720#" "m2_n1120_32400#" 16.6667
+cap "xp" "op" 1196.96
+cap "im" "m2_n1760_42320#" 16.6667
+cap "ip" "op" 209.92
+cap "li_n3840_39920#" "om" 60.48
+cap "m2_n2400_42640#" "m2_n2240_42640#" 50
+cap "li_n33120_34320#" "m2_n3040_42320#" 191.84
+cap "op" "xm" 9808.88
+cap "xp" "li_n3840_39920#" 60.48
+cap "li_n33120_40960#" "gnda" 727.04
+cap "li_n33120_34320#" "m2_n1440_42320#" 191.84
+cap "li_41040_35680#" "om" 5116.16
+cap "li_n33120_34320#" "m2_n2400_42320#" 191.84
+cap "ip" "m2_n1760_32400#" 16.6667
+cap "m2_n2560_42320#" "m2_n2560_42640#" 16.6667
+cap "li_n33120_34320#" "m2_n1120_32080#" 191.84
+cap "im" "ib" 104.96
+cap "m2_n2720_42640#" "m2_n2560_42640#" 50
+cap "li_n3840_31840#" "li_n33120_34320#" 1385.92
+cap "gnda" "fsb" 104.32
+cap "li_n33120_34320#" "vdda" 1783.2
+cap "m2_n1760_32400#" "m2_n1760_32080#" 16.6667
+cap "xp" "m2_n2560_42640#" 16.6667
+cap "im" "m2_n2560_42320#" 16.6667
+cap "m2_n2400_42640#" "m2_n2560_42640#" 50
+cap "li_n33120_34320#" "m2_n1440_32400#" 191.84
+cap "li_41040_40960#" "ib" 5116.16
+cap "vssa" "vdda" 6182
+cap "q" "om" 104.96
+cap "xp" "q" 104.96
+cap "im" "om" 5859.92
+cap "li_n33120_34320#" "m2_n2720_42320#" 191.84
+cap "ib" "om" 209.92
+cap "xp" "im" 209.92
+cap "xp" "ib" 209.92
+cap "ip" "im" 2011.29
+cap "q" "xm" 493.253
+cap "ip" "ib" 104.96
+cap "m2_n2240_42320#" "m2_n2400_42320#" 50
+cap "im" "xm" 104.96
+cap "xm" "ib" 104.96
+cap "m2_n1440_32080#" "m2_n1760_32080#" 16.6667
+cap "xp" "m2_n2720_42640#" 50
+cap "li_n33120_34320#" "m2_n1760_42640#" 191.84
+cap "li_n33120_34320#" "gnda" 1875.2
+cap "li_n3840_31840#" "op" 60.48
+cap "m2_n2400_42640#" "m2_n2720_42640#" 16.6667
+cap "op" "vdda" 104.32
+cap "m2_n2080_42640#" "m2_n2400_42640#" 16.6667
+cap "xp" "om" 9703.92
+cap "vssa" "gnda" 139216
+cap "m2_n2080_32400#" "m2_n2080_32080#" 16.6667
+cap "m2_n1760_42320#" "m2_n1440_42320#" 16.6667
+cap "ip" "om" 524.96
+cap "li_n33120_34320#" "m2_n2080_32080#" 191.84
+cap "xp" "ip" 104.96
+cap "xm" "om" 104.96
+cap "li_n33120_34320#" "li_n33120_40960#" 13703.1
+cap "xp" "xm" 1175.96
+cap "m3_n30240_34800#" "ip" 231
+cap "vdda" "li_41040_35680#" 690.24
+cap "li_41040_39680#" "vdda" 690.24
+cap "ip" "xm" 5993.25
+cap "li_n33120_34320#" "m3_n30240_32880#" 3957.4
+cap "li_n33120_40960#" "vssa" 727.04
+cap "m2_n10560_34480#" "fsb" 50
+cap "m2_n2080_42320#" "li_n33120_34320#" 191.84
+cap "m2_n1760_32400#" "m2_n1440_32400#" 16.6667
+cap "m2_n1120_42320#" "m2_n1120_42640#" 16.6667
+cap "m2_n3040_42320#" "im" 16.6667
+cap "li_n33120_34320#" "fsb" 51300.3
+cap "im" "m2_n1440_42320#" 16.6667
+cap "op" "gnda" 104.32
+cap "im" "m2_n2400_42320#" 16.6667
+cap "li_n33120_34320#" "m2_n1120_42000#" 208.507
+cap "vssa" "ota/3/vddx" 547.167
+cap "vssa" "ota/3/vddx" 753.75
+cap "ota/3/vddx" "vssa" 776.083
+cap "ota/3/vddx" "vssa" 748.167
+cap "vssa" "ota/3/vddx" 781.667
+cap "ota/3/vddx" "vssa" 748.167
+cap "ota/3/vddx" "vssa" 748.167
+cap "vssa" "ota/3/vddx" 781.667
+cap "vssa" "ota/3/vddx" 748.167
+cap "ota/3/vddx" "vssa" 753.75
+cap "vssa" "ota/3/vddx" 776.083
+cap "ota/3/vddx" "vssa" 748.167
+cap "ota/3/vddx" "vssa" 781.667
+cap "ota/3/vddx" "vssa" 748.167
+cap "vssa" "ota/3/vddx" 614.167
+cap "vssa" "ota/4/vddx" 524.833
+cap "vssa" "ota/4/vddx" 759.333
+cap "ota/4/vddx" "vssa" 770.5
+cap "ota/4/vddx" "vssa" 748.167
+cap "ota/4/vddx" "vssa" 781.667
+cap "ota/4/vddx" "vssa" 748.167
+cap "vssa" "ota/4/vddx" 748.167
+cap "ota/4/vddx" "vssa" 781.667
+cap "vssa" "ota/4/vddx" 748.167
+cap "vssa" "ota/4/vddx" 759.333
+cap "ota/4/vddx" "vssa" 770.5
+cap "ota/4/vddx" "vssa" 748.167
+cap "ota/4/vddx" "vssa" 781.667
+cap "ota/4/vddx" "vssa" 748.167
+cap "ota/4/vddx" "vssa" 636.5
+cap "ota/3/vddx" "vssa" 547.167
+cap "ota/3/vddx" "vssa" 753.75
+cap "vssa" "ota/3/vddx" 776.083
+cap "ota/3/vddx" "vssa" 748.167
+cap "ota/3/vddx" "vssa" 781.667
+cap "ota/3/vddx" "vssa" 748.167
+cap "vssa" "ota/3/vddx" 748.167
+cap "ota/3/vddx" "vssa" 781.667
+cap "ota/3/vddx" "vssa" 748.167
+cap "vssa" "ota/3/vddx" 753.75
+cap "ota/3/vddx" "vssa" 776.083
+cap "ota/3/vddx" "vssa" 748.167
+cap "ota/3/vddx" "vssa" 781.667
+cap "ota/3/vddx" "vssa" 748.167
+cap "ota/3/vddx" "vssa" 614.167
+cap "vssa" "ota/4/vddx" 524.833
+cap "vssa" "ota/4/vddx" 759.333
+cap "vssa" "ota/4/vddx" 770.5
+cap "ota/4/vddx" "vssa" 748.167
+cap "ota/4/vddx" "vssa" 781.667
+cap "vssa" "ota/4/vddx" 748.167
+cap "vssa" "ota/4/vddx" 748.167
+cap "vssa" "ota/4/vddx" 781.667
+cap "ota/4/vddx" "vssa" 748.167
+cap "ota/4/vddx" "vssa" 759.333
+cap "vssa" "ota/4/vddx" 770.5
+cap "vssa" "ota/4/vddx" 748.167
+cap "ota/4/vddx" "vssa" 781.667
+cap "ota/4/vddx" "vssa" 748.167
+cap "vssa" "ota/4/vddx" 636.5
+subcap "m4_n1040_n80#" -106.927
+subcap "m4_n1040_n80#" -76.047
+cap "ota/4/vdda" "vssa" -56.635
+cap "cap2/vssa" "cap2/gnda" -1.13687e-13
+subcap "m4_n1040_n80#" -24.623
+cap "cap2/gnda" "ota/3/vddx" 13.4
+cap "cap2/gnda" "ota/3/vdda" -5.68434e-14
+cap "cap2/gnda" "ota/3/vddx" 201
+cap "ota/3/vdda" "cap2/gnda" 13.4
+cap "cap2/gnda" "ota/3/biasm/vssa" 13.4
+cap "cap2/gnda" "ota/3/biasm/vssa" 35.0333
+cap "cap2/gnda" "ota/3/biasm/vssa" 228.5
+cap "cap2/gnda" "ota/3/vdda" 201
+cap "cap2/gnda" "ota/3/biasm/vssa" 201
+cap "cap2/ip" "ota/3/biasm/gnda" 22.3333
+cap "ota/3/biasm/qa" "cap2/gnda" 4.16667
+cap "ota/3/biasm/vssa" "cap2/gnda" 4.5
+cap "cap2/gnda" "ota/3/biasm/vssa" 8.93333
+cap "cap2/gnda" "ota/3/biasm/gnda" 73.6333
+cap "cap2/ip" "ota/3/biasm/gnda" 67
+cap "ota/3/biasm/vssa" "cap2/gnda" 134
+cap "cap2/gnda" "ota/3/biasm/vssa" 10.5
+cap "ota/3/biasm/gnda" "cap2/gnda" 473
+cap "ota/3/biasm/qa" "cap2/gnda" 50
+cap "cap2/gnda" "ota/3/biasm/vddx" 75.7
+cap "ota/3/biasm/vddx" "cap2/ip" 36.75
+cap "cap2/ip" "ota/3/biasm/vddx" 36.75
+cap "cap2/gnda" "ota/3/biasm/vddx" 394.5
+cap "ota/3/biasm/vdda" "cap2/gnda" 13.4
+cap "ota/3/biasm/vddx" "cap2/gnda" 35.2333
+cap "ota/3/biasm/vddx" "cap2/ip" 15.75
+cap "cap2/gnda" "ota/3/biasm/vddx" 159.5
+cap "cap2/ip" "ota/3/biasm/vddx" 15.75
+cap "cap2/gnda" "ota/3/biasm/vdda" 201
+cap "cap2/gnda" "ota/3/biasm/vdda" 28.3333
+cap "ota/3/biasm/vdda" "cap2/gnda" 349.5
+cap "ota/3/z" "cap2/gnda" 4.16667
+cap "ota/3/bp" "cap2/gnda" 4.16667
+cap "ota/3/biasm/vssa" "cap2/gnda" 47.8667
+cap "ota/3/biasm/vssa" "cap2/ip" 22.3333
+cap "ota/3/biasm/vdda" "cap2/gnda" 30.2
+cap "ota/3/biasm/vddx" "cap2/gnda" 45.1333
+cap "ota/3/bp" "cap2/gnda" 50
+cap "ota/3/z" "cap2/gnda" 50
+cap "ota/3/biasm/vssa" "cap2/gnda" 339
+cap "ota/3/biasm/vddx" "cap2/gnda" 406
+cap "cap2/ip" "ota/3/biasm/vssa" 67
+cap "ota/3/biasm/vdda" "cap2/gnda" 257.5
+cap "cap2/gnda" "ota/3/biasm/vssa" 8.93333
+cap "cap2/gnda" "ota/3/q" 4.16667
+cap "cap2/gnda" "ota/3/biasm/vssa" 8.93333
+cap "cap2/gnda" "ota/3/biasm/vssa" 39.9167
+cap "ota/3/biasm/vssa" "cap2/gnda" 134
+cap "cap2/gnda" "ota/3/biasm/vssa" 134
+cap "cap2/gnda" "ota/3/biasm/vssa" 337
+cap "cap2/gnda" "ota/3/q" 50
+cap "cap2/gnda" "ota/3/biasm/vdda" 54.0667
+cap "cap2/gnda" "ota/3/biasm/vssa" 5.21667
+cap "cap2/gnda" "ota/3/z" 4.16667
+cap "cap2/gnda" "ota/3/z" 50
+cap "ota/3/biasm/vdda" "cap2/gnda" 540
+cap "ota/3/biasm/vssa" "cap2/gnda" 69
+cap "cap2/gnda" "ota/3/biasm/vdda" 4.46667
+cap "ota/3/am/gnda" "cap2/gnda" 30.5667
+cap "ota/3/am/vssa" "cap2/gnda" 13.4
+cap "ota/3/am/vssa" "cap2/gnda" 201
+cap "ota/3/biasm/vdda" "cap2/gnda" 67
+cap "cap2/gnda" "ota/3/am/gnda" 161.5
+cap "ota/3/am/gnda" "cap2/gnda" 30.5667
+cap "ota/3/am/gnda" "cap2/gnda" 161.5
+cap "ota/3/bp" "cap2/gnda" 4.16667
+cap "ota/3/am/vdda" "cap2/gnda" 8.93333
+cap "ota/3/am/vddx" "cap2/gnda" 99.7333
+cap "ota/3/am/vddx" "cap2/ip" 52.5
+cap "ota/3/am/vddx" "cap2/ip" 52.5
+cap "ota/3/am/vdda" "cap2/gnda" 134
+cap "cap2/gnda" "ota/3/bp" 50
+cap "ota/3/am/vddx" "cap2/gnda" 721
+cap "ota/3/am/vdda" "cap2/gnda" 8.93333
+cap "ota/3/am/vdda" "cap2/gnda" 134
+cap "cap2/ip" "ota/3/bm/vddx" 52.5
+cap "cap2/gnda" "ota/3/bm/vddx" 99.7333
+cap "cap2/gnda" "ota/3/bp" 4.16667
+cap "ota/3/bp" "cap2/gnda" 50
+cap "ota/3/bm/vddx" "cap2/gnda" 721
+cap "cap2/ip" "ota/3/bm/vddx" 52.5
+cap "cap2/gnda" "ota/3/bm/vssa" 8.93333
+cap "cap2/gnda" "ota/3/bm/gnda" 61.1333
+cap "cap2/gnda" "ota/3/bm/vssa" 134
+cap "cap2/gnda" "ota/3/bm/gnda" 323
+cap "ota/3/bm/vssa" "cap2/gnda" 4.46667
+cap "ota/3/cm/gnda" "cap2/gnda" 51.2333
+cap "ota/3/cm/vssa" "cap2/gnda" 13.4
+cap "cap2/gnda" "ota/3/cm/vssa" 201
+cap "cap2/gnda" "ota/3/bm/vssa" 67
+cap "ota/3/cm/gnda" "cap2/gnda" 291.5
+cap "cap2/gnda" "ota/3/cm/vddx" 44.6333
+cap "ota/3/cm/gnda" "cap2/gnda" 9.9
+cap "ota/3/cm/vddx" "cap2/ip" 21
+cap "cap2/ip" "ota/3/cm/vddx" 21
+cap "cap2/gnda" "ota/3/cm/gnda" 31.5
+cap "ota/3/cm/vddx" "cap2/gnda" 285
+cap "ota/3/cm/vdda" "cap2/gnda" 8.93333
+cap "ota/3/cm/vddx" "cap2/ip" 31.5
+cap "cap2/gnda" "ota/3/bp" 4.16667
+cap "cap2/gnda" "ota/3/cm/vddx" 55.1
+cap "ota/3/cm/vddx" "cap2/gnda" 436
+cap "cap2/gnda" "ota/3/cm/vdda" 134
+cap "ota/3/cm/vddx" "cap2/ip" 31.5
+cap "ota/3/bp" "cap2/gnda" 50
+cap "cap2/gnda" "ota/3/cm/vdda" 8.93333
+cap "ota/3/e/vddx" "cap2/ip" 10.5
+cap "cap2/gnda" "ota/3/e/vddx" 14.6333
+cap "ota/3/e/vddx" "cap2/gnda" 201
+cap "cap2/gnda" "ota/3/cm/vdda" 134
+cap "ota/3/e/vddx" "cap2/ip" 10.5
+cap "ota/3/bp" "cap2/gnda" 4.16667
+cap "ota/3/e/vddx" "cap2/gnda" 85.1
+cap "ota/3/e/vddx" "cap2/ip" 42
+cap "ota/3/bp" "cap2/gnda" 50
+cap "ota/3/e/vddx" "cap2/ip" 42
+cap "cap2/gnda" "ota/3/e/vddx" 520
+cap "ota/3/e/vssa" "cap2/ip" 11.1667
+cap "ota/3/e/vssa" "cap2/gnda" 8.93333
+cap "cap2/gnda" "ota/3/e/gnda" 61.1333
+cap "ota/3/e/gnda" "cap2/gnda" 323
+cap "ota/3/e/vssa" "cap2/gnda" 134
+cap "cap2/ip" "ota/3/e/vssa" 11.1667
+cap "ota/3/fm/vssa" "cap2/gnda" 13.4
+cap "ota/3/fm/gnda" "cap2/gnda" 61.1333
+cap "ota/3/fm/vssa" "cap2/gnda" 201
+cap "cap2/gnda" "ota/3/fm/gnda" 323
+cap "cap2/op" "cap2/gnda" 62.6667
+cap "cap2/im" "cap2/gnda" 46
+cap "cap2/gnda" "cap2/dummy1/vssa" 181.5
+cap "cap2/xm" "cap2/gnda" 46
+cap "cap2/gnda" "cap2/op" 100
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 280.5
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 297
+cap "cap2/dummy1/vssa" "li_n33120_34320#" 297
+cap "cap2/dummy1/vssa" "li_n33120_34320#" 280.5
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 280.5
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 297
+cap "cap2/dummy1/vssa" "li_n33120_34320#" 297
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 280.5
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 280.5
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 297
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 297
+cap "cap2/dummy1/vssa" "li_n33120_34320#" 280.5
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 247.5
+subcap "m1_n11040_32080#" -73.92
+cap "cap2/dummy1/vssa" "li_n33120_34320#" 297
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 297
+cap "cap2/dummy1/vssa" "li_n33120_34320#" 280.5
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 280.5
+subcap "li_n3840_31840#" -1072.52
+cap "cap2/dummy1/vssa" "li_n33120_34320#" 297
+subcap "m2_n2080_32080#" -46.4
+subcap "li_n3840_31840#" -966.107
+cap "li_n33120_34320#" "cap2/dummy1/vssa" 231
+cap "li_n33120_34320#" "cap2/dummy1/gnda" 21
+subcap "m2_n1120_32080#" -16.4
+subcap "m2_n1120_32400#" -36.88
+subcap "m2_n1440_32400#" -40.96
+subcap "m2_n1760_32400#" -40.96
+subcap "m2_n2080_32400#" -40.96
+subcap "m2_n2400_32400#" -40.96
+cap "cap2/ip" "cap2/dummy1/gnda" 46
+cap "cap2/ip" "ota/3/fm/vddx" 52.5
+cap "cap2/dummy1/vssa" "cap2/dummy1/gnda" 60.5
+cap "cap2/dummy1/gnda" "ota/3/fm/vddx" 117.49
+cap "cap2/dummy1/gnda" "cap2/xp" 46
+cap "cap2/om" "cap2/dummy1/gnda" 46
+cap "cap2/dummy1/gnda" "m2_n1120_32080#" 8.33333
+cap "m2_n1120_32080#" "ota/3/fm/vddx" 16.6667
+cap "ota/3/bp" "cap2/dummy1/gnda" 4.16667
+cap "cap2/dummy1/gnda" "m2_n1760_32080#" 16.6667
+cap "cap2/dummy1/gnda" "m2_n1440_32080#" 16.6667
+cap "m2_n2080_32080#" "cap2/dummy1/gnda" 16.6667
+subcap "m2_n1120_32080#" -8.2
+subcap "m2_n1440_32080#" -42.32
+subcap "m2_n1120_32400#" -36.88
+subcap "m2_n1440_32400#" -4.24
+cap "ota/3/bp" "cap2/gnda" 50
+cap "ota/3/fm/vddx" "cap2/ip" 52.5
+cap "cap2/gnda" "ota/3/fm/vssa" 99
+cap "ota/3/fm/vddx" "m2_n1120_32080#" 50
+cap "cap2/gnda" "cap2/ip" -2.84217e-14
+cap "cap2/gnda" "m2_n1120_32080#" 8.33333
+cap "cap2/gnda" "ota/3/fm/vddx" 597
+subcap "m1_n11040_32080#" -53.36
+subcap "m1_n11040_32080#" -69.76
+subcap "li_n3840_31840#" -2358.36
+subcap "m2_n2080_32080#" -32.8
+subcap "li_n3840_31840#" -2146.66
+subcap "m2_n1120_32080#" -24.6
+subcap "m2_n1440_32080#" -16.4
+subcap "m2_n1760_32080#" -16.4
+subcap "m2_n2080_32080#" -16.4
+subcap "m2_n1120_32400#" -16.4
+subcap "m2_n1120_32720#" -16.4
+cap "cap2/dummy1/vssa" "cap2/gnda" 93.5
+cap "ota/3/fm/vdda" "cap2/gnda" 40.0714
+cap "ota/li_0_29440#" "cap2/gnda" 25.1667
+subcap "m2_n1120_32080#" -24.6
+subcap "m2_n1440_32080#" -32.8
+subcap "m2_n1120_32400#" -8.2
+subcap "m2_n1440_32400#" -42.32
+subcap "m2_n1120_32720#" -8.2
+cap "cap2/gnda" "ota/3/fm/vssa" 330
+cap "cap2/gnda" "ota/li_0_29440#" 176
+cap "ota/3/fm/vdda" "cap2/gnda" 110
+subcap "fsb" -5552.4
+cap "li_n33120_34320#" "pseudo/vssa" 82.5
+cap "li_n33120_34320#" "pseudo/q" 84.625
+cap "pseudo/q" "li_n33120_34320#" 37.125
+cap "pseudo/q" "li_n33120_34320#" 109.375
+cap "pseudo/vssa" "li_n33120_34320#" 148.5
+cap "li_n33120_34320#" "pseudo/q" 109.375
+cap "pseudo/q" "li_n33120_34320#" 37.125
+cap "pseudo/vssa" "li_n33120_34320#" 148.5
+cap "pseudo/gnda" "pseudo/vssa" 140.25
+cap "pseudo/gnda" "pseudo/q" 33
+cap "pseudo/q" "pseudo/gnda" 109.375
+subcap "m2_n10560_34480#" -43.68
+cap "pseudo/gnda" "pseudo/om" 31.5
+cap "pseudo/xm" "pseudo/gnda" 46
+cap "pseudo/op" "pseudo/gnda" 46
+cap "pseudo/xm" "pseudo/vssa" 6
+cap "pseudo/q" "pseudo/gnda" 109.375
+cap "pseudo/op" "pseudo/vssa" 6
+cap "pseudo/fsb" "pseudo/gnda" 200
+cap "pseudo/gnda" "pseudo/vssa" 114.75
+cap "pseudo/gnda" "pseudo/xp" 31.5
+cap "pseudo/gnda" "m2_n10560_34480#" 12.5
+cap "pseudo/fsb" "pseudo/gnda" 83.5
+cap "pseudo/fsb" "pseudo/vssa" 6
+cap "pseudo/vssa" "pseudo/gnda" 45
+cap "pseudo/q" "pseudo/gnda" 31.25
+cap "pseudo/vssa" "pseudo/vssa" 16.4
+cap "li_n33120_34320#" "ota/om" 4.16667
+cap "ota/li_0_30400#" "li_n33120_34320#" 122.333
+cap "li_n33120_34320#" "ota/li_0_29440#" 61.1667
+cap "li_n33120_34320#" "ota/ib" 4.16667
+cap "li_n33120_34320#" "ota/li_0_29920#" 86.3333
+cap "li_n33120_34320#" "ota/ip" 4.16667
+cap "li_n33120_34320#" "ota/bp" 4.16667
+cap "ota/li_0_30400#" "li_n33120_34320#" 688
+cap "ota/li_0_29440#" "li_n33120_34320#" 344
+cap "ota/bp" "li_n33120_34320#" 50
+cap "ota/ip" "li_n33120_34320#" 50
+cap "ota/li_0_29920#" "li_n33120_34320#" 520
+cap "li_n33120_34320#" "ota/ib" 50
+cap "li_n33120_34320#" "ota/om" 50
+cap "li_n33120_34320#" "pseudo/q" 84.625
+cap "pseudo/q" "li_n33120_34320#" 109.375
+cap "pseudo/q" "li_n33120_34320#" 37.125
+cap "pseudo/q" "li_n33120_34320#" 109.375
+cap "li_n33120_34320#" "pseudo/q" 37.125
+cap "pseudo/q" "pseudo/gnda" 109.375
+cap "pseudo/q" "pseudo/gnda" 33
+cap "pseudo/xp" "pseudo/gnda" 10.5
+cap "pseudo/om" "pseudo/gnda" 10.5
+cap "pseudo/q" "pseudo/gnda" 109.375
+cap "pseudo/gnda" "pseudo/q" 31.25
+cap "li_n33120_34320#" "ota/li_0_30400#" 389.25
+cap "li_n33120_34320#" "ota/y" 4.16667
+cap "li_n33120_34320#" "ota/x" 4.16667
+cap "ota/op" "ota/li_0_30400#" 36.8
+cap "ota/x" "li_n33120_34320#" 50
+cap "li_n33120_34320#" "ota/li_0_30400#" 1695
+cap "ota/li_0_30400#" "ota/im" 36.8
+cap "li_n33120_34320#" "ota/y" 50
+cap "ota/li_0_30400#" "ota/op" -18.4
+subcap "li_41040_35680#" -5055.66
+cap "ota/li_0_30400#" "ota/op" 36.8
+subcap "om" -29976.4
+subcap "ip" -10351.8
+subcap "im" -10493
+cap "li_n33120_34320#" "ota/li_0_32480#" 86.3333
+cap "ota/z" "li_n33120_34320#" 4.16667
+cap "li_n33120_34320#" "ota/li_0_32960#" 100.167
+cap "ota/li_0_32960#" "ota/q" 21
+cap "li_n33120_34320#" "ota/li_0_30400#" 5.08333
+cap "ota/q" "li_n33120_34320#" 4.16667
+cap "li_n33120_34320#" "ota/li_0_32960#" 86.3333
+cap "ota/li_0_32960#" "ota/q" 57.8
+cap "ota/m5_1120_29440#" "ota/q" -110.4
+cap "li_n33120_34320#" "ota/li_0_32960#" 386
+cap "li_n33120_34320#" "ota/li_0_32480#" 520
+cap "li_n33120_34320#" "ota/q" 50
+cap "li_n33120_34320#" "ota/li_0_32960#" 520
+cap "li_n33120_34320#" "ota/li_0_30400#" 67
+cap "li_n33120_34320#" "ota/z" 50
+cap "ota/li_0_30400#" "li_n33120_34320#" 177.5
+cap "li_n33120_34320#" "ota/z" 4.16667
+cap "ota/im" "li_n33120_34320#" 4.16667
+cap "ota/li_0_32480#" "ota/q" 52.5
+cap "ota/li_0_32480#" "li_n33120_34320#" 86.3333
+cap "ota/li_0_32960#" "ota/q" 10.5
+cap "li_n33120_34320#" "ota/li_0_32960#" 10.1667
+cap "li_n33120_34320#" "ota/op" 4.16667
+cap "ota/li_0_30400#" "ota/q" 99.75
+cap "ota/li_0_32960#" "ota/q" 10.5
+cap "ota/li_0_30400#" "ota/q" 99.75
+cap "ota/z" "li_n33120_34320#" 50
+cap "ota/li_0_32480#" "ota/q" 52.5
+cap "ota/li_0_32960#" "li_n33120_34320#" 134
+cap "ota/li_0_30400#" "li_n33120_34320#" 948
+cap "ota/op" "li_n33120_34320#" 50
+cap "ota/li_0_32480#" "li_n33120_34320#" 520
+cap "ota/im" "li_n33120_34320#" 50
+cap "pseudo/vssa" "pseudo/xp" 6
+cap "pseudo/om" "pseudo/xp" 1.42109e-14
+cap "pseudo/xp" "pseudo/gnda" 46
+cap "pseudo/om" "pseudo/vssa" 6
+cap "pseudo/om" "pseudo/gnda" 46
+cap "pseudo/gnda" "pseudo/q" 46
+cap "pseudo/q" "pseudo/vssa" 6
+subcap "li_n3840_39920#" -1622.12
+subcap "li_n3840_39920#" -1377.02
+cap "pseudo/vssa" "pseudo/vssa" 16.4
+cap "ota/y" "li_n33120_34320#" 4.16667
+cap "ota/li_0_29920#" "li_n33120_34320#" 30
+cap "ota/li_0_30400#" "q" 162.75
+cap "ota/li_0_29920#" "q" 18.8333
+cap "ota/x" "li_n33120_34320#" 4.16667
+cap "ota/li_0_30400#" "li_n33120_34320#" 340.667
+cap "ota/li_0_30400#" "ota/ip" 36.8
+cap "li_n33120_34320#" "ota/li_0_29920#" 84
+cap "ota/li_0_29920#" "q" 18.8333
+cap "li_n33120_34320#" "ota/x" 50
+cap "li_n33120_34320#" "ota/y" 50
+cap "ota/li_0_30400#" "ota/om" 36.8
+cap "ota/li_0_30400#" "q" 162.75
+cap "ota/li_0_30400#" "li_n33120_34320#" 1502
+subcap "li_41040_40960#" -8373.36
+cap "ota/li_0_30400#" "ota/om" -18.4
+subcap "li_41040_39680#" -4251.1
+subcap "li_41040_40960#" -8447.36
+cap "ota/om" "ota/li_0_30400#" 36.8
+subcap "op" -29931.8
+subcap "ib" -27314.9
+subcap "m2_n1120_42000#" -33.48
+subcap "m2_n1120_42320#" -38.92
+cap "ota/bp" "li_n33120_34320#" 4.16667
+cap "ota/1/fp/vdda" "li_n33120_34320#" 4.71429
+cap "li_n33120_34320#" "ota/li_0_29920#" 79.1667
+cap "ota/li_0_29440#" "li_n33120_34320#" 94
+cap "li_n33120_34320#" "ota/1/fp/vssa" 11
+subcap "m2_n1120_42000#" -33.48
+subcap "m2_n1120_42320#" -38.92
+cap "li_n33120_34320#" "ota/bp" 50
+cap "li_n33120_34320#" "ota/li_0_29440#" 116.72
+cap "li_n33120_34320#" "ota/1/fp/vdda" 16.5
+cap "li_n33120_34320#" "ota/1/fp/vssa" 49.5
+cap "li_n33120_34320#" "ota/li_0_29920#" 386
+cap "ota/li_0_29440#" "ota/ib" 36.8
+subcap "li_41040_40960#" -3566.51
+cap "ota/li_0_29440#" "ota/ib" -18.4
+subcap "li_41040_40960#" -6599.02
+cap "ota/li_0_29440#" "ota/ib" 36.8
+subcap "xp" -10874.8
+cap "cap1/om" "cap1/ip" -1.42109e-14
+cap "cap1/om" "cap1/gnda" 46
+cap "cap1/ip" "cap1/gnda" 46
+subcap "xp" -10282.7
+cap "cap1/dummy1/gnda" "cap1/xp" 96
+cap "cap1/dummy1/gnda" "cap1/dummy1/vssa" 181.5
+cap "cap1/dummy1/gnda" "cap1/om" -5.68434e-14
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 280.5
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 297
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 297
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 280.5
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 280.5
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 297
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 297
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 280.5
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 280.5
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 297
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 297
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 280.5
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 115.5
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 297
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 297
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 280.5
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 280.5
+cap "li_n33120_34320#" "cap1/dummy1/vssa" 297
+subcap "m2_n2080_42640#" -46.4
+subcap "m2_n2240_42640#" -40.96
+subcap "m2_n2400_42640#" -35.52
+cap "li_n33120_34320#" "cap1/dummy1/gnda" 42
+cap "cap1/dummy1/vssa" "li_n33120_34320#" 198
+subcap "m2_n1120_42000#" -16.4
+subcap "m2_n1120_42320#" -16.4
+subcap "m2_n2560_42320#" -16.4
+subcap "m2_n2720_42320#" -38.24
+subcap "m2_n1120_42640#" -16.4
+subcap "m2_n2560_42640#" -16.4
+subcap "m2_n2720_42640#" -38.24
+cap "cap1/xm" "cap1/gnda" 46
+cap "ota/1/fp/vdda" "cap1/gnda" 35.3571
+cap "cap1/gnda" "cap1/im" 46
+cap "m2_n1760_42640#" "cap1/gnda" 16.6667
+cap "cap1/op" "cap1/gnda" 46
+cap "ota/1/fp/vddx" "cap1/gnda" 117.49
+cap "m2_n1120_42640#" "ota/1/fp/vddx" 16.6667
+cap "cap1/dummy1/vssa" "cap1/gnda" 176
+cap "ota/1/fp/vddx" "cap1/im" 52.5
+cap "ota/1/bp" "cap1/gnda" 4.16667
+cap "m2_n1120_42640#" "cap1/gnda" 8.33333
+cap "m2_n2080_42640#" "cap1/gnda" 16.6667
+cap "m2_n1440_42640#" "cap1/gnda" 16.6667
+subcap "m2_n1120_42000#" -8.2
+subcap "m2_n1120_42320#" -8.2
+subcap "m2_n1440_42320#" -42.32
+subcap "m2_n1120_42640#" -8.2
+subcap "m2_n1440_42640#" -42.32
+cap "cap1/im" "ota/1/fp/vddx" 52.5
+cap "m2_n1120_42640#" "ota/1/fp/vddx" 50
+cap "ota/1/fp/vdda" "cap1/gnda" 93.5
+cap "ota/1/fp/vssa" "cap1/gnda" 379.5
+cap "ota/1/fp/bp" "cap1/gnda" 50
+cap "cap1/im" "cap1/gnda" 2.84217e-14
+cap "cap1/gnda" "ota/1/fp/vddx" 597
+cap "m2_n1120_42640#" "cap1/gnda" 8.33333
+cap "cap1/gnda" "ota/1/fp/gnda" 51.2333
+cap "cap1/gnda" "ota/1/fp/gnda" 291.5
+cap "cap1/gnda" "ota/1/fp/gnda" 9.9
+cap "cap1/gnda" "ota/1/d/gnda" 9
+cap "cap1/gnda" "ota/1/d/vssa" 13.4
+cap "cap1/gnda" "ota/1/fp/vssa" 13.4
+cap "ota/1/fp/gnda" "cap1/gnda" 31.5
+cap "cap1/gnda" "ota/1/d/vssa" 201
+cap "cap1/gnda" "ota/1/fp/vssa" 201
+cap "ota/1/d/gnda" "cap1/gnda" 21
+cap "cap1/gnda" "ota/1/d/gnda" 52.1333
+cap "ota/1/d/gnda" "cap1/gnda" 302
+cap "cap1/im" "ota/1/d/vddx" 52.5
+cap "cap1/gnda" "ota/1/bp" 4.16667
+cap "ota/1/d/vdda" "cap1/gnda" 4.46667
+cap "cap1/gnda" "ota/1/d/vddx" 99.7333
+cap "cap1/im" "ota/1/d/vddx" 52.5
+cap "cap1/gnda" "ota/1/d/vdda" 67
+cap "cap1/gnda" "ota/1/d/vddx" 721
+cap "cap1/gnda" "ota/1/bp" 50
+cap "ota/1/d/vdda" "cap1/gnda" 13.4
+cap "cap1/gnda" "ota/1/d/vdda" 201
+cap "ota/1/bp" "cap1/gnda" 4.16667
+cap "ota/1/cp/vddx" "cap1/im" 52.5
+cap "ota/1/cp/vddx" "cap1/gnda" 99.7333
+cap "cap1/im" "ota/1/cp/vddx" 52.5
+cap "cap1/gnda" "ota/1/cp/vddx" 721
+cap "cap1/gnda" "ota/1/bp" 50
+cap "cap1/gnda" "ota/1/cp/gnda" 61.1333
+cap "ota/1/cp/gnda" "cap1/gnda" 323
+cap "ota/1/bp/vssa" "cap1/gnda" 13.4
+cap "cap1/gnda" "ota/1/cp/vssa" 13.4
+cap "ota/1/bp/gnda" "cap1/gnda" 26.0667
+cap "ota/1/bp/gnda" "cap1/gnda" 151
+cap "ota/1/bp/vssa" "cap1/gnda" 201
+cap "ota/1/cp/vssa" "cap1/gnda" 201
+cap "cap1/gnda" "ota/1/bp/gnda" 35.0667
+cap "ota/1/bp/gnda" "cap1/gnda" 172
+cap "ota/1/bp/vddx" "cap1/gnda" 99.7333
+cap "ota/1/bp" "cap1/gnda" 4.16667
+cap "cap1/gnda" "ota/1/bp/vdda" 8.93333
+cap "ota/1/bp/vddx" "cap1/im" 52.5
+cap "ota/1/bp/vddx" "cap1/gnda" 721
+cap "cap1/gnda" "ota/1/bp" 50
+cap "cap1/gnda" "ota/1/bp/vdda" 134
+cap "cap1/im" "ota/1/bp/vddx" 52.5
+cap "ota/1/bp/vdda" "cap1/gnda" 8.93333
+cap "cap1/gnda" "ota/1/bp/vdda" 134
+cap "ota/1/ap/vddx" "cap1/im" 52.5
+cap "ota/1/ap/vddx" "cap1/gnda" 99.7333
+cap "ota/1/bp" "cap1/gnda" 4.16667
+cap "cap1/gnda" "ota/1/ap/vddx" 721
+cap "cap1/im" "ota/1/ap/vddx" 52.5
+cap "cap1/gnda" "ota/1/bp" 50
+cap "ota/1/ap/vssa" "cap1/gnda" 6.7
+cap "ota/1/ap/gnda" "cap1/gnda" 61.1333
+cap "ota/1/ap/gnda" "cap1/gnda" 323
+cap "ota/1/ap/vssa" "cap1/gnda" 100.5
+cap "ota/1/biasp/vdda" "cap1/gnda" 13.4
+cap "ota/1/ap/vssa" "cap1/gnda" 6.7
+cap "cap1/gnda" "ota/1/ap/vssa" 100.5
+cap "ota/1/biasp/vdda" "cap1/gnda" 201
+cap "ota/1/z" "cap1/gnda" 4.16667
+cap "ota/1/biasp/vssa" "cap1/gnda" 45.1333
+cap "cap1/gnda" "ota/1/q" 4.16667
+cap "ota/1/biasp/vdda" "cap1/gnda" 45.1333
+cap "cap1/gnda" "ota/1/biasp/vssa" 4.46667
+cap "cap1/gnda" "ota/1/biasp/vssa" 67
+cap "cap1/gnda" "ota/1/q" 50
+cap "cap1/gnda" "ota/1/biasp/vdda" 406
+cap "cap1/gnda" "ota/1/z" 50
+cap "ota/1/biasp/vssa" "cap1/gnda" 406
+cap "ota/1/biasp/vddx" "cap1/gnda" 10.4333
+cap "cap1/gnda" "ota/1/biasp/vssa" 8.93333
+cap "cap1/gnda" "ota/1/ib" 4.16667
+cap "cap1/gnda" "ota/1/biasp/vssa" 4.46667
+cap "cap1/gnda" "ota/1/biasp/vssa" 45.1333
+cap "cap1/gnda" "ota/1/biasp/vssa" 406
+cap "cap1/gnda" "ota/1/biasp/vssa" 134
+cap "ota/1/ib" "cap1/gnda" 50
+cap "cap1/gnda" "ota/1/biasp/vddx" 138
+cap "ota/1/biasp/vssa" "cap1/gnda" 67
+cap "ota/1/z" "cap1/gnda" 4.16667
+cap "cap1/gnda" "ota/1/bp" 4.16667
+cap "ota/1/biasp/vdda" "cap1/gnda" 47.3667
+cap "ota/1/biasp/vddx" "cap1/gnda" 34.7
+cap "cap1/gnda" "ota/1/biasp/vdda" 439.5
+cap "cap1/gnda" "ota/1/z" 50
+cap "cap1/gnda" "ota/1/biasp/vddx" 268
+cap "cap1/gnda" "ota/1/bp" 50
+cap "ota/1/biasp/vdda" "cap1/gnda" 20.1
+cap "cap1/gnda" "ota/1/biasp/vdda" 301.5
+cap "cap1/gnda" "ota/1/biasp/vddx" 110.933
+cap "cap1/im" "ota/1/biasp/vddx" 52.5
+cap "cap1/gnda" "ota/1/biasp/vdda" 4.46667
+cap "cap1/gnda" "ota/1/biasp/vddx" 554
+cap "ota/1/biasp/vddx" "cap1/im" 52.5
+cap "cap1/gnda" "ota/1/biasp/vdda" 67
+cap "ota/1/biasp/qa" "cap1/gnda" 4.16667
+cap "cap1/gnda" "ota/1/q" 4.16667
+cap "ota/1/biasp/gnda" "cap1/gnda" 70.9
+cap "cap1/gnda" "ota/1/biasp/qa" 50
+cap "ota/1/q" "cap1/gnda" 50
+cap "ota/1/biasp/gnda" "cap1/gnda" 540
+cap "ota/1/biasp/vssa" "cap1/gnda" 6.7
+cap "ota/1/biasp/vssa" "cap1/gnda" 8.93333
+cap "ota/1/biasp/vssa" "cap1/gnda" 39.5333
+cap "ota/1/biasp/vssa" "cap1/gnda" 134
+cap "cap1/gnda" "ota/1/biasp/vssa" 239
+cap "ota/1/biasp/vssa" "cap1/gnda" 100.5
+cap "cap1/vssa" "cap1/gnda" -117.415
+subcap "m4_n1040_74480#" -207.104
+cap "cap1/gnda" "ota/vdda" 13.4
+cap "cap1/gnda" "ota/vddx" 13.4
+cap "cap1/gnda" "ota/1/biasp/vssa" 6.7
+subcap "m4_n1040_74480#" -253.184
+cap "cap1/gnda" "ota/vdda" 107
+cap "cap1/gnda" "cap1/vssa" -108.98
+cap "cap1/gnda" "ota/1/biasp/vssa" 100.5
+cap "cap1/gnda" "ota/vddx" 201
+cap "ota/2/vdda" "vssa" 5.68434e-14
+cap "cap1/vssa" "cap1/gnda" -75.435
+subcap "m5_n800_74880#" -422.4
+subcap "m4_n1040_74000#" -107.948
+subcap "m5_n800_74880#" -194.88
+cap "cap1/gnda" "ota/1/vdda" -94
+cap "ota/1/vddx" "ota/1/vdda" 403.52
+cap "ota/1/vddx" "ota/1/vdda" 177.76
+cap "ota/vddx" "cap1/gnda" -134.14
+cap "cap1/vssa" "ota/1/vdda" 94
+cap "ota/1/bp" "ota/1/vdda" 295.36
+subcap "m5_6880_74880#" -294.75
+cap "ota/1/vssa" "ota/1/vdda" 94
+cap "ota/1/vddx" "ota/1/vdda" 380.8
+cap "ota/1/vddx" "ota/1/vdda" 308.8
+cap "ota/1/bp" "ota/1/vdda" 207.2
+cap "ota/1/bp" "ota/1/vdda" 308.8
+subcap "m5_11680_74880#" -393.144
+subcap "m5_11680_74880#" -294.75
+cap "ota/1/vdda" "ota/1/vddx" 308.8
+cap "ota/1/vdda" "ota/1/bp" 308.8
+cap "ota/1/bp" "ota/1/vdda" 207.2
+cap "ota/1/vssa" "ota/1/vdda" 94
+cap "ota/1/vdda" "ota/1/vddx" 380.8
+cap "ota/1/vddx" "vssa" 1094.33
+cap "vssa" "ota/1/vddx" 1507.5
+cap "vssa" "ota/1/vddx" 1552.17
+cap "ota/1/vddx" "vssa" 1496.33
+cap "ota/1/vddx" "vssa" 1563.33
+cap "vssa" "ota/1/vddx" 1496.33
+cap "ota/1/vddx" "vssa" 1496.33
+cap "vssa" "ota/1/vddx" 1563.33
+cap "vssa" "ota/1/vddx" 1496.33
+cap "ota/1/vddx" "vssa" 1507.5
+cap "vssa" "ota/1/vddx" 1552.17
+cap "ota/1/vddx" "vssa" 1496.33
+cap "vssa" "ota/1/vddx" 1563.33
+cap "vssa" "ota/1/vddx" 1496.33
+cap "ota/1/vddx" "vssa" 1228.33
+cap "ota/2/vddx" "vssa" 1049.67
+cap "ota/2/vddx" "vssa" 1518.67
+cap "vssa" "ota/2/vddx" 1541
+cap "vssa" "ota/2/vddx" 1496.33
+cap "ota/2/vddx" "vssa" 1563.33
+cap "vssa" "ota/2/vddx" 1496.33
+cap "ota/2/vddx" "vssa" 1496.33
+cap "vssa" "ota/2/vddx" 1563.33
+cap "ota/2/vddx" "vssa" 1496.33
+cap "vssa" "ota/2/vddx" 1518.67
+cap "ota/2/vddx" "vssa" 1541
+cap "ota/2/vddx" "vssa" 1496.33
+cap "vssa" "ota/2/vddx" 1563.33
+cap "ota/2/vddx" "vssa" 1496.33
+cap "vssa" "ota/2/vddx" 1273
+subcap "gnda" -143624
+subcap "vdda" -143364
+subcap "vssa" -141464
+merge "ota/1/vdda" "m5_n800_74880#" -429.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144000 -800 0 0
+merge "m5_n800_74880#" "m5_6880_74880#"
+merge "m5_6880_74880#" "m5_11680_74880#"
+merge "cap1/xp" "pseudo/xp" -7313 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2000000 -52800 257920 -1444 0 0 0 0 0 0
+merge "pseudo/xp" "ota/im"
+merge "ota/im" "cap2/xp"
+merge "cap2/xp" "xp"
+merge "pseudo/fsb" "fsb" 1128.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2736800 0 -6400 -160 0 0 0 0 0 0
+merge "cap1/dummy1/vssa" "cap1/a_1120_960#" -550.731 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6520 -1924 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap1/a_1120_960#" "pseudo/vssa"
+merge "pseudo/vssa" "cap2/a_1120_960#"
+merge "cap2/a_1120_960#" "ota/VSUBS"
+merge "ota/VSUBS" "VSUBS"
+merge "VSUBS" "cap2/dummy1/vssa"
+merge "cap2/dummy1/vssa" "li_n3840_31840#"
+merge "li_n3840_31840#" "li_n3840_39920#"
+merge "ota/li_0_29440#" "li_n33120_40960#" -1172.91 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92800 -2722 134640 -1604 797040 -2244 115200 -2722 0 0 0 0 0 0
+merge "li_n33120_40960#" "li_41040_40960#"
+merge "cap1/op" "ota/om" -31571.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5102400 -165160 5040 -4002 0 0 0 0 0 0
+merge "ota/om" "pseudo/op"
+merge "pseudo/op" "cap2/op"
+merge "cap2/op" "op"
+merge "ota/2/gnda" "ota/gnda" -1309.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -701496 -5284 -32000 -960 0 0
+merge "ota/gnda" "cap1/dummy1/gnda"
+merge "cap1/dummy1/gnda" "cap1/gnda"
+merge "cap1/gnda" "pseudo/gnda"
+merge "pseudo/gnda" "cap2/dummy1/gnda"
+merge "cap2/dummy1/gnda" "ota/4/gnda"
+merge "ota/4/gnda" "ota/3/gnda"
+merge "ota/3/gnda" "cap2/gnda"
+merge "cap2/gnda" "gnda"
+merge "gnda" "m4_n1040_400#"
+merge "m4_n1040_400#" "li_n33120_34320#"
+merge "li_n33120_34320#" "m4_n1040_74000#"
+merge "ota/li_0_30400#" "li_41040_35680#" -1207.99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172400 -2722 230240 -1604 57440 -1924 210800 -2722 0 0 0 0 0 0
+merge "li_41040_35680#" "li_41040_39680#"
+merge "cap1/im" "cap2/im" -172.275 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14200 -320 -116800 -320 0 0 0 0 0 0
+merge "cap2/im" "im"
+merge "pseudo/q" "ota/q" -17662.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 -84643 87920 -3120 0 0 0 0 0 0
+merge "ota/q" "q"
+merge "ota/2/vssa" "ota/vssa" -18368.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2281636 -91690 447277 -11603 0 0
+merge "ota/vssa" "cap1/vssa"
+merge "cap1/vssa" "ota/4/vssa"
+merge "ota/4/vssa" "ota/3/vssa"
+merge "ota/3/vssa" "cap2/vssa"
+merge "cap2/vssa" "vssa"
+merge "vssa" "m4_n1040_n80#"
+merge "m4_n1040_n80#" "m4_n1040_74480#"
+merge "cap1/om" "pseudo/om" -18784.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3350400 -84320 76720 -480 0 0 0 0 0 0
+merge "pseudo/om" "ota/op"
+merge "ota/op" "cap2/om"
+merge "cap2/om" "om"
+merge "cap1/ip" "cap2/ip" -166.56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 -108800 -320 0 0 0 0 0 0
+merge "cap2/ip" "ip"
+merge "cap1/xm" "ota/ip" -422.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -44000 -240 -60000 -1640 0 0 0 0 0 0
+merge "ota/ip" "pseudo/xm"
+merge "pseudo/xm" "cap2/xm"
+merge "cap2/xm" "xm"
+merge "ota/ib" "ib" -18709.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3350400 -84320 0 0 0 0 0 0 0 0
+merge "ota/2/vdda" "vdda" -367.912 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -139560 -800 -32000 -960 0 0

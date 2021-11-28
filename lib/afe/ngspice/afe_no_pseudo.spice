@@ -1,0 +1,245 @@
+* NGSPICE file created from afe.ext - technology: sky130A
+
+.subckt inv_2_2 in out vdda bp vddx gnda vssa
+X0 pb1 in vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X1 pb2 in out vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X2 vddx bp pa2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X3 vdda bp pa1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X4 n1 in vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X5 vddx in pb2 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X6 out in n1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X7 out in pb1 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X8 n2 in out vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X9 pa1 bp vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X10 pa2 bp vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X11 vssa in n2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+.ends
+
+.subckt invt in out xpb xn xpa vddx bp gnda vssa
+X0 xn in out vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=9e+11p ps=3.3e+06u w=1e+06u l=8e+06u
+X1 xpa bp vddx xpa sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.85e+12p ps=7.15e+06u w=3e+06u l=8e+06u
+X2 xpa bp vddx xpa sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.85e+12p ps=7.15e+06u w=3e+06u l=8e+06u
+X3 out in xpb vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.7e+12p pd=6.3e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X4 out in xpb vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.7e+12p pd=6.3e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X5 out in xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=9e+11p pd=3.3e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X6 vddx bp pa2 xpa sky130_fd_pr__pfet_g5v0d10v5 ad=2.85e+12p pd=7.15e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X7 vddx in pb2 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.85e+12p pd=7.15e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X8 xpb in pb1 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X9 xpa bp pa1 xpa sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X10 n1 in vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X11 xn in n1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X12 vddx bp xpa xpa sky130_fd_pr__pfet_g5v0d10v5 ad=2.85e+12p pd=7.15e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X13 n2 in xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X14 vddx bp xpa xpa sky130_fd_pr__pfet_g5v0d10v5 ad=2.85e+12p pd=7.15e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X15 xpb in out vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.7e+12p ps=6.3e+06u w=3e+06u l=8e+06u
+X16 xpb in out vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.7e+12p ps=6.3e+06u w=3e+06u l=8e+06u
+X17 vssa in n2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X18 pb2 in xpb vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X19 pa1 bp vddx xpa sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.85e+12p ps=7.15e+06u w=3e+06u l=8e+06u
+X20 pa2 bp xpa xpa sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X21 pb1 in vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.85e+12p ps=7.15e+06u w=3e+06u l=8e+06u
+X22 xn in out vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=9e+11p ps=3.3e+06u w=1e+06u l=8e+06u
+X23 out in xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=9e+11p pd=3.3e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+.ends
+
+.subckt inv_bias bpa bpb gnda na nb qa qb vdda vddx vssa xa xb
+X0 xb2 xb xb1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X1 qa6 qa vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X2 qa4 qa qa5 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X3 nb1 nb vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X4 nb3 nb nb2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X5 bpb xa xa3 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X6 xb qb qb3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X7 xa2 xa xa1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X8 qb2 qb qb1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X9 vdda bpa bpa1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X10 bpa2 bpa bpa3 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X11 na na na3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X12 qa1 qa vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X13 na2 na na1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X14 xb1 xb vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X15 xb3 xb xb2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X16 qa qa qa4 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X17 qa2 qa qa1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X18 bpb nb nb3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X19 qa5 qa qa6 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X20 nb2 nb nb1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X21 xa1 xa vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X22 xa3 xa xa2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X23 qb1 qb vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X24 qb3 qb qb2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X25 qa3 qa qa2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X26 bpa3 bpa vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X27 bpa1 bpa bpa2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X28 qa qa qa3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X29 na1 na vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X30 na3 na na2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X31 xb xb xb3 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+.ends
+
+.subckt opamp_core im ip out ib q vdda bp vddx gnda vssa xn xp x y z
+Xcl y out vdda bp vddx gnda vssa inv_2_2
+Xbl x y xp xn vdda vddx bp gnda vssa invt
+Xal im x vdda bp vddx gnda vssa inv_2_2
+Xcr y out vdda bp vddx gnda vssa inv_2_2
+Xbr ip y xp xn vdda vddx bp gnda vssa invt
+Xar x x vdda bp vddx gnda vssa inv_2_2
+Xbiasl bp bp gnda ib ib q q vdda vddx vssa z z inv_bias
+Xbiasr bp bp gnda ib ib q q vdda vddx vssa z z inv_bias
+X0 out xn sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X1 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X2 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X3 out xp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X4 out xp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X5 out xp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X6 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X7 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X8 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X9 out xn sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X10 out xn sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X11 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X12 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X13 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X14 out xn sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X15 out xp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+.ends
+
+.subckt opamp_pair ima ipa outa imb ipb outb ib vdda gnda vssa vddx
+Xb1 imb ipb outb ib q vdda bp vddx gnda vssa xpb xpb xb yb z opamp_core
+Xa1 ima ipa outa ib q vdda bp vddx gnda vssa xpa xpa xa ya z opamp_core
+Xb2 imb ipb outb ib q vdda bp vddx gnda vssa xpb xpb xb yb z opamp_core
+Xa2 ima ipa outa ib q vdda bp vddx gnda vssa xpa xpa xa ya z opamp_core
+.ends
+
+.subckt cap1_10_core a b1 b2 c1 c2 gnda vssa
+X0 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X1 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X2 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X3 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X4 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X5 a b2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X6 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X7 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X8 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1.2e+06u
+X9 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X10 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X11 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X12 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X13 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X14 a b1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X15 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1.2e+06u
+X16 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X17 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X18 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X19 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X20 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X21 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X22 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X23 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1.2e+06u
+X24 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1.2e+06u
+X25 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+.ends
+
+.subckt cap1_10_dummy gnda vssa
+X0 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X1 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X2 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X3 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X4 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X5 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1.2e+06u
+X6 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X7 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X8 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X9 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X10 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+X11 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1.2e+06u
+X12 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1.2e+06u w=1e+07u
+.ends
+
+.subckt cap1_10 ip xp om im xm op gnda vssa
+Xp1 xp om om ip ip gnda vssa cap1_10_core
+Xp2 xp om om ip ip gnda vssa cap1_10_core
+Xm1 xm op op im im gnda vssa cap1_10_core
+Xm2 xm op op im im gnda vssa cap1_10_core
+Xdummy1 gnda vssa cap1_10_dummy
+Xdummy2 gnda vssa cap1_10_dummy
+.ends
+
+.subckt pseudo xp om xm op fsb q gnda vssa
+X0 xp xp om q sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X1 xm fsb op q sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X2 xm op op op sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X3 op fsb xm q sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X4 op fsb xm op sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X5 xm fsb op op sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X6 op op xm op sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X7 op xm xm q sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X8 om fsb xp q sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X9 om xp xp q sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X10 xm xm op q sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X11 xp fsb om q sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X12 xp fsb om om sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X13 xp om om om sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X14 om om xp om sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+X15 om fsb xp om sky130_fd_pr__pfet_g5v0d10v5 ad=4.2e+11p pd=2.84e+06u as=4.2e+11p ps=2.84e+06u w=420000u l=2e+07u
+.ends
+
+.subckt inv_1_4 in out vdda bp vddx gnda vssa
+X0 pb1 in vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X1 pb3 in pb2 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X2 vdda bp pa1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X3 pa2 bp pa3 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X4 n1 in vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X5 out in pb3 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X6 n2 in n1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X7 pb2 in pb1 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X8 n3 in n2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X9 pa3 bp vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X10 pa1 bp pa2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X11 out in n3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+.ends
+
+.subckt ota_core im ip op om x y ib q z bp vdda vddx gnda vssa
+Xfm y op vdda bp vddx gnda vssa inv_2_2
+Xfp y om vdda bp vddx gnda vssa inv_2_2
+Xcm x x vdda bp vddx gnda vssa inv_1_4
+Xbm op x vdda bp vddx gnda vssa inv_1_4
+Xam im op vdda bp vddx gnda vssa inv_2_2
+Xcp x x vdda bp vddx gnda vssa inv_1_4
+Xbp om x vdda bp vddx gnda vssa inv_1_4
+Xap ip om vdda bp vddx gnda vssa inv_2_2
+Xbiasm bp bp gnda ib ib q q vdda vddx vssa z z inv_bias
+Xbiasp bp bp gnda ib ib q q vdda vddx vssa z z inv_bias
+Xd x y vdda bp vddx gnda vssa inv_1_4
+Xe y y vdda bp vddx gnda vssa inv_1_4
+X0 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X1 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X2 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X3 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X4 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X5 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X6 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X7 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X8 vddx bp sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+.ends
+
+.subckt ota im ip op om ib q vdda gnda vssa
+X1 im ip op om x y ib q z bp vdda vddx gnda vssa ota_core
+X2 im ip op om x y ib q z bp vdda vddx gnda vssa ota_core
+X3 im ip op om x y ib q z bp vdda vddx gnda vssa ota_core
+X4 im ip op om x y ib q z bp vdda vddx gnda vssa ota_core
+.ends
+
+.subckt lna ip im op om fsb ib vdda gnda vssa
+Xcap1 ip xp om im xm op gnda vssa cap1_10
+Xota xp xm om op ib q vdda gnda vssa ota
+Xcap2 ip xp om im xm op gnda vssa cap1_10
+rp xp om 1T
+rm xm op 1T
+.ends
+
+.subckt afe ip im om op fsb ib vdda gnda vssa
+Xbuffer op xp op om xm om ib vdda gnda vssa buffer/vddx opamp_pair
+Xlna ip im xp xm fsb ib vdda gnda vssa lna
+.ends
+

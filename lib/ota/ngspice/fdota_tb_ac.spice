@@ -1,0 +1,70 @@
+* symmetrical single-ended OTA open-loop testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../../array/ngspice/array.spice"
+
+.subckt fdotaa im ip op om ib vdda gnda vssa
+
+x1pa ib  ib  vdda vdda vssa p8_8
+
+x3pa xi  ib  vdda vdda vssa p8_8
+x3pb om  ip  xi   vdda vssa p8_8
+x3n  om  z   vssa vssa      n8_8
+
+x4pa xi  ib  vdda vdda vssa p8_8
+x4pb op  im  xi   vdda vssa p8_8
+x4n  op  z   vssa vssa      n8_8
+
+
+x5pa xop ib   vdda vdda vssa p4_8
+x5pb z   gnda xop  vdda vssa p4_8
+x5n  z   z    vssa vssa      n4_8
+
+x7pa xop ib   vdda vdda vssa p4_8
+x7pb n   op   xop  vdda vssa p4_8
+x7n  n   n    vssa vssa      n4_8
+
+x6pa xom ib   vdda vdda vssa p4_8
+x6pb z   gnda xom  vdda vssa p4_8
+x6n  z   z    vssa vssa      n4_8
+
+x8pa xom ib   vdda vdda vssa p4_8
+x8pb n   om   xom  vdda vssa p4_8
+x8n  n   n    vssa vssa      n4_8
+
+.ends
+
+* supply voltages
+vdda  vdda 0 1.8
+vssa  vssa 0 0.0
+egnda gnda vssa vdda vssa 0.5
+
+* input signals
+vin in gnda dc 0 ac 1 SINE(0 0.4 0.5k 0 0 0)
+eip ip gnda in gnda  0.5
+eim im gnda in gnda -0.5
+IB ib vss 10n
+
+* DUT
+Xdut im ip op om ib vdda gnda vssa fdotaa
+CLP op gnda 1p
+CLM om gnda 1p
+
+*.save v(in) v(out) v(ib) i(vdda)
+.option gmin=1e-15
+.control
+
+	op
+	print ib i(vdda)
+
+	dc vin -5m 5m 100u
+*	wrdata ../data/fdota_tb_open_dc.txt v(out)
+	plot v(in) v(op) v(om) xlimit -4m 4m ylimit 0.0 1.8
+	plot deriv(out) ylog
+
+    
+.endc
+
+.end

@@ -1,0 +1,92 @@
+timestamp 1637806411
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_g5v0d10v5 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_20v0 l=l w=w a1=as a2=ad p1=ps p2=pd
+port "vdda" 2 -320 -1520 80 -1440 m5
+port "gna" 1 10400 -2240 10480 -2160 m2
+port "gnb" 0 10400 -1680 10480 -1600 m2
+port "vssa" 3 960 -1520 1360 -1440 m5
+node "vdda" 2 33945.7 -320 -1520 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4384000 22720 3200000 20000 0 0
+node "n8" 168 303.4 9360 -2880 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 48000 880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 16000 560 0 0 0 0 0 0 0 0 0 0
+node "n7" 168 303.4 8080 -2880 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 48000 880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 16000 560 0 0 0 0 0 0 0 0 0 0
+node "n6" 168 303.4 6800 -2880 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 48000 880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 16000 560 0 0 0 0 0 0 0 0 0 0
+node "n5" 168 303.4 5520 -2880 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 48000 880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 16000 560 0 0 0 0 0 0 0 0 0 0
+node "n4" 168 303.4 4240 -2880 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 48000 880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 16000 560 0 0 0 0 0 0 0 0 0 0
+node "n3" 168 303.4 2960 -2880 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 48000 880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 16000 560 0 0 0 0 0 0 0 0 0 0
+node "n2" 168 303.4 1680 -2880 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 48000 880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 16000 560 0 0 0 0 0 0 0 0 0 0
+node "n1" 168 303.4 400 -2880 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 48000 880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 16000 560 0 0 0 0 0 0 0 0 0 0
+node "xn" 7356 15086.5 400 -2480 mvndif 0 0 0 0 0 0 0 0 0 0 0 0 576000 10560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1081600 27200 192000 6720 0 0 0 0 0 0 0 0 0 0
+node "gna" 13805 84417.2 10400 -2240 m2 0 0 0 0 0 0 0 0 0 0 0 0 800000 15200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4864000 37120 0 0 800000 25440 1059200 30480 876800 22080 0 0 0 0 0 0 0 0
+node "gnb" 8332 63346.9 10400 -1680 m2 0 0 0 0 0 0 0 0 0 0 0 0 384000 7040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2304000 24320 0 0 640000 19840 716800 21760 876800 22080 0 0 0 0 0 0 0 0
+substrate "vssa" 0 0 960 -1520 m5 0 0 0 0 0 0 0 0 0 0 2848000 71040 208000 4080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2960000 73840 80000 2800 3571200 90720 6924800 185760 4384000 22720 2560000 16000 0 0
+cap "n6" "xn" 84
+cap "vdda" "xn" 286.08
+cap "gnb" "gna" 736
+cap "xn" "n1" 84
+cap "xn" "n4" 84
+cap "gnb" "xn" 138.667
+cap "vdda" "gnb" 11213.1
+cap "xn" "n2" 84
+cap "xn" "n7" 84
+cap "xn" "n8" 84
+cap "xn" "n3" 84
+cap "gna" "xn" 5880.2
+cap "n5" "xn" 84
+cap "vdda" "gna" 4097.36
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 9600 -2880 9601 -2879 l=400 w=200 "vssa" "gna" 800 0 "n8" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 8960 -2880 8961 -2879 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "n8" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 8320 -2880 8321 -2879 l=400 w=200 "vssa" "gna" 800 0 "n7" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 7680 -2880 7681 -2879 l=400 w=200 "vssa" "gna" 800 0 "vssa" 200 0 "n7" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 7040 -2880 7041 -2879 l=400 w=200 "vssa" "gna" 800 0 "n6" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 6400 -2880 6401 -2879 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "n6" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5760 -2880 5761 -2879 l=400 w=200 "vssa" "gna" 800 0 "n5" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5120 -2880 5121 -2879 l=400 w=200 "vssa" "gna" 800 0 "vssa" 200 0 "n5" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4480 -2880 4481 -2879 l=400 w=200 "vssa" "gna" 800 0 "n4" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3840 -2880 3841 -2879 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "n4" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3200 -2880 3201 -2879 l=400 w=200 "vssa" "gna" 800 0 "n3" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2560 -2880 2561 -2879 l=400 w=200 "vssa" "gna" 800 0 "vssa" 200 0 "n3" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1920 -2880 1921 -2879 l=400 w=200 "vssa" "gna" 800 0 "n2" 200 0 "vssa" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1280 -2880 1281 -2879 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "n2" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 640 -2880 641 -2879 l=400 w=200 "vssa" "gna" 800 0 "n1" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 0 -2880 1 -2879 l=400 w=200 "vssa" "gna" 800 0 "vssa" 200 0 "n1" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 9600 -2480 9601 -2479 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 8960 -2480 8961 -2479 l=400 w=200 "vssa" "gna" 800 0 "gna" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 8320 -2480 8321 -2479 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 7680 -2480 7681 -2479 l=400 w=200 "vssa" "gna" 800 0 "gna" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 7040 -2480 7041 -2479 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 6400 -2480 6401 -2479 l=400 w=200 "vssa" "gna" 800 0 "gna" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5760 -2480 5761 -2479 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5120 -2480 5121 -2479 l=400 w=200 "vssa" "gna" 800 0 "gna" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4480 -2480 4481 -2479 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3840 -2480 3841 -2479 l=400 w=200 "vssa" "gna" 800 0 "gna" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3200 -2480 3201 -2479 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2560 -2480 2561 -2479 l=400 w=200 "vssa" "gna" 800 0 "gna" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1920 -2480 1921 -2479 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1280 -2480 1281 -2479 l=400 w=200 "vssa" "gna" 800 0 "gna" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 640 -2480 641 -2479 l=400 w=200 "vssa" "gna" 800 0 "xn" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 0 -2480 1 -2479 l=400 w=200 "vssa" "gna" 800 0 "gna" 200 0 "xn" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 9600 -1920 9601 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gnb" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 8960 -1920 8961 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gna" 200 0 "gnb" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 8320 -1920 8321 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gnb" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 7680 -1920 7681 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gna" 200 0 "gnb" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 7040 -1920 7041 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gnb" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 6400 -1920 6401 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gna" 200 0 "gnb" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5760 -1920 5761 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gnb" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 5120 -1920 5121 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gna" 200 0 "gnb" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 4480 -1920 4481 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gnb" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3840 -1920 3841 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gna" 200 0 "gnb" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 3200 -1920 3201 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gnb" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 2560 -1920 2561 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gna" 200 0 "gnb" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1920 -1920 1921 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gnb" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 1280 -1920 1281 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gna" 200 0 "gnb" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 640 -1920 641 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gnb" 200 0 "gna" 200 0
+device msubckt sky130_fd_pr__nfet_g5v0d10v5 0 -1920 1 -1919 l=400 w=200 "vssa" "gnb" 800 0 "gna" 200 0 "gnb" 200 0
+subcap "gna" -82818.7
+subcap "gnb" -62770.9
+subcap "vdda" -33758.5
+subcap "vssa" -14870.3
+subcap "gnb" -63314.1

@@ -3,86 +3,7 @@
 * Include SkyWater sky130 device models
 .lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 .param mc_mm_switch=0
-.include "../mag/cap_1_10.spice"
-.include "../../ota/mag/ota.spice"
-.include "../../pseudo/mag/pseudo_bias.spice"
-.include "../../pseudo/mag/pseudo_pair.spice"
-
-.subckt pseudo0 a b vdda vssa
-x0 x x a a vssa p1_8
-x1 x x b b vssa p1_8
-.ends
-
-.subckt cap2x a b c gnda vssa
-	xc1 a b c gnda vssa cap_1_10
-	xc2 a b c gnda vssa cap_1_10
-.ends
-
-.subckt cap4x a b c gnda vssa
-	xc1 a b c gnda vssa cap2x
-	xc2 a b c gnda vssa cap2x
-.ends
-
-.subckt cap8x a b c gnda vssa
-	xc1 a b c gnda vssa cap4x
-	xc2 a b c gnda vssa cap4x
-.ends
-
-.subckt cap16x a b c gnda vssa
-	xc1 a b c gnda vssa cap8x
-	xc2 a b c gnda vssa cap8x
-.ends
-
-
-.subckt lna0 inp inm out ib vdda gnda vssa
-
-* lna + feedback
-	eamp out gnda xm xp -100
-	cip inp xp   10p
-	cfp xp  gnda 1p
-	rp  xp  gnda 1T
-	cim inm xm   10p 
-	cfm xm  out  1p
-	rm  xm  out  1T	
-
-.ends
-
-.subckt lna1 inp inm out ib vdda gnda vssa
-
-* lna + feedback
-	Xamp xm xp out ib vdda gnda vssa ota
-
-	X0 ga da xm out gb db xp gnda gnda vssa pseudo_pair
-	x1 ib da ga db gb vdda        gnda vssa pseudo_bias
-	ibias ib vss 1n
-
-	cip inp xp   10p
-	cfp xp  gnda 1p
-	cim inm xm   10p 
-	cfm xm  out  1p
-		
-	xswp xp set gnda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
-	xswm xm set out  vdda sky130_fd_pr__pfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
-	vsw set vssa dc 1.8 pulse(0 1.8 1 10u 1m 1 1)
-	
-.ends
-
-.subckt lna2 inp inm out ib vdda gnda vssa
-
-* lna + feedback
-	Xamp xm xp out ib vdda gnda vssa ota
-	xcp xp inp gnda gnda vssa cap4x
-	xcm xm inm out  gnda vssa cap4x
-
-	X0 ga da xm out gb db xp gnda gnda vssa pseudo_pair
-	x1 ib da ga db gb vdda        gnda vssa pseudo_bias
-	ibias ib vss 1n
-	
-	xswp xp set gnda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
-	xswm xm set out  vdda sky130_fd_pr__pfet_g5v0d10v5 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=8e+06u
-	vsw set vssa dc 1.8 pulse(0 1.8 1 10u 1m 1 1)
-	
-.ends
+.include "../mag/lna.spice"
 
 
 * supply voltages
@@ -91,39 +12,41 @@ vgnda	gnda 0 0.9
 vssa	vssa 0 0.0
 
 * input signals
-vin	in gnda dc 0 ac 1 SINE(0 5m 1 0 0 0)
-einp	inp gnda in gnda  0.5
-einm	inm gnda in gnda -0.5
+vin	in gnda dc 0 ac 1 SINE(0 50m 1 0 0 0)
+einp	ip gnda in gnda  0.5
+einm	im gnda in gnda -0.5
+
+vfsb fsb vssa dc 1.8 pulse(0 1.8 1 10m 1m 10 1)
 
 * DUT
-*x0 inp  inm out ib  vdda gnda vssa lna0
+*x0 ip im op om fsb ib vdda gnda vssa lna2
+x0 ip im op om fsb ib q vdda gnda vssa lna
+IB   vdda ib 10n
+CLP  op gnda 10p
+CLM  om gnda 10p
 
-x1 inp  inm out1 ib1 vdda gnda vssa lna1
-CL1 out1 gnda 1p
-IB1 ib1 vssa 10n
-
-x2 inp  inm out2 ib2 vdda gnda vssa lna2
-CL2 out2 gnda 1p
-IB2 ib2 vssa 10n
-
-*.save v(in) v(x1.xp) v(x1.xm) v(out1) v(ib1)
-*.save v(in) v(x2.xp) v(x2.xm) v(out2) v(ib2)
+*.save v(in) v(ip) v(im) v(x0.xp) v(x0.xm) v(op) v(om)
 .option gmin=1e-14
-.option NOOPITER NOINIT
+*.option NOOPITER
+.option NOINIT
+.option METHOD=Gear
 .control
-
 	op
 	print ib i(vdda)
-	print in x1.xp x1.xm out1
-	print in x2.xp x2.xm out2
+	print ip im x0.xp x0.xm op om
 	
 	ac dec 10 1m 1Meg
-	plot vdb(out1) vdb(out2)
+	plot vdb(op,om)
 
-	tran 10m 5 100m uic
-	plot in x1.xm x1.xp out1
-	plot in x2.xm x2.xp out2
-	wrdata ../data/lna_tb_tran.txt in x1.xm out1
+	tran 1m 3 100m
+	plot ip im x0.xm x0.xp op om q
+	plot ip-im x0.xm-x0.xp op-om
+	wrdata ../data/lna_tb_tran.txt ip im x0.xp x0.xm op om
+	
+*	noise v(op,om) vin dec 10 1 100
+*	print inoise_total onoise_total
+*	setplot noise1
+*	plot inoise_spectrum loglog
     
 .endc
 

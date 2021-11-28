@@ -3,8 +3,7 @@
 * Include SkyWater sky130 device models
 .lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 .param mc_mm_switch=0
-.include "../mag/pseudo_pair.spice"
-.include "../mag/pseudo_bias.spice"
+.include "../mag/pseudo.spice"
 
 
 * supply voltages
@@ -13,55 +12,28 @@ vssa  vssa 0 0.0
 egnda gnda vssa vdda vssa 0.5
 
 
-vp  p  gnda dc 1m ac 1
-epa pa gnda p gnda 1
-epb pb gnda p gnda 1
+vo  o  gnda dc 0 ac 1
+eop op gnda o gnda  1
+eom om gnda o gnda -1
 
 
 * DUT
-X0 ga da pa gnda gb db pb gnda gnda vssa pseudo_pair
-x1 ib da ga db gb vdda         gnda vssa pseudo_bias
-ibias ib vss 1n
+x0 gnda om gnda op vdda gnda gnda vssa pseudo
 
-.save ib ga da db gb pa i(epa) i(epb)
+.save op om gnda i(eop) i(eom)
 
-*.option rshunt=1e18
-.option gmin=1e-14
+.option gmin=1e-15
 .control
 
 	ac dec 1 1m 1m
-	print abs(1/i(epa))
+	print abs(1/i(eop))
 
-	dc vp -100m 100m 1m
-	let ii = abs(i(epa))
+	dc vo -500m 500m 1m
+	let ii = abs(i(eop))
 	let ri = 1/abs(deriv(ii))
 	wrdata ../data/pseudo_i.txt ii ri
 	plot ylog ii
 	plot ylog ri
-	let vg = da
-	let vd = ga
-	plot vd-vg
-	wrdata ../data/pseudo_v.txt vg vd vd-vg
-
-
-	alter ibias dc 0.1n
-	dc vp -100m 100m 1m
-	let ii_01n = abs(i(epa))
-	let ri_01n = 1/abs(deriv(ii_01n))
-
-	alter ibias dc 1n
-	dc vp -100m 100m 1m
-	let ii_1n = abs(i(epa))
-	let ri_1n = 1/abs(deriv(ii_1n))
-	
-	alter ibias dc 10n
-	dc vp -100m 100m 1m
-	let ii_10n = abs(i(epa))
-	let ri_10n = 1/abs(deriv(ii_10n))
-
-	plot dc2.ri_01n dc3.ri_1n dc4.ri_10n ylog ylimit 1e11 1e14
-	wrdata ../data/pseudo_i_sweep.txt dc2.ri_01n dc3.ri_1n dc4.ri_10n
-	
     
 .endc
 

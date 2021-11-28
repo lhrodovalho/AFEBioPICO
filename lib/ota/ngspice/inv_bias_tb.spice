@@ -1,0 +1,33 @@
+* fully-differential single stage OTA open-loop testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/inv_bias.spice"
+
+* supply voltages
+vdda  vdda 0 1.8
+vssa  vssa 0 0.0
+
+* DUT
+X0 bp bp gnda ib ib q q vdda vddx vssa x x inv_bias
+IB vdda ib 1n
+
+egnda gnda vssa q vssa 1
+vin in gnda 0
+eip ip gnda in gnda  0.5
+eim im gnda in gnda -0.5
+
+*.save v(in) v(out) v(ib) i(vdda)
+.option gmin=1e-12
+.control
+
+	op
+	print i(vdda) v(q) v(bp) v(vddx)
+	
+	dc ib 100p 2n 100p
+	plot bp vddx q
+
+.endc
+
+.end

@@ -1,0 +1,26 @@
+* opamp bias testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/opamp_corea1.spice"
+.include "../mag/opamp_corea2.spice"
+
+* supply voltages
+vdda  vdda 0 1.8
+vssa  vssa 0 0.0
+
+* DUT
+x0         gnb gna vdda vssa opamp_corea1
+x1 gpa gpb     gna vdda vssa opamp_corea2
+ib vdda gnb 1n
+
+.option gmin=1e-15
+.control
+
+	dc ib 100p 10n 100p
+	plot gpa gpb gnb gna
+
+.endc
+
+.end

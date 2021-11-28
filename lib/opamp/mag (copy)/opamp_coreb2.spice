@@ -1,0 +1,40 @@
+* NGSPICE file created from opamp_coreb2.ext - technology: sky130A
+
+.subckt opamp_coreb2 gpa dpa gpb gn xn vdda vssa
+X0 xn gn xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=4.88e+15p pd=1.816e+10u as=4.88e+15p ps=1.816e+10u w=1e+06u l=2e+06u M=16
+X1 n2 gn xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=4.88e+15p ps=1.816e+10u w=1e+06u l=2e+06u
+X2 xp gpa p5 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.664e+16p pd=6.456e+10u as=2.16e+15p ps=5.04e+09u w=3e+06u l=2e+06u
+X3 xn gpb dpa dpa sky130_fd_pr__pfet_g5v0d10v5 ad=1.8e+16p pd=4.44e+10u as=3.456e+16p ps=8.064e+10u w=3e+06u l=2e+06u M=16
+X4 n7 gn vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=1.04e+15p ps=4.08e+09u w=1e+06u l=2e+06u
+X5 xp gpa dpa vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.664e+16p pd=6.456e+10u as=3.456e+16p ps=8.064e+10u w=3e+06u l=2e+06u M=16
+X6 vdda gpa p8 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=9.36e+15p pd=2.424e+10u as=2.16e+15p ps=5.04e+09u w=3e+06u l=2e+06u
+X7 xn gn n7 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=4.88e+15p pd=1.816e+10u as=2.4e+14p ps=8.8e+08u w=1e+06u l=2e+06u
+X8 p7 gpa vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=9.36e+15p ps=2.424e+10u w=3e+06u l=2e+06u
+X9 xn gn n5 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=4.88e+15p pd=1.816e+10u as=2.4e+14p ps=8.8e+08u w=1e+06u l=2e+06u
+X10 p1 gpa vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=9.36e+15p ps=2.424e+10u w=3e+06u l=2e+06u
+X11 n6 gn xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=4.88e+15p ps=1.816e+10u w=1e+06u l=2e+06u
+X12 n1 gn vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=1.04e+15p ps=4.08e+09u w=1e+06u l=2e+06u
+X13 n4 gn xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=4.88e+15p ps=1.816e+10u w=1e+06u l=2e+06u
+X14 xp gpa p3 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.664e+16p pd=6.456e+10u as=2.16e+15p ps=5.04e+09u w=3e+06u l=2e+06u
+X15 p2 gpa xp vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=2.664e+16p ps=6.456e+10u w=3e+06u l=2e+06u
+X16 p8 gpa xp vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=2.664e+16p ps=6.456e+10u w=3e+06u l=2e+06u
+X17 vssa gn n2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.04e+15p pd=4.08e+09u as=2.4e+14p ps=8.8e+08u w=1e+06u l=2e+06u
+X18 vssa gn n6 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.04e+15p pd=4.08e+09u as=2.4e+14p ps=8.8e+08u w=1e+06u l=2e+06u
+X19 p5 gpa vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=9.36e+15p ps=2.424e+10u w=3e+06u l=2e+06u
+X20 xp gpa p1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.664e+16p pd=6.456e+10u as=2.16e+15p ps=5.04e+09u w=3e+06u l=2e+06u
+X21 vssa gn n4 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.04e+15p pd=4.08e+09u as=2.4e+14p ps=8.8e+08u w=1e+06u l=2e+06u
+X22 n5 gn vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=1.04e+15p ps=4.08e+09u w=1e+06u l=2e+06u
+X23 p3 gpa vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=9.36e+15p ps=2.424e+10u w=3e+06u l=2e+06u
+X24 vdda gpa p6 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=9.36e+15p pd=2.424e+10u as=2.16e+15p ps=5.04e+09u w=3e+06u l=2e+06u
+X25 n3 gn vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=1.04e+15p ps=4.08e+09u w=1e+06u l=2e+06u
+X26 n8 gn xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2.4e+14p pd=8.8e+08u as=4.88e+15p ps=1.816e+10u w=1e+06u l=2e+06u
+X27 vdda gpa p2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=9.36e+15p pd=2.424e+10u as=2.16e+15p ps=5.04e+09u w=3e+06u l=2e+06u
+X28 p6 gpa xp vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=2.664e+16p ps=6.456e+10u w=3e+06u l=2e+06u
+X29 xn gn n3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=4.88e+15p pd=1.816e+10u as=2.4e+14p ps=8.8e+08u w=1e+06u l=2e+06u
+X30 vdda gpa p4 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=9.36e+15p pd=2.424e+10u as=2.16e+15p ps=5.04e+09u w=3e+06u l=2e+06u
+X31 vssa gn n8 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.04e+15p pd=4.08e+09u as=2.4e+14p ps=8.8e+08u w=1e+06u l=2e+06u
+X32 p4 gpa xp vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.16e+15p pd=5.04e+09u as=2.664e+16p ps=6.456e+10u w=3e+06u l=2e+06u
+X33 xp gpa p7 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.664e+16p pd=6.456e+10u as=2.16e+15p ps=5.04e+09u w=3e+06u l=2e+06u
+X34 xn gn n1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=4.88e+15p pd=1.816e+10u as=2.4e+14p ps=8.8e+08u w=1e+06u l=2e+06u
+.ends
+

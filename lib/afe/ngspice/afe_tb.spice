@@ -1,0 +1,52 @@
+* lna-ota buffer testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/afe.spice"
+
+
+* supply voltages
+vdda	vdda 0 1.8
+vgnda	gnda 0 0.9
+vssa	vssa 0 0.0
+
+* input signals
+vin	in gnda dc 0 ac 1 SINE(0 50m 1 0 0 0)
+einp	ip gnda in gnda  0.5
+einm	im gnda in gnda -0.5
+
+vfsb fsb vssa dc 1.8 pulse(0 1.8 1 10m 1m 10 1)
+
+* DUT
+x0 ip im om op fsb ib vdda gnda vssa lna
+IB   vdda ib 10n
+CLP  op gnda 10p
+CLM  om gnda 10p
+
+*.save v(in) v(ip) v(im) v(x0.xp) v(x0.xm) v(op) v(om)
+.option gmin=1e-14
+*.option NOOPITER
+.option NOINIT
+.option METHOD=Gear
+.control
+	op
+	print ib i(vdda)
+	print ip im op om
+	
+	ac dec 10 1m 1Meg
+	plot vdb(op,om)
+
+	tran 1m 3 100m
+	plot ip im op om
+	plot ip-im op-om
+	wrdata ../data/afe_tb_tran.txt ip im op om
+	
+*	noise v(op,om) vin dec 10 1 100
+*	print inoise_total onoise_total
+*	setplot noise1
+*	plot inoise_spectrum loglog
+    
+.endc
+
+.end

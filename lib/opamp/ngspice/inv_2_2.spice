@@ -1,0 +1,17 @@
+* NGSPICE file created from inv_2_2.ext - technology: sky130A
+
+.subckt inv_2_2 in out vdda bp vddx gnda vssa
+X0 pb1 in vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X1 pb2 in out vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X2 vddx bp pa2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X3 vdda bp pa1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X4 n1 in vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=1e+12p ps=4e+06u w=1e+06u l=8e+06u
+X5 vddx in pb2 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=3e+12p pd=8e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X6 out in n1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X7 out in pb1 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X8 n2 in out vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X9 pa1 bp vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=3e+12p ps=8e+06u w=3e+06u l=8e+06u
+X10 pa2 bp vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X11 vssa in n2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1e+12p pd=4e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+.ends
+

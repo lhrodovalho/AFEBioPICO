@@ -1,0 +1,17 @@
+* NGSPICE file created from inv_4_1.ext - technology: sky130A
+
+.subckt inv_4_1 in vdda bp vddx gnda vssa
+X0 a_2120_160# in vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.8e+12p ps=6.86667e+06u w=3e+06u l=8e+06u
+X1 a_2120_160# in vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.8e+12p ps=6.86667e+06u w=3e+06u l=8e+06u
+X2 vddx bp vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.8e+12p pd=6.86667e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X3 a_4040_3080# bp vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X4 a_2120_160# in vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=9e+11p ps=3.3e+06u w=1e+06u l=8e+06u
+X5 vddx in a_2120_160# vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.8e+12p pd=6.86667e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X6 vssa in a_2120_160# vssa sky130_fd_pr__nfet_g5v0d10v5 ad=9e+11p pd=3.3e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+X7 vddx in a_2120_160# vddx sky130_fd_pr__pfet_g5v0d10v5 ad=2.8e+12p pd=6.86667e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X8 a_2120_160# in vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=8e+11p pd=2.6e+06u as=9e+11p ps=3.3e+06u w=1e+06u l=8e+06u
+X9 vdda bp vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.8e+12p ps=6.86667e+06u w=3e+06u l=8e+06u
+X10 vdda bp a_4040_3080# vdda sky130_fd_pr__pfet_g5v0d10v5 ad=2.4e+12p pd=4.6e+06u as=2.4e+12p ps=4.6e+06u w=3e+06u l=8e+06u
+X11 vssa in a_2120_160# vssa sky130_fd_pr__nfet_g5v0d10v5 ad=9e+11p pd=3.3e+06u as=8e+11p ps=2.6e+06u w=1e+06u l=8e+06u
+.ends
+

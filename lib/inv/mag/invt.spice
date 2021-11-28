@@ -1,0 +1,33 @@
+* NGSPICE file created from invt.ext - technology: sky130A
+
+.subckt invt in out xpb xn vdda vddx bp gnda vssa
+X0 xn in out vssa sky130_fd_pr__nfet_g5v0d10v5 ad=4.8e+12p pd=1.56e+07u as=3.6e+12p ps=1.32e+07u w=1e+06u l=8e+06u
+X1 vdda bp vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=1.44e+13p pd=2.76e+07u as=2.28e+13p ps=5.72e+07u w=3e+06u l=8e+06u
+X2 vdda bp vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X3 out in xpb vddx sky130_fd_pr__pfet_g5v0d10v5 ad=1.08e+13p pd=2.52e+07u as=1.44e+13p ps=2.76e+07u w=3e+06u l=8e+06u
+X4 out in xpb vddx sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X5 out in xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X6 vddx bp pa2 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=4.8e+12p ps=9.2e+06u w=3e+06u l=8e+06u
+X7 vddx in pb2 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=4.8e+12p ps=9.2e+06u w=3e+06u l=8e+06u
+X8 xpb in pb1 vddx sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=4.8e+12p ps=9.2e+06u w=3e+06u l=8e+06u
+X9 vdda bp pa1 vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=4.8e+12p ps=9.2e+06u w=3e+06u l=8e+06u
+X10 n1 in vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.6e+12p pd=5.2e+06u as=2e+12p ps=8e+06u w=1e+06u l=8e+06u
+X11 xn in n1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X12 vddx bp vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X13 n2 in xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.6e+12p pd=5.2e+06u as=0p ps=0u w=1e+06u l=8e+06u
+X14 vddx bp vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X15 xpb in out vddx sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X16 xpb in out vddx sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X17 vssa in n2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X18 pb2 in xpb vddx sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X19 pa1 bp vddx vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X20 pa2 bp vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X21 pb1 in vddx vddx sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+06u l=8e+06u
+X22 xn in out vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+X23 out in xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=8e+06u
+C0 bp vddx 28.28fF
+C1 gnda out 18.27fF
+C2 vddx vdda 21.04fF
+C3 gnda in 21.95fF
+.ends
+

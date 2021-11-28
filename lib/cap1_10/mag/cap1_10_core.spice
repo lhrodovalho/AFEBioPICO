@@ -1,0 +1,31 @@
+* NGSPICE file created from cap1_10_core.ext - technology: sky130A
+
+.subckt cap1_10_core a b1 b2 c1 c2 gnda vssa
+X0 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X1 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X2 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X3 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X4 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X5 a b2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X6 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X7 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X8 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1.2e+06u
+X9 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X10 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X11 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X12 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X13 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X14 a b1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X15 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1.2e+06u
+X16 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X17 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X18 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X19 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X20 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X21 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X22 a c1 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+X23 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1.2e+06u
+X24 gnda gnda sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1.2e+06u
+X25 a c2 sky130_fd_pr__cap_mim_m3_1 l=1e+07u w=1e+07u
+.ends
+

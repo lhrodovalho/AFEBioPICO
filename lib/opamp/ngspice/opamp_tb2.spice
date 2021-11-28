@@ -1,0 +1,49 @@
+* OpAmp open-loop dc testbench
+
+* Include SkyWater sky130 device models
+.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param mc_mm_switch=0
+.include "../mag/opamp_core.spice"
+
+* supply voltages
+vdda  vdda 0 dc 1.8 pulse(1.7 1.8 1m 100u 100u 10 1)
+*vdda  vdda 0 dc 1.8
+vssa  vssa 0 0.0
+
+
+* DUT
+x0 out in out ib q vdda bp vddx gnda vssa xn xp x y z opamp_core
+ib vdda ib 5n
+*cl out gnda 10p
+*rl out vssa 1Meg
+il out gnda 0
+
+* input signals
+vin in gnda dc 0 ac 1 pulse(-250m 250m 0 10u 10u 5m 10m)
+egnda gnda vssa ib vssa 1
+
+.option method="Gear"
+.option gmin=1e-15
+.control
+
+	op
+
+	dc vin -0.5 0.5 10m
+	plot in out vddx bp
+	plot i(vdda)
+	
+	
+	dc il -5u 5u 100n
+	plot out vddx bp q
+	
+	ac dec 100 1 1Meg
+	plot vdb(out)
+	plot phase(out)*180/PI
+
+	tran 10u 40m
+	plot in out
+	plot i(vdda)
+
+.endc
+
+.end

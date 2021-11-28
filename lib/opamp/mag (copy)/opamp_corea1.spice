@@ -1,0 +1,53 @@
+* NGSPICE file created from opamp_corea1.ext - technology: sky130A
+
+.subckt opamp_corea1 gnb gna vdda vssa
+X0 gna gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=2e+13p pd=7.6e+07u as=1.44e+13p ps=5.28e+07u w=1e+06u l=2e+06u
+X1 gna gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X2 n2 gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.2e+12p pd=4.4e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X3 gna gnb gnb vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=9.6e+12p ps=3.52e+07u w=1e+06u l=2e+06u
+X4 gna gnb gnb vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X5 gna gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X6 n7 gna vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.2e+12p pd=4.4e+06u as=5.2e+12p ps=2.04e+07u w=1e+06u l=2e+06u
+X7 gna gnb gnb vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X8 xn gna gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X9 xn gna n7 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X10 gnb gnb gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X11 xn gna gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X12 xn gna n5 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=1.2e+12p ps=4.4e+06u w=1e+06u l=2e+06u
+X13 gnb gnb gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X14 gna gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X15 xn gna gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X16 gnb gnb gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X17 n6 gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.2e+12p pd=4.4e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X18 gna gnb gnb vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X19 gna gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X20 n1 gna vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.2e+12p pd=4.4e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X21 n4 gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.2e+12p pd=4.4e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X22 gna gnb gnb vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X23 gna gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X24 vssa gna n2 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X25 vssa gna n6 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X26 gna gnb gnb vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X27 xn gna gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X28 vssa gna n4 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X29 gnb gnb gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X30 xn gna gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X31 gnb gnb gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X32 n5 gna vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X33 gna gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X34 n3 gna vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.2e+12p pd=4.4e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X35 gna gnb gnb vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X36 gna gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X37 n8 gna xn vssa sky130_fd_pr__nfet_g5v0d10v5 ad=1.2e+12p pd=4.4e+06u as=0p ps=0u w=1e+06u l=2e+06u
+X38 gna gnb gnb vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X39 xn gna n3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X40 xn gna gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X41 vssa gna n8 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X42 gnb gnb gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X43 xn gna gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X44 xn gna gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X45 gnb gnb gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X46 gnb gnb gna vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+X47 xn gna n1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
+.ends
+
