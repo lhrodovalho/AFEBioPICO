@@ -58,7 +58,7 @@ The second and last block is buffer made with a class AB operational amplifier. 
 
 
 #### AFE
-![image](./docs/pictures/layout/afe.png)
+![image](./docs/pictures/layouts/afe.png)
 
 
 ---
