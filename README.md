@@ -60,18 +60,8 @@ Finally, the VGA output signal must be filtered to limit the noise and interfere
 All these analog circuit blocks have in common the need of a biasing current. We chose a resistorless `Self-Biased Current Reference Source (SBCS)` [5], since integrated resistors exhibit a larger process variability than MOS transistors.
 
 
-<!--
-### Schematics
+### Layouts
 
-- [Low Noise Amplifier (LNA)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/LNA/LNA.md)
-- [Variable Gain Amplifier (VGA)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/VGA/VGA.md) 
-- [Filter](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/FILTER/FILTER.md) 
-- [Pseudo-Resistor](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/PR/PR.md)
-- [Current Reference (SBCS)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/SBCS/SBCS.md)
-- [Analog Mux (AMUX)](https://github.com/lhrodovalho/AFEBioPICO/blob/main/xschem/AMUX/AMUX.md)
--->
-
-### Schematics and Layouts
 #### AFE - 700 x 350 um
 * All layouts use common-centroid technique
 * All wires are shielded, as they are very long and parasitic capacitance between then would be significant. Provides extra protection for noise. Very large parasitic capacitors between signals and the ground plane.
@@ -84,183 +74,13 @@ All these analog circuit blocks have in common the need of a biasing current. We
 * LNA based on [1] with tunable-pseudo resistors [6].
 * The LNA OTA is a simple single-stage amplifier with differential pair.and current mirror active load.
 ---
-![image](./images/lna_sch.png)
-
-LNA schematic
-
 ![image](./layouts/lna.png)
 
-LNA layout
-
----
-![image](./images/pseudo_sch.png)
-
-Tunable pseudo-resistor [6] schematic
-
-![image](./images/pseudo_bias.png)
-
-Tunable pseudo-resistor biasing circuit schematic
-
-![image](./layouts/pseudo.png)
-
-Matched Pseudo-Resistors and biasing circuit layout
-
----
-![image](./images/ota_sch.png)
-
-OTA schematic
-
-
-![image](./layouts/ota.png)
-
-OTA layout
-
----
-#### Variable Gain Amplifier (VGA)
-
-![image](./images/vga_sch.png)
-
-Outdated VGA schematic
-* Amplifier topology with capacitve feedback with pseudo-resistors was dismissed, as distortion is too large for output signals over 100 mV, as the pseudo-resistor resistance is too non-linear and the cutoff frequencies are a function of the output signal.
-* Non-inverting amplifier was choosen for better linearity, but resistive feedback requires a class AB operational amplifier which can drive the resistive load, otherwise the polysilicon resistors would be too large. A simple symmetrical OTA can drive the capacitive loads, but can't drive reasonably sized integrated resistors efficiently.
-
-![image](./images/opamp15.gif)
-
-VGA based on non-inverting amplifier with variable resistive feedback
-
-![image](./images/opamp_sch.jpeg)
-
-Class AB OPAMP schematic, based on [2]
-
-![image](./layouts/opamp.png)
-
-OPAMP layout
-
----
-#### Self-Biased Current Source (SBCS)
-![image](./images/irefa.png)
-
-Self-Biased Current Source schematic
-
-![image](./layouts/sbcs.png)
-
-Self-Biased Current Source layout
+#### Buffer
 
 ---
 ### Simulation Results
 
-* All simulated results from extracted netlists from .mag files
-* Testbenches can be found in the lib/\*/ngspice folder, as simulation scripts only.
-* Xschem circuits and simulations are outdated.
-
-#### Pseudo-Resistor
-
-![image](./lib/pseudo/plots/pseudo_tb_sweep.png)
-
-Pseudo-resistor biased with 0.1, 1 and 10 nA
-* Highly non-linear
-* Biasing is necessary to calibrate pseudoresistor after process variability is considered.
-
-#### OTA
-
-![image](./lib/ota/plots/ota_tb_open_dc.png)
-
-OTA in-out DC characteristic curve.
-* It is a simple differential pair and has limited output voltage excursion, but it already limited by the pseudo-resistor excursion range
-
-#### LNA
-
-* The LNA achieves a adequate voltage gain and cutoff frequencies, but simulation with MiM capacitors models is unstable.
-* The MiM LNA version OTA inputs are not converging to the virtual ground at 0.9 V (Vdd/2), so the voltage drop at the pseudoresistor is outside its proper range
-
-![image](./lib/lna/plots/lna_tb_ac_gain_idealcap_and_mim.png)
-
-Idead and MiM capacitor AC simulation results
-
-
-![image](./lib/lna/plots/lna_idealcap.png)
-
-Ideal capacitor transisent simulation
-
-![image](./lib/lna/plots/lna_tb_tran_mimcap.png)
-
-MiM capacitor transisent simulation
-
-#### VGA - OPAMP
-* VGA as non-inverting amplifier with variable resistive feedback.
-* Class AB opamp based on [2], but without Rail-to-Rail Input excursion.
-
-![image](./lib/opamp/plots/opamp_tb_open_dc.png)
-
-Open-loop in-out DC characteristic curve
-* 500 uV instrinsic voltage offset
-* rail-to-rail output
-
-![image](./lib/opamp/plots/opamp_tb_load_v.png)
-
-Voltage follower with varying current load with input at 0.9 V and output connected to a varying current source/sink
-* Can drive up to 300 uA load, both positive and negative
-* Uses about 300 nA quiescent current for no load.
-
-
-![image](./lib/opamp/plots/opamp_tb_inv_ac_gain.png)
-
-Open-loop AC gain
-
-![image](./lib/opamp/plots/opamp_tb_inv_ac_phase.png)
-
-Open-loop AC phase
-
-* 80 dB DC small-signal voltage gain
-* 3.3 kHz GBW for 10 pF load and 10 nA biasing current
-* 47° phase margin
-* 300 nA quiescent current
-
-![image](./images/opamp15.gif)
-
-Non-Inverting amplifier used for VGA
-* R1: 1 Meg, R2: 9 Meg
-* R1 is should be a digitally programmable resistor for VGA application
-
-![image](./lib/opamp/plots/opamp_tb_ninv_dc.png)
-
-Non-inverting amplifier DC characteristic curve
-
-![image](./lib/opamp/plots/opamp_tb_ninv_ac_gain.png)
-
-Non-inverting amplifier AC gain
-
-![image](./lib/opamp/plots/opamp_tb_ninv_ac_phase.png)
-
-Non-inverting amplifier AC phase
-
-![image](./lib/opamp/plots/opamp_tb_ninv_tran.png)
-
-Non-inverting amplifier transient simulation results
-
-#### SBCS
-
-![image](./lib/sbcs/plots/sbcs_io.png)
-
-Self-Biasing Current Source output current X VDD.
-
-![image](./lib/sbcs/plots/sbsc_psrr.png)
-
-Self-Biasing Current Source DC Power Supply Rejection Ratio
-
-![image](./lib/sbcs/plots/sbcs_idd.png)
-
-Self-Biasing Current Source total current consumption.
-
-![image](./lib/sbcs/plots/sbcs_temp.png)
-
-Self-Biasing Current Source temperature variability
-* PTAT behaviour
-* 372 nA total current
-* 36 nA output current
-* 1.1 V minimum power supply
-* VDD stability: 2.9\%/V 
-* Temp. stability: 4462 ppm/°C
 
 
 ### Target Performance Summary
@@ -279,17 +99,7 @@ Self-Biasing Current Source temperature variability
 Status and Issues
 ============
 
-* LNA **doesn't work** with MiM capacitors. Perhaps it is a problem with the models.
-* No dual MiM capacitors pass DRC.
-* **Noise simulation doesn't work** with extracted netlists.
-* No Monte carlo or corner simulations for extracted netlists
-* Resistive feedback and switches aren't finished. VGA gain is fixed.
-* No current DAC for pseudo-resistor calibration. Individual blocks will be biased externally.
-* No digital control for tuning.
-* Self-Biased Current Source was made with very small transistor lenghts and VDD stability is lackluster. Should be remade.
-* Filter block was scraped, as cutoff frequencies are now controlled by tuning the LNA OTA and pseudoresistor.
-* Top level blocks aren't routed
-* Documentation is extremely incomplete and some images were sourced from outside without proper references. Images must be updated.
+* Documentation is extremely incomplete.
 
 
 Team members
