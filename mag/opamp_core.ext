@@ -1,0 +1,1110 @@
+timestamp 1638148091
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use invt br -1 0 21200 0 1 15280
+use invt bl 1 0 0 0 1 15280
+use inv_2_2 ar -1 0 21200 0 1 11200
+use inv_2_2 cr -1 0 21200 0 1 21360
+use inv_2_2 cl 1 0 0 0 1 21360
+use inv_2_2 al 1 0 0 0 1 11200
+use inv_bias biasr -1 0 21200 0 1 1040
+use inv_bias biasl 1 0 0 0 1 1040
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "vssa" 10 3040 -80 3440 0 m5
+port "gnda" 9 2080 -80 2480 0 m5
+port "vddx" 8 1120 -80 1520 0 m5
+port "vdda" 6 160 -80 560 0 m5
+port "ib" 4 8640 -80 8720 0 m3
+port "q" 5 12480 -80 12560 0 m3
+port "z" 15 12000 -80 12080 0 m3
+port "im" 1 9600 -80 9680 0 m3
+port "xn" 11 10400 -80 10480 0 m3
+port "ip" 2 11520 -80 11600 0 m3
+port "x" 13 9920 -80 10000 0 m3
+port "xp" 12 10720 -80 10800 0 m3
+port "y" 14 11200 -80 11280 0 m3
+port "bp" 7 9120 -80 9200 0 m3
+port "out" 3 10240 -80 10320 0 m3
+node "m5_7840_n80#" 0 192 7840 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_6880_n80#" 0 192 6880 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_5920_n80#" 0 192 5920 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_4960_n80#" 0 192 4960 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_4000_n80#" 0 192 4000 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "vssa" 0 192 3040 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "gnda" 0 192 2080 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "vddx" 0 192 1120 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "vdda" 0 192 160 -80 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_20640_11120#" 0 192 20640 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_19680_11120#" 0 192 19680 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_18720_11120#" 0 192 18720 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_17760_11120#" 0 192 17760 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_16800_11120#" 0 192 16800 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_15840_11120#" 0 192 15840 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_14880_11120#" 0 192 14880 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_13920_11120#" 0 192 13920 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_12960_11120#" 0 192 12960 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_7840_11120#" 0 192 7840 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_6880_11120#" 0 192 6880 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_5920_11120#" 0 192 5920 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_4960_11120#" 0 192 4960 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_4000_11120#" 0 192 4000 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_3040_11120#" 0 192 3040 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_2080_11120#" 0 192 2080 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_1120_11120#" 0 192 1120 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_160_11120#" 0 192 160 11120 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_20640_15200#" 0 192 20640 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_19680_15200#" 0 192 19680 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_18720_15200#" 0 192 18720 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_17760_15200#" 0 192 17760 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_16800_15200#" 0 192 16800 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_15840_15200#" 0 192 15840 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_14880_15200#" 0 192 14880 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_13920_15200#" 0 192 13920 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_12960_15200#" 0 192 12960 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_7840_15200#" 0 192 7840 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_6880_15200#" 0 192 6880 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_5920_15200#" 0 192 5920 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_4960_15200#" 0 192 4960 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_4000_15200#" 0 192 4000 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_3040_15200#" 0 192 3040 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_2080_15200#" 0 192 2080 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_1120_15200#" 0 192 1120 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_160_15200#" 0 192 160 15200 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_20640_21280#" 0 192 20640 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_19680_21280#" 0 192 19680 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_18720_21280#" 0 192 18720 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_17760_21280#" 0 192 17760 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_16800_21280#" 0 192 16800 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_15840_21280#" 0 192 15840 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_14880_21280#" 0 192 14880 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_13920_21280#" 0 192 13920 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_12960_21280#" 0 192 12960 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_7840_21280#" 0 192 7840 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_6880_21280#" 0 192 6880 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_5920_21280#" 0 192 5920 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_4960_21280#" 0 192 4960 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_4000_21280#" 0 192 4000 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_3040_21280#" 0 192 3040 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_2080_21280#" 0 192 2080 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_1120_21280#" 0 192 1120 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "m5_160_21280#" 0 192 160 21280 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000 960 0 0
+node "ib" 14 9734.4 8640 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 704000 17920 2035200 51040 0 0 0 0 0 0
+node "q" 14 9734.4 12480 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 704000 17920 2035200 51040 0 0 0 0 0 0
+node "z" 14 9734.4 12000 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 704000 17920 2035200 51040 0 0 0 0 0 0
+node "im" 2 6379.12 9600 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102400 2720 2035200 51040 0 0 0 0 0 0
+node "xn" 13 26834.9 10400 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 352000 8960 21235200 99040 761600 19200 0 0 0 0
+node "ip" 2 6379.12 11520 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102400 2720 2035200 51040 0 0 0 0 0 0
+node "x" 14 9835.52 9920 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 710400 18240 2035200 51040 0 0 0 0 0 0
+node "xp" 13 26851 10720 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 352000 8960 21235200 99040 768000 19360 0 0 0 0
+node "y" 14 9769.12 11200 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 704000 17920 2035200 51040 0 0 0 0 0 0
+node "bp" 35 63952.5 9120 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1760000 44800 40780800 156000 3366400 84480 0 0 0 0
+node "m2_8480_6400#" 1 62002.9 8480 6400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4460800 127680 4147200 104000 11584000 136320 3072000 18560 0 0
+node "out" 0 117866 10240 -80 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7296000 198720 8256000 207520 46150400 303040 0 0 0 0
+node "m2_8400_21920#" 1 273592 8400 21920 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19404800 534080 19916800 499840 29542400 616960 4608000 27840 0 0
+node "m2_8400_13600#" 1 132725 8400 13600 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6547200 180800 6924800 174400 55795200 375680 3072000 18560 0 0
+node "m2_8480_0#" 1 64032.8 8480 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4460800 127680 4377600 109760 11584000 136320 3072000 18560 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "xn" "q" 314.88
+cap "m2_8480_0#" "im" 692.26
+cap "x" "im" 7171.25
+cap "y" "z" 419.84
+cap "y" "m2_8480_6400#" 902.18
+cap "m2_8400_21920#" "ib" 4212.09
+cap "z" "xn" 314.88
+cap "m2_8400_21920#" "ip" 63921.8
+cap "m2_8480_6400#" "xn" 925.76
+cap "xp" "m2_8400_21920#" 15794.7
+cap "y" "out" 8861.73
+cap "y" "bp" 734.72
+cap "m2_8480_0#" "m2_8400_21920#" 55638.7
+cap "x" "m2_8400_21920#" 74969.6
+cap "out" "xn" 133916
+cap "m2_8400_13600#" "q" 1719.44
+cap "bp" "xn" 734.4
+cap "y" "ib" 419.84
+cap "z" "m2_8400_13600#" 2519.44
+cap "y" "ip" 7154.59
+cap "m2_8480_6400#" "m2_8400_13600#" 33273.1
+cap "y" "xp" 314.88
+cap "z" "q" 419.84
+cap "ib" "xn" 314.88
+cap "m2_8480_6400#" "q" 8651.01
+cap "ip" "xn" 104.96
+cap "y" "m2_8480_0#" 902.18
+cap "y" "x" 753.173
+cap "out" "m2_8400_13600#" 22627.2
+cap "xp" "xn" 8338.25
+cap "m2_8400_13600#" "bp" 266635
+cap "out" "q" 1604.56
+cap "x" "xn" 314.88
+cap "m2_8480_0#" "xn" 925.76
+cap "m2_8480_6400#" "z" 72005.5
+cap "bp" "q" 734.72
+cap "m2_8400_21920#" "im" 63616.1
+cap "out" "z" 1454.56
+cap "m2_8400_13600#" "ib" 9239.11
+cap "m2_8480_6400#" "out" 5641.04
+cap "z" "bp" 734.72
+cap "ip" "m2_8400_13600#" 1049.6
+cap "m2_8480_6400#" "bp" 3232.11
+cap "ib" "q" 419.84
+cap "xp" "m2_8400_13600#" 1931.47
+cap "ip" "q" 314.88
+cap "xp" "q" 314.88
+cap "m2_8480_0#" "m2_8400_13600#" 54169.9
+cap "x" "m2_8400_13600#" 1615.27
+cap "out" "bp" 3463.12
+cap "z" "ib" 419.84
+cap "m2_8480_0#" "q" 1089.68
+cap "x" "q" 419.84
+cap "z" "ip" 314.88
+cap "y" "im" 209.92
+cap "m2_8480_6400#" "ib" 1048.01
+cap "xp" "z" 314.88
+cap "m2_8480_6400#" "ip" 7391.09
+cap "xp" "m2_8480_6400#" 1092.43
+cap "m2_8480_0#" "z" 1006.35
+cap "x" "z" 419.84
+cap "im" "xn" 104.96
+cap "out" "ib" 1529.56
+cap "out" "ip" 524.8
+cap "m2_8480_6400#" "m2_8480_0#" 9745.61
+cap "x" "m2_8480_6400#" 964.68
+cap "ib" "bp" 734.72
+cap "ip" "bp" 524.8
+cap "xp" "out" 134328
+cap "xp" "bp" 734.4
+cap "y" "m2_8400_21920#" 75623.8
+cap "x" "out" 8057.56
+cap "out" "m2_8480_0#" 5151.79
+cap "m2_8480_0#" "bp" 10414.1
+cap "x" "bp" 734.72
+cap "m2_8400_21920#" "xn" 16772.3
+cap "ip" "ib" 209.92
+cap "m2_8400_13600#" "im" 8000.02
+cap "xp" "ib" 314.88
+cap "xp" "ip" 104.96
+cap "im" "q" 209.92
+cap "x" "ib" 419.84
+cap "m2_8480_0#" "ib" 72047.2
+cap "m2_8480_0#" "ip" 419.84
+cap "x" "ip" 209.92
+cap "x" "xp" 314.88
+cap "xp" "m2_8480_0#" 1092.43
+cap "z" "im" 209.92
+cap "m2_8400_21920#" "m2_8400_13600#" 187243
+cap "m2_8480_6400#" "im" 419.84
+cap "x" "m2_8480_0#" 985.513
+cap "y" "xn" 314.88
+cap "m2_8400_21920#" "q" 75403
+cap "out" "im" 524.8
+cap "im" "bp" 629.76
+cap "z" "m2_8400_21920#" 18259.8
+cap "m2_8480_6400#" "m2_8400_21920#" 89348.8
+cap "y" "m2_8400_13600#" 1531.94
+cap "ib" "im" 314.88
+cap "out" "m2_8400_21920#" 147046
+cap "y" "q" 419.84
+cap "m2_8400_21920#" "bp" 42806.2
+cap "m2_8400_13600#" "xn" 1764.8
+cap "xp" "im" 104.96
+device csubckt sky130_fd_pr__cap_mim_m3_1 18160 28400 18161 28401 w=2000 l=2000 "None" "out" 7296 0 "xp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 15920 28400 15921 28401 w=2000 l=2000 "None" "out" 7296 0 "xp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 13680 28400 13681 28401 w=2000 l=2000 "None" "out" 7296 0 "xp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 11440 28400 11441 28401 w=2000 l=2000 "None" "out" 7296 0 "xp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 7760 28400 7761 28401 w=2000 l=2000 "None" "out" 7296 0 "xn" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5520 28400 5521 28401 w=2000 l=2000 "None" "out" 7296 0 "xn" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3280 28400 3281 28401 w=2000 l=2000 "None" "out" 7296 0 "xn" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1040 28400 1041 28401 w=2000 l=2000 "None" "out" 7296 0 "xn" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 18160 31280 18161 31281 w=2000 l=2000 "None" "m2_8400_13600#" 7296 0 "bp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 15920 31280 15921 31281 w=2000 l=2000 "None" "m2_8400_13600#" 7296 0 "bp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 13680 31280 13681 31281 w=2000 l=2000 "None" "m2_8400_13600#" 7296 0 "bp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 11440 31280 11441 31281 w=2000 l=2000 "None" "m2_8400_13600#" 7296 0 "bp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 7760 31280 7761 31281 w=2000 l=2000 "None" "m2_8400_13600#" 7296 0 "bp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5520 31280 5521 31281 w=2000 l=2000 "None" "m2_8400_13600#" 7296 0 "bp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3280 31280 3281 31281 w=2000 l=2000 "None" "m2_8400_13600#" 7296 0 "bp" 600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1040 31280 1041 31281 w=2000 l=2000 "None" "m2_8400_13600#" 7296 0 "bp" 600 0
+subcap "vdda" -117.141
+cap "vddx" "biasl/vssa" 69.85
+cap "vdda" "biasl/vssa" 110
+subcap "gnda" -172.332
+cap "biasl/vssa" "vddx" 34.31
+cap "biasl/vssa" "gnda" 94
+cap "biasl/vssa" "vddx" 5.84
+cap "biasl/vssa" "gnda" 16
+cap "biasl/vssa" "vssa" 16
+cap "biasl/gnda" "vssa" 40.89
+cap "biasl/gnda" "biasl/vssa" 6.96
+subcap "m5_5920_n80#" -216.964
+cap "biasl/gnda" "biasl/vssa" 9.04
+cap "biasl/vssa" "biasl/vssa" 16
+cap "biasl/gnda" "biasl/vssa" 53.11
+subcap "m5_5920_n80#" -172.332
+cap "biasl/vddx" "biasl/vssa" 22.09
+cap "biasl/vssa" "biasl/gnda" 16
+cap "biasl/vssa" "biasl/vddx" 3.76
+cap "biasl/gnda" "biasl/vssa" 94
+subcap "m5_7840_n80#" -432.6
+subcap "ib" -7380.39
+subcap "m2_8480_0#" -64126.7
+cap "m2_8480_0#" "biasl/vssa" 75.8491
+cap "biasl/vdda" "biasl/vssa" 94
+cap "biasl/vssa" "ib" -14.3
+cap "biasl/vdda" "biasl/vssa" 16
+cap "biasl/vddx" "biasl/vssa" 71.91
+cap "biasl/vddx" "biasl/vssa" 12.24
+cap "m2_8480_0#" "biasl/vssa" 90.2358
+cap "biasl/vssa" "ib" -402.76
+cap "biasl/vddx" "ib" -107.4
+cap "m2_8480_0#" "biasl/vssa" 37.9245
+subcap "ib" -8745.31
+subcap "im" -5892.52
+subcap "bp" -63588.9
+subcap "m2_8480_0#" -60795.2
+cap "biasl/vssa" "ib" -69.82
+cap "biasl/vssa" "m2_8480_0#" 201
+cap "biasl/vssa" "m2_8480_0#" 152.5
+cap "biasl/vssa" "m2_8480_0#" 100.5
+cap "biasl/vssa" "ib" -187.54
+subcap "xn" -26767.4
+subcap "x" -9768
+subcap "xp" -26783.4
+subcap "out" -117798
+subcap "q" -9370.8
+subcap "z" -9370.8
+subcap "ip" -6015.52
+subcap "y" -9282.52
+cap "m2_8480_0#" "biasr/vssa" 8.84956
+cap "biasr/vssa" "m2_8400_21920#" 3.55752
+cap "biasr/vssa" "m2_8400_21920#" 7.11504
+cap "m2_8480_0#" "biasr/vssa" 8.84956
+subcap "q" -9740.28
+cap "biasr/na" "biasr/vssa" 18.4
+cap "biasr/vssa" "biasr/na" 8.8
+cap "m2_8480_0#" "biasr/vssa" 50
+cap "biasr/vssa" "m2_8400_21920#" 201
+cap "biasr/vssa" "m2_8400_21920#" 100.5
+cap "m2_8400_21920#" "biasr/vssa" 105
+cap "m2_8480_0#" "biasr/vssa" 50
+cap "m2_8480_0#" "biasl/gnda" 138.651
+cap "biasl/qa" "biasl/vssa" -8.58
+cap "biasl/qa" "biasl/gnda" -29.9
+cap "biasl/gnda" "m2_8400_21920#" 18.8679
+cap "m2_8400_21920#" "biasl/gnda" 18.8679
+cap "biasl/qa" "m2_8480_0#" 18.8679
+cap "m2_8480_0#" "biasl/vssa" 12.6415
+cap "biasl/gnda" "m2_8400_21920#" 50
+cap "biasl/gnda" "biasl/qa" 18.4
+cap "m2_8480_0#" "biasl/qa" 50
+cap "m2_8480_0#" "biasl/vssa" 33.5
+cap "biasl/qa" "biasl/vssa" 8.8
+cap "biasl/gnda" "m2_8400_21920#" 50
+cap "m2_8480_0#" "biasl/gnda" 211.5
+cap "m2_8400_21920#" "biasr/gnda" 10.3363
+cap "m2_8400_21920#" "biasr/qa" 2.65487
+cap "biasr/vssa" "m2_8400_21920#" 1.18584
+cap "biasr/qa" "biasr/vssa" 8.8
+cap "biasr/gnda" "m2_8400_21920#" 406
+cap "biasr/vssa" "m2_8400_21920#" 33.5
+cap "biasr/gnda" "biasr/qa" 18.4
+cap "biasr/qa" "m2_8400_21920#" 50
+cap "biasl/vssa" "biasl/bpa" -2.86
+cap "biasl/vddx" "m2_8400_13600#" 5.66038
+cap "biasl/vddx" "m2_8480_0#" 133.33
+cap "biasl/vddx" "biasl/bpa" -21.32
+cap "biasl/vddx" "ib" 32.2105
+cap "biasl/vddx" "m2_8400_13600#" 5.66038
+cap "m2_8400_13600#" "biasl/vddx" 50
+cap "ib" "biasl/vddx" 105
+cap "m2_8400_13600#" "biasl/vddx" 50
+cap "biasl/bpa" "biasl/vssa" 8.8
+cap "biasl/bpa" "biasl/vddx" 65.6
+cap "m2_8480_0#" "biasl/vddx" 367.5
+cap "m2_8400_13600#" "biasr/vddx" 8.84956
+cap "q" "biasr/vddx" 52.5
+cap "biasr/vddx" "m2_8400_13600#" 8.84956
+cap "m2_8400_13600#" "biasr/vddx" 50
+cap "q" "biasr/vddx" 52.5
+cap "m2_8400_21920#" "biasr/vddx" 420
+cap "biasr/bpa" "biasr/vssa" 8.8
+cap "m2_8400_13600#" "biasr/vddx" 50
+cap "biasr/bpa" "biasr/vddx" 65.6
+cap "biasl/vdda" "m2_8480_0#" 101.132
+cap "m2_8480_0#" "biasl/vdda" 268
+cap "biasr/vdda" "m2_8400_21920#" 7.11504
+cap "biasr/vdda" "m2_8400_21920#" 2.37168
+cap "m2_8400_21920#" "biasr/vdda" 268
+subcap "m2_8480_6400#" -62006.5
+cap "biasl/vdda" "m2_8480_0#" 103.066
+cap "biasl/xa" "biasl/vssa" -2.86
+cap "biasl/vdda" "m2_8480_6400#" 18.8679
+cap "biasl/vddx" "m2_8400_13600#" 9.43396
+cap "biasl/vdda" "biasl/xa" -17.94
+cap "m2_8480_0#" "biasl/vddx" 5.25
+cap "biasl/vdda" "m2_8480_6400#" 18.8679
+subcap "m2_8480_6400#" -61816
+cap "m2_8400_13600#" "biasl/vddx" 25
+cap "m2_8480_6400#" "biasl/vdda" 50
+cap "biasl/vddx" "m2_8480_0#" 5.25
+cap "biasl/xa" "biasl/vssa" 8.8
+cap "biasl/vdda" "m2_8480_0#" 186.5
+cap "m2_8480_6400#" "biasl/vdda" 50
+cap "biasl/xa" "biasl/vdda" 18.4
+cap "biasr/vdda" "m2_8400_21920#" 4.74336
+cap "biasr/vdda" "m2_8480_6400#" 8.84956
+cap "biasr/vdda" "m2_8480_6400#" 8.84956
+cap "m2_8400_13600#" "biasr/vddx" 4.42478
+cap "m2_8480_6400#" "biasr/vdda" 50
+cap "m2_8400_13600#" "biasr/vddx" 25
+cap "biasr/xa" "biasr/vdda" 18.4
+cap "biasr/xa" "biasr/vssa" 8.8
+cap "m2_8480_6400#" "biasr/vdda" 50
+cap "biasr/vdda" "m2_8400_21920#" 239
+cap "m2_8400_21920#" "biasr/vddx" 10.5
+cap "biasl/vssa" "m2_8480_0#" 50.566
+cap "biasl/vssa" "biasl/bpb" -8.58
+cap "biasl/vddx" "m2_8400_13600#" 9.43396
+cap "biasl/vssa" "biasl/nb" -29.9
+cap "m2_8400_13600#" "biasl/vddx" 18.8679
+cap "biasl/vddx" "m2_8480_0#" 47.25
+cap "biasl/nb" "biasl/vssa" -8.58
+cap "biasl/nb" "biasl/bpb" 1.42109e-14
+cap "biasl/vddx" "biasl/bpb" -29.9
+cap "biasl/vssa" "m2_8480_0#" 90.2358
+cap "m2_8480_0#" "biasl/vssa" 152.5
+cap "biasl/bpb" "biasl/vssa" 8.8
+cap "m2_8480_0#" "biasl/vddx" 47.25
+cap "m2_8400_13600#" "biasl/vddx" 25
+cap "biasl/vssa" "biasl/nb" -329.33
+cap "biasl/bpb" "biasl/vddx" 18.4
+cap "biasl/vssa" "m2_8480_0#" 134
+cap "biasl/nb" "biasl/vssa" -64.1
+cap "m2_8400_13600#" "biasl/vddx" 50
+cap "biasr/vddx" "m2_8400_13600#" 4.42478
+cap "m2_8400_21920#" "biasr/vssa" 4.74336
+cap "biasr/vddx" "m2_8400_13600#" 8.84956
+cap "biasr/vssa" "m2_8480_0#" 8.84956
+cap "biasr/vssa" "m2_8480_0#" 8.84956
+cap "biasr/vssa" "m2_8480_0#" 50
+cap "biasr/vssa" "biasr/nb" 18.4
+cap "biasr/vssa" "biasr/bpb" 8.8
+cap "biasr/vddx" "m2_8400_13600#" 50
+cap "biasr/vssa" "m2_8480_0#" 50
+cap "m2_8400_21920#" "biasr/vddx" 94.5
+cap "biasr/vssa" "m2_8400_21920#" 105
+cap "biasr/bpb" "biasr/vddx" 18.4
+cap "biasr/vssa" "m2_8400_21920#" 134
+cap "biasr/vddx" "m2_8400_13600#" 25
+cap "biasr/vssa" "biasr/nb" 8.8
+cap "biasl/vssa" "m2_8480_0#" 50.566
+cap "biasl/vssa" "m2_8400_21920#" 18.8679
+cap "biasl/xb" "biasl/vdda" -29.9
+cap "m2_8480_6400#" "biasl/vdda" 18.8679
+cap "biasl/vssa" "biasl/qb" -17.94
+cap "biasl/vdda" "m2_8480_0#" 36.75
+cap "biasl/vssa" "m2_8480_0#" 52.5
+cap "biasl/vssa" "m2_8400_21920#" 18.8679
+cap "biasl/vssa" "biasl/xb" -8.58
+cap "biasl/vssa" "biasl/qb" -2.86
+cap "biasl/vssa" "m2_8400_21920#" 50
+cap "m2_8480_6400#" "biasl/vdda" 50
+cap "biasl/xb" "biasl/vssa" 8.8
+cap "m2_8480_0#" "biasl/vdda" 36.75
+cap "biasl/vssa" "m2_8480_0#" 134
+cap "m2_8400_21920#" "biasl/vssa" 50
+cap "biasl/qb" "biasl/vssa" 8.8
+cap "m2_8480_0#" "biasl/vssa" 52.5
+cap "biasl/xb" "biasl/vdda" 18.4
+cap "biasl/qb" "biasl/vssa" 18.4
+cap "biasr/vssa" "m2_8400_21920#" 4.74336
+cap "m2_8480_6400#" "biasr/vdda" 8.84956
+cap "m2_8400_21920#" "biasr/vssa" 5.30973
+cap "m2_8400_21920#" "biasr/vdda" 73.5
+cap "biasr/qb" "biasr/xb" 1.42109e-14
+cap "biasr/qb" "biasr/vssa" 18.4
+cap "biasr/vdda" "biasr/xb" 18.4
+cap "m2_8400_21920#" "biasr/vssa" 134
+cap "biasr/vssa" "biasr/xb" 8.8
+cap "m2_8400_21920#" "biasr/vssa" 205
+cap "m2_8480_6400#" "biasr/vdda" 50
+cap "biasr/vssa" "biasr/qb" 8.8
+subcap "m5_160_11120#" -103.995
+cap "al/vdda" "biasl/vssa" 16
+cap "al/vddx" "biasl/vssa" 10.16
+cap "biasl/vdda" "biasl/vssa" 83.4625
+subcap "m5_3040_11120#" -345.124
+subcap "m5_2080_11120#" -158.79
+cap "al/n1" "biasl/vssa" 5.5
+cap "al/gnda" "biasl/vssa" 16
+cap "al/vddx" "biasl/vssa" 5.84
+cap "biasl/vdda" "biasl/vssa" 96.25
+subcap "m5_3040_11120#" -371.59
+cap "al/out" "biasl/vssa" 0.9625
+cap "al/gnda" "biasl/vssa" 6.96
+cap "al/vssa" "biasl/vssa" 16
+cap "biasl/vdda" "biasl/vssa" 96.25
+subcap "m5_5920_11120#" -212.812
+subcap "m5_4960_11120#" -371.59
+cap "al/out" "biasl/vssa" 4.5375
+cap "biasl/vssa" "al/vssa" 16
+cap "biasl/vdda" "biasl/vssa" 96.25
+cap "biasl/vssa" "al/gnda" 9.04
+subcap "m5_5920_11120#" -158.79
+cap "biasl/vdda" "biasl/vssa" 96.25
+cap "al/vddx" "biasl/vssa" 3.76
+cap "biasl/vssa" "al/n2" 5.5
+cap "al/gnda" "biasl/vssa" 16
+cap "al/vdda" "biasl/vssa" 16
+cap "al/vddx" "biasl/vssa" 12.24
+cap "al/vdda" "m2_8480_0#" 91.5991
+cap "biasl/vdda" "biasl/vssa" 87.0375
+cap "al/vdda" "m2_8480_6400#" 18.8679
+cap "al/vdda" "m2_8480_0#" 216.75
+cap "m2_8480_6400#" "al/vdda" 50
+subcap "m5_12960_11120#" -273.06
+cap "biasr/vdda" "m2_8400_21920#" 7.11504
+cap "biasr/vdda" "m2_8480_6400#" 8.84956
+subcap "m5_12960_11120#" -799.058
+cap "biasr/vdda" "biasr/vssa" 69.7125
+cap "ar/vddx" "biasr/vssa" 2.16
+cap "ar/vdda" "m2_8400_21920#" 232.5
+cap "ar/vdda" "biasr/vssa" 16
+cap "ar/vdda" "m2_8480_6400#" 50
+subcap "m5_14880_11120#" -158.79
+cap "ar/gnda" "biasr/vssa" 16
+cap "ar/vddx" "biasr/vssa" 13.84
+cap "biasr/vssa" "ar/n2" 5.5
+cap "biasr/vdda" "biasr/vssa" 96.25
+subcap "m5_16800_11120#" -193.564
+subcap "m5_15840_11120#" -371.59
+cap "biasr/vdda" "biasr/vssa" 96.25
+cap "biasr/vssa" "ar/vssa" 16
+subcap "m5_17760_11120#" -371.59
+subcap "m5_16800_11120#" -158.79
+cap "ar/out" "biasr/vssa" 5.5
+cap "biasr/vssa" "biasr/vdda" 96.25
+cap "ar/gnda" "biasr/vssa" 16
+cap "ar/vssa" "biasr/vssa" 16
+subcap "m5_19680_11120#" -198.376
+subcap "m5_18720_11120#" -158.79
+cap "ar/gnda" "biasr/vssa" 16
+cap "ar/n1" "biasr/vssa" 5.5
+cap "biasr/vdda" "biasr/vssa" 96.25
+subcap "m5_20640_11120#" -45.501
+subcap "m5_19680_11120#" -158.79
+cap "biasr/vssa" "ar/vdda" 13.36
+cap "biasr/vdda" "biasr/vssa" 96.25
+cap "ar/vddx" "biasr/vssa" 16
+cap "ar/vdda" "biasr/vssa" 2.64
+cap "biasr/vssa" "biasr/vdda" 4.5375
+subcap "m5_160_11120#" -195.141
+cap "biasl/vssa" "biasl/vdda" 83.4625
+cap "biasl/vssa" "al/vdda" 110
+cap "al/vddx" "biasl/vssa" 69.85
+subcap "m5_2080_11120#" -250.332
+cap "al/gnda" "biasl/vssa" 16
+cap "biasl/vdda" "biasl/vssa" 96.25
+cap "biasl/vssa" "al/vddx" 5.84
+cap "al/vssa" "al/gnda" 94
+cap "al/vssa" "al/vddx" 34.31
+cap "biasl/vssa" "al/n1" 5.5
+cap "biasl/vssa" "al/out" 0.9625
+cap "al/vssa" "al/gnda" 40.89
+cap "biasl/vssa" "biasl/vdda" 96.25
+cap "al/vssa" "biasl/vssa" 16
+cap "biasl/vssa" "al/gnda" 6.96
+subcap "m5_5920_11120#" -216.964
+cap "biasl/vssa" "al/gnda" 9.04
+cap "al/vssa" "al/gnda" 53.11
+cap "al/out" "biasl/vssa" 4.5375
+cap "biasl/vssa" "biasl/vdda" 96.25
+cap "al/vssa" "biasl/vssa" 16
+subcap "m5_5920_11120#" -250.332
+cap "al/n2" "biasl/vssa" 5.5
+cap "biasl/vdda" "biasl/vssa" 96.25
+cap "al/vssa" "al/gnda" 94
+cap "al/vssa" "al/vddx" 22.09
+cap "al/gnda" "biasl/vssa" 16
+cap "biasl/vssa" "al/vddx" 3.76
+subcap "m5_7840_11120#" -460.44
+cap "biasl/vssa" "m2_8480_0#" 75.8491
+cap "al/out" "al/gnda" -17.94
+cap "m2_8480_0#" "al/gnda" 94.5
+cap "m2_8400_21920#" "al/gnda" 18.8679
+cap "al/in" "biasl/vssa" -8.58
+cap "al/in" "al/gnda" -29.9
+cap "m2_8400_21920#" "al/gnda" 18.8679
+cap "biasl/vssa" "al/vdda" 110
+cap "biasl/vdda" "biasl/vssa" 87.0375
+cap "biasl/vssa" "al/vddx" 84.15
+cap "m2_8400_21920#" "al/gnda" 18.8679
+cap "biasl/vssa" "al/out" -2.86
+cap "biasl/vssa" "al/out" 8.8
+cap "al/gnda" "m2_8400_21920#" 50
+cap "al/out" "al/gnda" 18.4
+cap "biasl/vssa" "al/in" 8.8
+cap "al/in" "al/gnda" 18.4
+cap "biasl/vssa" "m2_8480_0#" 201
+cap "al/gnda" "m2_8400_21920#" 50
+cap "al/gnda" "m2_8400_21920#" 50
+cap "al/gnda" "m2_8480_0#" 94.5
+subcap "m5_12960_11120#" -273.06
+cap "ar/gnda" "m2_8400_21920#" 8.84956
+cap "ar/gnda" "m2_8400_21920#" 8.84956
+cap "ar/gnda" "m2_8400_21920#" 8.84956
+cap "ar/vssa" "m2_8400_21920#" 7.11504
+subcap "m5_12960_11120#" -460.44
+cap "biasr/vssa" "ar/vdda" 110
+cap "ar/gnda" "m2_8400_21920#" 50
+cap "biasr/vssa" "m2_8400_21920#" 201
+cap "biasr/vssa" "ar/out" 8.8
+cap "biasr/vssa" "ar/in" 8.8
+cap "biasr/vssa" "ar/vddx" 14.85
+cap "ar/out" "ar/in" 7.10543e-15
+cap "ar/gnda" "m2_8400_21920#" 189
+cap "ar/gnda" "ar/out" 18.4
+cap "ar/gnda" "m2_8400_21920#" 50
+cap "ar/gnda" "ar/in" 18.4
+cap "biasr/vssa" "biasr/vdda" 69.7125
+cap "ar/gnda" "m2_8400_21920#" 50
+subcap "m5_14880_11120#" -250.332
+subcap "m5_13920_11120#" -64.608
+cap "ar/gnda" "biasr/vssa" 16
+cap "biasr/vssa" "ar/vddx" 13.84
+cap "biasr/vssa" "biasr/vdda" 96.25
+cap "ar/gnda" "ar/vssa" 94
+cap "biasr/vssa" "ar/n2" 5.5
+cap "ar/vssa" "ar/vddx" 81.31
+subcap "m5_16800_11120#" -193.876
+cap "biasr/vssa" "biasr/vdda" 96.25
+cap "ar/vssa" "biasr/vssa" 16
+subcap "m5_16800_11120#" -250.344
+cap "ar/gnda" "biasr/vssa" 16
+cap "ar/out" "biasr/vssa" 5.5
+cap "ar/gnda" "ar/vssa" 94
+cap "biasr/vdda" "biasr/vssa" 96.25
+cap "ar/vssa" "biasr/vssa" 16
+subcap "m5_19680_11120#" -199.648
+subcap "m5_18720_11120#" -250.332
+cap "ar/gnda" "biasr/vssa" 16
+cap "ar/n1" "biasr/vssa" 5.5
+cap "biasr/vdda" "biasr/vssa" 96.25
+cap "ar/vssa" "ar/gnda" 94
+subcap "m5_20640_11120#" -51.8379
+subcap "m5_19680_11120#" -250.38
+cap "biasr/vssa" "ar/vddx" 110
+cap "biasr/vssa" "ar/vdda" 91.85
+cap "biasr/vssa" "biasr/vdda" 96.25
+cap "biasr/vssa" "ar/vdda" 18.15
+cap "biasr/vdda" "biasr/vssa" 4.5375
+subcap "m2_8400_13600#" -131050
+cap "al/vddx" "ib" 30.3158
+cap "al/bp" "al/vddx" -21.32
+cap "al/bp" "al/vssa" -2.86
+cap "al/vddx" "m2_8480_0#" 118.075
+cap "al/vddx" "al/vssa" -8.58
+subcap "m2_8400_13600#" -130233
+cap "m2_8480_0#" "al/vddx" 294
+cap "al/vddx" "al/bp" 65.6
+cap "al/vddx" "ib" 84
+cap "al/vddx" "al/vssa" 8.8
+cap "al/vssa" "al/bp" 8.8
+cap "q" "ar/vddx" 42
+cap "ar/vddx" "ar/bp" 65.6
+cap "ar/vddx" "m2_8400_21920#" 336
+cap "ar/vssa" "ar/vddx" 8.8
+cap "q" "ar/vddx" 42
+cap "ar/vssa" "ar/bp" 8.8
+subcap "m5_160_15200#" -99.195
+cap "al/vssa" "al/vdda" 166.925
+cap "al/vssa" "bl/vdda" 126
+cap "al/vssa" "bl/vddx" 80.01
+subcap "m5_2080_15200#" -153.99
+cap "al/vssa" "bl/vddx" 11.68
+cap "bl/vssa" "bl/gnda" 94
+cap "bl/vssa" "bl/vddx" 34.31
+cap "al/vssa" "al/vdda" 192.5
+cap "al/vssa" "bl/gnda" 32
+cap "al/vssa" "bl/n1" 5.5
+cap "al/vssa" "bl/xn" 0.9625
+cap "al/vssa" "bl/vssa" 32
+cap "al/vdda" "al/vssa" 192.5
+cap "bl/gnda" "al/vssa" 13.92
+cap "bl/gnda" "bl/vssa" 40.89
+subcap "m5_5920_15200#" -219.04
+cap "bl/xn" "al/vssa" 4.5375
+cap "bl/vssa" "bl/gnda" 53.11
+cap "al/vdda" "al/vssa" 192.5
+cap "al/vssa" "bl/gnda" 18.08
+cap "bl/vssa" "al/vssa" 32
+subcap "m5_5920_15200#" -153.99
+cap "bl/gnda" "al/vssa" 32
+cap "bl/vddx" "al/vssa" 7.52
+cap "al/vssa" "bl/n2" 5.5
+cap "bl/vssa" "bl/gnda" 94
+cap "bl/vssa" "bl/vddx" 22.09
+cap "al/vdda" "al/vssa" 192.5
+subcap "m5_6880_15200#" -188.616
+subcap "m2_8400_13600#" -132722
+cap "al/vssa" "bl/vddx" 87.81
+cap "al/vssa" "bl/vdda" 126
+cap "ib" "bl/vddx" 1.89474
+cap "m2_8480_0#" "bl/vddx" 15.2547
+cap "m2_8480_0#" "bl/vdda" 50.566
+cap "al/vdda" "al/vssa" 174.075
+subcap "m2_8400_13600#" -130789
+cap "al/vddx" "ib" 21
+cap "al/vddx" "al/vssa" 8.8
+cap "m2_8480_0#" "bl/vdda" 134
+cap "al/vddx" "m2_8480_0#" 73.5
+subcap "m5_12960_15200#" -273.06
+cap "m2_8400_21920#" "ar/vdda" 4.74336
+cap "q" "ar/vddx" 10.5
+subcap "m5_12960_15200#" -123.6
+cap "q" "br/vddx" 10.5
+cap "m2_8400_21920#" "br/vddx" 84
+cap "br/vddx" "ar/vssa" 25.81
+cap "m2_8400_21920#" "br/vdda" 134
+cap "ar/vdda" "ar/vssa" 139.425
+cap "br/vdda" "ar/vssa" 126
+subcap "m5_14880_15200#" -153.99
+cap "br/n2" "ar/vssa" 5.5
+cap "br/vddx" "br/vssa" 81.31
+cap "br/vddx" "ar/vssa" 27.68
+cap "br/vssa" "br/gnda" 94
+cap "br/gnda" "ar/vssa" 32
+cap "ar/vdda" "ar/vssa" 192.5
+subcap "m5_16800_15200#" -194.032
+cap "ar/vdda" "ar/vssa" 192.5
+cap "br/vssa" "ar/vssa" 32
+subcap "m5_16800_15200#" -153.99
+cap "br/vssa" "ar/vssa" 32
+cap "br/xn" "ar/vssa" 5.5
+cap "br/gnda" "ar/vssa" 32
+cap "br/gnda" "br/vssa" 94
+cap "ar/vssa" "ar/vdda" 192.5
+subcap "m5_19680_15200#" -200.284
+subcap "m5_18720_15200#" -153.99
+cap "br/n1" "ar/vssa" 5.5
+cap "br/gnda" "br/vssa" 94
+cap "br/gnda" "ar/vssa" 32
+cap "ar/vdda" "ar/vssa" 192.5
+subcap "m5_19680_15200#" -153.99
+cap "ar/vssa" "br/vdda" 105.21
+cap "ar/vssa" "ar/vdda" 192.5
+cap "ar/vssa" "br/vddx" 126
+cap "ar/vssa" "ar/vdda" 9.075
+cap "br/vdda" "ar/vssa" 20.79
+subcap "m5_160_15200#" -199.551
+cap "bl/vdda" "al/vssa" 94
+cap "bl/vddx" "al/vssa" 59.69
+subcap "m5_2080_15200#" -254.577
+cap "bl/vssa" "bl/vddx" 34.31
+cap "bl/n1" "al/vssa" 5.5
+cap "bl/vssa" "bl/gnda" 94
+cap "bl/gnda" "bl/vssa" 40.89
+cap "al/vssa" "bl/xn" 0.9625
+subcap "m5_5920_15200#" -210.736
+cap "bl/vssa" "bl/gnda" 53.11
+cap "bl/xn" "al/vssa" 4.5375
+subcap "m5_5920_15200#" -254.577
+cap "bl/vssa" "bl/gnda" 94
+cap "bl/n2" "al/vssa" 5.5
+cap "bl/vddx" "bl/vssa" 22.09
+subcap "m5_7840_15200#" -289.08
+cap "al/vssa" "bl/xn" -2.86
+cap "bl/out" "bl/gnda" -17.94
+cap "al/vssa" "bl/vdda" 94
+cap "al/vssa" "bl/out" -8.58
+cap "al/vssa" "bl/vddx" 71.91
+cap "bl/gnda" "m2_8400_21920#" 18.8679
+cap "bl/gnda" "m2_8400_21920#" 18.8679
+cap "m2_8480_0#" "bl/gnda" 63
+cap "m2_8480_0#" "bl/gnda" 63
+cap "bl/out" "bl/gnda" 18.4
+cap "m2_8400_21920#" "bl/gnda" 50
+cap "bl/gnda" "m2_8400_21920#" 50
+cap "bl/xn" "al/vssa" 8.8
+cap "bl/out" "al/vssa" 8.8
+subcap "m5_12960_15200#" -273.06
+cap "m2_8400_21920#" "br/gnda" 8.84956
+cap "m2_8400_21920#" "br/gnda" 8.84956
+subcap "m5_12960_15200#" -289.08
+cap "br/xn" "ar/vssa" 8.8
+cap "br/gnda" "m2_8400_21920#" 126
+cap "br/gnda" "m2_8400_21920#" 50
+cap "br/vdda" "ar/vssa" 94
+cap "br/vddx" "ar/vssa" 12.69
+cap "br/out" "ar/vssa" 8.8
+cap "m2_8400_21920#" "br/gnda" 50
+cap "br/in" "br/out" -1.06581e-14
+cap "br/out" "br/gnda" 18.4
+subcap "m5_14880_15200#" -254.577
+subcap "m5_13920_15200#" -110.49
+cap "br/gnda" "br/vssa" 94
+cap "br/n2" "ar/vssa" 5.5
+cap "br/vddx" "br/vssa" 81.31
+subcap "m5_16800_15200#" -193.408
+subcap "m5_16800_15200#" -254.79
+cap "ar/vssa" "br/xn" 5.5
+cap "br/vssa" "br/gnda" 94
+subcap "m5_19680_15200#" -197.74
+subcap "m5_18720_15200#" -254.577
+cap "ar/vssa" "br/n1" 5.5
+cap "br/gnda" "br/vssa" 94
+subcap "m5_20640_15200#" -81.1959
+subcap "m5_19680_15200#" -254.4
+cap "br/vddx" "ar/vssa" 94
+cap "ar/vssa" "br/vdda" 78.49
+cap "br/vdda" "ar/vssa" 15.51
+cap "bl/vssa" "bl/xpb" -5.72
+cap "bl/gnda" "m2_8400_21920#" 18.8679
+cap "bl/gnda" "bl/in" -5.98
+cap "m2_8480_0#" "bl/gnda" 31.5
+cap "bl/in" "bl/vssa" -2.86
+cap "bl/in" "bl/gnda" 18.4
+cap "m2_8400_21920#" "bl/gnda" 50
+cap "bl/vssa" "bl/xpb" 8.8
+cap "m2_8480_0#" "bl/gnda" 31.5
+cap "bl/vssa" "bl/in" 8.8
+cap "m2_8400_21920#" "br/gnda" 8.84956
+cap "br/in" "br/vssa" 8.8
+cap "br/in" "br/gnda" 18.4
+cap "br/in" "br/out" -1.06581e-14
+cap "br/gnda" "m2_8400_21920#" 63
+cap "br/gnda" "m2_8400_21920#" 50
+cap "br/vssa" "br/xpb" 8.8
+cap "bl/bp" "bl/vssa" -2.86
+cap "ib" "bl/vddx" 32.2105
+cap "m2_8400_13600#" "bl/vddx" 5.66038
+cap "bl/bp" "bl/vddx" -21.32
+cap "m2_8480_0#" "bl/vddx" 133.33
+cap "m2_8400_13600#" "bl/vddx" 5.66038
+cap "bl/bp" "bl/vddx" 65.6
+cap "m2_8400_13600#" "bl/vddx" 50
+cap "m2_8400_13600#" "bl/vddx" 50
+cap "bl/vssa" "bl/bp" 8.8
+cap "bl/vddx" "m2_8480_0#" 367.5
+cap "bl/vddx" "ib" 105
+cap "br/vddx" "q" 52.5
+cap "br/vddx" "m2_8400_13600#" 8.84956
+cap "br/vddx" "m2_8400_13600#" 8.84956
+cap "br/vddx" "m2_8400_21920#" 420
+cap "br/bp" "br/vddx" 65.6
+cap "m2_8400_13600#" "br/vddx" 50
+cap "br/vddx" "q" 52.5
+cap "br/vssa" "br/bp" 8.8
+cap "br/vddx" "m2_8400_13600#" 50
+subcap "m5_1120_21280#" -93.525
+subcap "m5_160_21280#" -135.795
+subcap "m5_3040_21280#" -193.636
+subcap "m5_2080_21280#" -129.99
+subcap "m5_1120_21280#" -72.465
+subcap "m5_4000_21280#" -33.855
+subcap "m5_3040_21280#" -129.99
+subcap "m5_5920_21280#" -194.128
+subcap "m5_4960_21280#" -129.99
+subcap "m5_6880_21280#" -62.325
+subcap "m5_5920_21280#" -129.99
+cap "bl/vdda" "m2_8480_0#" 63.2075
+cap "bl/vdda" "m2_8480_0#" 167.5
+subcap "m5_12960_21280#" -273.06
+cap "br/vdda" "m2_8400_21920#" 5.9292
+subcap "m5_12960_21280#" -19.52
+cap "br/vdda" "m2_8400_21920#" 167.5
+subcap "m5_14880_21280#" -129.99
+subcap "m5_13920_21280#" -111.465
+subcap "m5_16800_21280#" -192.16
+subcap "m5_15840_21280#" -129.99
+subcap "m5_17760_21280#" -129.99
+subcap "m5_16800_21280#" -129.99
+subcap "m5_19680_21280#" -192.652
+subcap "m5_18720_21280#" -129.99
+subcap "m5_20640_21280#" -132.231
+subcap "m5_19680_21280#" -129.99
+subcap "m5_160_21280#" -169.101
+cap "bl/vssa" "bl/vdda" 166.925
+cap "bl/vssa" "bl/vdda" 126
+cap "bl/vssa" "bl/vddx" 80.01
+subcap "m5_2080_21280#" -279.132
+cap "bl/vssa" "bl/vddx" 11.68
+cap "bl/vddx" "bl/vssa" 34.31
+cap "bl/vssa" "bl/gnda" 32
+cap "bl/vssa" "bl/vdda" 192.5
+cap "bl/gnda" "bl/vssa" 94
+cap "bl/vssa" "cl/n1" 11
+cap "bl/vdda" "bl/vssa" 192.5
+cap "bl/vssa" "bl/vssa" 32
+cap "bl/vssa" "bl/gnda" 40.89
+cap "bl/vssa" "bl/gnda" 13.92
+cap "cl/out" "bl/vssa" 1.925
+subcap "m5_5920_21280#" -235.648
+cap "bl/gnda" "bl/vssa" 18.08
+cap "bl/gnda" "bl/vssa" 53.11
+cap "bl/vssa" "bl/vssa" 32
+cap "bl/vssa" "bl/vdda" 192.5
+cap "bl/vssa" "cl/out" 9.075
+subcap "m5_5920_21280#" -279.132
+cap "bl/vssa" "bl/vdda" 192.5
+cap "bl/vssa" "bl/gnda" 94
+cap "bl/vssa" "bl/gnda" 32
+cap "cl/n2" "bl/vssa" 11
+cap "bl/vddx" "bl/vssa" 22.09
+cap "bl/vddx" "bl/vssa" 7.52
+subcap "m5_7840_21280#" -361.245
+subcap "m2_8400_21920#" -272953
+cap "bl/vssa" "m2_8400_21920#" -22.88
+cap "bl/vdda" "bl/vssa" 174.075
+cap "cl/out" "m2_8400_21920#" -17.94
+cap "bl/vssa" "cl/out" -2.86
+cap "bl/vdda" "m2_8480_0#" 12.6415
+cap "bl/vdda" "bl/vssa" 126
+cap "m2_8480_0#" "m2_8400_21920#" 52.5
+cap "bl/vssa" "bl/vddx" 96.39
+cap "bl/vssa" "m2_8480_0#" 75.8491
+subcap "m2_8400_21920#" -272179
+cap "cl/out" "m2_8400_21920#" 18.4
+cap "m2_8400_21920#" "m2_8480_0#" 52.5
+cap "cl/out" "bl/vssa" 8.8
+cap "m2_8480_0#" "bl/vdda" 33.5
+cap "bl/vssa" "m2_8480_0#" 201
+cap "m2_8400_21920#" "bl/vssa" 17.6
+subcap "m5_12960_21280#" -273.06
+cap "m2_8400_21920#" "m2_8400_21920#" 1.42109e-14
+cap "br/vdda" "m2_8400_21920#" 1.18584
+cap "cr/vssa" "m2_8400_21920#" 7.11504
+subcap "m5_12960_21280#" -418.376
+cap "m2_8400_21920#" "br/vdda" 33.5
+cap "br/vssa" "br/vdda" 126
+cap "br/vssa" "m2_8400_21920#" 201
+cap "cr/out" "br/vssa" 8.8
+cap "br/vdda" "br/vssa" 139.425
+cap "m2_8400_21920#" "cr/out" 18.4
+cap "m2_8400_21920#" "m2_8400_21920#" 105
+cap "br/vddx" "br/vssa" 17.01
+cap "m2_8400_21920#" "br/vssa" 17.6
+cap "cr/in" "cr/out" 3.55271e-15
+subcap "m5_14880_21280#" -279.132
+cap "br/vssa" "cr/n2" 11
+cap "br/vssa" "br/vddx" 27.68
+cap "br/gnda" "cr/vssa" 94
+cap "br/vssa" "br/vdda" 192.5
+cap "br/vddx" "cr/vssa" 81.31
+cap "br/vssa" "br/gnda" 32
+subcap "m5_16800_21280#" -195.28
+cap "br/vssa" "br/vssa" 32
+cap "br/vssa" "br/vdda" 192.5
+subcap "m5_16800_21280#" -279.144
+cap "br/vssa" "cr/out" 11
+cap "br/vssa" "br/gnda" 94
+cap "br/vssa" "br/gnda" 32
+cap "br/vssa" "br/vssa" 32
+cap "br/vssa" "br/vdda" 192.5
+subcap "m5_19680_21280#" -205.372
+subcap "m5_18720_21280#" -279.132
+cap "br/vssa" "br/gnda" 32
+cap "br/vssa" "br/vdda" 192.5
+cap "cr/n1" "br/vssa" 11
+cap "br/vssa" "br/gnda" 94
+subcap "m5_19680_21280#" -279.18
+cap "br/vdda" "br/vssa" 192.5
+cap "br/vddx" "br/vssa" 126
+cap "br/vssa" "br/vdda" 105.21
+cap "br/vssa" "br/vdda" 20.79
+cap "br/vdda" "br/vssa" 9.075
+subcap "m2_8400_21920#" -273640
+cap "m2_8400_21920#" "m2_8480_0#" 42
+cap "cl/vssa" "cl/in" -2.86
+cap "cl/vssa" "m2_8400_21920#" -14.3
+cap "m2_8400_21920#" "cl/in" -17.94
+subcap "m2_8400_21920#" -272524
+cap "m2_8400_21920#" "cl/in" 18.4
+cap "m2_8480_0#" "m2_8400_21920#" 42
+cap "cl/vssa" "cl/in" 8.8
+cap "cl/vssa" "m2_8400_21920#" 8.8
+cap "m2_8400_21920#" "cr/vssa" 8.8
+cap "cr/in" "cr/out" -3.55271e-15
+cap "cr/in" "cr/vssa" 8.8
+cap "m2_8400_21920#" "m2_8400_21920#" 84
+cap "cr/in" "m2_8400_21920#" 18.4
+cap "cl/bp" "cl/vddx" -63.96
+cap "cl/vssa" "cl/vddx" -17.16
+cap "cl/vdda" "m2_8480_0#" 50.566
+cap "ib" "cl/vddx" 32.2105
+cap "m2_8480_0#" "cl/vddx" 133.33
+cap "cl/vssa" "cl/bp" -8.58
+cap "cl/vddx" "ib" 105
+cap "cl/vddx" "m2_8480_0#" 367.5
+cap "cl/bp" "cl/vddx" 65.6
+cap "cl/vdda" "m2_8480_0#" 134
+cap "cl/bp" "cl/vssa" 8.8
+cap "cl/vddx" "cl/vssa" 17.6
+cap "m2_8400_21920#" "cr/vddx" 2.84217e-14
+cap "cr/vddx" "q" 52.5
+cap "m2_8400_21920#" "cr/vdda" 4.74336
+cap "cr/bp" "cr/vssa" 8.8
+cap "cr/vddx" "m2_8400_21920#" 420
+cap "cr/vdda" "m2_8400_21920#" 134
+cap "cr/vddx" "cr/vssa" 17.6
+cap "cr/vddx" "cr/bp" 65.6
+cap "cr/vddx" "q" 52.5
+cap "cl/vdda" "cl/vssa" 16
+cap "cl/vddx" "cl/vssa" 10.16
+cap "cl/vddx" "cl/vssa" 5.84
+cap "cl/vssa" "cl/gnda" 16
+cap "cl/vssa" "cl/vssa" 16
+cap "cl/vssa" "cl/gnda" 6.96
+cap "cl/vssa" "cl/vssa" 16
+cap "cl/gnda" "cl/vssa" 9.04
+cap "cl/gnda" "cl/vssa" 16
+cap "cl/vssa" "cl/vddx" 3.76
+cap "cl/vddx" "cl/vssa" 12.24
+cap "cl/vdda" "cl/vssa" 16
+cap "cr/vssa" "cr/vddx" 2.16
+cap "cr/vdda" "cr/vssa" 16
+cap "cr/gnda" "cr/vssa" 16
+cap "cr/vddx" "cr/vssa" 13.84
+cap "cr/vssa" "cr/vssa" 16
+cap "cr/vssa" "cr/vssa" 16
+cap "cr/vssa" "cr/gnda" 16
+cap "cr/vssa" "cr/gnda" 16
+cap "cr/vssa" "cr/vdda" 13.36
+cap "cr/vddx" "cr/vssa" 16
+cap "cr/vdda" "cr/vssa" 2.64
+merge "cr/out" "cl/out" -74.168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20160 -320 0 0 0 0 0 0 0 0
+merge "cl/out" "out"
+merge "cr/vdda" "biasr/vdda" -4522.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1693133 -23149 259200 -3200 0 0
+merge "biasr/vdda" "ar/vdda"
+merge "ar/vdda" "m5_12960_11120#"
+merge "m5_12960_11120#" "m5_20640_11120#"
+merge "m5_20640_11120#" "br/vdda"
+merge "br/vdda" "m5_12960_15200#"
+merge "m5_12960_15200#" "m5_20640_15200#"
+merge "m5_20640_15200#" "m5_12960_21280#"
+merge "m5_12960_21280#" "m5_20640_21280#"
+merge "m5_20640_21280#" "cl/vdda"
+merge "cl/vdda" "biasl/vdda"
+merge "biasl/vdda" "vdda"
+merge "vdda" "m5_7840_n80#"
+merge "m5_7840_n80#" "al/vdda"
+merge "al/vdda" "m5_160_11120#"
+merge "m5_160_11120#" "m5_7840_11120#"
+merge "m5_7840_11120#" "bl/vdda"
+merge "bl/vdda" "m5_160_15200#"
+merge "m5_160_15200#" "m5_7840_15200#"
+merge "m5_7840_15200#" "m5_160_21280#"
+merge "m5_160_21280#" "m5_7840_21280#"
+merge "m5_7840_21280#" "m2_8480_6400#"
+merge "cr/vddx" "cl/vddx" -2549.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 198720 -4056 0 0 0 0 464400 -9600 0 0
+merge "cl/vddx" "biasr/vddx"
+merge "biasr/vddx" "ar/vddx"
+merge "ar/vddx" "m5_13920_11120#"
+merge "m5_13920_11120#" "m5_19680_11120#"
+merge "m5_19680_11120#" "biasl/vddx"
+merge "biasl/vddx" "vddx"
+merge "vddx" "m5_6880_n80#"
+merge "m5_6880_n80#" "al/vddx"
+merge "al/vddx" "m5_1120_11120#"
+merge "m5_1120_11120#" "m5_6880_11120#"
+merge "m5_6880_11120#" "m2_8400_13600#"
+merge "m2_8400_13600#" "bl/vddx"
+merge "bl/vddx" "m5_1120_15200#"
+merge "m5_1120_15200#" "m5_6880_15200#"
+merge "m5_6880_15200#" "br/vddx"
+merge "br/vddx" "m5_13920_15200#"
+merge "m5_13920_15200#" "m5_19680_15200#"
+merge "m5_19680_15200#" "m5_1120_21280#"
+merge "m5_1120_21280#" "m5_6880_21280#"
+merge "m5_6880_21280#" "m5_13920_21280#"
+merge "m5_13920_21280#" "m5_19680_21280#"
+merge "cr/vssa" "cl/vssa" -3697.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 486748 -6325 -548671 -8375 510312 -6325 265440 -3200 0 0
+merge "cl/vssa" "br/vssa"
+merge "br/vssa" "bl/vssa"
+merge "bl/vssa" "ar/vssa"
+merge "ar/vssa" "al/vssa"
+merge "al/vssa" "biasr/vssa"
+merge "biasr/vssa" "biasl/vssa"
+merge "biasl/vssa" "VSUBS"
+merge "VSUBS" "vssa"
+merge "vssa" "m5_4960_n80#"
+merge "m5_4960_n80#" "m5_3040_11120#"
+merge "m5_3040_11120#" "m5_4960_11120#"
+merge "m5_4960_11120#" "m5_15840_11120#"
+merge "m5_15840_11120#" "m5_17760_11120#"
+merge "m5_17760_11120#" "m5_3040_15200#"
+merge "m5_3040_15200#" "m5_4960_15200#"
+merge "m5_4960_15200#" "m5_15840_15200#"
+merge "m5_15840_15200#" "m5_17760_15200#"
+merge "m5_17760_15200#" "m5_3040_21280#"
+merge "m5_3040_21280#" "m5_4960_21280#"
+merge "m5_4960_21280#" "m5_15840_21280#"
+merge "m5_15840_21280#" "m5_17760_21280#"
+merge "m5_17760_21280#" "m2_8480_0#"
+merge "biasr/xb" "biasl/xb" -192.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -144800 -640 0 0 0 0 0 0 0 0
+merge "biasl/xb" "biasr/xa"
+merge "biasr/xa" "biasl/xa"
+merge "biasl/xa" "z"
+merge "cr/gnda" "cl/gnda" -9903.77 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1077644 -17057 -1691765 -16855 766200 -12891 537600 -9600 0 0
+merge "cl/gnda" "biasl/gnda"
+merge "biasl/gnda" "gnda"
+merge "gnda" "m5_4000_n80#"
+merge "m5_4000_n80#" "m5_5920_n80#"
+merge "m5_5920_n80#" "al/gnda"
+merge "al/gnda" "m5_2080_11120#"
+merge "m5_2080_11120#" "m5_4000_11120#"
+merge "m5_4000_11120#" "m5_5920_11120#"
+merge "m5_5920_11120#" "bl/gnda"
+merge "bl/gnda" "m5_2080_15200#"
+merge "m5_2080_15200#" "m5_4000_15200#"
+merge "m5_4000_15200#" "m5_5920_15200#"
+merge "m5_5920_15200#" "m5_2080_21280#"
+merge "m5_2080_21280#" "m5_4000_21280#"
+merge "m5_4000_21280#" "m5_5920_21280#"
+merge "m5_5920_21280#" "m2_8400_21920#"
+merge "m2_8400_21920#" "biasr/gnda"
+merge "biasr/gnda" "ar/gnda"
+merge "ar/gnda" "m5_14880_11120#"
+merge "m5_14880_11120#" "m5_16800_11120#"
+merge "m5_16800_11120#" "m5_18720_11120#"
+merge "m5_18720_11120#" "br/gnda"
+merge "br/gnda" "m5_14880_15200#"
+merge "m5_14880_15200#" "m5_16800_15200#"
+merge "m5_16800_15200#" "m5_18720_15200#"
+merge "m5_18720_15200#" "m5_14880_21280#"
+merge "m5_14880_21280#" "m5_16800_21280#"
+merge "m5_16800_21280#" "m5_18720_21280#"
+merge "br/xpb" "bl/xpb" -61.316 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10080 -320 0 0 0 0 0 0 0 0
+merge "bl/xpb" "xp"
+merge "cr/bp" "cl/bp" -482.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -364000 -1600 0 0 0 0 0 0 0 0
+merge "cl/bp" "br/bp"
+merge "br/bp" "bl/bp"
+merge "bl/bp" "ar/bp"
+merge "ar/bp" "al/bp"
+merge "al/bp" "biasr/bpb"
+merge "biasr/bpb" "biasl/bpb"
+merge "biasl/bpb" "biasr/bpa"
+merge "biasr/bpa" "biasl/bpa"
+merge "biasl/bpa" "bp"
+merge "al/in" "im" -34.126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3120 -160 0 0 0 0 0 0 0 0
+merge "biasr/qb" "biasl/qb" -4815.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40320 -640 -1401840 -42560 0 0 0 0 0 0
+merge "biasl/qb" "biasr/qa"
+merge "biasr/qa" "biasl/qa"
+merge "biasl/qa" "q"
+merge "cr/in" "cl/in" -326.802 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -460240 -640 0 0 0 0 0 0 0 0
+merge "cl/in" "br/out"
+merge "br/out" "bl/out"
+merge "bl/out" "y"
+merge "bl/in" "ar/out" -133.274 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4880 -640 0 0 0 0 0 0 0 0
+merge "ar/out" "ar/in"
+merge "ar/in" "al/out"
+merge "al/out" "x"
+merge "br/in" "ip" -32.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 0 0 0 0 0 0 0 0
+merge "biasr/nb" "biasl/nb" -2756.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40320 -640 4211040 -45360 0 0 0 0 0 0
+merge "biasl/nb" "biasr/na"
+merge "biasr/na" "biasl/na"
+merge "biasl/na" "ib"
+merge "br/xn" "bl/xn" -57.032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20160 -320 0 0 0 0 0 0 0 0
+merge "bl/xn" "xn"

@@ -46,37 +46,20 @@ Description
 
 The analog front-end for bio-signals main goal is to amplify its inputs, and filter interference and noise without losing resolution, so that the processed signals information can be properly extracted.
 
+Our design is composed of two blocks. The first block, the `Low-Power Low-Noise Amplifier (LNA)` [1], simultaneously filters the input DC signal and amplifies it. Normally, electrodes output an unknown DC offset which must be canceled, otherwise it would be amplified together with the input signal and saturate the output, causing distortion.
 
-### Block Diagram
-
-<img align=left width="550" src="https://user-images.githubusercontent.com/5855935/132361366-0e53de44-0f2a-4ce3-8b64-24c5ce326807.png" alt="block-diagram">
-
-Our design is composed of four blocks. The `Low-Power Low-Noise Amplifier (LNA)` [1] simultaneously filters the input DC signal and amplifies it. Normally, electrodes output an unknown DC offset which must be canceled, otherwise it would be amplified together with the input signal and saturate the output, causing distortion.
-
-After the first gain stage, a variable gain stage is needed, since the biomedical signals have a varying amplitude due to electrode position and the user own characteristics. This variable gain stage is implemented with a `Variable Gain Amplifier (VGA)` based on cascaded inverting operational amplifiers. These operational amplifiers should have large output voltage excursions, and be capable of driving a relatively large resisitive load as efficiently as possible, so it should have a  class AB output stage [2].
-
-Finally, the VGA output signal must be filtered to limit the noise and interference from unwanted frequencies. Since the biomedical signals usually have a very low upper cutoff frequency, the filters should be made of very low transconductance amplifiers [3] to implement very large time constants with reasonable sized integrated capacitors. Additionally, the `Filter` output must be as linear as possible to minimize distortion, so its transconductors must have improved linearity [4].
-
-All these analog circuit blocks have in common the need of a biasing current. We chose a resistorless `Self-Biased Current Reference Source (SBCS)` [5], since integrated resistors exhibit a larger process variability than MOS transistors.
+The second and last block is buffer made with a class AB operational amplifier. Its function is to isolate the output load from the LNA, so the LNA characteristics are not affected by it.
 
 
 ### Layouts
 
-#### AFE - 700 x 350 um
 * All layouts use common-centroid technique
 * All wires are shielded, as they are very long and parasitic capacitance between then would be significant. Provides extra protection for noise. Very large parasitic capacitors between signals and the ground plane.
-* All designs were made with transistor arrays [3] of 1:8, 4:2 and 8:1 matrices. Each single PMOS single transistor is 3 X 8 um, and each single NMOS is 1 x 8 um.
-
-![image](./layouts/afe.png)
 
 
-#### Low-Noise Amplifier (LNA)
-* LNA based on [1] with tunable-pseudo resistors [6].
-* The LNA OTA is a simple single-stage amplifier with differential pair.and current mirror active load.
----
-![image](./layouts/lna.png)
+#### AFE
+![image](./docs/pictures/layout/afe.png)
 
-#### Buffer
 
 ---
 ### Simulation Results
@@ -88,17 +71,19 @@ All these analog circuit blocks have in common the need of a biasing current. We
 
 | Specifications  | -                            |
 | :---            | :---                         |
-| VDD             | 1.8 V                        |
+| VDD             | 1.8-3.3 V                    |
 | Power           | 5 &mu;W                      |
 | Input Noise     | 10 &mu;V RMS (@ 0.05-100 Hz) |
 | Offset Voltage  | 1 mV                         |
-| Gain            | 10-1000 V/V                  |
-| Bandwidth       |	0.5-100 Hz                   |
-| THD             |	0.1 % @ 1 V<sub>pp</sub>     |
+| Gain            | 10 V/V                       |
+| Bandwidth       | 0.5-100 Hz                   |
+| THD             | 0.1 % @ 1 V<sub>pp</sub>     |
 
 Status and Issues
 ============
 
+* Variable gain was scrapped from project. Only fixed LNA gain is available.
+* Pseudo-resistor doesn't have a biasing circuit to correct process variability.
 * Documentation is extremely incomplete.
 
 
@@ -131,6 +116,7 @@ References
 
 [1] Harrison, Reid R., et al. "A low-power integrated circuit for a wireless 100-electrode neural recording system." IEEE Journal of Solid-State Circuits 42.1 (2006): 123-133.
 
+<--
 [2] Hogervorst, Ron, et al. "A compact power-efficient 3 V CMOS rail-to-rail input/output operational amplifier for VLSI cell libraries." IEEE journal of solid-state circuits 29.12 (1994): 1505-1513.
 
 [3] Arnaud, Alfredo, Rafaella Fiorelli, and Carlos Galup-Montoro. "Nanowatt, sub-nS OTAs, with sub-10-mV input offset, using series-parallel current mirrors." IEEE Journal of Solid-State Circuits 41.9 (2006): 2009-2018.
@@ -140,5 +126,5 @@ References
 [5] Serra-Graells, Francisco, and Jose Luis Huertas. "Sub-1-V CMOS proportional-to-absolute temperature references." IEEE Journal of Solid-State Circuits 38.1 (2003): 84-88.
 
 [6] Guglielmi, Emanuele, et al. "High-value tunable pseudo-resistors design." IEEE Journal of Solid-State Circuits 55.8 (2020): 2094-2105.
-
+-->
 

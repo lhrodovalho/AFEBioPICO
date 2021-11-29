@@ -1,0 +1,281 @@
+timestamp 1638148091
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use cap1_10_core p2 1 0 14000 0 1 2000
+use cap1_10_core m2 1 0 14000 0 1 8560
+use cap1_10_core m1 1 0 14000 0 1 15120
+use cap1_10_core p1 1 0 14000 0 1 21680
+use cap1_10_dummy dummy1 1 0 14000 0 1 28240
+use cap1_10_dummy dummy2 1 0 14000 0 1 -400
+port "ip" 1 29760 31840 29840 31920 m3
+port "om" 3 29440 31840 29520 31920 m3
+port "xp" 2 29120 31840 29200 31920 m3
+port "xm" 5 800 31840 880 31920 m3
+port "op" 6 480 31840 560 31920 m3
+port "im" 4 160 31840 240 31920 m3
+port "gnda" 7 0 480 80 880 m4
+port "vssa" 8 0 0 80 400 m4
+node "ip" 3 8040.96 29760 31840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2476800 62080 409600 10880 0 0 0 0
+node "om" 2 7871.04 29440 31840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2476800 62080 281600 7680 0 0 0 0
+node "xp" 1 7356.32 29120 31840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2476800 62080 83200 2400 0 0 0 0
+node "xm" 1 7387.2 800 31840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2476800 62080 89600 2560 0 0 0 0
+node "op" 2 7871.04 480 31840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2476800 62080 281600 7680 0 0 0 0
+node "im" 3 7979.2 160 31840 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2476800 62080 384000 10240 0 0 0 0
+node "gnda" 0 354057 0 480 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31104000 838400 20121600 504320 45299200 954080 0 0 0 0
+node "vssa" 15 53460.2 0 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4953600 124160 12800 640 12800 640 166400 4480 12000000 60800 0 0 0 0
+substrate "w_1094_934#" 0 0 1094 934 pw 0 0 17424 528 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "xm" "op" 8545.56
+cap "om" "gnda" 95081.1
+cap "gnda" "xp" 88651.7
+cap "vssa" "op" 167.68
+cap "ip" "vssa" 167.68
+cap "gnda" "im" 99040.3
+cap "vssa" "xp" 104.84
+cap "om" "vssa" 167.68
+cap "xm" "im" 418.56
+cap "om" "ip" 9528.23
+cap "ip" "xp" 418.56
+cap "vssa" "im" 167.68
+cap "xm" "gnda" 88651.7
+cap "im" "op" 9528.23
+cap "vssa" "gnda" 30346
+cap "om" "xp" 8545.56
+cap "gnda" "op" 95014.1
+cap "ip" "gnda" 99728.9
+cap "vssa" "xm" 104.84
+subcap "gnda" -350834
+subcap "vssa" -52272.2
+cap "vssa" "gnda" -10.4
+cap "gnda" "dummy2/gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "gnda" "dummy2/gnda" 390.833
+cap "gnda" "dummy2/gnda" 390.833
+cap "gnda" "dummy2/gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "gnda" "dummy2/gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "gnda" "dummy2/gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "gnda" "dummy2/gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "gnda" "dummy2/gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "dummy2/gnda" "gnda" 390.833
+cap "dummy2/vssa" "gnda" -75.84
+cap "w_1094_934#" "gnda" 73.2
+cap "dummy2/gnda" "dummy2/vssa" -227.52
+cap "gnda" "p2/b2" 33.5
+cap "gnda" "p2/c2" 33.5
+cap "gnda" "dummy2/vssa" 46.2
+cap "gnda" "p2/b2" 7.44444
+cap "gnda" "p2/c2" 7.44444
+cap "p2/c2" "p2/b2" -67
+cap "p2/vssa" "p2/b2" -37.92
+cap "p2/c2" "dummy2/gnda" -402
+cap "p2/vssa" "dummy2/gnda" -170.64
+cap "p2/b2" "dummy2/gnda" -335
+cap "p2/vssa" "p2/c2" -37.92
+cap "gnda" "p2/vssa" -2.6
+cap "gnda" "p2/vssa" -18.96
+cap "p2/a" "gnda" 33.5
+cap "p2/gnda" "gnda" 44.6667
+cap "p2/gnda" "gnda" 367.5
+cap "p2/gnda" "gnda" 134
+cap "p2/gnda" "p2/gnda" -426
+cap "gnda" "p2/gnda" 14.8889
+cap "p2/gnda" "p2/gnda" -127.8
+cap "gnda" "p2/a" 7.44444
+cap "gnda" "p2/gnda" 44.6667
+cap "p2/gnda" "gnda" 101.5
+cap "gnda" "p2/gnda" 44.6667
+cap "gnda" "p2/gnda" 134
+cap "gnda" "p2/gnda" 367.5
+cap "p2/a" "p2/vssa" -37.92
+cap "p2/gnda" "gnda" 201
+cap "p2/gnda" "gnda" 367.5
+cap "p2/gnda" "p2/gnda" -724.2
+cap "p2/gnda" "gnda" 122.5
+cap "p2/gnda" "gnda" 67
+cap "gnda" "p2/gnda" 201
+cap "gnda" "p2/gnda" 367.5
+cap "p2/b1" "gnda" 22.3333
+cap "p2/vssa" "gnda" 88.8
+cap "p2/c1" "gnda" 22.3333
+cap "gnda" "p2/b1" 7.44444
+cap "p2/c1" "gnda" 7.44444
+cap "p2/b1" "p2/c1" -67
+cap "p2/c1" "p2/vssa" -37.92
+cap "p2/c1" "p2/gnda" -402
+cap "p2/b1" "p2/vssa" -37.92
+cap "p2/b1" "p2/gnda" -402
+cap "p2/vssa" "p2/gnda" -113.76
+cap "op" "gnda" -268
+cap "im" "op" -44.6667
+cap "p2/vssa" "gnda" -15.6
+cap "p2/vssa" "im" -5.2
+cap "p2/vssa" "op" -5.2
+cap "im" "gnda" -268
+cap "p2/gnda" "m2/c2" 67
+cap "m2/b2" "p2/gnda" 67
+cap "p2/vssa" "p2/gnda" -113.76
+cap "m2/gnda" "gnda" 367.5
+cap "m2/gnda" "gnda" 201
+cap "m2/gnda" "gnda" 67
+cap "m2/gnda" "m2/gnda" -724.2
+cap "gnda" "m2/gnda" 122.5
+cap "gnda" "m2/gnda" 367.5
+cap "gnda" "m2/gnda" 201
+cap "gnda" "m2/gnda" 67
+cap "xm" "m2/vssa" -5.2
+cap "gnda" "m2/gnda" 367.5
+cap "gnda" "m2/gnda" 111.667
+cap "m2/gnda" "m2/gnda" -213
+cap "m2/gnda" "m2/gnda" -340.8
+cap "gnda" "m2/gnda" 22.3333
+cap "m2/gnda" "gnda" 37.2222
+cap "gnda" "m2/gnda" 101.5
+cap "gnda" "m2/gnda" 67
+cap "gnda" "m2/gnda" 111.667
+cap "gnda" "m2/a" 67
+cap "gnda" "m2/gnda" 367.5
+cap "im" "m2/vssa" 29.6
+cap "im" "gnda" -67
+cap "op" "gnda" -116.8
+cap "m2/vssa" "gnda" 83.6
+cap "im" "gnda" -116.8
+cap "op" "m2/vssa" 29.6
+cap "im" "op" -22.3333
+cap "m2/b1" "m2/gnda" 67
+cap "m2/c1" "m2/gnda" 67
+cap "m2/vssa" "m2/gnda" -151.68
+cap "im" "gnda" -201
+cap "gnda" "m2/vssa" -10.4
+cap "im" "op" -44.6667
+cap "op" "m2/vssa" -5.2
+cap "im" "m2/vssa" -5.2
+cap "gnda" "op" -268
+cap "m1/b2" "gnda" 67
+cap "m1/c2" "gnda" 67
+cap "m2/vssa" "gnda" -75.84
+cap "gnda" "m1/gnda" 367.5
+cap "gnda" "m1/gnda" 201
+cap "m1/gnda" "m1/gnda" -724.2
+cap "m1/gnda" "gnda" 67
+cap "m1/gnda" "gnda" 122.5
+cap "m1/gnda" "gnda" 201
+cap "m1/gnda" "gnda" 367.5
+cap "m1/gnda" "gnda" 167.5
+cap "m1/gnda" "gnda" 367.5
+cap "xm" "m1/vssa" -5.2
+cap "m1/gnda" "gnda" 101.5
+cap "m1/gnda" "gnda" 55.8333
+cap "m1/gnda" "m1/gnda" -596.4
+cap "gnda" "m1/gnda" 167.5
+cap "m1/a" "gnda" 67
+cap "gnda" "m1/gnda" 367.5
+cap "m1/vssa" "op" 29.6
+cap "op" "gnda" -16.3
+cap "im" "op" -11.1667
+cap "m1/vssa" "m1/gnda" -37.92
+cap "m1/b1" "m1/gnda" 67
+cap "op" "im" -11.1667
+cap "im" "gnda" -116.8
+cap "p1/b2" "gnda" 33.5
+cap "m1/vssa" "gnda" 48.8
+cap "p1/c2" "gnda" 33.5
+cap "op" "gnda" -33.5
+cap "m1/vssa" "im" 29.6
+cap "p1/b2" "gnda" 7.44444
+cap "p1/c2" "gnda" 7.44444
+cap "p1/c2" "m1/gnda" -268
+cap "m1/vssa" "m1/gnda" -151.68
+cap "p1/b2" "m1/gnda" -201
+cap "p1/c2" "m1/vssa" -37.92
+cap "p1/b2" "p1/c2" -67
+cap "m1/c1" "m1/gnda" 67
+cap "p1/b2" "m1/vssa" -37.92
+cap "gnda" "p1/vssa" -5.2
+cap "p1/vssa" "gnda" -37.92
+cap "p1/b2" "gnda" -67
+cap "p1/gnda" "gnda" 33.5
+cap "gnda" "p1/gnda" 367.5
+cap "gnda" "p1/gnda" 134
+cap "p1/a" "gnda" 33.5
+cap "gnda" "p1/gnda" 44.6667
+cap "gnda" "p1/gnda" 101.5
+cap "p1/gnda" "p1/gnda" -85.2
+cap "p1/a" "gnda" 7.44444
+cap "gnda" "p1/gnda" 11.1667
+cap "p1/gnda" "p1/gnda" -468.6
+cap "p1/gnda" "gnda" 33.5
+cap "p1/vssa" "p1/a" -37.92
+cap "p1/gnda" "gnda" 367.5
+cap "p1/gnda" "gnda" 134
+cap "p1/gnda" "gnda" 367.5
+cap "p1/gnda" "gnda" 189.833
+cap "p1/gnda" "gnda" 63.2778
+cap "p1/gnda" "gnda" 122.5
+cap "p1/gnda" "p1/gnda" -724.2
+cap "p1/gnda" "gnda" 189.833
+cap "gnda" "p1/gnda" 367.5
+cap "p1/b1" "gnda" 22.3333
+cap "gnda" "p1/c1" 22.3333
+cap "p1/vssa" "gnda" 88.8
+cap "gnda" "p1/c1" 7.44444
+cap "gnda" "p1/b1" 7.44444
+cap "p1/gnda" "p1/b1" -402
+cap "p1/gnda" "p1/vssa" -113.76
+cap "p1/vssa" "p1/b1" -37.92
+cap "p1/c1" "p1/gnda" -335
+cap "p1/c1" "p1/b1" -67
+cap "p1/c1" "p1/vssa" -37.92
+cap "p1/vssa" "gnda" -26
+cap "p1/gnda" "p1/vssa" -189.6
+subcap "xm" -7127.76
+subcap "op" -7611.6
+subcap "im" -7604.96
+cap "gnda" "dummy1/vssa" 148
+subcap "xp" -7096.88
+cap "dummy1/vssa" "dummy1/gnda" -189.6
+subcap "ip" -7666.72
+subcap "om" -7611.6
+subcap "xp" -7423.52
+merge "m1/b1" "m1/b2" -2532.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 494800 -18776 0 0 0 0
+merge "m1/b2" "m2/b1"
+merge "m2/b1" "m2/b2"
+merge "m2/b2" "op"
+merge "dummy1/gnda" "p1/gnda" -146463 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2822760 -266741 -49947434 -197655 224310 -382906 0 0 0 0
+merge "p1/gnda" "m1/gnda"
+merge "m1/gnda" "m2/gnda"
+merge "m2/gnda" "p2/gnda"
+merge "p2/gnda" "dummy2/gnda"
+merge "dummy2/gnda" "gnda"
+merge "dummy1/vssa" "p1/vssa" -34641 0 0 1258164 -3328 0 0 0 0 0 0 -363328 -3120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1375112 -126960 -519886 -320 -510664 -320 -306960 -1174 0 0 0 0 0 0
+merge "p1/vssa" "m1/vssa"
+merge "m1/vssa" "m2/vssa"
+merge "m2/vssa" "p2/vssa"
+merge "p2/vssa" "dummy2/vssa"
+merge "dummy2/vssa" "w_1094_934#"
+merge "w_1094_934#" "vssa"
+merge "m1/c1" "m1/c2" -993.451 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -132320 -8443 0 0 0 0
+merge "m1/c2" "m2/c1"
+merge "m2/c1" "m2/c2"
+merge "m2/c2" "im"
+merge "m1/a" "m2/a" -4721.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1436800 -36400 47920 -5124 0 0 0 0
+merge "m2/a" "xm"
+merge "p1/a" "p2/a" -3328.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3240960 -39200 -907248 -1120 0 0 0 0
+merge "p2/a" "xp"
+merge "p1/c1" "p1/c2" -709.032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -2320 76440 -2560 0 0 0 0
+merge "p1/c2" "p2/c1"
+merge "p2/c1" "p2/c2"
+merge "p2/c2" "ip"
+merge "p1/b1" "p1/b2" -614.224 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -2320 -23520 -2560 0 0 0 0
+merge "p1/b2" "p2/b1"
+merge "p2/b1" "p2/b2"
+merge "p2/b2" "om"
